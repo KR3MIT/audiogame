@@ -2,5 +2,5 @@ Event	ID	Name			Wwise Object Path	Notes
 	3287158630	ExplosionEvent			\Default Work Unit\ExplosionEvent	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	1013544364	8bitexplosion	C:\Users\matti\OneDrive - ITU\Documents\GitHub\audiogame\audiogame_WwiseProject\.cache\94\{94C6DB0E-ABC4-7C40-86A6-FC5E1499439D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\8bitexplosion		135316
+	1013544364	8bitexplosion	C:\Users\matti\OneDrive - ITU\Documents\GitHub\audiogame\audiogame_WwiseProject\.cache\94\{94C6DB0E-ABC4-7C40-86A6-FC5E1499439D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\8bitexplosion		135316
 
