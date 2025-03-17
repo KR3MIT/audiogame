@@ -29,6 +29,12 @@ public class PlayerSounds : MonoBehaviour
             time = 0;
         }
 
+
+        if (transform.position.y <= -5)
+        {
+            // play fall sound
+            Debug.Log("A fall was fallen");
+        }
     }
 
     IEnumerator Footsteps()
