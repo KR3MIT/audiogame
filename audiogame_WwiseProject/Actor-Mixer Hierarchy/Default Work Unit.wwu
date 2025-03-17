@@ -3,8 +3,14 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="8bitexplosion" ID="{7F087182-804C-4008-8C9B-5B313ADCD92C}" ShortID="760005179">
+				<ActorMixer Name="Main" ID="{F6DAC414-5036-4EBB-A847-CA110B7C2E7D}" ShortID="78453831">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
 						</Reference>
@@ -13,23 +19,38 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="mixkit-arcade-game-explosion-2759" ID="{C67CB408-981C-463C-A787-BF738032EDFF}">
-							<PropertyList>
-								<Property Name="LoopBegin" Type="Real64" Value="0"/>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimEnd" Type="Real64" Value="0.766555654330592"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>mixkit-arcade-game-explosion-2759.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="1013544364"/>
-							</MediaIDList>
-						</AudioFileSource>
+						<Sound Name="8bitexplosion" ID="{7F087182-804C-4008-8C9B-5B313ADCD92C}" ShortID="760005179">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="mixkit-arcade-game-explosion-2759" ID="{C67CB408-981C-463C-A787-BF738032EDFF}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="0"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.766555654330592"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>mixkit-arcade-game-explosion-2759.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1013544364"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="mixkit-arcade-game-explosion-2759" ID="{C67CB408-981C-463C-A787-BF738032EDFF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="mixkit-arcade-game-explosion-2759" ID="{C67CB408-981C-463C-A787-BF738032EDFF}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
+					<PositioningInfo>
+						<Panner Name="" ID="{98422D38-CE73-4454-9197-58BEE697C14A}"/>
+					</PositioningInfo>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
