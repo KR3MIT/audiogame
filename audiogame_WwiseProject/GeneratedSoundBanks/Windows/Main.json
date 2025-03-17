@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{E3426CFE-E3B9-27B5-C247-720B9518A026}",
+    "Hash": "{75FCECE5-31E8-F428-803C-F4331EE47B7D}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -30,6 +30,7 @@
       "Name": "ExplosionEvent",
       "ObjectPath": "\\Events\\Default Work Unit\\ExplosionEvent",
       "GUID": "{6BFE747A-0153-4389-BCFD-489C30A1797E}",
+      "MaxAttenuation": "50",
       "DurationType": "OneShot",
       "DurationMin": "0.76655567",
       "DurationMax": "0.76655567",
@@ -42,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{387FCB45-589B-3705-8F91-B420C9C32B5B}"
+  "FileHash": "{77C5609B-6F56-7B73-CF0E-5FE75AFCC6FA}"
  }
 }
