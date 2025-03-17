@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3161908922",
+    "Type": "User",
+    "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
+    "Language": "SFX",
+    "Hash": "{E3426CFE-E3B9-27B5-C247-720B9518A026}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
+    "ShortName": "Main",
+    "Path": "Main.bnk",
+    "Media": [
+     {
+      "Id": "1013544364",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mixkit-arcade-game-explosion-2759.wav",
+      "CachePath": "94/{94C6DB0E-ABC4-7C40-86A6-FC5E1499439D}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3287158630",
+      "Name": "ExplosionEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\ExplosionEvent",
+      "GUID": "{6BFE747A-0153-4389-BCFD-489C30A1797E}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.76655567",
+      "DurationMax": "0.76655567",
+      "MediaRefs": [
+       {
+        "Id": "1013544364"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{C5A70A57-5FED-F646-4E6B-70BF41F7F9AE}"
+ }
+}
