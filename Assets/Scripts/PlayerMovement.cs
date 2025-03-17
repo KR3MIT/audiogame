@@ -9,10 +9,13 @@ public class PlayerMovement : MonoBehaviour
     public float movespeed = 5.0f;
     public float lookspeed = 0.1f;
     public float lookX = 0;
+   
+    public float speed {get; private set;}
     void Start()
     {
        controller = GetComponent<CharacterController>();
        input = GetComponent<PlayerInput>();
+
     }
 
 
@@ -23,9 +26,10 @@ public class PlayerMovement : MonoBehaviour
         Vector2 move = input.actions["Move"].ReadValue<Vector2>();
         Vector3 moveDirection = new Vector3(move.x, 0, move.y);
         moveDirection = transform.TransformDirection(moveDirection);
-        controller.Move(moveDirection * movespeed * Time.deltaTime);
+        Vector3 moveVec = moveDirection * movespeed;
+        controller.Move(moveVec * Time.deltaTime);
         controller.Move(Physics.gravity * Time.deltaTime);
-
+        speed = moveVec.magnitude;
         
         //look logic
         Vector2 look = input.actions["Look"].ReadValue<Vector2>();     
