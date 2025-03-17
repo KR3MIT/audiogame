@@ -31,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(Physics.gravity * Time.deltaTime);
         speed = moveVec.magnitude;
         
+        
         //look logic
         Vector2 look = input.actions["Look"].ReadValue<Vector2>();     
         lookX += look.x * lookspeed;

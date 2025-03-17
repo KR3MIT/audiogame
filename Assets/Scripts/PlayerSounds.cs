@@ -5,9 +5,9 @@ using UnityEngine;
 public class PlayerSounds : MonoBehaviour
 {
     private PlayerMovement playerMovement;
-    private float steprate = 0.1f;
-    private float requirement = 0.1f;
-   
+    public float steprate = 0.2f;
+    public float requirement = 0.1f;
+
     private void Start()
     {
         playerMovement = GetComponent<PlayerMovement>();
@@ -15,14 +15,19 @@ public class PlayerSounds : MonoBehaviour
     }
     IEnumerator Footsteps()
     {
-        while (playerMovement.speed > requirement)
+        while (true)
         {
-            Debug.Log("Footstep has been stepped");
-            //Play footstep sound
-            yield return new WaitForSeconds(steprate);
+            if (playerMovement.speed > requirement)
+            {
+                Debug.Log("Footstep has been stepped");
+                //Play footstep 
+            }
+
+            // dogshit, iykyk
+            yield return new WaitForSeconds(steprate * (playerMovement.speed/playerMovement.movespeed));
         }
     }
 
 }
 
-    
+
