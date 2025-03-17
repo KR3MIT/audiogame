@@ -1259,6 +1259,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   steprate: 0.25
   requirement: 0.1
+  breathDelay: 5
+  time: 0
 --- !u!114 &8332305935637734740
 MonoBehaviour:
   m_ObjectHideFlags: 0
