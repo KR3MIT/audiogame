@@ -9,23 +9,23 @@ public class PlayerSounds : MonoBehaviour
     public float requirement = 0.1f;
 
     public float breathDelay = 5;
+    public float breathRate = 1;
     public float time;
+    
     private void Start()
     {
+
         playerMovement = GetComponent<PlayerMovement>();
         StartCoroutine(Footsteps());
-     
     }
 
     void Update()
     {
         // Oskar made this, dont hate him for it, he tried his best. 
         time += Time.deltaTime;
-        
         if (breathDelay < time)
         {
-            //play breath sound
-            Debug.Log("breaaath");
+            StartCoroutine(Breath());
             time = 0;
         }
 
@@ -46,13 +46,14 @@ public class PlayerSounds : MonoBehaviour
         }
     }
 
-    //IEnumerable Breath()
-    //{
-    //    //play breathing sound
-    //    Debug.Log("a breath was breathed")
-    //      yield return new WaitForSeconds(steprate * (playerMovement.speed / playerMovement.movespeed));
-    //}
-    // maybe make breath connected to speed?
+    IEnumerator Breath()
+    {
+        //play breathing 
+        Debug.Log("A breath was breathed");
+        yield return new WaitForSeconds(breathRate);
+    }
+    
+   
 }   
 
 

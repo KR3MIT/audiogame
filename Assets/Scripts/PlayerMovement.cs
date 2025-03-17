@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
         speed = moveVec.magnitude;
         
         
-        //look logic
+        //rotation logic
         Vector2 look = input.actions["Look"].ReadValue<Vector2>();     
         lookX += look.x * lookspeed;
         transform.rotation = Quaternion.Euler(0, lookX, 0);
