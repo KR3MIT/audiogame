@@ -21,7 +21,6 @@ public class PlayerSounds : MonoBehaviour
 
     void Update()
     {
-        // Oskar made this, dont hate him for it, he tried his best. 
         time += Time.deltaTime;
         if (breathDelay < time)
         {
