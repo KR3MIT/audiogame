@@ -7,10 +7,12 @@ public class PlayerSounds : MonoBehaviour
     private PlayerMovement playerMovement;
     public float steprate = 0.2f;
     public float requirement = 0.1f;
-
+    [Header("Breathing")]
     public float breathDelay = 5;
     public float breathRate = 1;
+    [Header("Falling")]
     public float time;
+    [Tooltip("The time is contained in this floaaat")]
     
     private void Start()
     {
@@ -21,19 +23,21 @@ public class PlayerSounds : MonoBehaviour
 
     void Update()
     {
+        #region Breathing
         time += Time.deltaTime;
         if (breathDelay < time)
         {
             StartCoroutine(Breath());
             time = 0;
         }
-
-
+        #endregion
+        #region Falling
         if (transform.position.y <= -5)
         {
             // play fall sound
             Debug.Log("A fall was fallen");
         }
+        #endregion
     }
 
     IEnumerator Footsteps()
