@@ -5,8 +5,9 @@ using UnityEngine;
 public class PlayerSounds : MonoBehaviour
 {
     private PlayerMovement playerMovement;
+    private CharacterController controller;
     public float steprate = 0.2f;
-    public float requirement = 0.1f;
+    public float threshold = 0.1f;
     [Header("Breathing")]
     public float breathDelay = 5;
     public float breathRate = 1;
@@ -16,26 +17,33 @@ public class PlayerSounds : MonoBehaviour
     
     private void Start()
     {
-
         playerMovement = GetComponent<PlayerMovement>();
+        controller = GetComponent<CharacterController>();
         StartCoroutine(Footsteps());
+
     }
 
     void Update()
     {
+        
         #region Breathing
         time += Time.deltaTime;
         if (breathDelay < time)
         {
-            StartCoroutine(Breath());
+            /// play breathing sound
             time = 0;
         }
         #endregion
         #region Falling
-        if (transform.position.y <= -5)
+        if (controller.velocity.y < -1)
         {
             // play fall sound
-            Debug.Log("A fall was fallen");
+            Debug.Log("A light fall was fallen");
+        }
+        else if (controller.velocity.y < -9)
+        {
+            // play heavy fall sound
+            Debug.Log("A heavy fall was fallen");
         }
         #endregion
     }
@@ -44,7 +52,7 @@ public class PlayerSounds : MonoBehaviour
     {
         while (true)
         {
-            if (playerMovement.speed > requirement)
+            if (playerMovement.speed > threshold)
             {
                 Debug.Log("Footstep has been stepped");
                 //Play footstep
@@ -55,14 +63,6 @@ public class PlayerSounds : MonoBehaviour
         }
     }
 
-    IEnumerator Breath()
-    {
-        //play breathing 
-        Debug.Log("A breath was breathed");
-        yield return new WaitForSeconds(breathRate);
-    }
-    
-   
 }   
 
 
