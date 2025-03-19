@@ -110,7 +110,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 7a74fe6b53018943bcfd489c30a1797e
       Path: Events\Default Work Unit\ExplosionEvent
-      maxAttenuation: 0
+      maxAttenuation: 50
       maxDuration: 0.76655567
       minDuration: 0.76655567
   RtpcWwu:
