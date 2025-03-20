@@ -12,6 +12,7 @@ public class PlayerThrow : MonoBehaviour
     bool canThrow = true;
     [Header("Rock logic :nerdge:")]
     public float force = 10f;
+   
 
     private void Start()
     {
@@ -22,15 +23,16 @@ public class PlayerThrow : MonoBehaviour
  
     void RockThrow()
     {
+        if(!canThrow) return;
         Vector3 offset = transform.position + new Vector3(0, 1, 0); 
         GameObject rock = Instantiate(RockPrefab, offset, quaternion.identity);
         Rigidbody rb = rock.GetComponent<Rigidbody>();
         rb.AddForce(transform.forward * force, ForceMode.Impulse);
+        canThrow = false;
+        Invoke("ResetRockCooldown", RockThrowRate);
     }
-   
-
-
-
-
-
+    private void ResetRockCooldown()
+    {
+        canThrow = true;
+    }
 }

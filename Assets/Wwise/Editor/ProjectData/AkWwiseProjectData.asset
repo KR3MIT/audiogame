@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c3d61869592f7241956bf3ebd662ac76
     GuidInternal: 
-    m_lastTime: -8584591439475574941
+    m_lastTime: -8584591420207388497
     List:
     - name: Main
       guid: 08192794cbd195478a29c0aa63f15f72
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: befe7aa783db144cbdf844a78d27198f
     GuidInternal: 
-    m_lastTime: -8584591456177299919
+    m_lastTime: -8584591420208026088
     List:
     - name: ExplosionEvent
       guid: 7a74fe6b53018943bcfd489c30a1797e

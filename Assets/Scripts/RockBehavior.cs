@@ -19,10 +19,12 @@ public class RockBehavior : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.GetComponent<AudioMaterial>() != null)
+      
+        if(collision.gameObject.TryGetComponent(out AudioMaterial audioMaterial))
         {
-           var type = collision.gameObject.GetComponent<AudioMaterial>().type;
+            var type = audioMaterial.type;
             //send to Wwise (good luck guys)
+            Debug.Log("Rock hit " + type);
         }
     }
 }
