@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c3d61869592f7241956bf3ebd662ac76
     GuidInternal: 
-    m_lastTime: -8584593926674981920
+    m_lastTime: -8584591439475574941
     List:
     - name: Main
       guid: 08192794cbd195478a29c0aa63f15f72
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: befe7aa783db144cbdf844a78d27198f
     GuidInternal: 
-    m_lastTime: -8584593926675290364
+    m_lastTime: -8584591456177299919
     List:
     - name: ExplosionEvent
       guid: 7a74fe6b53018943bcfd489c30a1797e
@@ -113,6 +113,23 @@ MonoBehaviour:
       maxAttenuation: 50
       maxDuration: 0.76655567
       minDuration: 0.76655567
+    - name: FootstepEvent
+      guid: 276ffc0c1053124a8217a1cc7fa0b0b0
+      id: 3511205013
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: FootstepEvent
+        ObjectType: 3
+        guid: 276ffc0c1053124a8217a1cc7fa0b0b0
+      Path: Events\Default Work Unit\FootstepEvent
+      maxAttenuation: 0
+      maxDuration: 0.33121386
+      minDuration: 0.101036966
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -170,7 +187,7 @@ MonoBehaviour:
     m_lastTime: -8584593964874249361
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0a0000005d0000005e000000
+  ExpandedWaapiItemIds: 0500000006000000070000000a00000047000000480000005d0000005e000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

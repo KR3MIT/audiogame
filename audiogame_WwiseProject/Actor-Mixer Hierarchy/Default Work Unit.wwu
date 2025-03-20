@@ -46,6 +46,566 @@
 								<ActiveSource Name="mixkit-arcade-game-explosion-2759" ID="{C67CB408-981C-463C-A787-BF738032EDFF}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<RandomSequenceContainer Name="Footsteps sequence" ID="{A541CD2E-74E8-4322-81A5-7C9FA87D9275}" ShortID="252741303">
+							<PropertyList>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="FootstepsRight" ID="{1B0D0620-39BC-4C14-A4B2-BD32B7EC983F}" ShortID="689545734">
+									<PropertyList>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{952F1844-78EA-4B9A-AD45-CC73A0A73605}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="600"/>
+															<Property Name="Min" Type="Real64" Value="-600"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="StoneFootsteps" ID="{7201FEE6-0EA3-43B9-A3C7-235AE52B82C5}" ShortID="754762493">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{C7C0F2C8-0DDD-4F24-8F90-CCAE0451914E}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0315718787278175"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0229613663475036"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0746244406293869"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.21751228853973"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>521590__fission9__hiking-boot-footsteps-on-stone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="865667167"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{867B6EE4-0661-47DF-A7C2-172B81E94DB4}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{C7C0F2C8-0DDD-4F24-8F90-CCAE0451914E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="StoneFootsteps_01" ID="{7C4A0EDF-BDCF-45E7-8771-ADD6567AC446}" ShortID="925003213">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{1534AE9C-B5AD-4F84-A061-C1BF34431804}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0510443442969153"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0540469527849691"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.621539957027145"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.834725260132663"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>521590__fission9__hiking-boot-footsteps-on-stone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="695656116"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{707DA11A-CC40-4337-9C5B-751816769975}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{1534AE9C-B5AD-4F84-A061-C1BF34431804}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="StoneFootsteps_02" ID="{33DAC951-1BC7-4D0A-9599-FFB3D0CDF50A}" ShortID="840316598">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{63512FB1-A51B-4658-A7DE-48019998BBD8}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0510443442969153"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0630547782491306"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.17702252731711"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.40221826437484"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>521590__fission9__hiking-boot-footsteps-on-stone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="897629732"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{08E9C1FD-9CB1-4194-90F6-29082F9C8771}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{63512FB1-A51B-4658-A7DE-48019998BBD8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="StoneFootsteps_03" ID="{5FF0D9A4-9D8F-4E90-A7C4-DDFEDD3580B0}" ShortID="968889706">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{C16D88BE-ED0F-4AE8-919B-16F52BEACDCC}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0450391273208077"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0570495612730231"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.72049466365485"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.95469822617674"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>521590__fission9__hiking-boot-footsteps-on-stone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="979414040"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{F5EB3E23-F8E1-4E5E-B0AF-B043A40E3FE4}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{C16D88BE-ED0F-4AE8-919B-16F52BEACDCC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="StoneFootsteps_04" ID="{61EA88E2-B8CC-47DD-8A05-0934047D2A8B}" ShortID="472157766">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{94F5CF1F-3026-4FBD-94D2-C54F83B25A74}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0540469527849692"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0450391273208077"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.32401896975367"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.5492147068114"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>521590__fission9__hiking-boot-footsteps-on-stone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="648253810"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{47D2E9E1-7650-4C04-B7F8-F6E11BB1268B}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{94F5CF1F-3026-4FBD-94D2-C54F83B25A74}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="StoneFootsteps_05" ID="{B9E5A610-7902-4896-A90A-A772FAC3C8E1}" ShortID="182641350">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{49DA2FEC-8F13-4903-A2DC-11B969C7047C}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0480417358088614"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0420365188327536"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.95156414375693"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.15574162139828"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>521590__fission9__hiking-boot-footsteps-on-stone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="589279751"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{C7489FEF-6358-4FCB-B38F-8C6C35A8645F}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{49DA2FEC-8F13-4903-A2DC-11B969C7047C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{D156D7DB-E084-480A-86B5-9F9BCBD73C27}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="13.3808392715756"/>
+												<Property Name="PanY" Type="Real64" Value="15.7227387996618"/>
+												<Property Name="PanZ" Type="Real64" Value="-1"/>
+											</PropertyList>
+										</Panner>
+										<Position Name="" ID="{4FFCE25A-FB54-4652-B6A5-A5FFFFE7A787}"/>
+									</PositioningInfo>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="FootstepsLeft" ID="{3010F3D7-5E1C-435B-A19A-AB6673C66B09}" ShortID="737584266">
+									<PropertyList>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{3138E079-1312-42A5-A786-1A12C4109BA4}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="600"/>
+															<Property Name="Min" Type="Real64" Value="-600"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="StoneFootsteps" ID="{4749A173-F884-4EE4-8BD9-2ABA1492D3CF}" ShortID="911409973">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{25C83C95-EE25-43A1-A2E2-B4EADA25E851}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0315718787278175"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0229613663475036"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0746244406293869"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.21751228853973"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>521590__fission9__hiking-boot-footsteps-on-stone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="865667167"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{777B92DB-B8A6-4FA2-A94E-4FD04EBC8ED7}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{25C83C95-EE25-43A1-A2E2-B4EADA25E851}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="StoneFootsteps_01" ID="{C780FAED-6D3D-4BE1-B1F8-F13240CDC7E0}" ShortID="453498018">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{8928E7CB-004D-4188-88E6-BE39700D4060}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0510443442969153"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0540469527849691"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.621539957027145"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.834725260132663"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>521590__fission9__hiking-boot-footsteps-on-stone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="695656116"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{F4B5DDE9-7E21-4D2F-B9C4-1D1B8478694A}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{8928E7CB-004D-4188-88E6-BE39700D4060}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="StoneFootsteps_02" ID="{37272439-5727-4E01-A3EE-9F4338032343}" ShortID="128715638">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{31E74B1C-96F1-43EB-AB7A-309898082A16}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0510443442969153"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0630547782491306"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.17702252731711"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.40221826437484"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>521590__fission9__hiking-boot-footsteps-on-stone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="897629732"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{06750850-CC14-4431-AA83-85B53488448E}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{31E74B1C-96F1-43EB-AB7A-309898082A16}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="StoneFootsteps_03" ID="{068F446C-0E19-48F4-9E9C-9607BCFBF985}" ShortID="51667632">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{86254FB8-F655-42E3-8E11-9E6CBBB20EDA}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0450391273208077"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0570495612730231"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.72049466365485"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.95469822617674"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>521590__fission9__hiking-boot-footsteps-on-stone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="979414040"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{DB18A016-1A86-4498-B65B-7EA2C6A4B7CF}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{86254FB8-F655-42E3-8E11-9E6CBBB20EDA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="StoneFootsteps_04" ID="{97532A63-7464-4E37-884E-494FA2AAD0E9}" ShortID="1008399017">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{BAA98542-6E2C-45A3-8A9C-D0732163437C}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0540469527849692"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0450391273208077"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.32401896975367"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.5492147068114"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>521590__fission9__hiking-boot-footsteps-on-stone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="648253810"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{44EFCF3E-E0ED-41EC-A82F-4FA3CCA336FE}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{BAA98542-6E2C-45A3-8A9C-D0732163437C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="StoneFootsteps_05" ID="{67AB54D3-321D-4DCD-A58D-26BCBD466F64}" ShortID="362604092">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{B19C50C8-90D9-4C63-8C03-D275A3904281}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0480417358088614"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0420365188327536"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.95156414375693"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.15574162139828"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>521590__fission9__hiking-boot-footsteps-on-stone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="589279751"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{4C2338F3-6A40-4CC6-A583-FB8D5F221C2A}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{B19C50C8-90D9-4C63-8C03-D275A3904281}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{095130EB-083C-42FF-AF12-24D22E1004CA}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-13.6975455265241"/>
+												<Property Name="PanY" Type="Real64" Value="15.3846153846154"/>
+												<Property Name="PanZ" Type="Real64" Value="-1"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Playlist">
+									<Reference>
+										<ObjectRef Name="FootstepsRight" ID="{1B0D0620-39BC-4C14-A4B2-BD32B7EC983F}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="FootstepsLeft" ID="{3010F3D7-5E1C-435B-A19A-AB6673C66B09}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<PositioningInfo>
 						<Panner Name="" ID="{98422D38-CE73-4454-9197-58BEE697C14A}"/>
