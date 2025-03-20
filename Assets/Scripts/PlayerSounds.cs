@@ -23,20 +23,11 @@ public class PlayerSounds : MonoBehaviour
         playerMovement = GetComponent<PlayerMovement>();
         controller = GetComponent<CharacterController>();
         StartCoroutine(Footsteps());
-
+        StartCoroutine(Breathing());
     }
 
     void Update()
     {
-        
-        #region Breathing
-        time += Time.deltaTime;
-        if (breathDelay < time)
-        {
-            // play breathing sound
-            time = 0;
-        }
-        #endregion
         #region Falling
         if (controller.velocity.y < -1)
         {
@@ -50,7 +41,15 @@ public class PlayerSounds : MonoBehaviour
         }
         #endregion
     }
-
+    IEnumerator Breathing()
+    {
+        while (true)
+        {
+            //play breathing sound
+            yield return new WaitForSeconds(breathRate);
+            
+        }
+    }
     IEnumerator Footsteps()
     {
         while (true)
