@@ -11,6 +11,9 @@ public class PlayerMovement : MonoBehaviour
     public float lookX = 0;
    
     public float speed {get; private set;}
+    public static float normalizedSpeed {get; private set;}
+
+    public AK.Wwise.RTPC playerSpeedRTPC;
     void Start()
     {
        controller = GetComponent<CharacterController>();
@@ -31,6 +34,9 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(moveVec * Time.deltaTime);
         controller.Move(Physics.gravity * Time.deltaTime);
         speed = moveVec.magnitude;
+        normalizedSpeed = speed / movespeed;
+        
+        playerSpeedRTPC.SetValue(gameObject, normalizedSpeed);
         
         
         //rotation logic

@@ -13,9 +13,10 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID EXPLOSIONEVENT = 3287158630U;
         static const AkUniqueID FOOTSTEPEVENT = 3511205013U;
+        static const AkUniqueID PLAY_WALLIMPACTANDRUB = 1324720394U;
         static const AkUniqueID ROCKHITSWITCHEVENT = 2895310559U;
+        static const AkUniqueID STOP_WALLRUB = 2444696015U;
     } // namespace EVENTS
 
     namespace SWITCHES
@@ -33,6 +34,11 @@ namespace AK
         } // namespace ROCKHITMATERIALS
 
     } // namespace SWITCHES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID PLAYERSPEED = 1493153371U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {

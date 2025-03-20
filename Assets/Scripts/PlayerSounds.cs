@@ -56,7 +56,7 @@ public class PlayerSounds : MonoBehaviour
         {
             if (playerMovement.speed > threshold)
             {
-                Debug.Log("Footstep has been stepped");
+                //Debug.Log("Footstep has been stepped");
                 FootstepEvent?.Invoke();
             }
 

@@ -3,23 +3,12 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="ExplosionEvent" ID="{6BFE747A-0153-4389-BCFD-489C30A1797E}">
-					<ChildrenList>
-						<Action Name="" ID="{E949E3A5-4D82-48DC-8D16-DD38A023D251}" ShortID="307679347">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="8bitexplosion" ID="{7F087182-804C-4008-8C9B-5B313ADCD92C}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="FootstepEvent" ID="{0CFC6F27-5310-4A12-8217-A1CC7FA0B0B0}">
 					<ChildrenList>
 						<Action Name="" ID="{55960188-5B79-4BDA-9B81-50BE6D65A510}" ShortID="439843889">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Footsteps sequence" ID="{A541CD2E-74E8-4322-81A5-7C9FA87D9275}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
+									<ObjectRef Name="Footsteps" ID="{A541CD2E-74E8-4322-81A5-7C9FA87D9275}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -36,6 +25,38 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Player wall impact" ID="{7858FDA1-79B1-4BD4-AE48-9AF49635B3F9}" ShortID="752738375">
+					<ChildrenList>
+						<Event Name="Play_WallImpactAndRub" ID="{EC69D6F8-726D-44B9-9C92-7CB6D4B1739B}">
+							<ChildrenList>
+								<Action Name="" ID="{92844209-581A-491D-901B-61C7C71B2087}" ShortID="840559679">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WallImpactAndRub" ID="{FA18C9DF-9C76-476B-B5B1-9D31D39C35FF}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_WallRub" ID="{2C7BCA63-F985-44E2-BCB2-FB5EC9839FD5}">
+							<ChildrenList>
+								<Action Name="" ID="{937A987C-CA26-4AE9-85C7-B1DA3BB44A24}" ShortID="1056781673">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WallRubbing" ID="{4311A3A2-81BC-4FA4-B800-BD6A7D16C4CD}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

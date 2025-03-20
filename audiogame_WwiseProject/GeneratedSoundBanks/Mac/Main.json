@@ -10,11 +10,19 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{01A06EF1-54F6-AC47-23FA-97C064FC109B}",
+    "Hash": "{44534B4F-A011-1ED7-082B-62C41447A53B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
+     {
+      "Id": "28769625",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "28297__herbertboland__stiffclothrubbing.wav",
+      "CachePath": "92/{9211CCDC-7EC5-9540-92F1-CC0996E0492C}.wem"
+     },
      {
       "Id": "249549327",
       "Language": "SFX",
@@ -30,6 +38,14 @@
       "Location": "Memory",
       "ShortName": "543024__leon23323328kiwn__rock-hit-against-another-rock-owi.wav",
       "CachePath": "E6/{E6904F3C-C248-037E-7DA7-E4D72F793274}.wem"
+     },
+     {
+      "Id": "350527672",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "594623__edelhanie__kicking-rock-wall-and-almost-falling.wav",
+      "CachePath": "84/{843D07D0-1790-5FFC-F887-EB9FF4A500F6}.wem"
      },
      {
       "Id": "589279751",
@@ -78,32 +94,21 @@
       "Location": "Memory",
       "ShortName": "521590__fission9__hiking-boot-footsteps-on-stone.wav",
       "CachePath": "23/{234B472E-1FF8-9DF5-0F49-04947E47854A}.wem"
-     },
-     {
-      "Id": "1013544364",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "mixkit-arcade-game-explosion-2759.wav",
-      "CachePath": "94/{94C6DB0E-ABC4-7C40-86A6-FC5E1499439D}.wem"
      }
     ],
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "614423904",
+       "Name": "Silence",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Main\\WallImpactAndRub\\Delay\\Silence",
+       "GUID": "{C8440F6B-EEE3-427F-8622-3E1196416E76}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      }
+     ]
+    },
     "Events": [
-     {
-      "Id": "3287158630",
-      "Name": "ExplosionEvent",
-      "ObjectPath": "\\Events\\Default Work Unit\\ExplosionEvent",
-      "GUID": "{6BFE747A-0153-4389-BCFD-489C30A1797E}",
-      "MaxAttenuation": "50",
-      "DurationType": "OneShot",
-      "DurationMin": "0.76655567",
-      "DurationMax": "0.76655567",
-      "MediaRefs": [
-       {
-        "Id": "1013544364"
-       }
-      ]
-     },
      {
       "Id": "3511205013",
       "Name": "FootstepEvent",
@@ -132,6 +137,29 @@
         "Id": "979414040"
        }
       ]
+     },
+     {
+      "Id": "1324720394",
+      "Name": "Play_WallImpactAndRub",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player wall impact\\Play_WallImpactAndRub",
+      "GUID": "{EC69D6F8-726D-44B9-9C92-7CB6D4B1739B}",
+      "MaxAttenuation": "50",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "28769625"
+       },
+       {
+        "Id": "350527672"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "614423904"
+        }
+       ]
+      }
      },
      {
       "Id": "2895310559",
@@ -193,6 +221,24 @@
         ]
        }
       ]
+     },
+     {
+      "Id": "2444696015",
+      "Name": "Stop_WallRub",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player wall impact\\Stop_WallRub",
+      "GUID": "{2C7BCA63-F985-44E2-BCB2-FB5EC9839FD5}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1493153371",
+      "Name": "PlayerSpeed",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerSpeed",
+      "GUID": "{8A423C8D-0C64-420F-9210-AB34C1F08E35}"
      }
     ],
     "SwitchGroups": [
@@ -225,6 +271,6 @@
     ]
    }
   ],
-  "FileHash": "{BBEB8C01-7842-E303-5777-89C35A20CA86}"
+  "FileHash": "{3A37284A-9EC9-D729-1D2F-E6F7BA12EEBF}"
  }
 }

@@ -7,6 +7,9 @@ public class PlayerCollisions : MonoBehaviour
     private float radius = 0.5f;
     private float offset = 0.1f;
     public PlayerMovement playerMovement;
+    
+    public AK.Wwise.Event playerCollisionEvent;
+    public AK.Wwise.Event stopRubEvent;
 
     
     private void OnTriggerEnter(Collider hit)
@@ -14,15 +17,16 @@ public class PlayerCollisions : MonoBehaviour
         if (hit.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
             Debug.Log("Player hit a wall!");
+            playerCollisionEvent.Post(transform.root.gameObject);
             //play Wall collision sound with Wwise ;) 
             
         }
     }
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Wall") && playerMovement.speed != 0)
+        if (other.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
-            Debug.Log("moving and scraping");
+            stopRubEvent.Post(transform.root.gameObject);
             
         }
     }

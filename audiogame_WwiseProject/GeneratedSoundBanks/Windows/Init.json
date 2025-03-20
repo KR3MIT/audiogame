@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{E8C73C05-9AC5-A17E-EA11-491BBCB2A45E}",
+    "Hash": "{2879E09F-336A-63C5-9166-6EE0F3BFDDEB}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -40,6 +40,14 @@
       "Name": "Master Audio Bus",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1493153371",
+      "Name": "PlayerSpeed",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerSpeed",
+      "GUID": "{8A423C8D-0C64-420F-9210-AB34C1F08E35}"
      }
     ],
     "SwitchGroups": [
@@ -72,6 +80,6 @@
     ]
    }
   ],
-  "FileHash": "{5954ABF4-4DBD-AB58-E84C-CB2601284226}"
+  "FileHash": "{D8E31FF1-E735-AB75-2419-B3DBA7E0EDF1}"
  }
 }

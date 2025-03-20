@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3a6d0dedd961c246b4dd5e7f55898ec, type: 3}
-  m_Name: 6BFE747A-0153-4389-BCFD-489C30A1797E
+  m_Name: EC69D6F8-726D-44B9-9C92-7CB6D4B1739B
   m_EditorClassIdentifier: 
-  objectName: ExplosionEvent
-  id: 3287158630
-  guid: 6BFE747A-0153-4389-BCFD-489C30A1797E
+  objectName: Play_WallImpactAndRub
+  id: 1324720394
+  guid: EC69D6F8-726D-44B9-9C92-7CB6D4B1739B
   IsInUserDefinedSoundBank: 1
   IsAutoBankLoaded: 0

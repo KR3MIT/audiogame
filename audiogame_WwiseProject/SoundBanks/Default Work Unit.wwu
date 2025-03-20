@@ -5,7 +5,8 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{94271908-D1CB-4795-8A29-C0AA63F15F72}">
 					<ObjectInclusionList>
-						<ObjectRef Name="ExplosionEvent" ID="{6BFE747A-0153-4389-BCFD-489C30A1797E}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_WallImpactAndRub" ID="{EC69D6F8-726D-44B9-9C92-7CB6D4B1739B}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_WallRub" ID="{2C7BCA63-F985-44E2-BCB2-FB5EC9839FD5}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FootstepEvent" ID="{0CFC6F27-5310-4A12-8217-A1CC7FA0B0B0}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RockHitSwitchEvent" ID="{F6393261-FC4B-4E26-9FCF-1E26F521B94B}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

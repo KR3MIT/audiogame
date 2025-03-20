@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c3d61869592f7241956bf3ebd662ac76
     GuidInternal: 
-    m_lastTime: -8584591345279140303
+    m_lastTime: -8584591313634020395
     List:
     - name: Main
       guid: 08192794cbd195478a29c0aa63f15f72
@@ -94,25 +94,8 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: befe7aa783db144cbdf844a78d27198f
     GuidInternal: 
-    m_lastTime: -8584591345279239842
+    m_lastTime: -8584591314358080355
     List:
-    - name: ExplosionEvent
-      guid: 7a74fe6b53018943bcfd489c30a1797e
-      id: 3287158630
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: befe7aa783db144cbdf844a78d27198f
-      - ElementName: ExplosionEvent
-        ObjectType: 3
-        guid: 7a74fe6b53018943bcfd489c30a1797e
-      Path: Events\Default Work Unit\ExplosionEvent
-      maxAttenuation: 50
-      maxDuration: 0.76655567
-      minDuration: 0.76655567
     - name: FootstepEvent
       guid: 276ffc0c1053124a8217a1cc7fa0b0b0
       id: 3511205013
@@ -130,6 +113,43 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.33121386
       minDuration: 0.101036966
+    - name: Play_WallImpactAndRub
+      guid: f8d669ec6d72b9449c927cb6d4b1739b
+      id: 1324720394
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: Player wall impact
+        ObjectType: 4
+        guid: a1fd5878b179d44bae489af49635b3f9
+      - ElementName: Play_WallImpactAndRub
+        ObjectType: 3
+        guid: f8d669ec6d72b9449c927cb6d4b1739b
+      Path: Events\Default Work Unit\Player wall impact\Play_WallImpactAndRub
+      maxAttenuation: 50
+      maxDuration: 0
+      minDuration: 0
+    - name: Player wall impact
+      guid: a1fd5878b179d44bae489af49635b3f9
+      id: 1854479028
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: Player wall impact
+        ObjectType: 4
+        guid: a1fd5878b179d44bae489af49635b3f9
+      Path: Events\Default Work Unit\Player wall impact
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: RockHitSwitchEvent
       guid: 613239f64bfc264e9fcf1e26f521b94b
       id: 2895310559
@@ -147,6 +167,26 @@ MonoBehaviour:
       maxAttenuation: 50
       maxDuration: 0.86942106
       minDuration: 0.17940433
+    - name: Stop_WallRub
+      guid: 63ca7b2c85f9e244bcb2fb5ec9839fd5
+      id: 2444696015
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: Player wall impact
+        ObjectType: 4
+        guid: a1fd5878b179d44bae489af49635b3f9
+      - ElementName: Stop_WallRub
+        ObjectType: 3
+        guid: 63ca7b2c85f9e244bcb2fb5ec9839fd5
+      Path: Events\Default Work Unit\Player wall impact\Stop_WallRub
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -159,8 +199,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 369525a7a2c8f84bbdafd28b9fcd98a3
     GuidInternal: 
-    m_lastTime: -8584593964874319613
-    List: []
+    m_lastTime: -8584591306019947205
+    List:
+    - name: PlayerSpeed
+      guid: 8d3c428a640c0f429210ab34c1f08e35
+      id: 1493153371
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 369525a7a2c8f84bbdafd28b9fcd98a3
+      - ElementName: PlayerSpeed
+        ObjectType: 13
+        guid: 8d3c428a640c0f429210ab34c1f08e35
+      Path: Game Parameters\Default Work Unit\PlayerSpeed
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -270,7 +324,7 @@ MonoBehaviour:
     m_lastTime: -8584593964874249361
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000a0000000f000000100000001100000047000000480000005d0000005e000000
+  ExpandedWaapiItemIds: 050000000600000007000000080000000a0000000f0000001000000011000000170000001800000047000000480000005d0000005e000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

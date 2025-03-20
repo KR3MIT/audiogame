@@ -19,34 +19,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="8bitexplosion" ID="{7F087182-804C-4008-8C9B-5B313ADCD92C}" ShortID="760005179">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="mixkit-arcade-game-explosion-2759" ID="{C67CB408-981C-463C-A787-BF738032EDFF}">
-									<PropertyList>
-										<Property Name="LoopBegin" Type="Real64" Value="0"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimEnd" Type="Real64" Value="0.766555654330592"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>mixkit-arcade-game-explosion-2759.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="1013544364"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="mixkit-arcade-game-explosion-2759" ID="{C67CB408-981C-463C-A787-BF738032EDFF}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<RandomSequenceContainer Name="Footsteps sequence" ID="{A541CD2E-74E8-4322-81A5-7C9FA87D9275}" ShortID="252741303">
+						<RandomSequenceContainer Name="Footsteps" ID="{A541CD2E-74E8-4322-81A5-7C9FA87D9275}" ShortID="252741303">
 							<PropertyList>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 							</PropertyList>
@@ -984,6 +957,233 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
+						<RandomSequenceContainer Name="WallImpactAndRub" ID="{FA18C9DF-9C76-476B-B5B1-9D31D39C35FF}" ShortID="344418837">
+							<PropertyList>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="WallRubbing" ID="{4311A3A2-81BC-4FA4-B800-BD6A7D16C4CD}" ShortID="648499624">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="28297__herbertboland__stiffclothrubbing" ID="{A1A8C9AB-03E7-4540-AC7A-5875899021FD}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>28297__herbertboland__stiffclothrubbing.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="28769625"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{1CEAFD52-AB08-4D91-B273-1F407F7104C0}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="28297__herbertboland__stiffclothrubbing" ID="{A1A8C9AB-03E7-4540-AC7A-5875899021FD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="WallImpact" ID="{2B1B67E2-2CF8-4A76-9065-D6CB96F0A347}" ShortID="608115834">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Lowpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{913D8D43-7C46-4DA6-9304-F3EBC702B443}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{757790F5-5E6E-4734-9C07-3A8367FCBC3E}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="300"/>
+															<Property Name="Min" Type="Real64" Value="-300"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="594623__edelhanie__kicking-rock-wall-and-almost-falling" ID="{B2F6B127-52CD-4465-91F1-7B736F62A240}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0233117724498335"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0698129305441384"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.95187424120766"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.1765486806423"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>594623__edelhanie__kicking-rock-wall-and-almost-falling.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="350527672"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{87BAA54B-C431-46CA-A480-EEECB6CA60D2}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="594623__edelhanie__kicking-rock-wall-and-almost-falling" ID="{B2F6B127-52CD-4465-91F1-7B736F62A240}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Delay" ID="{4BB356D3-E0B2-4797-A273-BB8A72778503}" ShortID="801926799">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Silence" ID="{C8440F6B-EEE3-427F-8622-3E1196416E76}" ShortID="614423904" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="0.2"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Silence" ID="{C8440F6B-EEE3-427F-8622-3E1196416E76}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Playlist">
+									<Reference>
+										<ObjectRef Name="WallImpact" ID="{2B1B67E2-2CF8-4A76-9065-D6CB96F0A347}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="Delay" ID="{4BB356D3-E0B2-4797-A273-BB8A72778503}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="WallRubbing" ID="{4311A3A2-81BC-4FA4-B800-BD6A7D16C4CD}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
+									</Reference>
+								</ObjectList>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{FB7BABCD-973D-4C1A-9A2A-AB9CE6301F60}" ShortID="805883535">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="PlayerSpeed" ID="{8A423C8D-0C64-420F-9210-AB34C1F08E35}" WorkUnitID="{A7259536-C8A2-4BF8-BDAF-D28B9FCD98A3}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{45987F2C-0A8E-4CAC-91C0-5CF52DF62723}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Log1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.34492</XPos>
+																		<YPos>-11.62463</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{730BB8C3-0D44-4E6C-A4F1-6244ACEDA84F}" ShortID="512952207">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="PlayerSpeed" ID="{8A423C8D-0C64-420F-9210-AB34C1F08E35}" WorkUnitID="{A7259536-C8A2-4BF8-BDAF-D28B9FCD98A3}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{53394528-DD66-469C-B2E4-A7A7611C6B37}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>1238</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>-1248</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<PositioningInfo>
 						<Panner Name="" ID="{98422D38-CE73-4454-9197-58BEE697C14A}"/>
