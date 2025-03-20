@@ -15,7 +15,24 @@ namespace AK
     {
         static const AkUniqueID EXPLOSIONEVENT = 3287158630U;
         static const AkUniqueID FOOTSTEPEVENT = 3511205013U;
+        static const AkUniqueID ROCKHITSWITCHEVENT = 2895310559U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace ROCKHITMATERIALS
+        {
+            static const AkUniqueID GROUP = 868718117U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID ROCK = 2144363834U;
+                static const AkUniqueID WATER = 2654748154U;
+                static const AkUniqueID WOOD = 2058049674U;
+            } // namespace SWITCH
+        } // namespace ROCKHITMATERIALS
+
+    } // namespace SWITCHES
 
     namespace BANKS
     {

@@ -3,12 +3,5 @@ using UnityEngine;
 
 public class AudioMaterial : MonoBehaviour
 {
-    public enum materialType
-    {
-        Stone,
-        Wood,
-        Metal,
-        Water,
-    }
-    public materialType type;
+    public AK.Wwise.Switch materialSwitch;
 }

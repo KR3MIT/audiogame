@@ -149,3 +149,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f35487e98f827e9428ebd2f449d62619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rockHitEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 298ea9b52cee5e94b82ccfb786004520, type: 2}
+  rockHitMaterialSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}

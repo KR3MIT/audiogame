@@ -606,6 +606,384 @@
 								</ObjectList>
 							</ObjectLists>
 						</RandomSequenceContainer>
+						<SwitchContainer Name="RockHitSwitch" ID="{E3CB4918-2F1D-497C-8998-66AF25DBC8EA}" ShortID="1040393234">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Color" Type="int16" Value="27"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Rock" ID="{B41D9CB0-9AE5-4784-90B2-C018628363C3}" WorkUnitID="{445E5444-8195-4767-A4EB-7791D5137314}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="RockHitMaterials" ID="{A096C912-8125-48E5-8B43-DCF16806D942}" WorkUnitID="{445E5444-8195-4767-A4EB-7791D5137314}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="RockHitRock" ID="{EFE62375-58F3-46C7-B39E-1D620D073B9E}" ShortID="792534273">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="RockHit_Rock" ID="{1783CB4F-863D-4DC1-A313-7150318BFDD6}" ShortID="1016726308">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="543024__leon23323328kiwn__rock-hit-against-another-rock-owi" ID="{D9C7C767-2D4D-4938-9DF6-D47E520AD526}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.069001693209214"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.14490355573935"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.31793234029599"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.75264287018493"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>543024__leon23323328kiwn__rock-hit-against-another-rock-owi.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="330690429"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{35DE71E9-F206-4653-923B-BCAC077048BF}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="543024__leon23323328kiwn__rock-hit-against-another-rock-owi" ID="{D9C7C767-2D4D-4938-9DF6-D47E520AD526}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RockHit_Rock_01" ID="{FDAA7523-1D8B-4FE3-A392-4A4132E70B64}" ShortID="549522267">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="543024__leon23323328kiwn__rock-hit-against-another-rock-owi" ID="{2B8248CD-47C6-439A-8A06-039DF5548C49}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0414010159255289"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0552013545673713"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="6.4792589923452"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.83806765970401"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>543024__leon23323328kiwn__rock-hit-against-another-rock-owi.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="249549327"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{D87D0F98-EA17-429A-B568-06736FDAF372}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="543024__leon23323328kiwn__rock-hit-against-another-rock-owi" ID="{2B8248CD-47C6-439A-8A06-039DF5548C49}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{6696028C-C5B3-4162-929F-8E11F3F62158}"/>
+									</PositioningInfo>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RockHitWood" ID="{5A6751C2-AD56-40DC-B239-A6AAC643FD34}" ShortID="616400980">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>1200</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="RockHit_Rock" ID="{C970D859-9904-4100-BAA3-AFE3EF16E18A}" ShortID="614017692">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="543024__leon23323328kiwn__rock-hit-against-another-rock-owi" ID="{77454A4F-BAFD-4E42-BF06-B4BB87E1D7F9}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.069001693209214"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.14490355573935"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.31793234029599"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.75264287018493"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>543024__leon23323328kiwn__rock-hit-against-another-rock-owi.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="330690429"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{69E2BEB1-2039-4443-84F5-CEAE649144A0}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="543024__leon23323328kiwn__rock-hit-against-another-rock-owi" ID="{77454A4F-BAFD-4E42-BF06-B4BB87E1D7F9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RockHit_Rock_01" ID="{760D9C50-4F95-4FD6-9E82-425E540C70DF}" ShortID="92516158">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="543024__leon23323328kiwn__rock-hit-against-another-rock-owi" ID="{17E971D6-0FE8-4E70-8CF8-C63CEBCEA635}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0414010159255289"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0552013545673713"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="6.4792589923452"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.83806765970401"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>543024__leon23323328kiwn__rock-hit-against-another-rock-owi.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="249549327"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{47ECF75E-9DA2-40FA-B40C-1C498287352F}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="543024__leon23323328kiwn__rock-hit-against-another-rock-owi" ID="{17E971D6-0FE8-4E70-8CF8-C63CEBCEA635}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{BE2C92E2-CF06-4213-A2FF-3ADB3A7589FE}"/>
+									</PositioningInfo>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RockHitWater" ID="{1C248B6D-B127-4548-A3B4-E3AC81D615BB}" ShortID="675074626">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-1200</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="RockHit_Rock" ID="{3EA597A2-DCDB-4261-A504-9AF1AC9ACA91}" ShortID="942176850">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="543024__leon23323328kiwn__rock-hit-against-another-rock-owi" ID="{D0E0D107-1482-4DAA-8901-1B295812C6FD}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.069001693209214"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.14490355573935"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.31793234029599"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.75264287018493"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>543024__leon23323328kiwn__rock-hit-against-another-rock-owi.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="330690429"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{A020215B-97CA-4670-A3F9-719322B8DB12}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="543024__leon23323328kiwn__rock-hit-against-another-rock-owi" ID="{D0E0D107-1482-4DAA-8901-1B295812C6FD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RockHit_Rock_01" ID="{DFD379AF-12E9-41FF-866D-2D86DC616EFA}" ShortID="727242645">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="543024__leon23323328kiwn__rock-hit-against-another-rock-owi" ID="{18E58BD4-1236-419E-8CE5-04B67393A1A8}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0414010159255289"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0552013545673713"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="6.4792589923452"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.83806765970401"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>543024__leon23323328kiwn__rock-hit-against-another-rock-owi.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="249549327"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{F9FE460C-6512-4EAB-A809-DB236368FB7A}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="543024__leon23323328kiwn__rock-hit-against-another-rock-owi" ID="{18E58BD4-1236-419E-8CE5-04B67393A1A8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{4061447E-E527-4121-8599-F84373035468}"/>
+									</PositioningInfo>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{D0FC7FF2-BBC7-4574-880F-3D43AEB0110C}"/>
+							</PositioningInfo>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="RockHitWater" ID="{1C248B6D-B127-4548-A3B4-E3AC81D615BB}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="RockHitRock" ID="{EFE62375-58F3-46C7-B39E-1D620D073B9E}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="RockHitWood" ID="{5A6751C2-AD56-40DC-B239-A6AAC643FD34}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Wood" ID="{5F20D034-BA87-4683-B76B-110974999546}"/>
+										<ItemList>
+											<ItemRef Name="RockHitWood" ID="{5A6751C2-AD56-40DC-B239-A6AAC643FD34}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Water" ID="{BB8DAB93-9FFF-4805-99D4-B80CA1A227F4}"/>
+										<ItemList>
+											<ItemRef Name="RockHitWater" ID="{1C248B6D-B127-4548-A3B4-E3AC81D615BB}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Rock" ID="{B41D9CB0-9AE5-4784-90B2-C018628363C3}"/>
+										<ItemList>
+											<ItemRef Name="RockHitRock" ID="{EFE62375-58F3-46C7-B39E-1D620D073B9E}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
 					</ChildrenList>
 					<PositioningInfo>
 						<Panner Name="" ID="{98422D38-CE73-4454-9197-58BEE697C14A}"/>

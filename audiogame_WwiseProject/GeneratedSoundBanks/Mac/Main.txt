@@ -1,8 +1,19 @@
 Event	ID	Name			Wwise Object Path	Notes
+	2895310559	RockHitSwitchEvent			\Default Work Unit\RockHitSwitchEvent	
 	3287158630	ExplosionEvent			\Default Work Unit\ExplosionEvent	
 	3511205013	FootstepEvent			\Default Work Unit\FootstepEvent	
 
+Switch Group	ID	Name			Wwise Object Path	Notes
+	868718117	RockHitMaterials			\Default Work Unit\RockHitMaterials	
+
+Switch	ID	Name	Switch Group			Notes
+	2058049674	Wood	RockHitMaterials			
+	2144363834	Rock	RockHitMaterials			
+	2654748154	Water	RockHitMaterials			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	249549327	RockHit_Rock_01	C:\Users\matti\OneDrive - ITU\Documents\GitHub\audiogame\audiogame_WwiseProject\.cache\82\{82E0C26C-0F9D-11B2-4157-CD7783A28B31}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\RockHitSwitch\RockHitWater\RockHit_Rock_01		68988
+	330690429	RockHit_Rock	C:\Users\matti\OneDrive - ITU\Documents\GitHub\audiogame\audiogame_WwiseProject\.cache\E6\{E6904F3C-C248-037E-7DA7-E4D72F793274}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\RockHitSwitch\RockHitRock\RockHit_Rock		83560
 	589279751	StoneFootsteps_05	C:\Users\matti\OneDrive - ITU\Documents\GitHub\audiogame\audiogame_WwiseProject\.cache\F3\{F3C41591-2E7F-804A-EBB4-7448A0B19550}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\Footsteps sequence\FootstepsRight\StoneFootsteps_05		19698
 	648253810	StoneFootsteps_04	C:\Users\matti\OneDrive - ITU\Documents\GitHub\audiogame\audiogame_WwiseProject\.cache\93\{9376C411-08C6-56B9-56DE-51E4C4A7A55E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\Footsteps sequence\FootstepsLeft\StoneFootsteps_04		21714
 	695656116	StoneFootsteps_01	C:\Users\matti\OneDrive - ITU\Documents\GitHub\audiogame\audiogame_WwiseProject\.cache\2B\{2B6D3410-CDF6-8761-E236-9C1C09791390}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\Footsteps sequence\FootstepsLeft\StoneFootsteps_01		20562

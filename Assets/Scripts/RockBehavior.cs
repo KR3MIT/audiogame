@@ -1,9 +1,10 @@
-using UnityEditor.Rendering.Universal.ShaderGraph;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
 public class RockBehavior : MonoBehaviour
 {
+    public AK.Wwise.Event rockHitEvent;
+    
     private Rigidbody rb;
     void Start()
     {
@@ -22,9 +23,8 @@ public class RockBehavior : MonoBehaviour
       
         if(collision.gameObject.TryGetComponent(out AudioMaterial audioMaterial))
         {
-            var type = audioMaterial.type;
-            //send to Wwise (good luck guys)
-            Debug.Log("Rock hit " + type);
+            audioMaterial.materialSwitch.SetValue(gameObject);
+            rockHitEvent.Post(gameObject);
         }
     }
 }

@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: ba26dab5bb73944984c13df76e93b0af
     GuidInternal: 
-    m_lastTime: -8584593964874309544
+    m_lastTime: -8584591348895444227
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c3d61869592f7241956bf3ebd662ac76
     GuidInternal: 
-    m_lastTime: -8584591420207388497
+    m_lastTime: -8584591345279140303
     List:
     - name: Main
       guid: 08192794cbd195478a29c0aa63f15f72
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: befe7aa783db144cbdf844a78d27198f
     GuidInternal: 
-    m_lastTime: -8584591420208026088
+    m_lastTime: -8584591345279239842
     List:
     - name: ExplosionEvent
       guid: 7a74fe6b53018943bcfd489c30a1797e
@@ -130,6 +130,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.33121386
       minDuration: 0.101036966
+    - name: RockHitSwitchEvent
+      guid: 613239f64bfc264e9fcf1e26f521b94b
+      id: 2895310559
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: RockHitSwitchEvent
+        ObjectType: 3
+        guid: 613239f64bfc264e9fcf1e26f521b94b
+      Path: Events\Default Work Unit\RockHitSwitchEvent
+      maxAttenuation: 50
+      maxDuration: 0.86942106
+      minDuration: 0.17940433
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -170,8 +187,74 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 44545e4495816747a4eb7791d5137314
     GuidInternal: 
-    m_lastTime: -8584593964874259431
-    List: []
+    m_lastTime: -8584591345279195435
+    List:
+    - name: RockHitMaterials
+      guid: 12c996a02581e5488b43dcf16806d942
+      id: 868718117
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 44545e4495816747a4eb7791d5137314
+      - ElementName: RockHitMaterials
+        ObjectType: 11
+        guid: 12c996a02581e5488b43dcf16806d942
+      Path: Switches\Default Work Unit\RockHitMaterials
+      values:
+      - name: Rock
+        guid: b09c1db4e59a844790b2c018628363c3
+        id: 2144363834
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 44545e4495816747a4eb7791d5137314
+        - ElementName: RockHitMaterials
+          ObjectType: 11
+          guid: 12c996a02581e5488b43dcf16806d942
+        - ElementName: Rock
+          ObjectType: 10
+          guid: b09c1db4e59a844790b2c018628363c3
+      - name: Water
+        guid: 93ab8dbbff9f054899d4b80ca1a227f4
+        id: 2654748154
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 44545e4495816747a4eb7791d5137314
+        - ElementName: RockHitMaterials
+          ObjectType: 11
+          guid: 12c996a02581e5488b43dcf16806d942
+        - ElementName: Water
+          ObjectType: 10
+          guid: 93ab8dbbff9f054899d4b80ca1a227f4
+      - name: Wood
+        guid: 34d0205f87ba8346b76b110974999546
+        id: 2058049674
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 44545e4495816747a4eb7791d5137314
+        - ElementName: RockHitMaterials
+          ObjectType: 11
+          guid: 12c996a02581e5488b43dcf16806d942
+        - ElementName: Wood
+          ObjectType: 10
+          guid: 34d0205f87ba8346b76b110974999546
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -187,7 +270,7 @@ MonoBehaviour:
     m_lastTime: -8584593964874249361
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000a00000047000000480000005d0000005e000000
+  ExpandedWaapiItemIds: 0500000006000000070000000a0000000f000000100000001100000047000000480000005d0000005e000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

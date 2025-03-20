@@ -10,11 +10,27 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{1C3966F0-304D-BCBC-467B-744320F453FA}",
+    "Hash": "{01A06EF1-54F6-AC47-23FA-97C064FC109B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
+     {
+      "Id": "249549327",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "543024__leon23323328kiwn__rock-hit-against-another-rock-owi.wav",
+      "CachePath": "82/{82E0C26C-0F9D-11B2-4157-CD7783A28B31}.wem"
+     },
+     {
+      "Id": "330690429",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "543024__leon23323328kiwn__rock-hit-against-another-rock-owi.wav",
+      "CachePath": "E6/{E6904F3C-C248-037E-7DA7-E4D72F793274}.wem"
+     },
      {
       "Id": "589279751",
       "Language": "SFX",
@@ -116,10 +132,99 @@
         "Id": "979414040"
        }
       ]
+     },
+     {
+      "Id": "2895310559",
+      "Name": "RockHitSwitchEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\RockHitSwitchEvent",
+      "GUID": "{F6393261-FC4B-4E26-9FCF-1E26F521B94B}",
+      "MaxAttenuation": "50",
+      "DurationType": "OneShot",
+      "DurationMin": "0.17940433",
+      "DurationMax": "0.86942106",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "868718117",
+         "Id": "2058049674",
+         "GUID": "{5F20D034-BA87-4683-B76B-110974999546}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "249549327"
+         },
+         {
+          "Id": "330690429"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "868718117",
+         "Id": "2654748154",
+         "GUID": "{BB8DAB93-9FFF-4805-99D4-B80CA1A227F4}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "249549327"
+         },
+         {
+          "Id": "330690429"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "868718117",
+         "Id": "2144363834",
+         "GUID": "{B41D9CB0-9AE5-4784-90B2-C018628363C3}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "249549327"
+         },
+         {
+          "Id": "330690429"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "868718117",
+      "Name": "RockHitMaterials",
+      "ObjectPath": "\\Switches\\Default Work Unit\\RockHitMaterials",
+      "GUID": "{A096C912-8125-48E5-8B43-DCF16806D942}",
+      "Switches": [
+       {
+        "Id": "2058049674",
+        "Name": "Wood",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RockHitMaterials\\Wood",
+        "GUID": "{5F20D034-BA87-4683-B76B-110974999546}"
+       },
+       {
+        "Id": "2144363834",
+        "Name": "Rock",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RockHitMaterials\\Rock",
+        "GUID": "{B41D9CB0-9AE5-4784-90B2-C018628363C3}"
+       },
+       {
+        "Id": "2654748154",
+        "Name": "Water",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RockHitMaterials\\Water",
+        "GUID": "{BB8DAB93-9FFF-4805-99D4-B80CA1A227F4}"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{CD8BDF61-D50D-7470-C610-76D2D90E8437}"
+  "FileHash": "{BBEB8C01-7842-E303-5777-89C35A20CA86}"
  }
 }
