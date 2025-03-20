@@ -754,7 +754,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c32d7f093c62d284084d3496623d3feb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpikeTrapDamage: 100
+  spikeTrapDamage: 25
+  spikeRate: 3
 --- !u!65 &1522286637
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -838,7 +839,7 @@ Transform:
   m_GameObject: {fileID: 1522286635}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.95, y: 0.04, z: 5.06}
+  m_LocalPosition: {x: 3.5, y: 0.04, z: 10.65}
   m_LocalScale: {x: 2, y: 0.109066, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1019,7 +1020,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6494781346327320996, guid: 029fb7f3a0d3fdf48a287ccc98fb8328, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.95
+      value: -3.932
       objectReference: {fileID: 0}
     - target: {fileID: 6494781346327320996, guid: 029fb7f3a0d3fdf48a287ccc98fb8328, type: 3}
       propertyPath: m_LocalPosition.y

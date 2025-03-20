@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class TrapBehavior : MonoBehaviour
 {
-    public int spikeTrapDamage = 100;
+    public int spikeTrapDamage = 25;
     public int spikeRate = 2;
     private BoxCollider bc;
     void Start()
