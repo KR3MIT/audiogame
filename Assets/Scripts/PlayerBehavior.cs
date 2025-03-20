@@ -19,7 +19,7 @@ public class PlayerBehavior : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            death();
+            StartCoroutine(death());
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -43,7 +43,7 @@ public class PlayerBehavior : MonoBehaviour
         Debug.Log("Player took "+ damage +" damage. Health is now: " + health);
         if (health <= 0)
         {
-            death();
+            StartCoroutine(death());
         }
     }
     IEnumerator death()
@@ -51,9 +51,9 @@ public class PlayerBehavior : MonoBehaviour
         //PLAY DEATH SOUND
         controller.enabled = false;
         Debug.Log("A respawn has been respawned");
+        transform.position = checkpoint;
         yield return new WaitForSeconds(respawnTime);
         //play REVIVE SOUND
-        transform.position = checkpoint;
         controller.enabled = true;
     }
   
