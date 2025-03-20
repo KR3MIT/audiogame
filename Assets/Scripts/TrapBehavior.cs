@@ -3,29 +3,33 @@ using UnityEngine;
 
 public class TrapBehavior : MonoBehaviour
 {
-    public int SpikeTrapDamage = 100;
+    public int spikeTrapDamage = 100;
+    public int spikeRate = 2;
+    private BoxCollider bc;
     void Start()
     {
-        StartCoroutine(SpikeTrap());
+       bc = GetComponent<BoxCollider>();
+       StartCoroutine(SpikeTrap());
+
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
+        if(TryGetComponent(out PlayerBehavior behaviour))
         {
             Debug.Log("Player hit a spike trap!");
-            //PLAY SPIKE TRAP SOUND 
-            other.gameObject.GetComponent<PlayerBehavior>().takeDamage(SpikeTrapDamage);
+            behaviour.TakeDamage(spikeTrapDamage);
         }
     }
     IEnumerator SpikeTrap()
     {
         while (true)
         {
-            //PLAY SPIKE TRAP SOUND
-            gameObject.GetComponent<BoxCollider>().enabled = true;
-            yield return new WaitForSeconds(3);
-            gameObject.GetComponent<BoxCollider>().enabled = false;
-            yield return new WaitForSeconds(3);
+            //PLAY SPIKE EXTEND TRAP SOUND
+            bc.enabled = true;
+            yield return new WaitForSeconds(spikeRate);
+            //PLAY SPIKE RETRACT TRAP SOUND
+            bc.enabled = false;
+            yield return new WaitForSeconds(spikeRate);
         }
     }
 

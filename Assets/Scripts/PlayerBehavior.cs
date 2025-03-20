@@ -17,36 +17,36 @@ public class PlayerBehavior : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            StartCoroutine(death());
-        }
+        //if (Input.GetKeyDown(KeyCode.R))
+        //{
+        //    StartCoroutine(Death());
+        //}
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Checkpoint")
         {
             //PLAY CHECKPOINT SOUND
-            setCheckpoint(other.transform.position);
+            SetCheckpoint(other.transform.position);
         }
     }
-    public void setCheckpoint(Vector3 pos)
+    public void SetCheckpoint(Vector3 pos)
     {
 
        checkpoint = pos;
         //a checkpoint has been checked, play sound
     }
-    public void takeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         //PLAY DAMAGE NOISE
         health -= damage;
         Debug.Log("Player took "+ damage +" damage. Health is now: " + health);
         if (health <= 0)
         {
-            StartCoroutine(death());
+            StartCoroutine(Death());
         }
     }
-    IEnumerator death()
+    IEnumerator Death()
     {
         //PLAY DEATH SOUND
         controller.enabled = false;
@@ -54,6 +54,7 @@ public class PlayerBehavior : MonoBehaviour
         transform.position = checkpoint;
         yield return new WaitForSeconds(respawnTime);
         //play REVIVE SOUND
+        health = 100;
         controller.enabled = true;
     }
   
