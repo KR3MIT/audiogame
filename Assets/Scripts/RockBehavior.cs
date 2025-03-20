@@ -1,3 +1,4 @@
+using UnityEditor.Rendering.Universal.ShaderGraph;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
@@ -13,9 +14,15 @@ public class RockBehavior : MonoBehaviour
     {
         if (rb.IsSleeping())
         {
-            Debug.Log("Rock is sleeping");
             Destroy(gameObject);
         }
     }
-
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.GetComponent<AudioMaterial>() != null)
+        {
+           var type = collision.gameObject.GetComponent<AudioMaterial>().type;
+            //send to Wwise (good luck guys)
+        }
+    }
 }

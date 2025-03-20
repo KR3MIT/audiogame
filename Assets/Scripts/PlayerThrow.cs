@@ -27,9 +27,10 @@ public class PlayerThrow : MonoBehaviour
         Rigidbody rb = rock.GetComponent<Rigidbody>();
         rb.AddForce(transform.forward * force, ForceMode.Impulse);
     }
-    
+   
 
-    
 
-    
+
+
+
 }
