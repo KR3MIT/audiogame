@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerSounds : MonoBehaviour
 {
+    //events
+    public static event System.Action FootstepEvent;
+    
     private PlayerMovement playerMovement;
     private CharacterController controller;
     public float steprate = 0.2f;
@@ -30,7 +33,7 @@ public class PlayerSounds : MonoBehaviour
         time += Time.deltaTime;
         if (breathDelay < time)
         {
-            /// play breathing sound
+            // play breathing sound
             time = 0;
         }
         #endregion
@@ -55,7 +58,7 @@ public class PlayerSounds : MonoBehaviour
             if (playerMovement.speed > threshold)
             {
                 Debug.Log("Footstep has been stepped");
-                //Play footstep
+                FootstepEvent?.Invoke();
             }
 
             //dogshit, iykyk

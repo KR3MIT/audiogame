@@ -10,11 +10,59 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{75FCECE5-31E8-F428-803C-F4331EE47B7D}",
+    "Hash": "{1C3966F0-304D-BCBC-467B-744320F453FA}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
+     {
+      "Id": "589279751",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "521590__fission9__hiking-boot-footsteps-on-stone.wav",
+      "CachePath": "F3/{F3C41591-2E7F-804A-EBB4-7448A0B19550}.wem"
+     },
+     {
+      "Id": "648253810",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "521590__fission9__hiking-boot-footsteps-on-stone.wav",
+      "CachePath": "93/{9376C411-08C6-56B9-56DE-51E4C4A7A55E}.wem"
+     },
+     {
+      "Id": "695656116",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "521590__fission9__hiking-boot-footsteps-on-stone.wav",
+      "CachePath": "2B/{2B6D3410-CDF6-8761-E236-9C1C09791390}.wem"
+     },
+     {
+      "Id": "865667167",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "521590__fission9__hiking-boot-footsteps-on-stone.wav",
+      "CachePath": "34/{34CC17AC-FEB5-3C0C-3139-6DAF6E76663E}.wem"
+     },
+     {
+      "Id": "897629732",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "521590__fission9__hiking-boot-footsteps-on-stone.wav",
+      "CachePath": "93/{93EDB9A0-607B-6F7A-DC96-DC8CA6107262}.wem"
+     },
+     {
+      "Id": "979414040",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "521590__fission9__hiking-boot-footsteps-on-stone.wav",
+      "CachePath": "23/{234B472E-1FF8-9DF5-0F49-04947E47854A}.wem"
+     },
      {
       "Id": "1013544364",
       "Language": "SFX",
@@ -39,10 +87,39 @@
         "Id": "1013544364"
        }
       ]
+     },
+     {
+      "Id": "3511205013",
+      "Name": "FootstepEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\FootstepEvent",
+      "GUID": "{0CFC6F27-5310-4A12-8217-A1CC7FA0B0B0}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.101036966",
+      "DurationMax": "0.33121386",
+      "MediaRefs": [
+       {
+        "Id": "589279751"
+       },
+       {
+        "Id": "648253810"
+       },
+       {
+        "Id": "695656116"
+       },
+       {
+        "Id": "865667167"
+       },
+       {
+        "Id": "897629732"
+       },
+       {
+        "Id": "979414040"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{77C5609B-6F56-7B73-CF0E-5FE75AFCC6FA}"
+  "FileHash": "{21B61444-9DB0-F40E-A789-ACBDFD2FBD4B}"
  }
 }

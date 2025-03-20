@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID EXPLOSIONEVENT = 3287158630U;
+        static const AkUniqueID FOOTSTEPEVENT = 3511205013U;
     } // namespace EVENTS
 
     namespace BANKS
