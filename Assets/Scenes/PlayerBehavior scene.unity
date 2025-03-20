@@ -1335,7 +1335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RockThrowRate: 2
   RockPrefab: {fileID: 4771837504582411164, guid: ac32b3cf88194df46922db4df44b9755, type: 3}
-  offset: {x: 20, y: 20, z: 0}
+  force: 20
 --- !u!114 &8332305935637734740
 MonoBehaviour:
   m_ObjectHideFlags: 0

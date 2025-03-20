@@ -1,16 +1,21 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class RockBehavior : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private Rigidbody rb;
     void Start()
     {
-        
-    }
+        rb = GetComponent <Rigidbody>();
 
-    // Update is called once per frame
+    }
     void Update()
     {
-        
+        if (rb.IsSleeping())
+        {
+            Debug.Log("Rock is sleeping");
+            Destroy(gameObject);
+        }
     }
+
 }
