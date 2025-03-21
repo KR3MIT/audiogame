@@ -10,11 +10,11 @@ public class TrapBehavior : MonoBehaviour
     {
        bc = GetComponent<BoxCollider>();
        StartCoroutine(SpikeTrap());
-
+      
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(TryGetComponent(out PlayerBehavior behaviour))
+        if(other.TryGetComponent(out PlayerBehavior behaviour))
         {
             Debug.Log("Player hit a spike trap!");
             behaviour.TakeDamage(spikeTrapDamage);
