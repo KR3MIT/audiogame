@@ -31,10 +31,16 @@ public class PlayerMovement : MonoBehaviour
         Vector3 moveDirection = new Vector3(move.x, 0, move.y);
         moveDirection = transform.TransformDirection(moveDirection);
         Vector3 moveVec = moveDirection * movespeed;
-        controller.Move(moveVec * Time.deltaTime);
-        controller.Move(Physics.gravity * Time.deltaTime);
+
+        var moveVector = (moveVec * Time.deltaTime) + (Physics.gravity * Time.deltaTime);
+        controller.Move(moveVector);
+        //controller.Move(Physics.gravity * Time.deltaTime);
         speed = moveVec.magnitude;
-        normalizedSpeed = speed / movespeed;
+        
+        //speed for rtpc
+        var horizontalSpeed = new Vector2(controller.velocity.x, controller.velocity.z).magnitude;
+        normalizedSpeed = horizontalSpeed / movespeed;
+        
         
         playerSpeedRTPC.SetValue(gameObject, normalizedSpeed);
         
