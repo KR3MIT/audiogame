@@ -57,5 +57,19 @@ public class PlayerBehavior : MonoBehaviour
         health = 100;
         controller.enabled = true;
     }
-  
+ 
+    void Interact()
+    {
+        if(Physics.CheckSphere(transform.position, 5))
+        {
+            Collider[] hitColliders = Physics.OverlapSphere(transform.position, 5);
+            foreach (var hitCollider in hitColliders)
+            {
+                if (hitCollider.gameObject.tag == "Chest")
+                {
+                    hitCollider.gameObject.GetComponent<ChestBehavior>().OpenChest();
+                }
+            }
+        }
+    }
 }
