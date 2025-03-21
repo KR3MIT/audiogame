@@ -17,10 +17,10 @@ public class PlayerBehavior : MonoBehaviour
     }
     private void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.R))
-        //{
-        //    StartCoroutine(Death());
-        //}
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            PlayerInteraction();
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -57,18 +57,17 @@ public class PlayerBehavior : MonoBehaviour
         health = 100;
         controller.enabled = true;
     }
- 
-    void Interact()
+
+    void PlayerInteraction()
     {
-        if(Physics.CheckSphere(transform.position, 5))
+        Debug.Log("Player is trying to interact");
+        if(Physics.BoxCast(transform.position, Vector3.zero, transform.forward, out RaycastHit hit, transform.rotation, 2f))
         {
-            Collider[] hitColliders = Physics.OverlapSphere(transform.position, 5);
-            foreach (var hitCollider in hitColliders)
+            Debug.Log("Player is interacting with something");
+            if(hit.collider.gameObject.GetComponent<Iinteractables>() != null)
             {
-                if (hitCollider.gameObject.tag == "Chest")
-                {
-                    hitCollider.gameObject.GetComponent<ChestBehavior>().OpenChest();
-                }
+                Debug.Log("Player is interacting with an interactable object");
+                hit.collider.gameObject.GetComponent<Iinteractables>().Interact();
             }
         }
     }
