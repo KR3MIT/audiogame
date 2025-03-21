@@ -1,10 +1,11 @@
-using UnityEditor.TextCore.Text;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class NarrativeManager : MonoBehaviour
 {
-    [SerializeField] private PlayerMovement player;
+    [SerializeField] private GameObject player;
+    [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private PlayerInput input;
     public enum TaskType
     {
@@ -15,12 +16,24 @@ public class NarrativeManager : MonoBehaviour
         Farewell,
     }
     public TaskType currentTask;
+
     void Start()
     {
-        if (player == null)
-            Debug.LogError("Narrative No player found");
-        if (input == null)
-            Debug.LogError("Narrative No input found");
+        player = Camera.main.transform.root.gameObject;
+
+        if (player.TryGetComponent(out playerMovement)) {}
+        else
+        {
+            Debug.LogError("No playerMovement comp found");
+            return;
+        }
+
+        if (player.TryGetComponent(out input)){}
+        else
+        {
+            Debug.LogError("No playerInput comp found");
+            return;
+        }
         
         SetTask(TaskType.None);
     }
