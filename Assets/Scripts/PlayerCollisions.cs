@@ -25,6 +25,15 @@ public class PlayerCollisions : MonoBehaviour
     private void Start()
     {
         soundObjectInstance = Instantiate(soundObject, transform);
+        Invoke(nameof(LateStart), 0);
+    }
+
+    private void LateStart()
+    {
+        if (!PlayerBehavior.WwiseActive)
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     public void Update()

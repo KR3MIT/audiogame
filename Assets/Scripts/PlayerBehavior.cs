@@ -10,8 +10,12 @@ public class PlayerBehavior : MonoBehaviour
     private CharacterController controller;
     public float respawnTime;
 
+    public static bool WwiseActive { get; private set; }
+    
     void Start()
     {
+        WwiseActive = GameObject.Find("WwiseGlobal") != null;
+        
         controller = GetComponent<CharacterController>();
         checkpoint = transform.position;
     }

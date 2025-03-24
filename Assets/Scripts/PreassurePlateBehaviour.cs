@@ -22,5 +22,13 @@ public class PreassurePlateBehaviour : MonoBehaviour
             transform.root.GetComponent<PlateManager>().PlateAdd(plateNumber);
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "PlayerCollision")
+        {
+            transform.root.GetComponent<PlateManager>().PlateAdd(plateNumber);
+        }
+    }
    
 }

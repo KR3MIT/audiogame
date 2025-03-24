@@ -23,6 +23,8 @@ public class RockBehavior : MonoBehaviour
       
         if(collision.gameObject.TryGetComponent(out AudioMaterial audioMaterial))
         {
+            if (!PlayerBehavior.WwiseActive) { return;}
+            
             audioMaterial.materialSwitch.SetValue(gameObject);
             rockHitEvent.Post(gameObject);
         }

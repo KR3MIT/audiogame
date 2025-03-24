@@ -13,6 +13,8 @@ public class Footstepper : MonoBehaviour
 
     public void PlaySound()
     {
+        
+        
         footstepEvent.Post(transform.root.gameObject);
     }
 }
