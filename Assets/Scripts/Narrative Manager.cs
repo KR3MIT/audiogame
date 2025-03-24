@@ -37,11 +37,10 @@ public class NarrativeManager : MonoBehaviour
         
         SetTask(TaskType.None);
     }
-    
-    public void SetTask(TaskType task)
+
+    void Update()
     {
-        currentTask = task;
-        switch (task)
+        switch (currentTask)
         {
             case TaskType.LookAround:
                 LookAround();
@@ -58,17 +57,19 @@ public class NarrativeManager : MonoBehaviour
                 break;
         }
     }
+    public void SetTask(TaskType task)
+    {
+        currentTask = task;
+    }
     private void LookAround()
     {
         Vector2 look = input.actions["Look"].ReadValue<Vector2>();
         
         //insert dialogue
-        Debug.Log("Hello, turn ur head.");
         
         if (look.magnitude > 0.5f)
         {
             //insert dialogue
-            Debug.Log("gj");
             SetTask(TaskType.MoveAround);
         }
     }
@@ -77,23 +78,19 @@ public class NarrativeManager : MonoBehaviour
         Vector2 move = input.actions["Move"].ReadValue<Vector2>();
         
         //insert dialogue
-        Debug.Log("Move around");
         
         if (move.magnitude > 0.5f)
         {
             //insert dialogue
-            Debug.Log("gj");
             SetTask(TaskType.ThrowRock);
         }
     }
     private void ThrowRock()
     {
         //insert dialogue
-        Debug.Log("Throw rock");
         
         if (input.actions["Attack"].triggered)
         {
-            Debug.Log("gj");
             //insert dialogue
             SetTask(TaskType.Farewell);
         }
@@ -101,6 +98,5 @@ public class NarrativeManager : MonoBehaviour
     private void Farewell()
     {
         //insert dialogue
-        Debug.Log("Farewell");
     }
 }
