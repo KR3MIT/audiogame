@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Checkpoint
+  - PlayerCollision
   layers:
   - Default
   - TransparentFX

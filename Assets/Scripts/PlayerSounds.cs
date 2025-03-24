@@ -32,12 +32,12 @@ public class PlayerSounds : MonoBehaviour
         if (controller.velocity.y < -1)
         {
             // play fall sound
-            Debug.Log("A light fall was fallen");
+            //Debug.Log("A light fall was fallen");
         }
         else if (controller.velocity.y < -9)
         {
             // play heavy fall sound
-            Debug.Log("A heavy fall was fallen");
+            //Debug.Log("A heavy fall was fallen");
         }
         #endregion
     }
