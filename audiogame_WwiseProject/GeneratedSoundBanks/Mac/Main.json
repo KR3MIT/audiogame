@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{58FB96B3-85EE-8C78-6698-9A8EEED6AD56}",
+    "Hash": "{3A658F3B-0B97-6C5A-C764-EAC14358E139}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -96,18 +96,6 @@
       "CachePath": "23/{234B472E-1FF8-9DF5-0F49-04947E47854A}.wem"
      }
     ],
-    "Plugins": {
-     "Custom": [
-      {
-       "Id": "614423904",
-       "Name": "Silence",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Main\\WallImpactAndRub\\Delay\\Silence",
-       "GUID": "{C8440F6B-EEE3-427F-8622-3E1196416E76}",
-       "LibName": "Wwise Silence",
-       "LibId": "6619138"
-      }
-     ]
-    },
     "Events": [
      {
       "Id": "3511205013",
@@ -142,7 +130,7 @@
       "Id": "1324720394",
       "Name": "Play_WallImpactAndRub",
       "ObjectPath": "\\Events\\Default Work Unit\\Player wall impact\\Play_WallImpactAndRub",
-      "GUID": "{EC69D6F8-726D-44B9-9C92-7CB6D4B1739B}",
+      "GUID": "{C6D4B25F-82D2-4BF6-B8B5-24B9A8A1C2E1}",
       "MaxAttenuation": "50",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -152,14 +140,7 @@
        {
         "Id": "350527672"
        }
-      ],
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "614423904"
-        }
-       ]
-      }
+      ]
      },
      {
       "Id": "2895310559",
@@ -271,6 +252,6 @@
     ]
    }
   ],
-  "FileHash": "{B20BCA7A-6C10-D3BA-1F0D-F9971F55D15E}"
+  "FileHash": "{55FED1FF-E7A0-859D-FBD0-8C07C675186D}"
  }
 }
