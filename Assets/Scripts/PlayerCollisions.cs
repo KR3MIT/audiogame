@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using NUnit.Framework;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -10,15 +11,29 @@ public class PlayerCollisions : MonoBehaviour
     private float radius = 0.5f;
     private float offset = 0.1f;
     public PlayerMovement playerMovement;
-    
+
     public AK.Wwise.Event playerCollisionEvent;
     public AK.Wwise.Event stopRubEvent;
 
     public GameObject soundObject;
 
     private GameObject soundObjectInstance;
+
+    private List<GameObject> soundObjects = new List<GameObject>();
+
     
-    
+    private void Start()
+    {
+        soundObjectInstance = Instantiate(soundObject, transform);
+    }
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            stopRubEvent.Post(soundObjectInstance);
+        }
+    }
 
     private void OnCollisionEnter(Collision other)
     {
@@ -26,20 +41,11 @@ public class PlayerCollisions : MonoBehaviour
         {
             Debug.Log("Player hit a wall!");
 
-            if (soundObjectInstance != null)
-            {
-                stopRubEvent.Post(other.gameObject);
-                Destroy(soundObjectInstance, 2f);
-                soundObjectInstance = null;
-            }
-            
             var hitPosition = other.GetContact(0).point;
-            soundObjectInstance = Instantiate(soundObject, hitPosition, Quaternion.identity); 
-            
+            soundObjectInstance.transform.position = hitPosition;
+
+            playerMovement.playerSpeedRTPC.SetValue(soundObjectInstance, PlayerMovement.normalizedSpeed);
             playerCollisionEvent.Post(soundObjectInstance);
-            
-            //play Wall collision sound with Wwise ;) 
-            
         }
     }
 
@@ -47,8 +53,11 @@ public class PlayerCollisions : MonoBehaviour
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
-            if(soundObjectInstance != null)
+            if (soundObjectInstance != null)
+            {
+                playerMovement.playerSpeedRTPC.SetValue(soundObjectInstance, PlayerMovement.normalizedSpeed);
                 soundObjectInstance.transform.position = other.contacts[0].point;
+            }
         }
     }
 
@@ -57,16 +66,14 @@ public class PlayerCollisions : MonoBehaviour
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
+            playerMovement.playerSpeedRTPC.SetValue(soundObjectInstance, 0);
             stopRubEvent.Post(soundObjectInstance);
-            Destroy(soundObjectInstance, 2f);
-            soundObjectInstance = null;
         }
     }
-    
-    
-    
+
+
     //oldig
-    
+
     // private void OnTriggerEnter(Collider other)
     // {
     //     if (other.gameObject.layer == LayerMask.NameToLayer("Wall"))
@@ -80,7 +87,7 @@ public class PlayerCollisions : MonoBehaviour
     //         
     //     }
     // }
-    
+
     // private void OnTriggerExit(Collider other)
     // {
     //     if (other.gameObject.layer == LayerMask.NameToLayer("Wall"))

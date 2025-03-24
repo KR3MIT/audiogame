@@ -1081,7 +1081,7 @@
 									<ChildrenList>
 										<SourcePlugin Name="Silence" ID="{C8440F6B-EEE3-427F-8622-3E1196416E76}" ShortID="614423904" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
 											<PropertyList>
-												<Property Name="Length" Type="Real32" Value="0.2"/>
+												<Property Name="Length" Type="Real32" Value="0.05"/>
 											</PropertyList>
 											<Language>SFX</Language>
 										</SourcePlugin>
@@ -1128,8 +1128,8 @@
 																		<SegmentShape>Log1</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>0.34492</XPos>
-																		<YPos>-11.62463</YPos>
+																		<XPos>0.3475</XPos>
+																		<YPos>-5.36664</YPos>
 																		<Flags>0</Flags>
 																		<SegmentShape>SCurve</SegmentShape>
 																	</Point>
