@@ -19,9 +19,9 @@ public class PlayerCollisions : MonoBehaviour
 
     private GameObject soundObjectInstance;
 
-    private List<GameObject> soundObjects = new List<GameObject>();
+    public List<GameObject> touchingWalls = new List<GameObject>();
 
-    
+
     private void Start()
     {
         soundObjectInstance = Instantiate(soundObject, transform);
@@ -46,6 +46,11 @@ public class PlayerCollisions : MonoBehaviour
 
             playerMovement.playerSpeedRTPC.SetValue(soundObjectInstance, PlayerMovement.normalizedSpeed);
             playerCollisionEvent.Post(soundObjectInstance);
+            
+            if (!touchingWalls.Contains(other.gameObject))
+            {
+                touchingWalls.Add(other.gameObject);
+            }
         }
     }
 
@@ -58,6 +63,12 @@ public class PlayerCollisions : MonoBehaviour
                 playerMovement.playerSpeedRTPC.SetValue(soundObjectInstance, PlayerMovement.normalizedSpeed);
                 soundObjectInstance.transform.position = other.contacts[0].point;
             }
+
+            
+            if (!touchingWalls.Contains(other.gameObject))
+            {
+                touchingWalls.Add(other.gameObject);
+            }
         }
     }
 
@@ -66,8 +77,13 @@ public class PlayerCollisions : MonoBehaviour
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
-            playerMovement.playerSpeedRTPC.SetValue(soundObjectInstance, 0);
-            stopRubEvent.Post(soundObjectInstance);
+            touchingWalls.Remove(other.gameObject);
+
+            if (touchingWalls.Count == 0)
+            {
+                playerMovement.playerSpeedRTPC.SetValue(soundObjectInstance, 0);
+                stopRubEvent.Post(soundObjectInstance);
+            }
         }
     }
 

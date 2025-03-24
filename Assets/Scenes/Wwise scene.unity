@@ -2161,12 +2161,13 @@ MonoBehaviour:
   playerCollisionEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 90ab8c8c09759fb4fa531ce07a26c76b, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: ec9355ff2d82c474a9b6c3050d3d6504, type: 2}
   stopRubEvent:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: fa3b39529e46c6449ba381d93cd80a2e, type: 2}
   soundObject: {fileID: 3132695115990697664, guid: 787ac5d7163b00f47a35387c8ab94816, type: 3}
+  touchingWalls: []
 --- !u!23 &8687806767030673409
 MeshRenderer:
   m_ObjectHideFlags: 0

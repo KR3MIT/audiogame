@@ -15,9 +15,6 @@ Switch	ID	Name	Switch Group			Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1493153371	PlayerSpeed			\Default Work Unit\PlayerSpeed	
 
-Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
-	614423904	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Main\WallImpactAndRub\Delay\Silence	
-
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	28769625	WallRubbing	C:\Users\matti\OneDrive - ITU\Documents\GitHub\audiogame\audiogame_WwiseProject\.cache\92\{9211CCDC-7EC5-9540-92F1-CC0996E0492C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\WallImpactAndRub\WallRubbing		1106044
 	249549327	RockHit_Rock_01	C:\Users\matti\OneDrive - ITU\Documents\GitHub\audiogame\audiogame_WwiseProject\.cache\82\{82E0C26C-0F9D-11B2-4157-CD7783A28B31}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\RockHitSwitch\RockHitWater\RockHit_Rock_01		68988
