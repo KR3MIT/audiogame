@@ -6,6 +6,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerThrow : MonoBehaviour
 {
+    public Task rockThrowTask;
+    
     public float RockThrowRate = 2f;
     public GameObject RockPrefab; //set in editor
     private PlayerInput input;
@@ -30,6 +32,8 @@ public class PlayerThrow : MonoBehaviour
         rb.AddForce(transform.forward * force, ForceMode.Impulse);
         canThrow = false;
         Invoke("ResetRockCooldown", RockThrowRate);
+        
+        rockThrowTask?.CompleteTask();
     }
     private void ResetRockCooldown()
     {
