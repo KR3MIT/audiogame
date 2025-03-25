@@ -8,8 +8,7 @@ using UnityEngine;
 public class PlayerCollisions : MonoBehaviour
 {
     public LayerMask wallLayer;
-    private float radius = 0.5f;
-    private float offset = 0.1f;
+    public float soundOffset = 3f;
     public PlayerMovement playerMovement;
 
     public AK.Wwise.Event playerCollisionEvent;
@@ -51,7 +50,10 @@ public class PlayerCollisions : MonoBehaviour
             Debug.Log("Player hit a wall!");
 
             var hitPosition = other.GetContact(0).point;
-            soundObjectInstance.transform.position = hitPosition;
+            var direction = (hitPosition - transform.position).normalized;
+            var newPosition = hitPosition + direction * soundOffset;
+
+            soundObjectInstance.transform.position = newPosition;
 
             playerMovement.playerSpeedRTPC.SetValue(soundObjectInstance, PlayerMovement.normalizedSpeed);
             playerCollisionEvent.Post(soundObjectInstance);
@@ -69,8 +71,11 @@ public class PlayerCollisions : MonoBehaviour
         {
             if (soundObjectInstance != null)
             {
-                playerMovement.playerSpeedRTPC.SetValue(soundObjectInstance, PlayerMovement.normalizedSpeed);
-                soundObjectInstance.transform.position = other.contacts[0].point;
+                var hitPosition = other.GetContact(0).point;
+                var direction = (hitPosition - transform.position).normalized;
+                var newPosition = hitPosition + direction * soundOffset;
+
+                soundObjectInstance.transform.position = newPosition;
             }
 
             
