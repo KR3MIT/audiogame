@@ -778,6 +778,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2028d93cf91fac440a7e5deb2401de11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentForce: 0
+  forceMultiplier: 1.5
+  setCustomForce: 0
+  customForce: 20
 --- !u!65 &2009305797
 BoxCollider:
   m_ObjectHideFlags: 0

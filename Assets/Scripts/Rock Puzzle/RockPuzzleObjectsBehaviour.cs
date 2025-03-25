@@ -84,6 +84,15 @@ public class RockPuzzleObjectsBehaviour : MonoBehaviour
         transform.position = new Vector3(x, transform.position.y, z);
     }
 
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Rock"))
+        {
+            // play Wwise Sound collision
+            Destroy(gameObject);
+        }
+    }
+
     private void OnDestroy()
     {
         // play Wwise Sound destroy
