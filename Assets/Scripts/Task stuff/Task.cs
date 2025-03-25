@@ -8,7 +8,8 @@ public class Task : ScriptableObject
 
     public string taskStartNarration;
     public string taskCompleteNarration;
-    
+
+    public float dialogueLength;
     
     public UnityEvent onTaskStart;
     public UnityAction onTaskComplete;

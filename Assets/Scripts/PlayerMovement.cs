@@ -3,7 +3,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public LookTask lookTask;
+    public ContinuousTask lookTask;
+    public  ContinuousTask moveTask;
     
     private CharacterController controller;
     private PlayerInput input;
@@ -28,6 +29,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        #region PlayerControl
+        
         //move logic
         Vector2 move = input.actions["Move"].ReadValue<Vector2>();
         Vector3 moveDirection = new Vector3(move.x, 0, move.y);
@@ -43,9 +46,15 @@ public class PlayerMovement : MonoBehaviour
         var horizontalSpeed = new Vector2(controller.velocity.x, controller.velocity.z).magnitude;
         normalizedSpeed = horizontalSpeed / movespeed;
         
-        
         playerSpeedRTPC.SetValue(gameObject, normalizedSpeed);
         
+        if (lookTask != null)
+        {
+            moveTask.TrackAmount(speed);
+        }
+        #endregion
+        
+        #region CameraControl
         
         //rotation logic
         Vector2 look = input.actions["Look"].ReadValue<Vector2>();     
@@ -54,7 +63,9 @@ public class PlayerMovement : MonoBehaviour
 
         if (lookTask != null)
         {
-            lookTask.TrackLook(look.x);
+            lookTask.TrackAmount(look.x);
         }
+        
+        #endregion
     }
 }

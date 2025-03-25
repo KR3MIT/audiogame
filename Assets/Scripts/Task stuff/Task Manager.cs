@@ -1,4 +1,4 @@
-using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,16 +15,29 @@ public class TaskManager : MonoBehaviour
 
     private void StartNextTask()
     {
-        if (currentTask < taskList.Count)
+        if (currentTask == taskList.Count)
+        {
+            Debug.Log("EndTask");
+            StartCoroutine(EndDialogueDelay());
+        }
+        else if (currentTask < taskList.Count)
         {
             taskList[currentTask].StartTask(CompleteTask);
         }
     }
-    
     private void CompleteTask()
     {
         currentTask++;
         StartNextTask();
     }
 
+    private IEnumerator EndDialogueDelay()
+    {
+        var _endDelay = taskList[currentTask].dialogueLength;
+        
+        //play end dialogue
+        Debug.Log("End Dialogue");
+        yield return new WaitForSeconds(_endDelay);
+        Debug.Log(taskList[currentTask].taskCompleteNarration);
+    }
 }
