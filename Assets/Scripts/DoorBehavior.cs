@@ -4,10 +4,12 @@ public class DoorBehavior : MonoBehaviour, Iinteractables
 {
     public BoxCollider bc;
     public bool Interactiable;
+    private MeshRenderer mc;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-     bc = GetComponent<BoxCollider>(); 
+        bc = GetComponent<BoxCollider>(); 
+        mc = GetComponent<MeshRenderer>();
     }
 
     public void Interact()
@@ -18,6 +20,7 @@ public class DoorBehavior : MonoBehaviour, Iinteractables
             Debug.Log("Door has been opened");
             // play door opening sound
             bc.enabled = false;
+            mc.enabled = false;
         }
       
 
@@ -26,6 +29,7 @@ public class DoorBehavior : MonoBehaviour, Iinteractables
     {
         //event to open door
         bc.enabled = false;
+        mc.enabled = false;
         Debug.Log("Door has been opened");
         //door sounds
     }
