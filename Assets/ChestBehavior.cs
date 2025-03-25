@@ -11,8 +11,9 @@ public class ChestBehavior : MonoBehaviour, Iinteractables
     public void Interact()
     {
         Debug.Log("Chest has been opened");
-        Destroy(gameObject);
+        bc.enabled = false;
     // do the chest opening sound
     // and reward player something idk yet
+     PlayerBehavior.instance.health = 100;
     }
 }
