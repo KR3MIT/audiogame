@@ -26,7 +26,7 @@ public class PlayerThrow : MonoBehaviour
     void RockThrow()
     {
         if(!canThrow) return;
-        Vector3 offset = transform.position + new Vector3(0, 1, 0); 
+        Vector3 offset = transform.position + transform.forward + transform.up; 
         GameObject rock = Instantiate(RockPrefab, offset, quaternion.identity);
         Rigidbody rb = rock.GetComponent<Rigidbody>();
         rb.AddForce(transform.forward * force, ForceMode.Impulse);
