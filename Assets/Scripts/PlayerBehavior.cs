@@ -1,7 +1,9 @@
 using NUnit.Framework;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.XR;
+using UnityEngine.Windows;
 
 public class PlayerBehavior : MonoBehaviour
 {
@@ -9,11 +11,12 @@ public class PlayerBehavior : MonoBehaviour
     public Vector3 checkpoint;
     private CharacterController controller;
     public float respawnTime;
-
+    private PlayerInput input;
     public static bool WwiseActive { get; private set; }
     
     void Start()
     {
+        input = GetComponent<PlayerInput>();
         WwiseActive = GameObject.Find("WwiseGlobal") != null;
         
         controller = GetComponent<CharacterController>();
@@ -21,10 +24,11 @@ public class PlayerBehavior : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
+        
+            if (input.actions["Interact"].triggered)
+            {
             PlayerInteraction();
-        }
+            }
     }
     private void OnTriggerEnter(Collider other)
     {
