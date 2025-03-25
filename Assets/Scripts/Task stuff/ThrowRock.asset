@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6e804e9d1892d94f94590467473fbea, type: 3}
   m_Name: ThrowRock
   m_EditorClassIdentifier: 
-  audioClip: {fileID: 0}
-  text: 
-  narrationDuration: 0
+  name: Rock throw
+  taskStartNarration: throw da rock pls
+  taskCompleteNarration: u done throw da rock
+  onTaskStart:
+    m_PersistentCalls:
+      m_Calls: []

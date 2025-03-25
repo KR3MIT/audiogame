@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3722812569d940b4bb15a7ce155fef72, type: 3}
   m_Name: LookTask
   m_EditorClassIdentifier: 
-  name: 
-  taskStartNarration: 
-  taskCompleteNarration: 
+  name: Looky
+  taskStartNarration: start looking
+  taskCompleteNarration: you done lookin
   onTaskStart:
     m_PersistentCalls:
       m_Calls: []
-  requiredLookAmount: 0
+  requiredLookAmount: 5000
