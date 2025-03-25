@@ -3,6 +3,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public LookTask lookTask;
+    
     private CharacterController controller;
     private PlayerInput input;
 
@@ -49,7 +51,10 @@ public class PlayerMovement : MonoBehaviour
         Vector2 look = input.actions["Look"].ReadValue<Vector2>();     
         lookX += look.x * lookspeed;
         transform.rotation = Quaternion.Euler(0, lookX, 0);
-    }
 
-    
+        if (lookTask != null)
+        {
+            lookTask.TrackLook(look.x);
+        }
+    }
 }
