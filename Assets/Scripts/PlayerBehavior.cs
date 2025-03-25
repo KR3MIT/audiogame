@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.XR;
+using UnityEngine.SubsystemsImplementation;
 using UnityEngine.Windows;
 
 public class PlayerBehavior : MonoBehaviour
@@ -12,8 +13,20 @@ public class PlayerBehavior : MonoBehaviour
     private CharacterController controller;
     public float respawnTime;
     private PlayerInput input;
+    public static PlayerBehavior instance;
     public static bool WwiseActive { get; private set; }
-    
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            instance = this;
+        }
+    }
     void Start()
     {
         input = GetComponent<PlayerInput>();

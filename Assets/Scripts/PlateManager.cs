@@ -1,11 +1,14 @@
+using JetBrains.Annotations;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlateManager : MonoBehaviour
 {
     public List<int> CorrectPlate = new List<int>();
     public List<int> CurrentPlate = new List<int>();
-
+    public UnityEvent OnPuzzleComplete;
+    
     void Start()
     {
 
@@ -25,6 +28,8 @@ public class PlateManager : MonoBehaviour
             {
                 CurrentPlate.Clear();
                 Debug.Log("Incorrect Plate");
+                PlayerBehavior.instance.TakeDamage(5);
+                //play zap sound
                 return;
             }
         }
@@ -37,6 +42,7 @@ public class PlateManager : MonoBehaviour
                 child.gameObject.SetActive(false);
             }
             Debug.Log("All Plates Correct");
+            OnPuzzleComplete?.Invoke();
         }
     }
 }
