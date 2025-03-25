@@ -76,6 +76,7 @@ public class PlayerCollisions : MonoBehaviour
                 var newPosition = hitPosition + direction * soundOffset;
 
                 soundObjectInstance.transform.position = newPosition;
+                playerMovement.playerSpeedRTPC.SetValue(soundObjectInstance, PlayerMovement.normalizedSpeed);
             }
 
             

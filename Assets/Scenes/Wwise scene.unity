@@ -343,7 +343,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -498,9 +498,9 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 126
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!1 &517377216
 GameObject:
@@ -1141,7 +1141,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -1689,6 +1689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 745e3739712fba0489613e64def9de10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lookTask: {fileID: 0}
   movespeed: 5
   lookspeed: 0.1
   lookX: 0
@@ -2032,6 +2033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04ed3651bb780da428f658dcea089dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rockThrowTask: {fileID: 0}
   RockThrowRate: 2
   RockPrefab: {fileID: 4771837504582411164, guid: ac32b3cf88194df46922db4df44b9755, type: 3}
   force: 10
@@ -2050,6 +2052,7 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 64
+  soundOffset: 0.1
   playerMovement: {fileID: 1175282926198996639}
   playerCollisionEvent:
     idInternal: 0

@@ -10,10 +10,10 @@ public class ChestBehavior : MonoBehaviour, Iinteractables
     }
     public void Interact()
     {
-        Debug.Log("Chest has been opened");
+        Debug.Log("Potion has been Drunk");
         bc.enabled = false;
-    // do the chest opening sound
-    // and reward player something idk yet
+    // do the potion drinking 
      PlayerBehavior.instance.health = 100;
+       Debug.Log("Player new health is" +PlayerBehavior.instance.health);
     }
 }

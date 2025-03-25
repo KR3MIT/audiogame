@@ -6,9 +6,11 @@ public class TrapBehavior : MonoBehaviour
     public int spikeTrapDamage = 25;
     public int spikeRate = 2;
     private BoxCollider bc;
+    private MeshRenderer mr;
     void Start()
     {
        bc = GetComponent<BoxCollider>();
+       mr = GetComponent<MeshRenderer>();
        StartCoroutine(SpikeTrap());
       
     }
@@ -26,9 +28,11 @@ public class TrapBehavior : MonoBehaviour
         {
             //PLAY SPIKE EXTEND TRAP SOUND
             bc.enabled = true;
+            mr.enabled = true;
             yield return new WaitForSeconds(spikeRate);
             //PLAY SPIKE RETRACT TRAP SOUND
             bc.enabled = false;
+            mr.enabled = false;
             yield return new WaitForSeconds(spikeRate);
         }
     }
