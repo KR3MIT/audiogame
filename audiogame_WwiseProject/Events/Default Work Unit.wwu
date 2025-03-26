@@ -66,6 +66,17 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_GlowSwitchController" ID="{CE46776C-8F62-4CA2-919C-7369465865FA}">
+					<ChildrenList>
+						<Action Name="" ID="{341065A2-8720-423B-8002-E11770E88003}" ShortID="467192884">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GlowSwitchController" ID="{DE82F7E4-C42B-4A05-95BD-ADF3F9A4E755}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
