@@ -13,7 +13,7 @@ public class PlayerThrow : MonoBehaviour
     private PlayerInput input;
     bool canThrow = true;
     [Header("Rock logic :nerdge:")]
-    public float force = 10f;
+    public static float force = 10f;
    
 
     private void Start()

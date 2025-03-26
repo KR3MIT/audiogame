@@ -1,36 +1,38 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TriggerRockPuzzle : MonoBehaviour
 {
 [SerializeField] private float currentForce;
 [SerializeField] private float forceMultiplier = 1.5f;
+[SerializeField] private float newForce;
 [SerializeField] private bool setCustomForce = false;
 [SerializeField] private float customForce = 20f;
+
+
+    void Start()
+    {
+        currentForce = PlayerThrow.force;
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            currentForce = other.GetComponent<PlayerThrow>().force;
+            newForce = currentForce * forceMultiplier;
+
+            PlayerThrow.force = newForce;
+
             if (setCustomForce)
             {
-                other.GetComponent<PlayerThrow>().force = customForce;
+                PlayerThrow.force = customForce;
             }
-            else
-            {
-                other.GetComponent<PlayerThrow>().force = currentForce * forceMultiplier;
-            }
-            
         }
-       
     }
-
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<PlayerThrow>().force = currentForce;
+            PlayerThrow.force = currentForce;
         }
-        
     }
-
 }
