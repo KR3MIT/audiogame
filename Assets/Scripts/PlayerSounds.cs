@@ -7,7 +7,6 @@ public class PlayerSounds : MonoBehaviour
     //events
     public static event System.Action FootstepEvent;
     
-    private PlayerMovement playerMovement;
     private CharacterController controller;
     public float steprate = 0.2f;
     public float threshold = 0.1f;
@@ -20,7 +19,6 @@ public class PlayerSounds : MonoBehaviour
     
     private void Start()
     {
-        playerMovement = GetComponent<PlayerMovement>();
         controller = GetComponent<CharacterController>();
         StartCoroutine(Footsteps());
         StartCoroutine(Breathing());
@@ -54,7 +52,7 @@ public class PlayerSounds : MonoBehaviour
     {
         while (true)
         {
-            if (playerMovement.speed > threshold)
+            if (PlayerMovement.normalizedSpeed > threshold)
             {
                 //Debug.Log("Footstep has been stepped");
                 if(PlayerBehavior.WwiseActive)
@@ -62,7 +60,7 @@ public class PlayerSounds : MonoBehaviour
             }
 
             //dogshit, iykyk
-           yield return new WaitForSeconds(steprate * (playerMovement.speed / playerMovement.movespeed));
+           yield return new WaitForSeconds(steprate * (PlayerMovement.normalizedSpeed));
         }
     }
 
