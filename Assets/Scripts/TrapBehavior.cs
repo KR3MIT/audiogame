@@ -4,7 +4,7 @@ using UnityEngine;
 public class TrapBehavior : MonoBehaviour
 {
     public int spikeTrapDamage = 25;
-    public int spikeRate = 2;
+    public int spikeRate;
     private BoxCollider bc;
     private MeshRenderer mr;
     void Start()
@@ -12,6 +12,8 @@ public class TrapBehavior : MonoBehaviour
        bc = GetComponent<BoxCollider>();
        mr = GetComponent<MeshRenderer>();
        StartCoroutine(SpikeTrap());
+       
+        spikeRate = Random.Range(1, 5);
       
     }
     private void OnTriggerEnter(Collider other)
