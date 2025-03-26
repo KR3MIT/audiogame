@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class TrapBehavior : MonoBehaviour
 {
+    public AK.Wwise.Event spikeExtendTrapSound;  
+    public AK.Wwise.Event spikeRetractTrapSound;
+    
     public int spikeTrapDamage = 25;
     public int spikeRate;
     private BoxCollider bc;
@@ -29,10 +32,12 @@ public class TrapBehavior : MonoBehaviour
         while (true)
         {
             //PLAY SPIKE EXTEND TRAP SOUND
+            spikeExtendTrapSound.Post(gameObject);
             bc.enabled = true;
             mr.enabled = true;
             yield return new WaitForSeconds(spikeRate);
             //PLAY SPIKE RETRACT TRAP SOUND
+            spikeRetractTrapSound.Post(gameObject);
             bc.enabled = false;
             mr.enabled = false;
             yield return new WaitForSeconds(spikeRate);
