@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{3A658F3B-0B97-6C5A-C764-EAC14358E139}",
+    "Hash": "{ADF7DFDC-F9CC-9AF9-2B1F-809E92F90481}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -131,7 +131,7 @@
       "Name": "Play_WallImpactAndRub",
       "ObjectPath": "\\Events\\Default Work Unit\\Player wall impact\\Play_WallImpactAndRub",
       "GUID": "{C6D4B25F-82D2-4BF6-B8B5-24B9A8A1C2E1}",
-      "MaxAttenuation": "50",
+      "MaxAttenuation": "30",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -147,7 +147,7 @@
       "Name": "RockHitSwitchEvent",
       "ObjectPath": "\\Events\\Default Work Unit\\RockHitSwitchEvent",
       "GUID": "{F6393261-FC4B-4E26-9FCF-1E26F521B94B}",
-      "MaxAttenuation": "50",
+      "MaxAttenuation": "30",
       "DurationType": "OneShot",
       "DurationMin": "0.17940433",
       "DurationMax": "0.86942106",
@@ -252,6 +252,6 @@
     ]
    }
   ],
-  "FileHash": "{2D62F1A7-D588-1432-BF1F-1273AE4DF5C2}"
+  "FileHash": "{796D8AA3-E81B-A6BB-8E8E-F7A4AEA7A02B}"
  }
 }

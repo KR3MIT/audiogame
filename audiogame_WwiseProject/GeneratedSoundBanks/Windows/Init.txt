@@ -1,3 +1,11 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	654387190	IsCloseToInteractable			\Default Work Unit\IsCloseToInteractable	
+
+State	ID	Name	State Group			Notes
+	748895195	None	IsCloseToInteractable			
+	979470758	Yes	IsCloseToInteractable			
+	1668749452	No	IsCloseToInteractable			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 

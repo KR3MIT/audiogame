@@ -19,6 +19,22 @@ namespace AK
         static const AkUniqueID STOP_WALLRUB = 2444696015U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace ISCLOSETOINTERACTABLE
+        {
+            static const AkUniqueID GROUP = 654387190U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NO = 1668749452U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID YES = 979470758U;
+            } // namespace STATE
+        } // namespace ISCLOSETOINTERACTABLE
+
+    } // namespace STATES
+
     namespace SWITCHES
     {
         namespace ROCKHITMATERIALS

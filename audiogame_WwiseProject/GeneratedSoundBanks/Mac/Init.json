@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{2E6218D2-8E6D-CD13-8887-B57434E831AE}",
+    "Hash": "{AE392D2B-DBDB-4D32-82D6-66BABC8CA0BC}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -50,6 +50,34 @@
       "GUID": "{8A423C8D-0C64-420F-9210-AB34C1F08E35}"
      }
     ],
+    "StateGroups": [
+     {
+      "Id": "654387190",
+      "Name": "IsCloseToInteractable",
+      "ObjectPath": "\\States\\Default Work Unit\\IsCloseToInteractable",
+      "GUID": "{90AA0BA7-78A1-4247-9F0E-13E67D893DE7}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\IsCloseToInteractable\\None",
+        "GUID": "{6F94C287-4F6A-45E3-AC1C-3C901E0602B0}"
+       },
+       {
+        "Id": "979470758",
+        "Name": "Yes",
+        "ObjectPath": "\\States\\Default Work Unit\\IsCloseToInteractable\\Yes",
+        "GUID": "{5562B11A-96D8-42B6-80E7-74631978EAA2}"
+       },
+       {
+        "Id": "1668749452",
+        "Name": "No",
+        "ObjectPath": "\\States\\Default Work Unit\\IsCloseToInteractable\\No",
+        "GUID": "{265113B6-B4A8-42FE-801A-BD04941E3788}"
+       }
+      ]
+     }
+    ],
     "SwitchGroups": [
      {
       "Id": "868718117",
@@ -80,6 +108,6 @@
     ]
    }
   ],
-  "FileHash": "{B8581CB7-1AC0-FB92-0817-E7E3023981C6}"
+  "FileHash": "{6ACDBB32-CAFF-1360-9036-65AF7AB62CD8}"
  }
 }
