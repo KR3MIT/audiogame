@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4828491264567668032}
   - component: {fileID: 5312396804250729731}
   - component: {fileID: 1540786483162828069}
-  - component: {fileID: 1871974046281420963}
+  - component: {fileID: 4862587509094835285}
   m_Layer: 0
   m_Name: RockPuzzleTrigger
   m_TagString: Untagged
@@ -63,7 +63,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.5, y: 2, z: 8}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1871974046281420963
+--- !u!114 &4862587509094835285
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -72,6 +72,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 601231761682204652}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2028d93cf91fac440a7e5deb2401de11, type: 3}
+  m_Script: {fileID: 11500000, guid: 361d5657118565c4198b18a864734aa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  childObjects: []
+  currentForce: 0
+  forceMultiplier: 2
+  newForce: 0
+  setCustomForce: 0
+  customForce: 20
+  OnVictory:
+    m_PersistentCalls:
+      m_Calls: []
