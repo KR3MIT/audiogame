@@ -363,7 +363,6 @@ GameObject:
   - component: {fileID: 2753360497265810888}
   - component: {fileID: 6467033102710604365}
   - component: {fileID: 1378231924235444024}
-  - component: {fileID: 6649773325084727943}
   - component: {fileID: 5418875152150955388}
   - component: {fileID: 1701187783603960336}
   - component: {fileID: 8621704215059076128}
@@ -428,7 +427,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 74989fe2c8fdd3a47b1ac681d79b400c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -477,29 +476,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!136 &6649773325084727943
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5398658719960121855}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.6
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!143 &5418875152150955388
 CharacterController:
   m_ObjectHideFlags: 0
@@ -538,6 +514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookTask: {fileID: 0}
+  moveTask: {fileID: 0}
   movespeed: 5
   lookspeed: 0.1
   lookX: 0
