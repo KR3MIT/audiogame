@@ -9,6 +9,7 @@ public class RockBehavior : MonoBehaviour
     void Start()
     {
         rb = GetComponent <Rigidbody>();
+        Destroy(this, 10);
 
     }
     void Update()
