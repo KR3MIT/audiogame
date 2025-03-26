@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5337811172389278351}
   - component: {fileID: 6252370822272557930}
   - component: {fileID: 4495011087446182445}
+  - component: {fileID: 7140338230053708355}
   m_Layer: 0
   m_Name: Spiketrap
   m_TagString: Untagged
@@ -121,5 +122,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c32d7f093c62d284084d3496623d3feb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spikeExtendTrapSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 298ea9b52cee5e94b82ccfb786004520, type: 2}
+  spikeRetractTrapSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 298ea9b52cee5e94b82ccfb786004520, type: 2}
   spikeTrapDamage: 25
   spikeRate: 3
+--- !u!114 &7140338230053708355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4866193536097096352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06db01f669a241c41a1697f30aa15086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  usePositionOffsetData: 0
+  m_positionOffsetData:
+    KeepMe: 1
+    positionOffset: {x: 0, y: 0, z: 0}
+  scalingFactor: 1
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
