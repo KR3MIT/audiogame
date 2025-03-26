@@ -37,7 +37,7 @@ public class PlayerBehavior : MonoBehaviour
     }
     private void Update()
     {
-        
+
             if (input.actions["Interact"].triggered)
             {
             PlayerInteraction();
