@@ -1560,6 +1560,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4741793950358942197, guid: 05626fcc6a300b5499f108c3b11a32c3, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1928121938}
+    - target: {fileID: 4741793950358942197, guid: 05626fcc6a300b5499f108c3b11a32c3, type: 3}
       propertyPath: turbo
       value: 0
       objectReference: {fileID: 0}
@@ -1845,6 +1849,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05626fcc6a300b5499f108c3b11a32c3, type: 3}
+--- !u!95 &1928121938 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4709941869465916633, guid: 05626fcc6a300b5499f108c3b11a32c3, type: 3}
+  m_PrefabInstance: {fileID: 1680969875}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2110516033 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8209019713667720385, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}

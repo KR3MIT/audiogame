@@ -1,31 +1,22 @@
 using UnityEngine;
-
 public class AxeTrap : MonoBehaviour
 {
-
     public int axeTrapDamage = 50;
-    private BoxCollider bc;
     public bool turbo = false;
     public Animator anim;
+    private float _randomTime;
     void Start()
     {
-        bc = GetComponent<BoxCollider>();
+        var temp = Random.Range(0, 100);
+        _randomTime = temp / 100f;
+        
         anim = GetComponentInParent<Animator>();
-        TurboMode(turbo);
-    }
 
-    public void TurboMode(bool turbo)
-    {
         if (turbo)
-        {
-            anim.SetBool("Turbo", true);
-        }
+            anim.Play("AxeSwingFast",0,_randomTime);
         else
-        {
-            anim.SetBool("Turbo", false);
-        }
+            anim.Play("AxeSwingSlow",0,_randomTime);
     }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.TryGetComponent(out PlayerBehavior behaviour))
