@@ -33,15 +33,15 @@ public class Haptics : MonoBehaviour
     {
         _gamepad.ResetHaptics();
     }
-    public void PulseHaptics(float lowFrequency, float highFrequency, float duration)
+    public void PulseHaptics(float lowFreq, float highFreq, float duration)
     {
         if (IsInvoking("Pulse"))
             return;
-        StartCoroutine(Pulse(lowFrequency, highFrequency, duration));
+        StartCoroutine(Pulse(lowFreq, highFreq, duration));
     }
-    public IEnumerator Pulse(float lowFrequency, float highFrequency, float duration)
+    private IEnumerator Pulse(float lowFreq, float highFreq, float duration)
     {
-        SetMotorSpeeds(lowFrequency, highFrequency);
+        SetMotorSpeeds(lowFreq, highFreq);
         yield return new WaitForSeconds(duration);
         PauseHaptics();
     }
