@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID AXESWINGEVENT = 3270970525U;
         static const AkUniqueID FOOTSTEPEVENT = 3511205013U;
         static const AkUniqueID PLAY_GLOWSWITCHCONTROLLER = 3599396917U;
         static const AkUniqueID PLAY_WALLIMPACTANDRUB = 1324720394U;

@@ -1,21 +1,19 @@
-using NUnit.Framework;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.XR;
-using UnityEngine.SubsystemsImplementation;
-using UnityEngine.Windows;
-
 public class PlayerBehavior : MonoBehaviour
 {
     public int health = 100;
-    public Vector3 checkpoint;
-    private CharacterController controller;
     public float respawnTime;
-    private PlayerInput input;
-    public static PlayerBehavior instance;
+    
+    [HideInInspector]public Vector3 checkpoint;
+    
     public static bool WwiseActive { get; private set; }
+    public static PlayerBehavior instance;
 
+    private CharacterController controller;
+    private PlayerInput input;
+    
     private void Awake()
     {
         if (instance != null)
@@ -37,35 +35,34 @@ public class PlayerBehavior : MonoBehaviour
     }
     private void Update()
     {
-
-            if (input.actions["Interact"].triggered)
-            {
+        if (input.actions["Interact"].triggered)
+        {
             PlayerInteraction();
-            }
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Checkpoint")
         {
-            //PLAY CHECKPOINT SOUND
             SetCheckpoint(other.transform.position);
         }
     }
     public void SetCheckpoint(Vector3 pos)
     {
-
-       checkpoint = pos;
+        //PLAY CHECKPOINT SOUND
+        checkpoint = pos;
         //a checkpoint has been checked, play sound
+        Haptics.instance.PulseHaptics(0.25f,0.25f, 0.1f);
     }
     public void TakeDamage(int damage)
     {
+        Haptics.instance.PulseHaptics(0.75f,0.75f, 0.2f);
         //PLAY DAMAGE NOISE
         health -= damage;
         Debug.Log("Player took "+ damage +" damage. Health is now: " + health);
         if (health <= 0)
-        {
             StartCoroutine(Death());
-        }
+        
     }
     IEnumerator Death()
     {
@@ -81,14 +78,13 @@ public class PlayerBehavior : MonoBehaviour
 
     void PlayerInteraction()
     {
-        Debug.Log("Player is trying to interact");
         if(Physics.BoxCast(transform.position, Vector3.zero, transform.forward, out RaycastHit hit, transform.rotation, 2f))
         {
-            Debug.Log("Player is interacting with something");
             if(hit.collider.gameObject.GetComponent<Iinteractables>() != null)
             {
-                Debug.Log("Player is interacting with an interactable object");
                 hit.collider.gameObject.GetComponent<Iinteractables>().Interact();
+                //PLAY INTERACTION SOUND
+                Haptics.instance.PulseHaptics(0.25f,0.25f, 0.1f);
             }
         }
     }

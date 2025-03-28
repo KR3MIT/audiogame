@@ -4,6 +4,9 @@
 		<WorkUnit Name="Thisen" ID="{543AA68A-03F3-4940-81BD-3741357C33EB}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="Sounds" ID="{0795FD36-C7C4-4384-9858-BE1BC611156D}" ShortID="934231523">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
@@ -801,54 +804,16 @@
 								<Panner Name="" ID="{1DA2A163-5F54-43F0-AA7B-2DE938ECC139}"/>
 							</PositioningInfo>
 						</ActorMixer>
-						<Folder Name="Ambience" ID="{08BD6407-2B98-4AE2-8438-5766131DD69D}" ShortID="385441841">
-							<ChildrenList>
-								<Sound Name="Wind" ID="{92EBB492-F939-47C1-8A85-8C69C584E800}" ShortID="932214490">
-									<PropertyList>
-										<Property Name="SpeakerPanning" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<SourcePlugin Name="Soundseed Air Wind" ID="{9E48D028-9512-4C00-BC45-C3B432B34929}" ShortID="130603837" PluginName="SoundSeed Air Wind" CompanyID="0" PluginID="119">
-											<PropertyList>
-												<Property Name="AverageVelocity" Type="Real32" Value="-2400"/>
-												<Property Name="Gustiness" Type="Real32" Value="0.1"/>
-												<Property Name="Variability" Type="Real32" Value="0.2"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<PluginData/>
-											<PluginInnerObjectList>
-												<List Name="Deflectors">
-													<PluginInnerObject Name="" ID="{C6CD1394-F592-4907-B88B-A20AEF7D9ED6}" PluginName="Deflector" CompanyID="0" PluginID="121"/>
-												</List>
-											</PluginInnerObjectList>
-										</SourcePlugin>
-									</ChildrenList>
-									<PositioningInfo>
-										<Panner Name="" ID="{2FF7872E-1FE5-457C-A9B8-0751A1783535}">
-											<PropertyList>
-												<Property Name="PanX" Type="Real64" Value="32.0827943078913"/>
-												<Property Name="PanY" Type="Real64" Value="-34.0248962655601"/>
-											</PropertyList>
-										</Panner>
-									</PositioningInfo>
-									<ActiveSourceList>
-										<ActiveSource Name="Soundseed Air Wind" ID="{9E48D028-9512-4C00-BC45-C3B432B34929}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</Folder>
 						<ActorMixer Name="AxeTrap" ID="{CC7EBDD9-BA57-4615-A9CC-42842DE18D04}" ShortID="313435489">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{DBE5B0B9-B8C3-4B21-B983-1B97B18A0721}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
@@ -858,7 +823,22 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<SwitchContainer Name="AxeSwitch" ID="{38FAEE2B-89A3-492D-BFA3-9DEC446F0D36}" ShortID="533508585">
+								<RandomSequenceContainer Name="AxeSequence" ID="{CFF11820-4505-4F96-8235-E1FBCA1FD0FC}" ShortID="868660548">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{92A5405D-767B-49E9-8FB0-48F9AF33A7CD}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="400"/>
+															<Property Name="Min" Type="Real64" Value="-400"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
@@ -868,7 +848,17 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="WooshTurboOn" ID="{2D2902AB-AA5A-4E55-88A6-7C52407F54BD}" ShortID="559608574">
+										<Sound Name="Woosh" ID="{628AC526-EE2F-4841-A8F1-268ACD450CF1}" ShortID="731584425">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{7F18B814-706F-432C-98B3-1181B222539C}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
 													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
@@ -881,100 +871,73 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<SourcePlugin Name="Soundseed Air Woosh" ID="{9ADE4B2D-0771-4AB2-A0AD-E320AECE99D5}" ShortID="239470046" PluginName="SoundSeed Air Woosh" CompanyID="0" PluginID="120">
+												<AudioFileSource Name="Woosh" ID="{E68FF973-C3DD-40C5-99A0-34F7E7AEE494}">
 													<PropertyList>
-														<Property Name="FrequencyScale" Type="Real32" Value="-3.45"/>
-														<Property Name="QFactorScale" Type="Real32" Value="4"/>
-														<Property Name="Speed" Type="Real32" Value="23"/>
-														<Property Name="SpeedAutomate" Type="bool" Value="True"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.30503962964428"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.77885319453518"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<PluginData>
-	<WooshData>
-		<CurveList Version="1">
-			<CurveInfo Name="Speed">
-				<Curve Name="" ID="{832CED71-5754-45DA-9F82-A7F5C2485BF3}">
-					<PropertyList>
-						<Property Name="Flags" Type="int32" Value="1"/>
-					</PropertyList>
-					<PointList>
-						<Point>
-							<XPos>0</XPos>
-							<YPos>0</YPos>
-							<Flags>5</Flags>
-						</Point>
-						<Point>
-							<XPos>0.25</XPos>
-							<YPos>100</YPos>
-							<Flags>0</Flags>
-						</Point>
-						<Point>
-							<XPos>0.5</XPos>
-							<YPos>0</YPos>
-							<Flags>37</Flags>
-						</Point>
-					</PointList>
-				</Curve>
-			</CurveInfo>
-		</CurveList>
-		<Path Version="1">
-			<Path2D Name="" ID="{B25CE620-7829-4AB2-AD20-D2B65D2702B4}">
-				<PropertyList>
-					<Property Name="LinearTime" Type="bool" Value="False"/>
-				</PropertyList>
-				<PointList>
-					<Point>
-						<XPos>0</XPos>
-						<YPos>0</YPos>
-						<Flags>12</Flags>
-						<Time>0</Time>
-					</Point>
-				</PointList>
-			</Path2D>
-		</Path>
-	</WooshData>
-</PluginData>
-													<PluginInnerObjectList>
-														<List Name="Deflectors">
-															<PluginInnerObject Name="" ID="{338EA353-45E9-4687-B817-04F5358F7F41}" PluginName="Deflector" CompanyID="0" PluginID="122"/>
-														</List>
-													</PluginInnerObjectList>
-												</SourcePlugin>
+													<AudioFile>Woosh.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="359865250"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Soundseed Air Woosh" ID="{9ADE4B2D-0771-4AB2-A0AD-E320AECE99D5}" Platform="Linked"/>
+												<ActiveSource Name="Woosh" ID="{E68FF973-C3DD-40C5-99A0-34F7E7AEE494}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Woosh_01" ID="{CE83988D-1E82-45C2-9ACF-07100CD7601A}" ShortID="123061861">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Woosh" ID="{FE2F85E1-6C4B-4547-807F-8135FD8C490B}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.39353056586519"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.82892680359536"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Woosh.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="137710955"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Woosh" ID="{FE2F85E1-6C4B-4547-807F-8135FD8C490B}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
-									<StateInfo>
-										<StateGroupList>
-											<StateGroupInfo>
-												<StateGroupRef Name="AxeTrapTurbo" ID="{D9E98000-141B-49DB-A086-5AD474D35A0E}"/>
-											</StateGroupInfo>
-										</StateGroupList>
-										<CustomStateList>
-											<CustomState>
-												<StateRef Name="TurboOff" ID="{294E7537-70DE-416D-AB02-7CB3F957A130}"/>
-												<CustomState Name="" ID="{E02B9312-D5FD-46AC-85C8-1D26821BE366}" ShortID="741102606"/>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="TurboOn" ID="{7977DEB9-05F6-4D76-BA53-239C231B9695}"/>
-												<CustomState Name="" ID="{C441ADBE-7AF0-447F-BEA5-21F5B1FE49E3}" ShortID="839136644"/>
-											</CustomState>
-										</CustomStateList>
-									</StateInfo>
-									<GroupingInfo>
-										<GroupingBehaviorList>
-											<GroupingBehavior>
-												<ItemRef Name="WooshTurboOn" ID="{2D2902AB-AA5A-4E55-88A6-7C52407F54BD}"/>
-											</GroupingBehavior>
-										</GroupingBehaviorList>
-									</GroupingInfo>
-								</SwitchContainer>
+									<ObjectLists>
+										<ObjectList Name="Playlist">
+											<Reference>
+												<ObjectRef Name="Woosh" ID="{628AC526-EE2F-4841-A8F1-268ACD450CF1}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+											</Reference>
+											<Reference>
+												<ObjectRef Name="Woosh_01" ID="{CE83988D-1E82-45C2-9ACF-07100CD7601A}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
+				<Folder Name="Ambience" ID="{08BD6407-2B98-4AE2-8438-5766131DD69D}" ShortID="385441841"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

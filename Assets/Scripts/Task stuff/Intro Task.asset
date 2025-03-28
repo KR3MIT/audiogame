@@ -9,10 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f7edf1f0b17b9d42a2dcb7993b2b15c, type: 3}
-  m_Name: 7977DEB9-05F6-4D76-BA53-239C231B9695
+  m_Script: {fileID: 11500000, guid: 1f9b27af02ed3164fbabbc3e793d16bd, type: 3}
+  m_Name: Intro Task
   m_EditorClassIdentifier: 
-  objectName: TurboOn
-  id: 3469814704
-  guid: 7977DEB9-05F6-4D76-BA53-239C231B9695
-  WwiseStateGroupReference: {fileID: 0}
+  taskStartNarration: sup drilla
+  taskCompleteNarration: 
+  dialogueLength: 5
+  onTaskStart:
+    m_PersistentCalls:
+      m_Calls: []

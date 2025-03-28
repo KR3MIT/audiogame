@@ -1,10 +1,13 @@
 using UnityEngine;
+using AK;
 public class AxeTrap : MonoBehaviour
 {
     public int axeTrapDamage = 50;
     public bool turbo = false;
     public Animator anim;
     private float _randomTime;
+    public AK.Wwise.Event axeSwingEvent;
+    public bool axeSwinging = false;
     void Start()
     {
         var temp = Random.Range(0, 100);
@@ -15,12 +18,22 @@ public class AxeTrap : MonoBehaviour
         if (turbo)
             anim.SetBool("Turbo", true);
 
+        //PlayerSounds.FootstepEvent += PlaySound;
 
-        /*if (turbo)
-            anim.Play("AxeSwingFast",0,_randomTime);
-        else
-            anim.Play("AxeSwingSlow",0,_randomTime);*/
     }
+
+    private void Update()
+    {
+        if (axeSwinging)
+        {
+            //Debug.Log("Axe is swinging");
+            axeSwingEvent.Post(transform.root.gameObject);
+            //Debug.Log("Axe Swing Event Posted");
+            axeSwinging = false;
+            //Debug.Log("Axe Swinging is now false");
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.TryGetComponent(out PlayerBehavior behaviour))

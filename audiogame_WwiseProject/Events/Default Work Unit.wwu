@@ -84,7 +84,7 @@
 								<Action Name="" ID="{ABEE282D-DE21-42D1-8561-C07A0FAB704F}" ShortID="649264364">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="AxeSwitch" ID="{38FAEE2B-89A3-492D-BFA3-9DEC446F0D36}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+											<ObjectRef Name="AxeSequence" ID="{CFF11820-4505-4F96-8235-E1FBCA1FD0FC}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

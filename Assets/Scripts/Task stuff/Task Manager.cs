@@ -4,21 +4,23 @@ using UnityEngine;
 
 public class TaskManager : MonoBehaviour
 {
+    [SerializeField] private bool onStart = false;
     [SerializeField] private List<Task> taskList;
-
     [SerializeField] private int currentTask = 0;
-
     public void Start()
     {
-        StartNextTask();
+        if (onStart)
+            StartNextTask();
     }
-
     private void StartNextTask()
     {
+        if (currentTask == 0)
+        {
+            StartCoroutine(DialogueDelay());
+        }
         if (currentTask == taskList.Count)
         {
-            Debug.Log("EndTask");
-            StartCoroutine(EndDialogueDelay());
+            StartCoroutine(DialogueDelay());
         }
         else if (currentTask < taskList.Count)
         {
@@ -30,14 +32,11 @@ public class TaskManager : MonoBehaviour
         currentTask++;
         StartNextTask();
     }
-
-    private IEnumerator EndDialogueDelay()
+    private IEnumerator DialogueDelay()
     {
-        var _endDelay = taskList[currentTask].dialogueLength;
-        
-        //play end dialogue
-        Debug.Log("End Dialogue");
-        yield return new WaitForSeconds(_endDelay);
-        Debug.Log(taskList[currentTask].taskCompleteNarration);
+        var _delay = taskList[currentTask].dialogueLength;
+        //insert end dialogue here
+        yield return new WaitForSeconds(_delay);
+        CompleteTask();
     }
 }

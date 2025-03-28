@@ -6,66 +6,69 @@ public class PlayerMovement : MonoBehaviour
     public ContinuousTask lookTask;
     public  ContinuousTask moveTask;
     
-    private CharacterController controller;
-    private PlayerInput input;
+    private CharacterController _controller;
+    private PlayerInput _input;
 
-    public float movespeed = 5.0f;
-    public float lookspeed = 0.1f;
-    public float lookX = 0;
+    public float moveSpeed = 5.0f;
+    public float mouseSensitivity;
+    public float controllerSensitivity;
+    
+    private float _lookX = 0;
+    private float _sens;
    
-    public float speed {get; private set;}
-    public static float normalizedSpeed {get; private set;}
-
+    public float Speed {get; private set;}
+    public static float NormalizedSpeed {get; private set;}
     public AK.Wwise.RTPC playerSpeedRTPC;
     void Start()
     {
-       controller = GetComponent<CharacterController>();
-       input = GetComponent<PlayerInput>();
-       
-       Cursor.lockState = CursorLockMode.Locked;
+        _controller = GetComponent<CharacterController>();
+        _input = GetComponent<PlayerInput>();
+        
+        Cursor.lockState = CursorLockMode.Locked;
     }
-
-
     // Update is called once per frame
     void Update()
     {
         #region PlayerControl
-        
         //move logic
-        Vector2 move = input.actions["Move"].ReadValue<Vector2>();
+        Vector2 move = _input.actions["Move"].ReadValue<Vector2>();
         Vector3 moveDirection = new Vector3(move.x, 0, move.y);
         moveDirection = transform.TransformDirection(moveDirection);
-        Vector3 moveVec = moveDirection * movespeed;
+        Vector3 moveVec = moveDirection * moveSpeed;
 
         var moveVector = (moveVec * Time.deltaTime) + (Physics.gravity * Time.deltaTime);
-        controller.Move(moveVector);
+        _controller.Move(moveVector);
         //controller.Move(Physics.gravity * Time.deltaTime);
-        speed = moveVec.magnitude;
+        Speed = moveVec.magnitude;
         
         //speed for rtpc
-        var horizontalSpeed = new Vector2(controller.velocity.x, controller.velocity.z).magnitude;
-        normalizedSpeed = horizontalSpeed / movespeed;
+        var horizontalSpeed = new Vector2(_controller.velocity.x, _controller.velocity.z).magnitude;
+        NormalizedSpeed = horizontalSpeed / moveSpeed;
         
-        playerSpeedRTPC.SetValue(gameObject, normalizedSpeed);
+        playerSpeedRTPC.SetValue(gameObject, NormalizedSpeed);
         
         if (lookTask != null)
         {
-            moveTask.TrackAmount(speed);
+            moveTask.TrackAmount(Speed);
         }
         #endregion
         
         #region CameraControl
         
         //rotation logic
-        Vector2 look = input.actions["Look"].ReadValue<Vector2>();     
-        lookX += look.x * lookspeed;
-        transform.rotation = Quaternion.Euler(0, lookX, 0);
+        Vector2 look = _input.actions["Look"].ReadValue<Vector2>();     
+        _lookX += look.x * _sens;
+        transform.rotation = Quaternion.Euler(0, _lookX, 0);
 
         if (lookTask != null)
-        {
             lookTask.TrackAmount(look.x);
-        }
+        #endregion
         
+        #region InputSensitivity
+        if (_input.currentControlScheme == "Keyboard&Mouse")
+            _sens = mouseSensitivity;
+        else if (_input.currentControlScheme == "Gamepad")
+            _sens = controllerSensitivity;
         #endregion
     }
 }
