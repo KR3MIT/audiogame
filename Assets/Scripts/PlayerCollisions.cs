@@ -1,8 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using NUnit.Framework;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerCollisions : MonoBehaviour
@@ -17,10 +13,9 @@ public class PlayerCollisions : MonoBehaviour
     public GameObject soundObject;
 
     private GameObject soundObjectInstance;
-
+    
     public List<GameObject> touchingWalls = new List<GameObject>();
-
-
+    
     private void Start()
     {
         soundObjectInstance = Instantiate(soundObject, transform);
@@ -55,8 +50,11 @@ public class PlayerCollisions : MonoBehaviour
 
             soundObjectInstance.transform.position = newPosition;
 
-            playerMovement.playerSpeedRTPC.SetValue(soundObjectInstance, PlayerMovement.normalizedSpeed);
+            playerMovement.playerSpeedRTPC.SetValue(soundObjectInstance, PlayerMovement.NormalizedSpeed);
             playerCollisionEvent.Post(soundObjectInstance);
+            
+            Haptics.instance.SetMotorSpeeds(0.35f,0.35f);
+            Haptics.instance.ResumeHaptics();
             
             if (!touchingWalls.Contains(other.gameObject))
             {
@@ -64,7 +62,6 @@ public class PlayerCollisions : MonoBehaviour
             }
         }
     }
-
     private void OnCollisionStay(Collision other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Wall"))
@@ -76,9 +73,8 @@ public class PlayerCollisions : MonoBehaviour
                 var newPosition = hitPosition + direction * soundOffset;
 
                 soundObjectInstance.transform.position = newPosition;
-                playerMovement.playerSpeedRTPC.SetValue(soundObjectInstance, PlayerMovement.normalizedSpeed);
+                playerMovement.playerSpeedRTPC.SetValue(soundObjectInstance, PlayerMovement.NormalizedSpeed);
             }
-
             
             if (!touchingWalls.Contains(other.gameObject))
             {
@@ -86,10 +82,10 @@ public class PlayerCollisions : MonoBehaviour
             }
         }
     }
-
-
     private void OnCollisionExit(Collision other)
     {
+        Haptics.instance.PauseHaptics();
+        
         if (other.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
             touchingWalls.Remove(other.gameObject);
@@ -101,8 +97,7 @@ public class PlayerCollisions : MonoBehaviour
             }
         }
     }
-
-
+    
     //oldig
 
     // private void OnTriggerEnter(Collider other)

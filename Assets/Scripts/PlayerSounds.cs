@@ -52,7 +52,7 @@ public class PlayerSounds : MonoBehaviour
     {
         while (true)
         {
-            if (PlayerMovement.normalizedSpeed > threshold)
+            if (PlayerMovement.NormalizedSpeed > threshold)
             {
                 //Debug.Log("Footstep has been stepped");
                 if(PlayerBehavior.WwiseActive)
@@ -60,7 +60,7 @@ public class PlayerSounds : MonoBehaviour
             }
 
             //dogshit, iykyk
-           yield return new WaitForSeconds(steprate * (PlayerMovement.normalizedSpeed));
+           yield return new WaitForSeconds(steprate * (PlayerMovement.NormalizedSpeed));
         }
     }
 
