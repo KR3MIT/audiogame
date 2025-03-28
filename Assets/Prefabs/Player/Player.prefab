@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: 4045626712683393236}
   - component: {fileID: 1395093948587435316}
   - component: {fileID: 2180566359320144640}
+  - component: {fileID: 8078313022990104782}
+  - component: {fileID: 1672702946173145104}
+  - component: {fileID: 3901772139283170772}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -170,6 +173,52 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &8078313022990104782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508366104711853462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840640bfbe97ee240853c34ea0179cef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Collider: {fileID: 0}
+--- !u!114 &1672702946173145104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508366104711853462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d81a7b602f2744b498e6a3f5a842ac2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &3901772139283170772
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508366104711853462}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &695861866535491306
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,6 +338,8 @@ GameObject:
   - component: {fileID: 8336151054020066868}
   - component: {fileID: 8922384449741479975}
   - component: {fileID: 5784065392288766070}
+  - component: {fileID: 3961593406009333801}
+  - component: {fileID: 289136203984175465}
   m_Layer: 0
   m_Name: Footstepper
   m_TagString: Untagged
@@ -305,7 +356,7 @@ Transform:
   m_GameObject: {fileID: 1643153310464098375}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: -0.549, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -326,7 +377,7 @@ MonoBehaviour:
   m_listeners:
     initialListenerList: []
     useDefaultListeners: 1
-  isEnvironmentAware: 1
+  isEnvironmentAware: 0
   isStaticObject: 0
   usePositionOffsetData: 0
   m_positionOffsetData:
@@ -351,6 +402,40 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 26c7c8b7bdc5a7a458446731ffd4f559, type: 2}
+--- !u!114 &3961593406009333801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643153310464098375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840640bfbe97ee240853c34ea0179cef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Collider: {fileID: 0}
+--- !u!135 &289136203984175465
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643153310464098375}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5398658719960121855
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,9 +600,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lookTask: {fileID: 11400000, guid: e8b4aa380f49e5f4d9000828c3f8cd87, type: 2}
   moveTask: {fileID: 11400000, guid: b21038cd31707584cb92a20f18f5b661, type: 2}
-  movespeed: 5
-  lookspeed: 0.1
-  lookX: 0
+  moveSpeed: 5
+  mouseSensitivity: 0.1
+  controllerSensitivity: 1
   playerSpeedRTPC:
     idInternal: 0
     valueGuidInternal: 
@@ -564,7 +649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 951db6e3610312146a95607021e0ee45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  steprate: 0.25
+  steprate: 0.6
   threshold: 0.1
   breathDelay: 5
   breathRate: 1
@@ -597,8 +682,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  checkpoint: {x: 10, y: 10, z: 10}
   respawnTime: 2
+  checkpoint: {x: 10, y: 10, z: 10}
 --- !u!114 &4243507214024805099
 MonoBehaviour:
   m_ObjectHideFlags: 0
