@@ -6,6 +6,8 @@
 				<ActorMixer Name="Main" ID="{F6DAC414-5036-4EBB-A847-CA110B7C2E7D}" ShortID="78453831">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -29,6 +31,9 @@
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="RoomTest" ID="{EDEAFCF6-A2A1-4048-8096-294A48C13532}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -60,7 +65,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="StoneFootsteps" ID="{7201FEE6-0EA3-43B9-A3C7-235AE52B82C5}" ShortID="754762493">
+										<Sound Name="StoneFootsteps_06" ID="{9609C010-BF79-4542-BCC3-4072BB20ED9C}" ShortID="390003529">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 											</PropertyList>
@@ -76,29 +81,29 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{C7C0F2C8-0DDD-4F24-8F90-CCAE0451914E}">
+												<AudioFileSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{FF41C177-8135-4C0E-8FC8-EEDA890CF97E}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.0315718787278175"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.0229613663475036"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.0746244406293869"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.21751228853973"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.190193026211893"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>521590__fission9__hiking-boot-footsteps-on-stone.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="865667167"/>
+														<MediaID ID="593205648"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<PositioningInfo>
-												<Panner Name="" ID="{867B6EE4-0661-47DF-A7C2-172B81E94DB4}"/>
+												<Panner Name="" ID="{8480808A-81F6-4509-9256-78E2F03C6E07}"/>
 											</PositioningInfo>
 											<ActiveSourceList>
-												<ActiveSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{C7C0F2C8-0DDD-4F24-8F90-CCAE0451914E}" Platform="Linked"/>
+												<ActiveSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{FF41C177-8135-4C0E-8FC8-EEDA890CF97E}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="StoneFootsteps_01" ID="{7C4A0EDF-BDCF-45E7-8771-ADD6567AC446}" ShortID="925003213">
+										<Sound Name="StoneFootsteps_07" ID="{C56270F1-67F5-4561-AFD8-BBAD56F4EC00}" ShortID="74813990">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 											</PropertyList>
@@ -114,29 +119,29 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{1534AE9C-B5AD-4F84-A061-C1BF34431804}">
+												<AudioFileSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{00544B1E-05EA-48AE-8003-5547508A5BAB}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.0510443442969153"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.0540469527849691"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.621539957027145"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.834725260132663"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.65853078289806"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.784900882428982"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>521590__fission9__hiking-boot-footsteps-on-stone.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="695656116"/>
+														<MediaID ID="166573158"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<PositioningInfo>
-												<Panner Name="" ID="{707DA11A-CC40-4337-9C5B-751816769975}"/>
+												<Panner Name="" ID="{7C9C2254-457D-4FEC-B7BD-CF54F5F066C5}"/>
 											</PositioningInfo>
 											<ActiveSourceList>
-												<ActiveSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{1534AE9C-B5AD-4F84-A061-C1BF34431804}" Platform="Linked"/>
+												<ActiveSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{00544B1E-05EA-48AE-8003-5547508A5BAB}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="StoneFootsteps_02" ID="{33DAC951-1BC7-4D0A-9599-FFB3D0CDF50A}" ShortID="840316598">
+										<Sound Name="StoneFootsteps_08" ID="{F35357E8-E87F-447F-9598-47F36C17D6BC}" ShortID="808662610">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 											</PropertyList>
@@ -152,29 +157,29 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{63512FB1-A51B-4658-A7DE-48019998BBD8}">
+												<AudioFileSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{CA01E051-FFB2-4CF9-8A61-DCDE11A339E5}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.0510443442969153"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.0630547782491306"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="1.17702252731711"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.40221826437484"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.21522121688993"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.34824185519585"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>521590__fission9__hiking-boot-footsteps-on-stone.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="897629732"/>
+														<MediaID ID="933969872"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<PositioningInfo>
-												<Panner Name="" ID="{08E9C1FD-9CB1-4194-90F6-29082F9C8771}"/>
+												<Panner Name="" ID="{AA4932CE-7E2A-4D24-BC1D-850FC960E39F}"/>
 											</PositioningInfo>
 											<ActiveSourceList>
-												<ActiveSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{63512FB1-A51B-4658-A7DE-48019998BBD8}" Platform="Linked"/>
+												<ActiveSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{CA01E051-FFB2-4CF9-8A61-DCDE11A339E5}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="StoneFootsteps_03" ID="{5FF0D9A4-9D8F-4E90-A7C4-DDFEDD3580B0}" ShortID="968889706">
+										<Sound Name="StoneFootsteps_09" ID="{5905CA64-4FF4-4FFB-96ED-831C61B9C915}" ShortID="615086587">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 											</PropertyList>
@@ -190,29 +195,29 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{C16D88BE-ED0F-4AE8-919B-16F52BEACDCC}">
+												<AudioFileSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{F30F56C3-D695-4A7B-AC9F-B4B2E80B92E8}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.0450391273208077"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.0570495612730231"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="1.72049466365485"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.95469822617674"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.77374861935714"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.91249697826172"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>521590__fission9__hiking-boot-footsteps-on-stone.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="979414040"/>
+														<MediaID ID="31611349"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<PositioningInfo>
-												<Panner Name="" ID="{F5EB3E23-F8E1-4E5E-B0AF-B043A40E3FE4}"/>
+												<Panner Name="" ID="{6BDF5ACA-B255-4901-BDEF-29BAAFE10847}"/>
 											</PositioningInfo>
 											<ActiveSourceList>
-												<ActiveSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{C16D88BE-ED0F-4AE8-919B-16F52BEACDCC}" Platform="Linked"/>
+												<ActiveSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{F30F56C3-D695-4A7B-AC9F-B4B2E80B92E8}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="StoneFootsteps_04" ID="{61EA88E2-B8CC-47DD-8A05-0934047D2A8B}" ShortID="472157766">
+										<Sound Name="StoneFootsteps_10" ID="{D983C0FE-B77D-4C9B-90B1-E7E7BEA732E6}" ShortID="687000200">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 											</PropertyList>
@@ -228,29 +233,29 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{94F5CF1F-3026-4FBD-94D2-C54F83B25A74}">
+												<AudioFileSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{9488CFF4-61FD-4CC7-A73D-B9B8F2C97ABE}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.0540469527849692"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.0450391273208077"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="2.32401896975367"/>
-														<Property Name="TrimEnd" Type="Real64" Value="2.5492147068114"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.36421063443464"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.51359027675327"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>521590__fission9__hiking-boot-footsteps-on-stone.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="648253810"/>
+														<MediaID ID="659278601"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<PositioningInfo>
-												<Panner Name="" ID="{47D2E9E1-7650-4C04-B7F8-F6E11BB1268B}"/>
+												<Panner Name="" ID="{D7549624-A0F7-4D2B-9D35-7432CAC51D1A}"/>
 											</PositioningInfo>
 											<ActiveSourceList>
-												<ActiveSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{94F5CF1F-3026-4FBD-94D2-C54F83B25A74}" Platform="Linked"/>
+												<ActiveSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{9488CFF4-61FD-4CC7-A73D-B9B8F2C97ABE}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="StoneFootsteps_05" ID="{B9E5A610-7902-4896-A90A-A772FAC3C8E1}" ShortID="182641350">
+										<Sound Name="StoneFootsteps_11" ID="{29F42621-0EBA-4661-BA3D-E26860104C0D}" ShortID="864165612">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 											</PropertyList>
@@ -266,26 +271,26 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{49DA2FEC-8F13-4903-A2DC-11B969C7047C}">
+												<AudioFileSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{BEFB61D9-35FA-46BD-B498-87165DAA12CB}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.0480417358088614"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.0420365188327536"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="2.95156414375693"/>
-														<Property Name="TrimEnd" Type="Real64" Value="3.15574162139828"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.982758970769"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.10707769125945"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>521590__fission9__hiking-boot-footsteps-on-stone.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="589279751"/>
+														<MediaID ID="113282342"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<PositioningInfo>
-												<Panner Name="" ID="{C7489FEF-6358-4FCB-B38F-8C6C35A8645F}"/>
+												<Panner Name="" ID="{010A4343-72E3-4F31-A860-44599DD88418}"/>
 											</PositioningInfo>
 											<ActiveSourceList>
-												<ActiveSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{49DA2FEC-8F13-4903-A2DC-11B969C7047C}" Platform="Linked"/>
+												<ActiveSource Name="521590__fission9__hiking-boot-footsteps-on-stone" ID="{BEFB61D9-35FA-46BD-B498-87165DAA12CB}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -350,12 +355,12 @@
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.0229613663475036"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.0746244406293869"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.21751228853973"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.190193026211893"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>521590__fission9__hiking-boot-footsteps-on-stone.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="865667167"/>
+														<MediaID ID="593205648"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -387,13 +392,13 @@
 														<Property Name="FadeInDuration" Type="Real64" Value="0.0510443442969153"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.0540469527849691"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.621539957027145"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.834725260132663"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.65853078289806"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.784900882428982"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>521590__fission9__hiking-boot-footsteps-on-stone.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="695656116"/>
+														<MediaID ID="166573158"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -425,13 +430,13 @@
 														<Property Name="FadeInDuration" Type="Real64" Value="0.0510443442969153"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.0630547782491306"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="1.17702252731711"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.40221826437484"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.21522121688993"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.34824185519585"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>521590__fission9__hiking-boot-footsteps-on-stone.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="897629732"/>
+														<MediaID ID="933969872"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -463,13 +468,13 @@
 														<Property Name="FadeInDuration" Type="Real64" Value="0.0450391273208077"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.0570495612730231"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="1.72049466365485"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.95469822617674"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.77374861935714"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.91249697826172"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>521590__fission9__hiking-boot-footsteps-on-stone.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="979414040"/>
+														<MediaID ID="31611349"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -501,13 +506,13 @@
 														<Property Name="FadeInDuration" Type="Real64" Value="0.0540469527849692"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.0450391273208077"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="2.32401896975367"/>
-														<Property Name="TrimEnd" Type="Real64" Value="2.5492147068114"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.36421063443464"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.51359027675327"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>521590__fission9__hiking-boot-footsteps-on-stone.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="648253810"/>
+														<MediaID ID="659278601"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -539,13 +544,13 @@
 														<Property Name="FadeInDuration" Type="Real64" Value="0.0480417358088614"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.0420365188327536"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="2.95156414375693"/>
-														<Property Name="TrimEnd" Type="Real64" Value="3.15574162139828"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.982758970769"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.10707769125945"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>521590__fission9__hiking-boot-footsteps-on-stone.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="589279751"/>
+														<MediaID ID="113282342"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>

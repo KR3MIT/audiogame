@@ -1,13 +1,27 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	654387190	IsCloseToInteractable			\Default Work Unit\IsCloseToInteractable	
+	654387190	IsCloseToInteractable			\Default Work Unit\PlayerStates\IsCloseToInteractable	
+	2775752782	AxeTrapTurbo			\Default Work Unit\TrapStates\AxeTrapTurbo	
 
 State	ID	Name	State Group			Notes
 	748895195	None	IsCloseToInteractable			
 	979470758	Yes	IsCloseToInteractable			
 	1668749452	No	IsCloseToInteractable			
+	748895195	None	AxeTrapTurbo			
+	1262998222	TurboOff	AxeTrapTurbo			
+	3469814704	TurboOn	AxeTrapTurbo			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	187046019	LargeRoom			\Default Work Unit\Master Audio Bus\LargeRoom	
+	1803451668	RoomTest			\Default Work Unit\Master Audio Bus\RoomTest	
+	2933838247	SmallRoom			\Default Work Unit\Master Audio Bus\SmallRoom	
+
+Effect plug-ins	ID	Name	Type				Notes
+	205680755	Room_Small (Custom)	Wwise RoomVerb			
+	290965900	Room_Small (Custom)	Wwise RoomVerb			
+	741803379	Room_Large (Custom)	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

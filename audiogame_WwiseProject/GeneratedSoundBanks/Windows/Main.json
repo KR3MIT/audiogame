@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{43D16518-930A-0292-2FC0-45AB56476184}",
+    "Hash": "{09D16232-13EC-4BC7-CAF0-8C35B3A93B5C}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -32,6 +32,22 @@
       "CachePath": "92/{9211CCDC-7EC5-9540-92F1-CC0996E0492C}.wem"
      },
      {
+      "Id": "31611349",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "521590__fission9__hiking-boot-footsteps-on-stone.wav",
+      "CachePath": "20/{20FE3529-5B7C-D4D3-C7A3-098D07FCD29D}.wem"
+     },
+     {
+      "Id": "113282342",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "521590__fission9__hiking-boot-footsteps-on-stone.wav",
+      "CachePath": "85/{85C7A4AD-AB48-7E11-FBEA-E2A36232380F}.wem"
+     },
+     {
       "Id": "140299461",
       "Language": "SFX",
       "Streaming": "false",
@@ -46,6 +62,14 @@
       "Location": "Memory",
       "ShortName": "Pot3.wav",
       "CachePath": "5A/{5A2FCD5B-5118-C6C3-1387-78A0E308253D}.wem"
+     },
+     {
+      "Id": "166573158",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "521590__fission9__hiking-boot-footsteps-on-stone.wav",
+      "CachePath": "F7/{F7CB7D5E-A443-9F8D-26BD-F1F5DD9A1ADA}.wem"
      },
      {
       "Id": "210891056",
@@ -96,12 +120,12 @@
       "CachePath": "41/{419171E6-256E-A816-F8B9-662C498D4B51}.wem"
      },
      {
-      "Id": "589279751",
+      "Id": "593205648",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "521590__fission9__hiking-boot-footsteps-on-stone.wav",
-      "CachePath": "F3/{F3C41591-2E7F-804A-EBB4-7448A0B19550}.wem"
+      "CachePath": "01/{013CFC30-8AB8-2152-2613-0EA4D3BF0D22}.wem"
      },
      {
       "Id": "643937551",
@@ -112,20 +136,12 @@
       "CachePath": "38/{3888CA04-8EC5-B445-A1A5-9C6AA3913E00}.wem"
      },
      {
-      "Id": "648253810",
+      "Id": "659278601",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "521590__fission9__hiking-boot-footsteps-on-stone.wav",
-      "CachePath": "93/{9376C411-08C6-56B9-56DE-51E4C4A7A55E}.wem"
-     },
-     {
-      "Id": "695656116",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "521590__fission9__hiking-boot-footsteps-on-stone.wav",
-      "CachePath": "2B/{2B6D3410-CDF6-8761-E236-9C1C09791390}.wem"
+      "CachePath": "7F/{7FE09927-CBF7-3EA7-187F-1980A3EAAF49}.wem"
      },
      {
       "Id": "724544279",
@@ -144,28 +160,12 @@
       "CachePath": "A2/{A23F10A3-B5DE-DBAA-1616-19F4CB95DFB0}.wem"
      },
      {
-      "Id": "865667167",
+      "Id": "933969872",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "521590__fission9__hiking-boot-footsteps-on-stone.wav",
-      "CachePath": "34/{34CC17AC-FEB5-3C0C-3139-6DAF6E76663E}.wem"
-     },
-     {
-      "Id": "897629732",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "521590__fission9__hiking-boot-footsteps-on-stone.wav",
-      "CachePath": "93/{93EDB9A0-607B-6F7A-DC96-DC8CA6107262}.wem"
-     },
-     {
-      "Id": "979414040",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "521590__fission9__hiking-boot-footsteps-on-stone.wav",
-      "CachePath": "23/{234B472E-1FF8-9DF5-0F49-04947E47854A}.wem"
+      "CachePath": "28/{28322C74-7D16-813F-842D-171086A217B8}.wem"
      },
      {
       "Id": "993891194",
@@ -219,26 +219,26 @@
       "ObjectPath": "\\Events\\Default Work Unit\\FootstepEvent",
       "GUID": "{0CFC6F27-5310-4A12-8217-A1CC7FA0B0B0}",
       "DurationType": "OneShot",
-      "DurationMin": "0.101036966",
-      "DurationMax": "0.33121386",
+      "DurationMin": "0.08171933",
+      "DurationMax": "0.21125472",
       "MediaRefs": [
        {
-        "Id": "589279751"
+        "Id": "31611349"
        },
        {
-        "Id": "648253810"
+        "Id": "113282342"
        },
        {
-        "Id": "695656116"
+        "Id": "166573158"
        },
        {
-        "Id": "865667167"
+        "Id": "593205648"
        },
        {
-        "Id": "897629732"
+        "Id": "659278601"
        },
        {
-        "Id": "979414040"
+        "Id": "933969872"
        }
       ]
      },
@@ -409,25 +409,25 @@
      {
       "Id": "654387190",
       "Name": "IsCloseToInteractable",
-      "ObjectPath": "\\States\\Default Work Unit\\IsCloseToInteractable",
+      "ObjectPath": "\\States\\Default Work Unit\\PlayerStates\\IsCloseToInteractable",
       "GUID": "{90AA0BA7-78A1-4247-9F0E-13E67D893DE7}",
       "States": [
        {
         "Id": "748895195",
         "Name": "None",
-        "ObjectPath": "\\States\\Default Work Unit\\IsCloseToInteractable\\None",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerStates\\IsCloseToInteractable\\None",
         "GUID": "{6F94C287-4F6A-45E3-AC1C-3C901E0602B0}"
        },
        {
         "Id": "979470758",
         "Name": "Yes",
-        "ObjectPath": "\\States\\Default Work Unit\\IsCloseToInteractable\\Yes",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerStates\\IsCloseToInteractable\\Yes",
         "GUID": "{5562B11A-96D8-42B6-80E7-74631978EAA2}"
        },
        {
         "Id": "1668749452",
         "Name": "No",
-        "ObjectPath": "\\States\\Default Work Unit\\IsCloseToInteractable\\No",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerStates\\IsCloseToInteractable\\No",
         "GUID": "{265113B6-B4A8-42FE-801A-BD04941E3788}"
        }
       ]
@@ -463,6 +463,6 @@
     ]
    }
   ],
-  "FileHash": "{7E32579F-24FE-429C-AA2E-455106264B9D}"
+  "FileHash": "{CC0AF4C3-D477-2B61-944C-77286314D23D}"
  }
 }

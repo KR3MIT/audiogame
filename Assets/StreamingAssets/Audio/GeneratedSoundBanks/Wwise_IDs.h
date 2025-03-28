@@ -22,6 +22,18 @@ namespace AK
 
     namespace STATES
     {
+        namespace AXETRAPTURBO
+        {
+            static const AkUniqueID GROUP = 2775752782U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID TURBOOFF = 1262998222U;
+                static const AkUniqueID TURBOON = 3469814704U;
+            } // namespace STATE
+        } // namespace AXETRAPTURBO
+
         namespace ISCLOSETOINTERACTABLE
         {
             static const AkUniqueID GROUP = 654387190U;
@@ -67,6 +79,13 @@ namespace AK
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID LARGEROOM = 187046019U;
+        static const AkUniqueID ROOMTEST = 1803451668U;
+        static const AkUniqueID SMALLROOM = 2933838247U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {

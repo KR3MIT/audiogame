@@ -10,11 +10,37 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{93E7CA22-52E6-D1B1-3402-86354BBE665E}",
+    "Hash": "{9A658136-237F-DB38-41FF-E0B7D7B114D4}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "Custom": [
+      {
+       "Id": "205680755",
+       "Name": "Room_Small (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SmallRoom\\[Effect Slot [0]: (RoomVerb)]\\Room_Small (Custom)",
+       "GUID": "{ED76DF6B-70CB-4112-8219-17012AFDFECC}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "290965900",
+       "Name": "Room_Small (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\RoomTest\\[Effect Slot [0]: (RoomVerb)]\\Room_Small (Custom)",
+       "GUID": "{4232BB74-BAA2-4219-97E6-A75A57C7C885}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "741803379",
+       "Name": "Room_Large (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\LargeRoom\\[Effect Slot [0]: (RoomVerb)]\\Room_Large (Custom)",
+       "GUID": "{4CC1FB8D-A7F7-4B47-81DD-24CF7BD9684B}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ],
      "AudioDevices": [
       {
        "Id": "2317455096",
@@ -42,6 +68,47 @@
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
      }
     ],
+    "AuxBusses": [
+     {
+      "Id": "187046019",
+      "Name": "LargeRoom",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\LargeRoom",
+      "GUID": "{03A1E0E2-4798-4DB7-BB89-B3DA573FB608}",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "741803379"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "1803451668",
+      "Name": "RoomTest",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\RoomTest",
+      "GUID": "{EDEAFCF6-A2A1-4048-8096-294A48C13532}",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "290965900"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "2933838247",
+      "Name": "SmallRoom",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SmallRoom",
+      "GUID": "{3AD4C917-C66D-4922-81BA-9DD594663246}",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "205680755"
+        }
+       ]
+      }
+     }
+    ],
     "GameParameters": [
      {
       "Id": "1493153371",
@@ -54,26 +121,52 @@
      {
       "Id": "654387190",
       "Name": "IsCloseToInteractable",
-      "ObjectPath": "\\States\\Default Work Unit\\IsCloseToInteractable",
+      "ObjectPath": "\\States\\Default Work Unit\\PlayerStates\\IsCloseToInteractable",
       "GUID": "{90AA0BA7-78A1-4247-9F0E-13E67D893DE7}",
       "States": [
        {
         "Id": "748895195",
         "Name": "None",
-        "ObjectPath": "\\States\\Default Work Unit\\IsCloseToInteractable\\None",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerStates\\IsCloseToInteractable\\None",
         "GUID": "{6F94C287-4F6A-45E3-AC1C-3C901E0602B0}"
        },
        {
         "Id": "979470758",
         "Name": "Yes",
-        "ObjectPath": "\\States\\Default Work Unit\\IsCloseToInteractable\\Yes",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerStates\\IsCloseToInteractable\\Yes",
         "GUID": "{5562B11A-96D8-42B6-80E7-74631978EAA2}"
        },
        {
         "Id": "1668749452",
         "Name": "No",
-        "ObjectPath": "\\States\\Default Work Unit\\IsCloseToInteractable\\No",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerStates\\IsCloseToInteractable\\No",
         "GUID": "{265113B6-B4A8-42FE-801A-BD04941E3788}"
+       }
+      ]
+     },
+     {
+      "Id": "2775752782",
+      "Name": "AxeTrapTurbo",
+      "ObjectPath": "\\States\\Default Work Unit\\TrapStates\\AxeTrapTurbo",
+      "GUID": "{D9E98000-141B-49DB-A086-5AD474D35A0E}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\TrapStates\\AxeTrapTurbo\\None",
+        "GUID": "{884B2E78-54CF-4E40-AB69-624B3CCDFF34}"
+       },
+       {
+        "Id": "1262998222",
+        "Name": "TurboOff",
+        "ObjectPath": "\\States\\Default Work Unit\\TrapStates\\AxeTrapTurbo\\TurboOff",
+        "GUID": "{294E7537-70DE-416D-AB02-7CB3F957A130}"
+       },
+       {
+        "Id": "3469814704",
+        "Name": "TurboOn",
+        "ObjectPath": "\\States\\Default Work Unit\\TrapStates\\AxeTrapTurbo\\TurboOn",
+        "GUID": "{7977DEB9-05F6-4D76-BA53-239C231B9695}"
        }
       ]
      }
@@ -108,6 +201,6 @@
     ]
    }
   ],
-  "FileHash": "{6E40251F-FEC0-CF1D-8C62-9A46DF679F7D}"
+  "FileHash": "{89B91CF6-A047-BE05-9E54-D7E934E8D649}"
  }
 }
