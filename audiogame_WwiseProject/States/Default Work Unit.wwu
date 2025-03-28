@@ -3,13 +3,28 @@
 	<States>
 		<WorkUnit Name="Default Work Unit" ID="{77D799E8-5C79-4950-BA12-C7E5B40FBACF}" PersistMode="Standalone">
 			<ChildrenList>
-				<StateGroup Name="IsCloseToInteractable" ID="{90AA0BA7-78A1-4247-9F0E-13E67D893DE7}">
+				<Folder Name="PlayerStates" ID="{DCC12CB3-9BC9-4CF2-A0B7-C7BDF1D099EE}" ShortID="371448022">
 					<ChildrenList>
-						<State Name="None" ID="{6F94C287-4F6A-45E3-AC1C-3C901E0602B0}"/>
-						<State Name="No" ID="{265113B6-B4A8-42FE-801A-BD04941E3788}"/>
-						<State Name="Yes" ID="{5562B11A-96D8-42B6-80E7-74631978EAA2}"/>
+						<StateGroup Name="IsCloseToInteractable" ID="{90AA0BA7-78A1-4247-9F0E-13E67D893DE7}">
+							<ChildrenList>
+								<State Name="None" ID="{6F94C287-4F6A-45E3-AC1C-3C901E0602B0}"/>
+								<State Name="No" ID="{265113B6-B4A8-42FE-801A-BD04941E3788}"/>
+								<State Name="Yes" ID="{5562B11A-96D8-42B6-80E7-74631978EAA2}"/>
+							</ChildrenList>
+						</StateGroup>
 					</ChildrenList>
-				</StateGroup>
+				</Folder>
+				<Folder Name="TrapStates" ID="{378B5D5D-9406-40BD-863C-A2551B275464}" ShortID="504600270">
+					<ChildrenList>
+						<StateGroup Name="AxeTrapTurbo" ID="{D9E98000-141B-49DB-A086-5AD474D35A0E}">
+							<ChildrenList>
+								<State Name="None" ID="{884B2E78-54CF-4E40-AB69-624B3CCDFF34}"/>
+								<State Name="TurboOn" ID="{7977DEB9-05F6-4D76-BA53-239C231B9695}"/>
+								<State Name="TurboOff" ID="{294E7537-70DE-416D-AB02-7CB3F957A130}"/>
+							</ChildrenList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

@@ -77,6 +77,21 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Traps" ID="{309AE2A1-0B0B-40A4-9755-D51B363C186D}" ShortID="137658704">
+					<ChildrenList>
+						<Event Name="AxeSwingEvent" ID="{4A1FAF40-05AD-4E56-9683-CD3EF923C768}">
+							<ChildrenList>
+								<Action Name="" ID="{ABEE282D-DE21-42D1-8561-C07A0FAB704F}" ShortID="649264364">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AxeSwitch" ID="{38FAEE2B-89A3-492D-BFA3-9DEC446F0D36}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

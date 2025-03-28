@@ -804,6 +804,9 @@
 						<Folder Name="Ambience" ID="{08BD6407-2B98-4AE2-8438-5766131DD69D}" ShortID="385441841">
 							<ChildrenList>
 								<Sound Name="Wind" ID="{92EBB492-F939-47C1-8A85-8C69C584E800}" ShortID="932214490">
+									<PropertyList>
+										<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
 											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
@@ -831,12 +834,145 @@
 											</PluginInnerObjectList>
 										</SourcePlugin>
 									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{2FF7872E-1FE5-457C-A9B8-0751A1783535}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="32.0827943078913"/>
+												<Property Name="PanY" Type="Real64" Value="-34.0248962655601"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="Soundseed Air Wind" ID="{9E48D028-9512-4C00-BC45-C3B432B34929}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 						</Folder>
+						<ActorMixer Name="AxeTrap" ID="{CC7EBDD9-BA57-4615-A9CC-42842DE18D04}" ShortID="313435489">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="AxeSwitch" ID="{38FAEE2B-89A3-492D-BFA3-9DEC446F0D36}" ShortID="533508585">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="WooshTurboOn" ID="{2D2902AB-AA5A-4E55-88A6-7C52407F54BD}" ShortID="559608574">
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Soundseed Air Woosh" ID="{9ADE4B2D-0771-4AB2-A0AD-E320AECE99D5}" ShortID="239470046" PluginName="SoundSeed Air Woosh" CompanyID="0" PluginID="120">
+													<PropertyList>
+														<Property Name="FrequencyScale" Type="Real32" Value="-3.45"/>
+														<Property Name="QFactorScale" Type="Real32" Value="4"/>
+														<Property Name="Speed" Type="Real32" Value="23"/>
+														<Property Name="SpeedAutomate" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<PluginData>
+	<WooshData>
+		<CurveList Version="1">
+			<CurveInfo Name="Speed">
+				<Curve Name="" ID="{832CED71-5754-45DA-9F82-A7F5C2485BF3}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.25</XPos>
+							<YPos>100</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.5</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+		<Path Version="1">
+			<Path2D Name="" ID="{B25CE620-7829-4AB2-AD20-D2B65D2702B4}">
+				<PropertyList>
+					<Property Name="LinearTime" Type="bool" Value="False"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>0</XPos>
+						<YPos>0</YPos>
+						<Flags>12</Flags>
+						<Time>0</Time>
+					</Point>
+				</PointList>
+			</Path2D>
+		</Path>
+	</WooshData>
+</PluginData>
+													<PluginInnerObjectList>
+														<List Name="Deflectors">
+															<PluginInnerObject Name="" ID="{338EA353-45E9-4687-B817-04F5358F7F41}" PluginName="Deflector" CompanyID="0" PluginID="122"/>
+														</List>
+													</PluginInnerObjectList>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Soundseed Air Woosh" ID="{9ADE4B2D-0771-4AB2-A0AD-E320AECE99D5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="AxeTrapTurbo" ID="{D9E98000-141B-49DB-A086-5AD474D35A0E}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="TurboOff" ID="{294E7537-70DE-416D-AB02-7CB3F957A130}"/>
+												<CustomState Name="" ID="{E02B9312-D5FD-46AC-85C8-1D26821BE366}" ShortID="741102606"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="TurboOn" ID="{7977DEB9-05F6-4D76-BA53-239C231B9695}"/>
+												<CustomState Name="" ID="{C441ADBE-7AF0-447F-BEA5-21F5B1FE49E3}" ShortID="839136644"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="WooshTurboOn" ID="{2D2902AB-AA5A-4E55-88A6-7C52407F54BD}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

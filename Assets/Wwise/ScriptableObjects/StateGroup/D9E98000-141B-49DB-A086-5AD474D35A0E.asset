@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fc44bff15e804a4ca706d77c8f30374, type: 3}
+  m_Name: D9E98000-141B-49DB-A086-5AD474D35A0E
+  m_EditorClassIdentifier: 
+  objectName: AxeTrapTurbo
+  id: 2775752782
+  guid: D9E98000-141B-49DB-A086-5AD474D35A0E

@@ -13,9 +13,13 @@ public class AxeTrap : MonoBehaviour
         anim = GetComponentInParent<Animator>();
 
         if (turbo)
+            anim.SetBool("Turbo", true);
+
+
+        /*if (turbo)
             anim.Play("AxeSwingFast",0,_randomTime);
         else
-            anim.Play("AxeSwingSlow",0,_randomTime);
+            anim.Play("AxeSwingSlow",0,_randomTime);*/
     }
     private void OnTriggerEnter(Collider other)
     {
