@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: befe7aa783db144cbdf844a78d27198f
     GuidInternal: 
-    m_lastTime: -8584584543644905613
+    m_lastTime: -8584584478836020928
     List:
     - name: AxeSwingEvent
       guid: 40af1f4aad05564e9683cd3ef923c768
@@ -114,8 +114,8 @@ MonoBehaviour:
         guid: 40af1f4aad05564e9683cd3ef923c768
       Path: Events\Default Work Unit\Traps\AxeSwingEvent
       maxAttenuation: 30
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 0.5969677
+      minDuration: 0.3455742
     - name: FootstepEvent
       guid: 276ffc0c1053124a8217a1cc7fa0b0b0
       id: 3511205013
@@ -281,86 +281,8 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: e899d777795c5049ba12c7e5b40fbacf
     GuidInternal: 
-    m_lastTime: -8584584543645128173
+    m_lastTime: -8584584478836196618
     List:
-    - name: AxeTrapTurbo
-      guid: 0080e9d91b14db49a0865ad474d35a0e
-      id: 2775752782
-      PathAndIcons:
-      - ElementName: States
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: e899d777795c5049ba12c7e5b40fbacf
-      - ElementName: TrapStates
-        ObjectType: 4
-        guid: 5d5d8b370694bd40863ca2551b275464
-      - ElementName: AxeTrapTurbo
-        ObjectType: 9
-        guid: 0080e9d91b14db49a0865ad474d35a0e
-      Path: States\Default Work Unit\TrapStates\AxeTrapTurbo
-      values:
-      - name: None
-        guid: 782e4b88cf54404eab69624b3ccdff34
-        id: 748895195
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: e899d777795c5049ba12c7e5b40fbacf
-        - ElementName: TrapStates
-          ObjectType: 4
-          guid: 5d5d8b370694bd40863ca2551b275464
-        - ElementName: AxeTrapTurbo
-          ObjectType: 9
-          guid: 0080e9d91b14db49a0865ad474d35a0e
-        - ElementName: None
-          ObjectType: 8
-          guid: 782e4b88cf54404eab69624b3ccdff34
-      - name: TurboOff
-        guid: 37754e29de706d41ab027cb3f957a130
-        id: 1262998222
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: e899d777795c5049ba12c7e5b40fbacf
-        - ElementName: TrapStates
-          ObjectType: 4
-          guid: 5d5d8b370694bd40863ca2551b275464
-        - ElementName: AxeTrapTurbo
-          ObjectType: 9
-          guid: 0080e9d91b14db49a0865ad474d35a0e
-        - ElementName: TurboOff
-          ObjectType: 8
-          guid: 37754e29de706d41ab027cb3f957a130
-      - name: TurboOn
-        guid: b9de7779f605764dba53239c231b9695
-        id: 3469814704
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: e899d777795c5049ba12c7e5b40fbacf
-        - ElementName: TrapStates
-          ObjectType: 4
-          guid: 5d5d8b370694bd40863ca2551b275464
-        - ElementName: AxeTrapTurbo
-          ObjectType: 9
-          guid: 0080e9d91b14db49a0865ad474d35a0e
-        - ElementName: TurboOn
-          ObjectType: 8
-          guid: b9de7779f605764dba53239c231b9695
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
     - name: IsCloseToInteractable
       guid: a70baa90a17847429f0e13e67d893de7
       id: 654387190
@@ -453,24 +375,6 @@ MonoBehaviour:
         ObjectType: 4
         guid: b32cc1dcc99bf24ca0b7c7bdf1d099ee
       Path: States\Default Work Unit\PlayerStates
-      values: []
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
-    - name: TrapStates
-      guid: 5d5d8b370694bd40863ca2551b275464
-      id: 210723230
-      PathAndIcons:
-      - ElementName: States
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: e899d777795c5049ba12c7e5b40fbacf
-      - ElementName: TrapStates
-        ObjectType: 4
-        guid: 5d5d8b370694bd40863ca2551b275464
-      Path: States\Default Work Unit\TrapStates
       values: []
       ValueGuids: []
       ValueIcons: []

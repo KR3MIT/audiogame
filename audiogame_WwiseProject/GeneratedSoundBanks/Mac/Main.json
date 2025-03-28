@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{A941C1F7-E62F-3383-DC88-A2BF464BA3CA}",
+    "Hash": "{8B76F5D1-C520-4592-52DF-0A9E2D6335C0}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -30,6 +30,14 @@
       "Location": "Memory",
       "ShortName": "28297__herbertboland__stiffclothrubbing.wav",
       "CachePath": "92/{9211CCDC-7EC5-9540-92F1-CC0996E0492C}.wem"
+     },
+     {
+      "Id": "137710955",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Woosh.wav",
+      "CachePath": "9E/{9E491501-86D3-74C3-DD6B-131F249AE272}.wem"
      },
      {
       "Id": "140299461",
@@ -78,6 +86,14 @@
       "Location": "Memory",
       "ShortName": "594623__edelhanie__kicking-rock-wall-and-almost-falling.wav",
       "CachePath": "84/{843D07D0-1790-5FFC-F887-EB9FF4A500F6}.wem"
+     },
+     {
+      "Id": "359865250",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Woosh.wav",
+      "CachePath": "6B/{6BBDFC2A-E3C6-8C58-DB91-D13F5E046044}.wem"
      },
      {
       "Id": "433311367",
@@ -220,8 +236,16 @@
       "GUID": "{4A1FAF40-05AD-4E56-9683-CD3EF923C768}",
       "MaxAttenuation": "30",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "0.3455742",
+      "DurationMax": "0.5969677",
+      "MediaRefs": [
+       {
+        "Id": "137710955"
+       },
+       {
+        "Id": "359865250"
+       }
+      ]
      },
      {
       "Id": "3511205013",
@@ -441,32 +465,6 @@
         "GUID": "{265113B6-B4A8-42FE-801A-BD04941E3788}"
        }
       ]
-     },
-     {
-      "Id": "2775752782",
-      "Name": "AxeTrapTurbo",
-      "ObjectPath": "\\States\\Default Work Unit\\TrapStates\\AxeTrapTurbo",
-      "GUID": "{D9E98000-141B-49DB-A086-5AD474D35A0E}",
-      "States": [
-       {
-        "Id": "748895195",
-        "Name": "None",
-        "ObjectPath": "\\States\\Default Work Unit\\TrapStates\\AxeTrapTurbo\\None",
-        "GUID": "{884B2E78-54CF-4E40-AB69-624B3CCDFF34}"
-       },
-       {
-        "Id": "1262998222",
-        "Name": "TurboOff",
-        "ObjectPath": "\\States\\Default Work Unit\\TrapStates\\AxeTrapTurbo\\TurboOff",
-        "GUID": "{294E7537-70DE-416D-AB02-7CB3F957A130}"
-       },
-       {
-        "Id": "3469814704",
-        "Name": "TurboOn",
-        "ObjectPath": "\\States\\Default Work Unit\\TrapStates\\AxeTrapTurbo\\TurboOn",
-        "GUID": "{7977DEB9-05F6-4D76-BA53-239C231B9695}"
-       }
-      ]
      }
     ],
     "SwitchGroups": [
@@ -499,6 +497,6 @@
     ]
    }
   ],
-  "FileHash": "{52BBEA5E-E741-8FC2-6899-4781C65DC9B2}"
+  "FileHash": "{A9D33553-7268-5956-A118-6AFE4B1E9983}"
  }
 }

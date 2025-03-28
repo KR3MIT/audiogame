@@ -16,15 +16,11 @@ Switch	ID	Name	Switch Group			Notes
 
 State Group	ID	Name			Wwise Object Path	Notes
 	654387190	IsCloseToInteractable			\Default Work Unit\PlayerStates\IsCloseToInteractable	
-	2775752782	AxeTrapTurbo			\Default Work Unit\TrapStates\AxeTrapTurbo	
 
 State	ID	Name	State Group			Notes
 	748895195	None	IsCloseToInteractable			
 	979470758	Yes	IsCloseToInteractable			
 	1668749452	No	IsCloseToInteractable			
-	748895195	None	AxeTrapTurbo			
-	1262998222	TurboOff	AxeTrapTurbo			
-	3469814704	TurboOn	AxeTrapTurbo			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1493153371	PlayerSpeed			\Default Work Unit\PlayerSpeed	
@@ -36,12 +32,14 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4812034	Tic1	C:\Github\audiogame\audiogame_WwiseProject\.cache\BB\{BBBE934F-7B12-18FD-39F8-759698C7C9F4}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\TicsContainer\Tics\Tic1		26816
 	28769625	WallRubbing	C:\Github\audiogame\audiogame_WwiseProject\.cache\92\{9211CCDC-7EC5-9540-92F1-CC0996E0492C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\WallImpactAndRub\WallRubbing		1106044
+	137710955	Woosh_01	C:\Github\audiogame\audiogame_WwiseProject\.cache\9E\{9E491501-86D3-74C3-DD6B-131F249AE272}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\AxeTrap\AxeSequence\Woosh_01		38498
 	140299461	ChoirAah	C:\Github\audiogame\audiogame_WwiseProject\.cache\78\{783360DD-98B4-D1BB-24FB-1F420006F6D9}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\LoopingChoir\ChoirRandom\ChoirAah		907344
 	165970382	Pot3	C:\Github\audiogame\audiogame_WwiseProject\.cache\5A\{5A2FCD5B-5118-C6C3-1387-78A0E308253D}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\PotContainer\Pots\Pot3		25312
 	210891056	Tic2	C:\Github\audiogame\audiogame_WwiseProject\.cache\00\{004C60D3-00CB-667D-727B-648C95DE2F7D}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\TicsContainer\Tics\Tic2		27568
 	249549327	RockHit_Rock_01	C:\Github\audiogame\audiogame_WwiseProject\.cache\82\{82E0C26C-0F9D-11B2-4157-CD7783A28B31}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\RockHitSwitch\RockHitWater\RockHit_Rock_01		68988
 	330690429	RockHit_Rock	C:\Github\audiogame\audiogame_WwiseProject\.cache\E6\{E6904F3C-C248-037E-7DA7-E4D72F793274}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\RockHitSwitch\RockHitRock\RockHit_Rock		83560
 	350527672	WallImpact	C:\Github\audiogame\audiogame_WwiseProject\.cache\84\{843D07D0-1790-5FFC-F887-EB9FF4A500F6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\WallImpactAndRub\WallImpact		43232
+	359865250	Woosh	C:\Github\audiogame\audiogame_WwiseProject\.cache\6B\{6BBDFC2A-E3C6-8C58-DB91-D13F5E046044}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\AxeTrap\AxeSequence\Woosh		41886
 	433311367	ChoirAah2	C:\Github\audiogame\audiogame_WwiseProject\.cache\1D\{1D0E0550-CB83-F0B4-702B-95C917D58A80}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\LoopingChoir\ChoirRandom\ChoirAah2		907344
 	456254043	Pot4	C:\Github\audiogame\audiogame_WwiseProject\.cache\41\{419171E6-256E-A816-F8B9-662C498D4B51}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\PotContainer\Pots\Pot4		26064
 	589279751	StoneFootsteps_05	C:\Github\audiogame\audiogame_WwiseProject\.cache\F3\{F3C41591-2E7F-804A-EBB4-7448A0B19550}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\Footsteps\FootstepsRight\StoneFootsteps_05		19698

@@ -14,17 +14,6 @@
 						</StateGroup>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="TrapStates" ID="{378B5D5D-9406-40BD-863C-A2551B275464}" ShortID="504600270">
-					<ChildrenList>
-						<StateGroup Name="AxeTrapTurbo" ID="{D9E98000-141B-49DB-A086-5AD474D35A0E}">
-							<ChildrenList>
-								<State Name="None" ID="{884B2E78-54CF-4E40-AB69-624B3CCDFF34}"/>
-								<State Name="TurboOn" ID="{7977DEB9-05F6-4D76-BA53-239C231B9695}"/>
-								<State Name="TurboOff" ID="{294E7537-70DE-416D-AB02-7CB3F957A130}"/>
-							</ChildrenList>
-						</StateGroup>
-					</ChildrenList>
-				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
