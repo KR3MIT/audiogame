@@ -513,8 +513,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 745e3739712fba0489613e64def9de10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookTask: {fileID: 0}
-  moveTask: {fileID: 0}
+  lookTask: {fileID: 11400000, guid: e8b4aa380f49e5f4d9000828c3f8cd87, type: 2}
+  moveTask: {fileID: 11400000, guid: b21038cd31707584cb92a20f18f5b661, type: 2}
   movespeed: 5
   lookspeed: 0.1
   lookX: 0
@@ -581,10 +581,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04ed3651bb780da428f658dcea089dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rockThrowTask: {fileID: 0}
+  rockThrowTask: {fileID: 11400000, guid: 4d31944d671fcf04a86d867e5dfbea37, type: 2}
   RockThrowRate: 2
   RockPrefab: {fileID: 4771837504582411164, guid: ac32b3cf88194df46922db4df44b9755, type: 3}
-  force: 20
 --- !u!114 &9192045439036763573
 MonoBehaviour:
   m_ObjectHideFlags: 0

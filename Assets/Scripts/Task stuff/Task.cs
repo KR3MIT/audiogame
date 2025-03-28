@@ -3,12 +3,9 @@ using UnityEngine.Events;
 
 [CreateAssetMenu(fileName = "Task", menuName = "Scriptable Objects/Task")]
 public class Task : ScriptableObject
-{
-    public string name;
-
+{ 
     public string taskStartNarration;
     public string taskCompleteNarration;
-
     public float dialogueLength;
     
     public UnityEvent onTaskStart;
@@ -17,21 +14,19 @@ public class Task : ScriptableObject
     public virtual void StartTask(UnityAction onTaskCompleteCallback)
     {
         Debug.Log(taskStartNarration);
-        
+        // insert start dialogue here
         onTaskStart?.Invoke();
         onTaskComplete = onTaskCompleteCallback;
     }
-
     public void CompleteTask()
     {
         if (onTaskComplete == null)
         {
             return;
         }
-        
         onTaskComplete?.Invoke();
         onTaskComplete = null;
-        
+        // insert end dialogue here
         Debug.Log(taskCompleteNarration);
     }
 }
