@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: TurboOn
   id: 3469814704
   guid: 7977DEB9-05F6-4D76-BA53-239C231B9695
-  WwiseStateGroupReference: {fileID: 0}
+  WwiseStateGroupReference: {fileID: 11400000, guid: 243cc66efe25767489e245d9c78f85f1, type: 2}

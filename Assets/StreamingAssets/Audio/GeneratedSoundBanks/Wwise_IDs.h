@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID AXESWINGEVENT = 3270970525U;
         static const AkUniqueID FOOTSTEPEVENT = 3511205013U;
         static const AkUniqueID PLAY_GLOWSWITCHCONTROLLER = 3599396917U;
         static const AkUniqueID PLAY_WALLIMPACTANDRUB = 1324720394U;
@@ -22,6 +23,18 @@ namespace AK
 
     namespace STATES
     {
+        namespace AXETRAPTURBO
+        {
+            static const AkUniqueID GROUP = 2775752782U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID TURBOOFF = 1262998222U;
+                static const AkUniqueID TURBOON = 3469814704U;
+            } // namespace STATE
+        } // namespace AXETRAPTURBO
+
         namespace ISCLOSETOINTERACTABLE
         {
             static const AkUniqueID GROUP = 654387190U;

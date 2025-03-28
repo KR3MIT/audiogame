@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{43D16518-930A-0292-2FC0-45AB56476184}",
+    "Hash": "{A941C1F7-E62F-3383-DC88-A2BF464BA3CA}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -214,6 +214,16 @@
     },
     "Events": [
      {
+      "Id": "3270970525",
+      "Name": "AxeSwingEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\Traps\\AxeSwingEvent",
+      "GUID": "{4A1FAF40-05AD-4E56-9683-CD3EF923C768}",
+      "MaxAttenuation": "30",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
       "Id": "3511205013",
       "Name": "FootstepEvent",
       "ObjectPath": "\\Events\\Default Work Unit\\FootstepEvent",
@@ -409,26 +419,52 @@
      {
       "Id": "654387190",
       "Name": "IsCloseToInteractable",
-      "ObjectPath": "\\States\\Default Work Unit\\IsCloseToInteractable",
+      "ObjectPath": "\\States\\Default Work Unit\\PlayerStates\\IsCloseToInteractable",
       "GUID": "{90AA0BA7-78A1-4247-9F0E-13E67D893DE7}",
       "States": [
        {
         "Id": "748895195",
         "Name": "None",
-        "ObjectPath": "\\States\\Default Work Unit\\IsCloseToInteractable\\None",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerStates\\IsCloseToInteractable\\None",
         "GUID": "{6F94C287-4F6A-45E3-AC1C-3C901E0602B0}"
        },
        {
         "Id": "979470758",
         "Name": "Yes",
-        "ObjectPath": "\\States\\Default Work Unit\\IsCloseToInteractable\\Yes",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerStates\\IsCloseToInteractable\\Yes",
         "GUID": "{5562B11A-96D8-42B6-80E7-74631978EAA2}"
        },
        {
         "Id": "1668749452",
         "Name": "No",
-        "ObjectPath": "\\States\\Default Work Unit\\IsCloseToInteractable\\No",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerStates\\IsCloseToInteractable\\No",
         "GUID": "{265113B6-B4A8-42FE-801A-BD04941E3788}"
+       }
+      ]
+     },
+     {
+      "Id": "2775752782",
+      "Name": "AxeTrapTurbo",
+      "ObjectPath": "\\States\\Default Work Unit\\TrapStates\\AxeTrapTurbo",
+      "GUID": "{D9E98000-141B-49DB-A086-5AD474D35A0E}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\TrapStates\\AxeTrapTurbo\\None",
+        "GUID": "{884B2E78-54CF-4E40-AB69-624B3CCDFF34}"
+       },
+       {
+        "Id": "1262998222",
+        "Name": "TurboOff",
+        "ObjectPath": "\\States\\Default Work Unit\\TrapStates\\AxeTrapTurbo\\TurboOff",
+        "GUID": "{294E7537-70DE-416D-AB02-7CB3F957A130}"
+       },
+       {
+        "Id": "3469814704",
+        "Name": "TurboOn",
+        "ObjectPath": "\\States\\Default Work Unit\\TrapStates\\AxeTrapTurbo\\TurboOn",
+        "GUID": "{7977DEB9-05F6-4D76-BA53-239C231B9695}"
        }
       ]
      }
@@ -463,6 +499,6 @@
     ]
    }
   ],
-  "FileHash": "{8D412A6D-31A1-065C-7882-9BF70FFF2E96}"
+  "FileHash": "{52BBEA5E-E741-8FC2-6899-4781C65DC9B2}"
  }
 }

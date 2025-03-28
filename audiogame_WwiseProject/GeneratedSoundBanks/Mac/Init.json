@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{93E7CA22-52E6-D1B1-3402-86354BBE665E}",
+    "Hash": "{17AD9039-0F6F-38AE-9B31-DBBC3B900643}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -54,26 +54,52 @@
      {
       "Id": "654387190",
       "Name": "IsCloseToInteractable",
-      "ObjectPath": "\\States\\Default Work Unit\\IsCloseToInteractable",
+      "ObjectPath": "\\States\\Default Work Unit\\PlayerStates\\IsCloseToInteractable",
       "GUID": "{90AA0BA7-78A1-4247-9F0E-13E67D893DE7}",
       "States": [
        {
         "Id": "748895195",
         "Name": "None",
-        "ObjectPath": "\\States\\Default Work Unit\\IsCloseToInteractable\\None",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerStates\\IsCloseToInteractable\\None",
         "GUID": "{6F94C287-4F6A-45E3-AC1C-3C901E0602B0}"
        },
        {
         "Id": "979470758",
         "Name": "Yes",
-        "ObjectPath": "\\States\\Default Work Unit\\IsCloseToInteractable\\Yes",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerStates\\IsCloseToInteractable\\Yes",
         "GUID": "{5562B11A-96D8-42B6-80E7-74631978EAA2}"
        },
        {
         "Id": "1668749452",
         "Name": "No",
-        "ObjectPath": "\\States\\Default Work Unit\\IsCloseToInteractable\\No",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerStates\\IsCloseToInteractable\\No",
         "GUID": "{265113B6-B4A8-42FE-801A-BD04941E3788}"
+       }
+      ]
+     },
+     {
+      "Id": "2775752782",
+      "Name": "AxeTrapTurbo",
+      "ObjectPath": "\\States\\Default Work Unit\\TrapStates\\AxeTrapTurbo",
+      "GUID": "{D9E98000-141B-49DB-A086-5AD474D35A0E}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\TrapStates\\AxeTrapTurbo\\None",
+        "GUID": "{884B2E78-54CF-4E40-AB69-624B3CCDFF34}"
+       },
+       {
+        "Id": "1262998222",
+        "Name": "TurboOff",
+        "ObjectPath": "\\States\\Default Work Unit\\TrapStates\\AxeTrapTurbo\\TurboOff",
+        "GUID": "{294E7537-70DE-416D-AB02-7CB3F957A130}"
+       },
+       {
+        "Id": "3469814704",
+        "Name": "TurboOn",
+        "ObjectPath": "\\States\\Default Work Unit\\TrapStates\\AxeTrapTurbo\\TurboOn",
+        "GUID": "{7977DEB9-05F6-4D76-BA53-239C231B9695}"
        }
       ]
      }
@@ -108,6 +134,6 @@
     ]
    }
   ],
-  "FileHash": "{6E40251F-FEC0-CF1D-8C62-9A46DF679F7D}"
+  "FileHash": "{AFCB5922-28B5-866B-43EE-21634C5F23EC}"
  }
 }

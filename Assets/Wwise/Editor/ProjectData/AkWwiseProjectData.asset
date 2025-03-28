@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c3d61869592f7241956bf3ebd662ac76
     GuidInternal: 
-    m_lastTime: -8584586107276858314
+    m_lastTime: -8584584533258188603
     List:
     - name: Main
       guid: 08192794cbd195478a29c0aa63f15f72
@@ -94,8 +94,28 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: befe7aa783db144cbdf844a78d27198f
     GuidInternal: 
-    m_lastTime: -8584586103585946645
+    m_lastTime: -8584584543644905613
     List:
+    - name: AxeSwingEvent
+      guid: 40af1f4aad05564e9683cd3ef923c768
+      id: 3270970525
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: Traps
+        ObjectType: 4
+        guid: a1e29a300b0ba4409755d51b363c186d
+      - ElementName: AxeSwingEvent
+        ObjectType: 3
+        guid: 40af1f4aad05564e9683cd3ef923c768
+      Path: Events\Default Work Unit\Traps\AxeSwingEvent
+      maxAttenuation: 30
+      maxDuration: 0
+      minDuration: 0
     - name: FootstepEvent
       guid: 276ffc0c1053124a8217a1cc7fa0b0b0
       id: 3511205013
@@ -204,6 +224,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Traps
+      guid: a1e29a300b0ba4409755d51b363c186d
+      id: 3797942683
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: Traps
+        ObjectType: 4
+        guid: a1e29a300b0ba4409755d51b363c186d
+      Path: Events\Default Work Unit\Traps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -244,8 +281,86 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: e899d777795c5049ba12c7e5b40fbacf
     GuidInternal: 
-    m_lastTime: -8584586116615608634
+    m_lastTime: -8584584543645128173
     List:
+    - name: AxeTrapTurbo
+      guid: 0080e9d91b14db49a0865ad474d35a0e
+      id: 2775752782
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e899d777795c5049ba12c7e5b40fbacf
+      - ElementName: TrapStates
+        ObjectType: 4
+        guid: 5d5d8b370694bd40863ca2551b275464
+      - ElementName: AxeTrapTurbo
+        ObjectType: 9
+        guid: 0080e9d91b14db49a0865ad474d35a0e
+      Path: States\Default Work Unit\TrapStates\AxeTrapTurbo
+      values:
+      - name: None
+        guid: 782e4b88cf54404eab69624b3ccdff34
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: e899d777795c5049ba12c7e5b40fbacf
+        - ElementName: TrapStates
+          ObjectType: 4
+          guid: 5d5d8b370694bd40863ca2551b275464
+        - ElementName: AxeTrapTurbo
+          ObjectType: 9
+          guid: 0080e9d91b14db49a0865ad474d35a0e
+        - ElementName: None
+          ObjectType: 8
+          guid: 782e4b88cf54404eab69624b3ccdff34
+      - name: TurboOff
+        guid: 37754e29de706d41ab027cb3f957a130
+        id: 1262998222
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: e899d777795c5049ba12c7e5b40fbacf
+        - ElementName: TrapStates
+          ObjectType: 4
+          guid: 5d5d8b370694bd40863ca2551b275464
+        - ElementName: AxeTrapTurbo
+          ObjectType: 9
+          guid: 0080e9d91b14db49a0865ad474d35a0e
+        - ElementName: TurboOff
+          ObjectType: 8
+          guid: 37754e29de706d41ab027cb3f957a130
+      - name: TurboOn
+        guid: b9de7779f605764dba53239c231b9695
+        id: 3469814704
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: e899d777795c5049ba12c7e5b40fbacf
+        - ElementName: TrapStates
+          ObjectType: 4
+          guid: 5d5d8b370694bd40863ca2551b275464
+        - ElementName: AxeTrapTurbo
+          ObjectType: 9
+          guid: 0080e9d91b14db49a0865ad474d35a0e
+        - ElementName: TurboOn
+          ObjectType: 8
+          guid: b9de7779f605764dba53239c231b9695
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: IsCloseToInteractable
       guid: a70baa90a17847429f0e13e67d893de7
       id: 654387190
@@ -256,10 +371,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: e899d777795c5049ba12c7e5b40fbacf
+      - ElementName: PlayerStates
+        ObjectType: 4
+        guid: b32cc1dcc99bf24ca0b7c7bdf1d099ee
       - ElementName: IsCloseToInteractable
         ObjectType: 9
         guid: a70baa90a17847429f0e13e67d893de7
-      Path: States\Default Work Unit\IsCloseToInteractable
+      Path: States\Default Work Unit\PlayerStates\IsCloseToInteractable
       values:
       - name: No
         guid: b6135126a8b4fe42801abd04941e3788
@@ -271,6 +389,9 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: e899d777795c5049ba12c7e5b40fbacf
+        - ElementName: PlayerStates
+          ObjectType: 4
+          guid: b32cc1dcc99bf24ca0b7c7bdf1d099ee
         - ElementName: IsCloseToInteractable
           ObjectType: 9
           guid: a70baa90a17847429f0e13e67d893de7
@@ -287,6 +408,9 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: e899d777795c5049ba12c7e5b40fbacf
+        - ElementName: PlayerStates
+          ObjectType: 4
+          guid: b32cc1dcc99bf24ca0b7c7bdf1d099ee
         - ElementName: IsCloseToInteractable
           ObjectType: 9
           guid: a70baa90a17847429f0e13e67d893de7
@@ -303,12 +427,51 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: e899d777795c5049ba12c7e5b40fbacf
+        - ElementName: PlayerStates
+          ObjectType: 4
+          guid: b32cc1dcc99bf24ca0b7c7bdf1d099ee
         - ElementName: IsCloseToInteractable
           ObjectType: 9
           guid: a70baa90a17847429f0e13e67d893de7
         - ElementName: Yes
           ObjectType: 8
           guid: 1ab16255d896b64280e774631978eaa2
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: PlayerStates
+      guid: b32cc1dcc99bf24ca0b7c7bdf1d099ee
+      id: 4069290704
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e899d777795c5049ba12c7e5b40fbacf
+      - ElementName: PlayerStates
+        ObjectType: 4
+        guid: b32cc1dcc99bf24ca0b7c7bdf1d099ee
+      Path: States\Default Work Unit\PlayerStates
+      values: []
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: TrapStates
+      guid: 5d5d8b370694bd40863ca2551b275464
+      id: 210723230
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e899d777795c5049ba12c7e5b40fbacf
+      - ElementName: TrapStates
+        ObjectType: 4
+        guid: 5d5d8b370694bd40863ca2551b275464
+      Path: States\Default Work Unit\TrapStates
+      values: []
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -407,7 +570,7 @@ MonoBehaviour:
     m_lastTime: -8584593220592810358
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 06000000070000000b0000000c0000000d0000000e0000000f0000001000000011000000170000001800000019000000400000004100000043000000
+  ExpandedWaapiItemIds: 06000000070000000b0000000c0000000d0000000e0000000f000000100000001100000017000000180000001900000040000000410000004300000055000000560000005b000000790000007a0000007f000000a0000000a1000000a6000000ce000000cf000000d1000000b2460000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

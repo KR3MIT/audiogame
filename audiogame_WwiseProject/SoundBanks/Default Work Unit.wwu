@@ -10,6 +10,7 @@
 						<ObjectRef Name="Play_WallImpactAndRub" ID="{C6D4B25F-82D2-4BF6-B8B5-24B9A8A1C2E1}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_GlowSwitchController" ID="{CE46776C-8F62-4CA2-919C-7369465865FA}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RockHitSwitchEvent" ID="{F6393261-FC4B-4E26-9FCF-1E26F521B94B}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AxeSwingEvent" ID="{4A1FAF40-05AD-4E56-9683-CD3EF923C768}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
