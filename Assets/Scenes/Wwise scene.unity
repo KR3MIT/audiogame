@@ -1005,6 +1005,7 @@ GameObject:
   - component: {fileID: 1058342063}
   - component: {fileID: 1058342062}
   - component: {fileID: 1058342068}
+  - component: {fileID: 1058342071}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1061,7 +1062,7 @@ MonoBehaviour:
   usePositionOffsetData: 0
   m_positionOffsetData:
     KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
+    positionOffset: {x: 0.008829117, y: -0.1413548, z: 0}
   scalingFactor: 1
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
@@ -1080,12 +1081,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 41.11947, y: 1, z: 32.81483}
+  m_Center: {x: 0.014923096, y: 0, z: -0.037397385}
 --- !u!23 &1058342065
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1166,7 +1167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c57637f7c87b4e4da20847ae5a0f78c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f7e1664c
+  triggerList: f7f422d6
   useOtherObject: 0
   data:
     idInternal: 0
@@ -1174,6 +1175,30 @@ MonoBehaviour:
     groupIdInternal: 0
     groupGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: c9acc123e475d584584a78591424a52c, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
+--- !u!114 &1058342071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058342061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c57637f7c87b4e4da20847ae5a0f78c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: 3f2ff36a
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 742ca71c5345d4243945bc9ff4289718, type: 2}
   valueIdInternal: 0
   groupIdInternal: 0
   valueGuidInternal: 

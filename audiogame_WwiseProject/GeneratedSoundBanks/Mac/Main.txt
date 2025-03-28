@@ -48,6 +48,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	865667167	StoneFootsteps	C:\Github\audiogame\audiogame_WwiseProject\.cache\34\{34CC17AC-FEB5-3C0C-3139-6DAF6E76663E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\Footsteps\FootstepsLeft\StoneFootsteps		13814
 	897629732	StoneFootsteps_02	C:\Github\audiogame\audiogame_WwiseProject\.cache\93\{93EDB9A0-607B-6F7A-DC96-DC8CA6107262}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\Footsteps\FootstepsLeft\StoneFootsteps_02		21714
 	979414040	StoneFootsteps_03	C:\Github\audiogame\audiogame_WwiseProject\.cache\23\{234B472E-1FF8-9DF5-0F49-04947E47854A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\Footsteps\FootstepsLeft\StoneFootsteps_03		22580
+	993891194	Bass Strings_01	C:\Github\audiogame\audiogame_WwiseProject\.cache\A7\{A7682981-F5D1-81F9-2CA0-D0CA5DF4F509}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\LoopingString\Bass Strings_01		907344
 	1036082695	ChoirAah3	C:\Github\audiogame\audiogame_WwiseProject\.cache\91\{91068A37-9235-9247-81B9-5B20A412FF18}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\LoopingChoir\ChoirRandom\ChoirAah3		907344
 	1042931339	Tic3	C:\Github\audiogame\audiogame_WwiseProject\.cache\07\{0778F2A9-4C30-FFD3-CA97-6EA2AC898F7D}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\TicsContainer\Tics\Tic3		42592
 

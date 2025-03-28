@@ -63,11 +63,6 @@
 										<RandomSequenceContainer Name="LoopingString" ID="{93A6BDD1-FA1C-40F5-A3EC-7CA4477771D4}" ShortID="734380250">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value>False</Value>
-													</ValueList>
-												</Property>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
@@ -86,7 +81,7 @@
 												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-24</Value>
+														<Value>-41</Value>
 													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
@@ -108,7 +103,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="StringRandom" ID="{2841D5DA-C2D3-4379-A347-C217E15E665A}" ShortID="74648794">
+												<Sound Name="Bass Strings" ID="{2FF0069F-54CE-45C6-8F33-DC3033864333}" ShortID="985941545">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
@@ -118,79 +113,48 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="Bass Strings 2" ID="{779EBB7B-2CD8-44FD-AB34-9894DFEB92E4}" ShortID="248444250">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Bass Strings 2" ID="{07F8E493-C47B-4FA3-A293-410EA20B38A9}">
-																	<Language>SFX</Language>
-																	<AudioFile>Bass Strings 2.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="296043277"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Bass Strings 2" ID="{07F8E493-C47B-4FA3-A293-410EA20B38A9}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Bass Strings 3" ID="{F2A58AAE-A6D2-47AA-9DA2-0F9E2321B050}" ShortID="712844861">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Bass Strings 3" ID="{2353600B-DBEF-457E-91E7-A68714015588}">
-																	<Language>SFX</Language>
-																	<AudioFile>Bass Strings 3.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="686307188"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Bass Strings 3" ID="{2353600B-DBEF-457E-91E7-A68714015588}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Bass Strings" ID="{234D6D55-213D-4796-88CA-65995F103122}" ShortID="1003396267">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Bass Strings" ID="{365822E3-0E33-4FF7-A88F-59BF62276043}">
-																	<Language>SFX</Language>
-																	<AudioFile>Bass Strings.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="993891194"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Bass Strings" ID="{365822E3-0E33-4FF7-A88F-59BF62276043}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
+														<AudioFileSource Name="Bass Strings" ID="{88BBD723-60B8-4986-BCE9-6A3C283B38B5}">
+															<Language>SFX</Language>
+															<AudioFile>Bass Strings.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="993891194"/>
+															</MediaIDList>
+														</AudioFileSource>
 													</ChildrenList>
-												</RandomSequenceContainer>
+													<ActiveSourceList>
+														<ActiveSource Name="Bass Strings" ID="{88BBD723-60B8-4986-BCE9-6A3C283B38B5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Bass Strings_01" ID="{3CCF0916-4C1D-4E56-9652-DBE9FC489F38}" ShortID="100638963">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Bass Strings" ID="{B7517CC2-7313-480C-B25E-0886C8A445B6}">
+															<Language>SFX</Language>
+															<AudioFile>Bass Strings.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="993891194"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Bass Strings" ID="{B7517CC2-7313-480C-B25E-0886C8A445B6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
 											<ObjectLists>
 												<ObjectList Name="Playlist">
 													<Reference>
-														<ObjectRef Name="StringRandom" ID="{2841D5DA-C2D3-4379-A347-C217E15E665A}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+														<ObjectRef Name="Bass Strings" ID="{2FF0069F-54CE-45C6-8F33-DC3033864333}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+													</Reference>
+													<Reference>
+														<ObjectRef Name="Bass Strings_01" ID="{3CCF0916-4C1D-4E56-9652-DBE9FC489F38}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
 													</Reference>
 												</ObjectList>
 											</ObjectLists>

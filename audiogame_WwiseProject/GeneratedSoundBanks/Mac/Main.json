@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{D367CD99-4E85-9A85-1946-1D4B9E5C7FB3}",
+    "Hash": "{43D16518-930A-0292-2FC0-45AB56476184}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -168,6 +168,14 @@
       "CachePath": "23/{234B472E-1FF8-9DF5-0F49-04947E47854A}.wem"
      },
      {
+      "Id": "993891194",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Bass Strings.wav",
+      "CachePath": "A7/{A7682981-F5D1-81F9-2CA0-D0CA5DF4F509}.wem"
+     },
+     {
       "Id": "1036082695",
       "Language": "SFX",
       "Streaming": "false",
@@ -277,6 +285,9 @@
          },
          {
           "Id": "841893982"
+         },
+         {
+          "Id": "993891194"
          },
          {
           "Id": "1036082695"
@@ -452,6 +463,6 @@
     ]
    }
   ],
-  "FileHash": "{7EC2CC73-A085-6CAD-9FF2-46BA612F5EEF}"
+  "FileHash": "{8D412A6D-31A1-065C-7882-9BF70FFF2E96}"
  }
 }
