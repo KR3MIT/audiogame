@@ -935,6 +935,60 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
+						<Sound Name="CheckpointSound" ID="{04635B62-7233-4EAC-8899-03472E93448D}" ShortID="178569928">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="CheckpointSound" ID="{C8725696-DD83-4FA4-897D-042F6BB679C4}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.170553937554359"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.05393585349832"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>CheckpointSound.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="166496500"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="CheckpointSound" ID="{C8725696-DD83-4FA4-897D-042F6BB679C4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Death Chime" ID="{9E04210E-826A-4288-86A7-F4C31CCAFC79}" ShortID="259723132">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Death Chime" ID="{76BD4A96-539D-4FEC-97E1-3489EFE806FC}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.778425663709641"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="2.63265305331775"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Death Chime.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1047885612"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Death Chime" ID="{76BD4A96-539D-4FEC-97E1-3489EFE806FC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 				<Folder Name="Ambience" ID="{08BD6407-2B98-4AE2-8438-5766131DD69D}" ShortID="385441841"/>
