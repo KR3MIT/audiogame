@@ -1112,6 +1112,11 @@
 								<Sound Name="WallRubbing" ID="{4311A3A2-81BC-4FA4-B800-BD6A7D16C4CD}" ShortID="648499624">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -1225,8 +1230,634 @@
 										<ActiveSource Name="28297__herbertboland__stiffclothrubbing" ID="{A1A8C9AB-03E7-4540-AC7A-5875899021FD}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="WallGrind" ID="{FD06CFCA-4AAE-4474-A4AB-877F02CFF46E}" ShortID="41433445">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WallGrind" ID="{FF1956BC-7A22-4349-843C-314877BB812A}">
+											<Language>SFX</Language>
+											<AudioFile>WallGrind.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="711891577"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="WallGrind" ID="{FF1956BC-7A22-4349-843C-314877BB812A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</ActorMixer>
+						<RandomSequenceContainer Name="WaterDroplets" ID="{51EFC357-C761-46BD-AD7B-0C6EB84E4165}" ShortID="46914715">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{BFCEBD4E-24B6-49F8-9255-59FD0A3FA648}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-450"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{7F7C7058-7EBB-4F9E-9DB1-D2275380D203}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="5"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="WaterDrip" ID="{5209FFC0-E9C5-4339-96AB-233BB176E00D}" ShortID="237286156">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WaterDrip" ID="{BD0AA79C-34A6-4549-A12F-76A2992167FE}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0395029476652551"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.973523740591858"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.20492276935745"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>WaterDrip.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="107015913"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{3011B9AB-7EC0-4D65-ADD3-03324D647C76}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="WaterDrip" ID="{BD0AA79C-34A6-4549-A12F-76A2992167FE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="WaterDrip_01" ID="{AAF0FC76-17B1-4856-86A0-C99353901DBF}" ShortID="109831322">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WaterDrip" ID="{B0E38C78-AEF0-486C-B18B-41E715F67A0D}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0593785660947455"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.86500770879259"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.08036175649691"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>WaterDrip.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="426616645"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{94DD39FE-85E1-44C4-8BDA-ADEF7A0E1931}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="WaterDrip" ID="{B0E38C78-AEF0-486C-B18B-41E715F67A0D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="WaterDrip_02" ID="{C1FC921A-E49E-4E20-813D-FF3167027294}" ShortID="117687024">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WaterDrip" ID="{0454F3E5-F5FE-4E78-8D94-BF35DE1D4BE8}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.150724813581703"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.70889372817741"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.08319874405311"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>WaterDrip.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="881603668"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{CFE66E1C-7A87-423A-8F92-DD86BD240BB4}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="WaterDrip" ID="{0454F3E5-F5FE-4E78-8D94-BF35DE1D4BE8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="WaterDrip_04" ID="{DE6A3316-3F26-475C-87C0-4EFD1FBC328D}" ShortID="29110963">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WaterDrip" ID="{3CB2541B-5EB5-4C4D-817A-41471C385A4C}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.158011790661019"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="7.21696842423607"/>
+												<Property Name="TrimEnd" Type="Real64" Value="7.50317933710594"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>WaterDrip.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="840649587"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{CE2ACE04-9D05-4DE2-9012-EF31797EF96B}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="WaterDrip" ID="{3CB2541B-5EB5-4C4D-817A-41471C385A4C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="WaterDrip_05" ID="{2F2F5473-541B-4A88-850B-EA74CF8EB6E8}" ShortID="994069793">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WaterDrip" ID="{0F7CFE11-296A-4B44-A5BF-83EAA255D7E6}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0523268747286352"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="8.10492779399607"/>
+												<Property Name="TrimEnd" Type="Real64" Value="8.3063786685275"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>WaterDrip.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="367453762"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{7F964A85-CB45-45FA-93FC-39351D5657F3}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="WaterDrip" ID="{0F7CFE11-296A-4B44-A5BF-83EAA255D7E6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="WaterDrip_06" ID="{40A3B1CF-5074-422B-8978-A2B483F452A4}" ShortID="780081305">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WaterDrip" ID="{02832D05-CE78-4572-BDDC-A2D96A76707C}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0752198824224095"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="8.97540612178797"/>
+												<Property Name="TrimEnd" Type="Real64" Value="9.18403619412684"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>WaterDrip.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="62138234"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{999AFE84-8518-4BE0-85B9-49D391CDC9E2}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="WaterDrip" ID="{02832D05-CE78-4572-BDDC-A2D96A76707C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="TakeDamage" ID="{4629182D-818B-42F2-A7C4-616DCC7A04D3}" ShortID="129715159">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C6EE5F7E-149A-4157-8A62-DFED6F3CD1E6}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="125"/>
+													<Property Name="Min" Type="Real64" Value="-125"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B391EC31-65E9-4571-A915-383F87EDFC4E}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="2"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="TakeDamage1_0" ID="{BCCB0186-ACC2-4B58-BCD9-79DF683194D2}" ShortID="10713963">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TakeDamage1_0" ID="{5240089D-441A-44B2-8E10-A95966CB61A9}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0827076992470057"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.34260971778094"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.75048409480661"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>TakeDamage1.0.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="880378824"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{5146D153-7B74-4D94-A114-8E652AC1D82C}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="TakeDamage1_0" ID="{5240089D-441A-44B2-8E10-A95966CB61A9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TakeDamage1_01" ID="{15F5F194-6DA0-4949-878C-6545C7C92C5D}" ShortID="826714662">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TakeDamage1_0" ID="{C400E219-E40D-4120-AC5F-2F56E2704002}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.120302107995645"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.06835863511487"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.46730752177377"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>TakeDamage1.0.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="430613048"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{E2523274-5CF2-461F-95A7-D8638A6EEDDF}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="TakeDamage1_0" ID="{C400E219-E40D-4120-AC5F-2F56E2704002}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TakeDamage1_02" ID="{F4B6D820-1459-4B48-BB22-9F32FF239FEA}" ShortID="268519965">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TakeDamage1_0" ID="{64905199-3EB5-4D37-920B-7C38F83E03FD}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.155776754599009"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.53921284193613"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.87582733983114"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>TakeDamage1.0.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="745509452"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{F1489D7A-10C6-4DCC-A398-217AC56BAFDA}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="TakeDamage1_0" ID="{64905199-3EB5-4D37-920B-7C38F83E03FD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TakeDamage1_03" ID="{1256C470-2846-48B3-9A90-F31B6D92CF8D}" ShortID="195670631">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TakeDamage1_0" ID="{B3684769-848C-4BA3-BFC2-503B520EB514}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.14787134107798"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="6.42096020775394"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.82645100367578"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>TakeDamage1.0.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="13984439"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{307D130B-BEE9-4B07-A296-C4092DA0437D}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="TakeDamage1_0" ID="{B3684769-848C-4BA3-BFC2-503B520EB514}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TakeDamage1_04" ID="{0F494DAB-7AF0-4469-9D16-91F6974FAA14}" ShortID="72540703">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TakeDamage1_0" ID="{E7B71FC6-60B0-4945-ACA0-1A4BA83DB8AF}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.146778596930353"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="8.46631450328466"/>
+												<Property Name="TrimEnd" Type="Real64" Value="8.9101029212333"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>TakeDamage1.0.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="632634852"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{1D4E9D5D-9576-406E-BE50-E5E2750B7E20}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="TakeDamage1_0" ID="{E7B71FC6-60B0-4945-ACA0-1A4BA83DB8AF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TakeDamage1_05" ID="{9E529E50-C4DB-4888-8D67-E56274CF06E6}" ShortID="337422044">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TakeDamage1_0" ID="{A22043DD-A23A-431B-AB6D-587A384A711A}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0753206285973249"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="10.1034875770057"/>
+												<Property Name="TrimEnd" Type="Real64" Value="10.4550634508993"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>TakeDamage1.0.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="815087105"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{6EFD56B9-F527-4247-B01B-0A6D12152068}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="TakeDamage1_0" ID="{A22043DD-A23A-431B-AB6D-587A384A711A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TakeDamage1_06" ID="{0A277FCE-4BF5-416C-9CC9-F113AB11E4C5}" ShortID="553669650">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TakeDamage1_0" ID="{25576F98-4202-4648-864D-69F71B84BA2D}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.111851133467024"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="12.0610698392504"/>
+												<Property Name="TrimEnd" Type="Real64" Value="12.4471049007273"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>TakeDamage1.0.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="165046590"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{6F8FE7A4-11A2-4C78-BB9E-B29CA799EF96}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="TakeDamage1_0" ID="{25576F98-4202-4648-864D-69F71B84BA2D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<PositioningInfo>
 						<Panner Name="" ID="{98422D38-CE73-4454-9197-58BEE697C14A}"/>
