@@ -7,6 +7,8 @@ public class LeverManager : MonoBehaviour
   
     public float leverPullTime;
     public float leverPullTime2;
+
+    public float timeToBeat = 10;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     
@@ -15,7 +17,7 @@ public class LeverManager : MonoBehaviour
         leverPullTime = Time.time;
         if(leverPullTime2 != 0)
         {
-            if(leverPullTime - leverPullTime2 < 10)
+            if(leverPullTime - leverPullTime2 < timeToBeat)
             {
                 Debug.Log("Levers Pulled in time");
                 OnComplete?.Invoke();

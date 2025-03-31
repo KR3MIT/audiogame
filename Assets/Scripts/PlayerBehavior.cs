@@ -64,7 +64,7 @@ public class PlayerBehavior : MonoBehaviour
             StartCoroutine(Death());
         
     }
-    IEnumerator Death()
+   public  IEnumerator Death()
     {
         //PLAY DEATH SOUND
         controller.enabled = false;
