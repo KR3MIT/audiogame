@@ -48,7 +48,7 @@
 								<Action Name="" ID="{45C958EE-D4EC-44BE-B69F-C03FE241395B}" ShortID="217129182">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="WallImpact" ID="{2B1B67E2-2CF8-4A76-9065-D6CB96F0A347}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
+											<ObjectRef Name="WallGrind" ID="{FD06CFCA-4AAE-4474-A4AB-877F02CFF46E}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
