@@ -15,6 +15,8 @@ public class Haptics : MonoBehaviour
     private void SetController()
     {
         _gamepad = Gamepad.current;
+        if (_gamepad == null)
+            Destroy(this);
     }
     public void SetMotorSpeeds(float lowFrequency, float highFrequency)
     {
