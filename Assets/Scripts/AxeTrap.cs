@@ -6,6 +6,7 @@ public class AxeTrap : MonoBehaviour
     public bool turbo = false;
     public Animator anim;
     private float _randomTime;
+    public bool axeSwinging = false;
     public AK.Wwise.Event axeSwingEvent;
     void Start()
     {
@@ -27,4 +28,17 @@ public class AxeTrap : MonoBehaviour
             behaviour.TakeDamage(axeTrapDamage);
         }
     }
+    private void Update()
+    {
+        if (axeSwinging)
+        {
+            //Debug.Log("Axe is swinging");
+            axeSwingEvent.Post(gameObject);
+            //Debug.Log("Axe Swing Event Posted");
+            axeSwinging = false;
+            //Debug.Log("Axe Swinging is now false");
+        }
+
+    }
+
 }
