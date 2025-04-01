@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{9A658136-237F-DB38-41FF-E0B7D7B114D4}",
+    "Hash": "{FC1376BC-BF51-9C66-AEDF-22007422A5D8}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -143,32 +143,6 @@
         "GUID": "{265113B6-B4A8-42FE-801A-BD04941E3788}"
        }
       ]
-     },
-     {
-      "Id": "2775752782",
-      "Name": "AxeTrapTurbo",
-      "ObjectPath": "\\States\\Default Work Unit\\TrapStates\\AxeTrapTurbo",
-      "GUID": "{D9E98000-141B-49DB-A086-5AD474D35A0E}",
-      "States": [
-       {
-        "Id": "748895195",
-        "Name": "None",
-        "ObjectPath": "\\States\\Default Work Unit\\TrapStates\\AxeTrapTurbo\\None",
-        "GUID": "{884B2E78-54CF-4E40-AB69-624B3CCDFF34}"
-       },
-       {
-        "Id": "1262998222",
-        "Name": "TurboOff",
-        "ObjectPath": "\\States\\Default Work Unit\\TrapStates\\AxeTrapTurbo\\TurboOff",
-        "GUID": "{294E7537-70DE-416D-AB02-7CB3F957A130}"
-       },
-       {
-        "Id": "3469814704",
-        "Name": "TurboOn",
-        "ObjectPath": "\\States\\Default Work Unit\\TrapStates\\AxeTrapTurbo\\TurboOn",
-        "GUID": "{7977DEB9-05F6-4D76-BA53-239C231B9695}"
-       }
-      ]
      }
     ],
     "SwitchGroups": [
@@ -201,6 +175,6 @@
     ]
    }
   ],
-  "FileHash": "{89B91CF6-A047-BE05-9E54-D7E934E8D649}"
+  "FileHash": "{305EE3E6-650D-DA22-18CF-291D32336A5A}"
  }
 }
