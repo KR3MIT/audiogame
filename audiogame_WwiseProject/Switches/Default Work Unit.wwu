@@ -8,6 +8,7 @@
 						<Switch Name="Rock" ID="{B41D9CB0-9AE5-4784-90B2-C018628363C3}"/>
 						<Switch Name="Wood" ID="{5F20D034-BA87-4683-B76B-110974999546}"/>
 						<Switch Name="Water" ID="{BB8DAB93-9FFF-4805-99D4-B80CA1A227F4}"/>
+						<Switch Name="Floor" ID="{49496581-E383-4010-AEED-63F9974D9B4B}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>
