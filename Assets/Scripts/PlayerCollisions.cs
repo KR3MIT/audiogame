@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,7 +14,8 @@ public class PlayerCollisions : MonoBehaviour
     public GameObject soundObject;
 
     private GameObject soundObjectInstance;
-    
+    private bool isTouchingWall = false;
+    private float wallTouchDelay = 0.5f;
     public List<GameObject> touchingWalls = new List<GameObject>();
     
     private void Start()
@@ -37,35 +39,51 @@ public class PlayerCollisions : MonoBehaviour
             stopRubEvent.Post(soundObjectInstance);
         }
     }
-
+    
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
-            Debug.Log("Player hit a wall!");
-
-            var hitPosition = other.GetContact(0).point;
-            var direction = (hitPosition - transform.position).normalized;
-            var newPosition = hitPosition + direction * soundOffset;
-            var positionLeveled = new Vector3(newPosition.x, transform.position.y, newPosition.z);
-
-            soundObjectInstance.transform.position = positionLeveled;
-
-            playerMovement.playerSpeedRTPC.SetValue(soundObjectInstance, PlayerMovement.NormalizedSpeed);
-            playerCollisionEvent.Post(soundObjectInstance);
-            
-            if(Haptics.instance != null)
+            if (isTouchingWall)
             {
-                Haptics.instance.SetMotorSpeeds(0.25f,0.25f);
-                Haptics.instance.ResumeHaptics();
+                return;
             }
-            
-            if (!touchingWalls.Contains(other.gameObject))
+            else
             {
-                touchingWalls.Add(other.gameObject);
+                isTouchingWall = true;
+                
+                Debug.Log("Player hit a wall!");
+                
+                var hitPosition = other.GetContact(0).point;
+                var direction = (hitPosition - transform.position).normalized;
+                var newPosition = hitPosition + direction * soundOffset;
+                var positionLeveled = new Vector3(newPosition.x, transform.position.y, newPosition.z);
+                
+                soundObjectInstance.transform.position = positionLeveled;
+                
+                playerMovement.playerSpeedRTPC.SetValue(soundObjectInstance, PlayerMovement.NormalizedSpeed);
+                playerCollisionEvent.Post(soundObjectInstance);
+                
+                if(Haptics.instance != null)
+                {
+                    Haptics.instance.SetMotorSpeeds(0.25f,0.25f);
+                    Haptics.instance.ResumeHaptics();
+                }
+                
+                if (!touchingWalls.Contains(other.gameObject))
+                {
+                    touchingWalls.Add(other.gameObject);
+                }
+                StartCoroutine(WallHitDelay());
             }
         }
     }
+    IEnumerator WallHitDelay()
+    {
+        yield return new WaitForSeconds(wallTouchDelay);
+        isTouchingWall = false;
+    }
+    
     private void OnCollisionStay(Collision other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Wall"))
@@ -87,10 +105,12 @@ public class PlayerCollisions : MonoBehaviour
             }
         }
     }
+    
     private void OnCollisionExit(Collision other)
     {
+        isTouchingWall = false;
         if (Haptics.instance != null)
-        Haptics.instance.PauseHaptics();
+            Haptics.instance.PauseHaptics();
         
         if (other.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
