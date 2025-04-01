@@ -36,7 +36,7 @@ public class LeverManager : MonoBehaviour
         leverPullTime2 = Time.time;
         if (leverPullTime != 0)
         {
-            if (leverPullTime2 - leverPullTime < 10)
+            if (leverPullTime2 - leverPullTime < timeToBeat)
             {
                 Debug.Log("Levers Pulled in time");
                 OnComplete?.Invoke();
