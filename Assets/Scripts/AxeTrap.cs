@@ -7,7 +7,6 @@ public class AxeTrap : MonoBehaviour
     public Animator anim;
     private float _randomTime;
     public AK.Wwise.Event axeSwingEvent;
-    public bool axeSwinging = false;
     void Start()
     {
         var temp = Random.Range(0, 100);
@@ -16,23 +15,10 @@ public class AxeTrap : MonoBehaviour
         anim = GetComponentInParent<Animator>();
 
         if (turbo)
-            anim.SetBool("Turbo", true);
-
-
+            anim.Play("AxeSwingFast",0, _randomTime);
+        else
+            anim.Play("AxeSwingSlow",0, _randomTime);
     }
-
-    private void Update()
-    {
-        if (axeSwinging)
-        {
-            //Debug.Log("Axe is swinging");
-            axeSwingEvent.Post(transform.root.gameObject);
-            //Debug.Log("Axe Swing Event Posted");
-            axeSwinging = false;
-            //Debug.Log("Axe Swinging is now false");
-        }
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.TryGetComponent(out PlayerBehavior behaviour))
