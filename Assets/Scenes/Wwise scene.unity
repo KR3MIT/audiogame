@@ -748,6 +748,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4243507214024805099, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
+      propertyPath: stopRubEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: fa3b39529e46c6449ba381d93cd80a2e, type: 2}
+    - target: {fileID: 4243507214024805099, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
+      propertyPath: playerCollisionEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: ec9355ff2d82c474a9b6c3050d3d6504, type: 2}
     - target: {fileID: 5398658719960121855, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
       propertyPath: m_Name
       value: Player (1)
@@ -1904,9 +1912,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lookTask: {fileID: 0}
   moveTask: {fileID: 0}
-  movespeed: 5
-  lookspeed: 0.1
-  lookX: 0
+  moveSpeed: 5
+  mouseSensitivity: 0
+  controllerSensitivity: 0
   playerSpeedRTPC:
     idInternal: 0
     valueGuidInternal: 
