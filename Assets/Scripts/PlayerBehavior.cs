@@ -47,10 +47,7 @@ public class PlayerBehavior : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Checkpoint")
-        {
-            SetCheckpoint(other.transform.position);
-        }
+        
     }
     public void SetCheckpoint(Vector3 pos)
     {
