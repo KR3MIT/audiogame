@@ -23,7 +23,33 @@
 					<ChildrenList>
 						<RandomSequenceContainer Name="Footsteps" ID="{A541CD2E-74E8-4322-81A5-7C9FA87D9275}" ShortID="252741303">
 							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>20</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-250</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{53DC7868-354D-4BE1-8B8A-92117B8D0E1D}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -40,6 +66,11 @@
 								<RandomSequenceContainer Name="FootstepsRight" ID="{1B0D0620-39BC-4C14-A4B2-BD32B7EC983F}" ShortID="689545734">
 									<PropertyList>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
@@ -308,6 +339,11 @@
 								<RandomSequenceContainer Name="FootstepsLeft" ID="{3010F3D7-5E1C-435B-A19A-AB6673C66B09}" ShortID="737584266">
 									<PropertyList>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
@@ -572,14 +608,666 @@
 										</Panner>
 									</PositioningInfo>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="FootstepsStoneRight" ID="{4329F758-15F1-421C-BE90-5B910348168E}" ShortID="262771609">
+									<PropertyList>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{FF0BF59B-3D42-4D53-9A17-814BA0D209F4}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="600"/>
+															<Property Name="Min" Type="Real64" Value="-600"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="FootstepStone" ID="{6552A911-6502-46F0-8F7A-1BDACB54276E}" ShortID="798246878">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FootstepsStone" ID="{79B58A26-4C38-4ECA-B619-1A339255CE3E}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0258882213718579"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.50128019955024"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.60001369889978"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FootstepsStone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="880648180"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FootstepsStone" ID="{79B58A26-4C38-4ECA-B619-1A339255CE3E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FootstepStone_01" ID="{FB4A0375-C02F-4B2F-BDDA-DC45C5F7CD70}" ShortID="140511646">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FootstepsStone" ID="{8250CBF0-C9BB-4802-9B0C-E776C76A75F3}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0258882213718579"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.28085956176427"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.37393716552973"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FootstepsStone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="385467872"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FootstepsStone" ID="{8250CBF0-C9BB-4802-9B0C-E776C76A75F3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FootstepStone_02" ID="{421F046B-1D40-4FE9-98A0-0643E1B5593E}" ShortID="607575806">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FootstepsStone" ID="{DBDF193C-E478-4525-B878-CCF5673786D6}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0258882213718579"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.02537877327902"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.09149692602772"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FootstepsStone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="335112658"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FootstepsStone" ID="{DBDF193C-E478-4525-B878-CCF5673786D6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FootstepStone_06" ID="{82EEF75D-6234-4B09-B5CC-A111C88D09F1}" ShortID="1031332773">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FootstepsStone" ID="{CFD33ACC-31DE-4136-8307-D2F77DBA863D}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.01329052945459"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="7.87120355431096"/>
+														<Property Name="TrimEnd" Type="Real64" Value="7.94523063021603"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FootstepsStone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="823371680"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FootstepsStone" ID="{CFD33ACC-31DE-4136-8307-D2F77DBA863D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FootstepStone_07" ID="{70ABE993-883A-48FA-A121-943B20152DC3}" ShortID="462523008">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-180</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FootstepsStone" ID="{E847EB07-F411-4906-96C8-54E1006FD4D7}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0258882213718579"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="8.57361534015081"/>
+														<Property Name="TrimEnd" Type="Real64" Value="8.66001579220512"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FootstepsStone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="969719700"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FootstepsStone" ID="{E847EB07-F411-4906-96C8-54E1006FD4D7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FootstepStone_08" ID="{D3B00175-AE32-4C0F-9450-11206CB30AB7}" ShortID="984372277">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FootstepsStone" ID="{11EED05D-F7D5-4016-98C0-2FE37D9731E9}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0258882213718579"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="9.23634819286771"/>
+														<Property Name="TrimEnd" Type="Real64" Value="9.39159284926956"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FootstepsStone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="814459543"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FootstepsStone" ID="{11EED05D-F7D5-4016-98C0-2FE37D9731E9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FootstepStone_09" ID="{50176D0E-67CC-45D6-90D4-4AB50D7DB48E}" ShortID="710997634">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FootstepsStone" ID="{5A06B56A-EAF7-4C01-9F19-9B8A71C87B65}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0258882213718579"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="10.2084943998737"/>
+														<Property Name="TrimEnd" Type="Real64" Value="10.3112982945812"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FootstepsStone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="169031252"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FootstepsStone" ID="{5A06B56A-EAF7-4C01-9F19-9B8A71C87B65}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FootstepStone_10" ID="{50C3E77A-4F7C-45F5-881C-850A766EA702}" ShortID="100477987">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FootstepsStone" ID="{CEBD706F-A84E-4367-930E-B7D23A613EA5}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0258882213718579"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="10.9902546688082"/>
+														<Property Name="TrimEnd" Type="Real64" Value="11.06937317626"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FootstepsStone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="782706024"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FootstepsStone" ID="{CEBD706F-A84E-4367-930E-B7D23A613EA5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{C6154456-B168-48C0-A4FC-BCFA555185CE}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="13.3808392715756"/>
+												<Property Name="PanY" Type="Real64" Value="15.7227387996618"/>
+												<Property Name="PanZ" Type="Real64" Value="-1"/>
+											</PropertyList>
+										</Panner>
+										<Position Name="" ID="{616633C8-B527-47F7-9DA4-BC5F05C702B2}"/>
+									</PositioningInfo>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="FootstepsStoneLeft" ID="{31C0E41C-567B-4908-A3E5-1F6C4A0349A3}" ShortID="353931403">
+									<PropertyList>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{CBE2D16E-39C4-4D99-BC92-973F7EB14C33}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="600"/>
+															<Property Name="Min" Type="Real64" Value="-600"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="FootstepStone_06" ID="{B4F46C24-5051-486E-8450-587D2F660AAB}" ShortID="239720918">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FootstepsStone" ID="{DC63EA20-8D16-42F8-A604-A1ED014EBC87}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.01329052945459"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="7.87120355431096"/>
+														<Property Name="TrimEnd" Type="Real64" Value="7.94523063021603"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FootstepsStone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="823371680"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{48F2E7FC-B6E5-4D51-98E0-ED4525B3F492}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="FootstepsStone" ID="{DC63EA20-8D16-42F8-A604-A1ED014EBC87}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FootstepStone_07" ID="{CFB8075B-7D9B-4942-A7E9-CFA48D68F478}" ShortID="718694325">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-180</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FootstepsStone" ID="{792A7FFB-4CF7-401E-A5C9-6DDAD3DE81AE}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0258882213718579"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="8.57361534015081"/>
+														<Property Name="TrimEnd" Type="Real64" Value="8.66001579220512"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FootstepsStone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="969719700"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{1ECE8CC9-4C28-408F-A328-837833EBB054}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="FootstepsStone" ID="{792A7FFB-4CF7-401E-A5C9-6DDAD3DE81AE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FootstepStone_08" ID="{B627012D-EDCA-4AD0-98AB-180E50D946B3}" ShortID="388436184">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FootstepsStone" ID="{718C4B86-08CA-45C3-BE6A-3A983ADE4C41}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0258882213718579"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="9.23634819286771"/>
+														<Property Name="TrimEnd" Type="Real64" Value="9.39159284926956"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FootstepsStone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="814459543"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{D0F94600-8736-4EF7-9634-FFF85EA9B9AD}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="FootstepsStone" ID="{718C4B86-08CA-45C3-BE6A-3A983ADE4C41}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FootstepStone_01" ID="{A556AF92-8F2E-48FC-9B1D-904F26CCAADF}" ShortID="155749459">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FootstepsStone" ID="{2C70D72E-26B6-4532-ACA2-3C28841582AA}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0258882213718579"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.28085956176427"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.37393716552973"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FootstepsStone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="385467872"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{B619C58A-1818-4344-9295-3F30E1AF8691}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="FootstepsStone" ID="{2C70D72E-26B6-4532-ACA2-3C28841582AA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FootstepStone_02" ID="{9DEECF14-52C3-49F1-AE2A-21D937F3614F}" ShortID="954096008">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FootstepsStone" ID="{233E9F03-1728-48FB-8021-150B90DDE895}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0258882213718579"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.02537877327902"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.09149692602772"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FootstepsStone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="335112658"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{39634A94-1241-4875-AB2E-E4B7DFF3CD34}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="FootstepsStone" ID="{233E9F03-1728-48FB-8021-150B90DDE895}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FootstepStone" ID="{AD503CFC-A9CF-4854-9D57-ED6FF8E3D7DD}" ShortID="664312470">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FootstepsStone" ID="{887D67B3-5D9D-4BEF-9397-7D6B53DAD8C0}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0258882213718579"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.50128019955024"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.60001369889978"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FootstepsStone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="880648180"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{5E3AA181-CC78-4F79-8CBE-DC4B5623110A}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="FootstepsStone" ID="{887D67B3-5D9D-4BEF-9397-7D6B53DAD8C0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FootstepStone_10" ID="{77B9EC34-DF37-426A-9BC9-01628A408F58}" ShortID="887855755">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FootstepsStone" ID="{A03A20E4-A0E6-4A37-9F00-E60FD0BA5464}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0258882213718579"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="10.9902546688082"/>
+														<Property Name="TrimEnd" Type="Real64" Value="11.06937317626"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FootstepsStone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="782706024"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{963C1B1E-20BB-4887-982D-DA8A5E556679}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="FootstepsStone" ID="{A03A20E4-A0E6-4A37-9F00-E60FD0BA5464}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FootstepStone_09" ID="{23391860-6D09-4DC7-A13F-420FF82808FE}" ShortID="364524202">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FootstepsStone" ID="{C307680D-0E3D-494E-82F2-6D6927499A0B}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0258882213718579"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="10.2084943998737"/>
+														<Property Name="TrimEnd" Type="Real64" Value="10.3112982945812"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FootstepsStone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="169031252"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{E5B7BC4F-ED35-46EB-82D1-E55459F88224}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="FootstepsStone" ID="{C307680D-0E3D-494E-82F2-6D6927499A0B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{43CA1C07-9E46-44CD-A7FE-7A3533C81EF6}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-13.6975455265241"/>
+												<Property Name="PanY" Type="Real64" Value="15.3846153846154"/>
+												<Property Name="PanZ" Type="Real64" Value="-1"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<ObjectLists>
 								<ObjectList Name="Playlist">
 									<Reference>
-										<ObjectRef Name="FootstepsRight" ID="{1B0D0620-39BC-4C14-A4B2-BD32B7EC983F}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
+										<ObjectRef Name="FootstepsStoneRight" ID="{4329F758-15F1-421C-BE90-5B910348168E}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
 									</Reference>
 									<Reference>
-										<ObjectRef Name="FootstepsLeft" ID="{3010F3D7-5E1C-435B-A19A-AB6673C66B09}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
+										<ObjectRef Name="FootstepsStoneLeft" ID="{31C0E41C-567B-4908-A3E5-1F6C4A0349A3}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
 									</Reference>
 								</ObjectList>
 							</ObjectLists>
@@ -611,6 +1299,11 @@
 								<RandomSequenceContainer Name="RockHitRock" ID="{EFE62375-58F3-46C7-B39E-1D620D073B9E}" ShortID="792534273">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -1031,12 +1724,399 @@
 										<Panner Name="" ID="{EDC5DB34-E541-4A64-B64F-41EA029497BB}"/>
 									</PositioningInfo>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RockToRock" ID="{17F9164E-8DC5-4AB6-BDDB-8E7BBAEE852A}" ShortID="900330583">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="RoomTest" ID="{EDEAFCF6-A2A1-4048-8096-294A48C13532}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="RockThrowStone" ID="{BBBBA306-2BAE-426A-829F-A32CBF99648C}" ShortID="415492854">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RockThrowStone" ID="{0101F9EE-009B-4C7F-BF58-C3441FDAFEFC}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0435357295621155"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.30072136778726"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.66319907816644"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>RockThrowStone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="450430112"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{0F525439-A4BC-44C8-8F38-81DBA66E2FC3}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="RockThrowStone" ID="{0101F9EE-009B-4C7F-BF58-C3441FDAFEFC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RockThrowStone_01" ID="{491CDA49-F8AC-422D-B28A-FA92D57F8771}" ShortID="257259732">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RockThrowStone" ID="{2BB20921-EA6C-4243-9959-D5B42E38B735}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="5.15249107346665"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.47996460410996"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>RockThrowStone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="744729462"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{FB1823A9-1FE0-41DF-8114-37743C349582}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="RockThrowStone" ID="{2BB20921-EA6C-4243-9959-D5B42E38B735}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RockThrowStone_02" ID="{8A6AC3F4-9CCF-4BE3-9FB6-1B2CDB311E2C}" ShortID="1025493778">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RockThrowStone" ID="{9FF50482-447E-49F9-8D24-440E850B0A55}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.071443217396773"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="11.0231570047499"/>
+														<Property Name="TrimEnd" Type="Real64" Value="11.2770831107556"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>RockThrowStone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1072085083"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{7FF6DA2F-3910-451F-BF08-2587E8E76AFA}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="RockThrowStone" ID="{9FF50482-447E-49F9-8D24-440E850B0A55}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RockThrowStone_03" ID="{CC1F5AE4-467B-466D-B23A-D27B0EC0DBB2}" ShortID="124702968">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RockThrowStone" ID="{D36208CC-BBD8-4E1E-9219-7D24510402FB}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.223260054364921"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="21.8537141096928"/>
+														<Property Name="TrimEnd" Type="Real64" Value="22.310846647123"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>RockThrowStone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="475851401"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{5355221F-11D8-4BDD-8535-12DA8273B971}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="RockThrowStone" ID="{D36208CC-BBD8-4E1E-9219-7D24510402FB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RockThrowStone_04" ID="{F338FEF9-26D6-4469-9FBB-C99426A8B789}" ShortID="532399386">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-180</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RockThrowStone" ID="{4B67256A-3DBE-433A-B20D-73E9FCF61C7A}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.223260054364921"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="24.3336421415675"/>
+														<Property Name="TrimEnd" Type="Real64" Value="24.809096753343"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>RockThrowStone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="559777520"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{324827F4-32AB-4AFE-9033-B259784290F1}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="RockThrowStone" ID="{4B67256A-3DBE-433A-B20D-73E9FCF61C7A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RockThrowStone_05" ID="{1F470BC8-151C-4FDA-B70A-E2A3C2D7C4E1}" ShortID="38943036">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-180</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RockThrowStone" ID="{714F3442-23EC-40F1-86B1-FC0292EEC977}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.223260054364921"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="26.3796452699767"/>
+														<Property Name="TrimEnd" Type="Real64" Value="26.8401806186518"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>RockThrowStone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="674967751"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{FC3C18FE-CAB5-4C68-B06B-9287C20D96E7}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="RockThrowStone" ID="{714F3442-23EC-40F1-86B1-FC0292EEC977}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RockThrowStone_06" ID="{1132650F-79CA-409D-9A50-34BADCCA4763}" ShortID="999008138">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>28</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-180</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RockThrowStone" ID="{9E0E73CF-78D0-4F0E-AB31-F563BB410FDB}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.209864451103023"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.223260054364921"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="28.3319126570938"/>
+														<Property Name="TrimEnd" Type="Real64" Value="28.835623053385"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>RockThrowStone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="711467482"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{034957C2-C9F6-412F-A867-DB67734FF7AF}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="RockThrowStone" ID="{9E0E73CF-78D0-4F0E-AB31-F563BB410FDB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RockThrowStone_07" ID="{70F8C8E9-CE15-4CDE-BE26-AA8D2A849DCF}" ShortID="695547905">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-180</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RockThrowStone" ID="{0BAB7222-54BC-4257-ABA0-F9160A73188F}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.223260054364921"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="35.2880283532647"/>
+														<Property Name="TrimEnd" Type="Real64" Value="35.7087206069248"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>RockThrowStone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="269963085"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{4BAC9D68-7708-4120-B62A-4DA5B9255FC4}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="RockThrowStone" ID="{0BAB7222-54BC-4257-ABA0-F9160A73188F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<PositioningInfo>
 								<Panner Name="" ID="{D0FC7FF2-BBC7-4574-880F-3D43AEB0110C}"/>
 							</PositioningInfo>
 							<GroupingInfo>
 								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="RockToRock" ID="{17F9164E-8DC5-4AB6-BDDB-8E7BBAEE852A}"/>
+									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="RockHitWater" ID="{1C248B6D-B127-4548-A3B4-E3AC81D615BB}"/>
 									</GroupingBehavior>
@@ -1072,7 +2152,7 @@
 									<Grouping>
 										<SwitchRef Name="Rock" ID="{B41D9CB0-9AE5-4784-90B2-C018628363C3}"/>
 										<ItemList>
-											<ItemRef Name="RockHitRock" ID="{EFE62375-58F3-46C7-B39E-1D620D073B9E}"/>
+											<ItemRef Name="RockToRock" ID="{17F9164E-8DC5-4AB6-BDDB-8E7BBAEE852A}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>
@@ -1091,6 +2171,11 @@
 								<Sound Name="WallImpact" ID="{2B1B67E2-2CF8-4A76-9065-D6CB96F0A347}" ShortID="608115834">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Lowpass" Type="int16">
 											<ModifierList>
 												<ModifierInfo>
@@ -1228,6 +2313,11 @@
 								<Sound Name="WallGrind" ID="{FD06CFCA-4AAE-4474-A4AB-877F02CFF46E}" ShortID="41433445">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1325,6 +2415,311 @@
 										<ActiveSource Name="WallGrind" ID="{FF1956BC-7A22-4349-843C-314877BB812A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<RandomSequenceContainer Name="WallImpacts" ID="{D16EAF4B-AED6-450F-8C06-642A14403CD1}" ShortID="712415823">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{E0EF1DA7-DEBB-4456-95AB-2A8C41ED0D76}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{DA616917-6118-464B-9D33-17C831778281}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="300"/>
+															<Property Name="Min" Type="Real64" Value="-300"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="WallImpactInside_01" ID="{1E98EBCD-8E7B-401D-90E0-20EF654522CC}" ShortID="340392170">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WallImpactInside" ID="{43519515-BF02-4BF7-81F8-37158C30E82B}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0236247027400562"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.45433405968095"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.64482886845839"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WallImpactInside.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="462692331"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{D6AA5EAF-89D8-4F42-B34E-2927D6E84919}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="WallImpactInside" ID="{43519515-BF02-4BF7-81F8-37158C30E82B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="WallImpactInside_02" ID="{AEEBBCA1-BC1E-45E9-9FD2-FF7B27CB2162}" ShortID="690961005">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WallImpactInside" ID="{4E1B3068-497F-468B-BEF9-158EED525453}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0295308784250699"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.38035823982005"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.53921047304405"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WallImpactInside.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="879063686"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{EDF6B86B-A095-4592-9EFD-165A90459BD7}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="WallImpactInside" ID="{4E1B3068-497F-468B-BEF9-158EED525453}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="WallImpactInside_03" ID="{8AEBAFC1-F829-461F-830B-2F453331F5A5}" ShortID="208872453">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WallImpactInside" ID="{9BFDC3AC-5DA3-4F36-BD08-7451572816C1}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0276113713274402"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="5.30212842489247"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.49023013279051"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WallImpactInside.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="384600095"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{C2912120-3F99-4D72-B893-08926BA9E0A8}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="WallImpactInside" ID="{9BFDC3AC-5DA3-4F36-BD08-7451572816C1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="WallImpactInside_04" ID="{8113853A-32DE-4975-9EAD-AFBD64C92623}" ShortID="928135475">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WallImpactInside" ID="{32CEF026-FDA0-427E-9229-64196984B98E}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0251012466613112"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0383901419525898"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="6.19364515615436"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.51237660788778"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WallImpactInside.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="10129682"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{F3C74434-EAFB-4DBA-9F4A-45524FF0AD47}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="WallImpactInside" ID="{32CEF026-FDA0-427E-9229-64196984B98E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="WallImpactInside_05" ID="{55795601-D453-4A19-B12D-78C04E9F2C62}" ShortID="168277400">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WallImpactInside" ID="{5E0F4815-87BB-4E96-81F5-788FE12AE371}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.02218698604438"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0321711297643503"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="7.25460735658206"/>
+														<Property Name="TrimEnd" Type="Real64" Value="7.48141126836001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WallImpactInside.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="966737072"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{92863FAF-2EA2-41B8-A824-CE16B639D350}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="WallImpactInside" ID="{5E0F4815-87BB-4E96-81F5-788FE12AE371}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{79FB6419-C6F2-4F50-9BB1-BA715564D0DF}" ShortID="952623973">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="PlayerSpeed" ID="{8A423C8D-0C64-420F-9210-AB34C1F08E35}" WorkUnitID="{A7259536-C8A2-4BF8-BDAF-D28B9FCD98A3}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{B80DDD8E-08DE-4722-A566-5075F939A804}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-7.07375999999999</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{B2E48E00-1C44-47A3-8C03-2DE3071CD30D}" ShortID="222248758">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="PlayerSpeed" ID="{8A423C8D-0C64-420F-9210-AB34C1F08E35}" WorkUnitID="{A7259536-C8A2-4BF8-BDAF-D28B9FCD98A3}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{9FE352F9-25E6-4BB2-8151-D58C3322934E}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-51</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
 						<RandomSequenceContainer Name="WaterDroplets" ID="{51EFC357-C761-46BD-AD7B-0C6EB84E4165}" ShortID="46914715">

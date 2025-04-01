@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     public ContinuousTask lookTask;
-    public  ContinuousTask moveTask;
+    public ContinuousTask moveTask;
     
     private CharacterController _controller;
     private PlayerInput _input;
@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 moveDirection = new Vector3(move.x, 0, move.y);
         moveDirection = transform.TransformDirection(moveDirection);
         Vector3 moveVec = moveDirection * moveSpeed;
-
+        
         var moveVector = (moveVec * Time.deltaTime) + (Physics.gravity * Time.deltaTime);
         _controller.Move(moveVector);
         //controller.Move(Physics.gravity * Time.deltaTime);

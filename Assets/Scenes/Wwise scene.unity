@@ -800,7 +800,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2595851226765644850, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2258,6 +2259,7 @@ MonoBehaviour:
   rockThrowTask: {fileID: 0}
   RockThrowRate: 2
   RockPrefab: {fileID: 4771837504582411164, guid: ac32b3cf88194df46922db4df44b9755, type: 3}
+  characterController: {fileID: 0}
 --- !u!114 &8405954872897381131
 MonoBehaviour:
   m_ObjectHideFlags: 0
