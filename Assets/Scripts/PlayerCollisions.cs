@@ -47,8 +47,9 @@ public class PlayerCollisions : MonoBehaviour
             var hitPosition = other.GetContact(0).point;
             var direction = (hitPosition - transform.position).normalized;
             var newPosition = hitPosition + direction * soundOffset;
+            var positionLeveled = new Vector3(newPosition.x, transform.position.y, newPosition.z);
 
-            soundObjectInstance.transform.position = newPosition;
+            soundObjectInstance.transform.position = positionLeveled;
 
             playerMovement.playerSpeedRTPC.SetValue(soundObjectInstance, PlayerMovement.NormalizedSpeed);
             playerCollisionEvent.Post(soundObjectInstance);
@@ -74,8 +75,9 @@ public class PlayerCollisions : MonoBehaviour
                 var hitPosition = other.GetContact(0).point;
                 var direction = (hitPosition - transform.position).normalized;
                 var newPosition = hitPosition + direction * soundOffset;
+                var positionLeveled = new Vector3(newPosition.x, transform.position.y, newPosition.z);
 
-                soundObjectInstance.transform.position = newPosition;
+                soundObjectInstance.transform.position = positionLeveled;
                 playerMovement.playerSpeedRTPC.SetValue(soundObjectInstance, PlayerMovement.NormalizedSpeed);
             }
             
