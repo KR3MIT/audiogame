@@ -74,7 +74,7 @@ public class PlayerCollisions : MonoBehaviour
                 {
                     touchingWalls.Add(other.gameObject);
                 }
-                StartCoroutine(WallHitDelay());
+                //StartCoroutine(WallHitDelay());
             }
         }
     }
