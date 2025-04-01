@@ -153,6 +153,12 @@
       "GUID": "{A096C912-8125-48E5-8B43-DCF16806D942}",
       "Switches": [
        {
+        "Id": "1088209313",
+        "Name": "Floor",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RockHitMaterials\\Floor",
+        "GUID": "{49496581-E383-4010-AEED-63F9974D9B4B}"
+       },
+       {
         "Id": "2058049674",
         "Name": "Wood",
         "ObjectPath": "\\Switches\\Default Work Unit\\RockHitMaterials\\Wood",
@@ -175,6 +181,6 @@
     ]
    }
   ],
-  "FileHash": "{305EE3E6-650D-DA22-18CF-291D32336A5A}"
+  "FileHash": "{382EB22D-8A65-8BB9-7CC5-381AF05E15B5}"
  }
 }

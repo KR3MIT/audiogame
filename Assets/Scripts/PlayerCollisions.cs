@@ -53,8 +53,11 @@ public class PlayerCollisions : MonoBehaviour
             playerMovement.playerSpeedRTPC.SetValue(soundObjectInstance, PlayerMovement.NormalizedSpeed);
             playerCollisionEvent.Post(soundObjectInstance);
             
-            Haptics.instance.SetMotorSpeeds(0.25f,0.25f);
-            Haptics.instance.ResumeHaptics();
+            if(Haptics.instance != null)
+            {
+                Haptics.instance.SetMotorSpeeds(0.25f,0.25f);
+                Haptics.instance.ResumeHaptics();
+            }
             
             if (!touchingWalls.Contains(other.gameObject))
             {

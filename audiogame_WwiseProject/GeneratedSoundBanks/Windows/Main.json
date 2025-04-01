@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{073126AC-53A2-C9E3-81F3-C00C003A1244}",
+    "Hash": "{D1B770FF-FE3A-DAA4-BFB1-9132D0FE8BA3}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -118,6 +118,14 @@
       "Location": "Memory",
       "ShortName": "543024__leon23323328kiwn__rock-hit-against-another-rock-owi.wav",
       "CachePath": "E6/{E6904F3C-C248-037E-7DA7-E4D72F793274}.wem"
+     },
+     {
+      "Id": "350527672",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "594623__edelhanie__kicking-rock-wall-and-almost-falling.wav",
+      "CachePath": "84/{843D07D0-1790-5FFC-F887-EB9FF4A500F6}.wem"
      },
      {
       "Id": "359865250",
@@ -424,6 +432,9 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
+        "Id": "350527672"
+       },
+       {
         "Id": "711891577"
        }
       ]
@@ -480,7 +491,7 @@
       "GUID": "{F6393261-FC4B-4E26-9FCF-1E26F521B94B}",
       "MaxAttenuation": "30",
       "DurationType": "OneShot",
-      "DurationMin": "0.17940433",
+      "DurationMin": "0.08970217",
       "DurationMax": "0.86942106",
       "SwitchContainers": [
        {
@@ -489,6 +500,22 @@
          "GroupId": "868718117",
          "Id": "2058049674",
          "GUID": "{5F20D034-BA87-4683-B76B-110974999546}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "249549327"
+         },
+         {
+          "Id": "330690429"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "868718117",
+         "Id": "1088209313",
+         "GUID": "{49496581-E383-4010-AEED-63F9974D9B4B}"
         },
         "MediaRefs": [
          {
@@ -578,6 +605,14 @@
       ]
      }
     ],
+    "GameParameters": [
+     {
+      "Id": "1493153371",
+      "Name": "PlayerSpeed",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerSpeed",
+      "GUID": "{8A423C8D-0C64-420F-9210-AB34C1F08E35}"
+     }
+    ],
     "StateGroups": [
      {
       "Id": "654387190",
@@ -614,6 +649,12 @@
       "GUID": "{A096C912-8125-48E5-8B43-DCF16806D942}",
       "Switches": [
        {
+        "Id": "1088209313",
+        "Name": "Floor",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RockHitMaterials\\Floor",
+        "GUID": "{49496581-E383-4010-AEED-63F9974D9B4B}"
+       },
+       {
         "Id": "2058049674",
         "Name": "Wood",
         "ObjectPath": "\\Switches\\Default Work Unit\\RockHitMaterials\\Wood",
@@ -636,6 +677,6 @@
     ]
    }
   ],
-  "FileHash": "{45041DBF-F816-259F-E932-C1BCE3CFF54F}"
+  "FileHash": "{DD99E8B9-858B-6788-63F9-38FB7C44DEE5}"
  }
 }

@@ -37,7 +37,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="WallRubbing" ID="{4311A3A2-81BC-4FA4-B800-BD6A7D16C4CD}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
+											<ObjectRef Name="WallGrind" ID="{FD06CFCA-4AAE-4474-A4AB-877F02CFF46E}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -45,20 +45,20 @@
 						</Event>
 						<Event Name="Play_WallImpactAndRub" ID="{C6D4B25F-82D2-4BF6-B8B5-24B9A8A1C2E1}">
 							<ChildrenList>
-								<Action Name="" ID="{45C958EE-D4EC-44BE-B69F-C03FE241395B}" ShortID="217129182">
+								<Action Name="" ID="{801F294E-7325-47A0-B2A5-D2C6A3A398B3}" ShortID="1002585258">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="WallGrind" ID="{FD06CFCA-4AAE-4474-A4AB-877F02CFF46E}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
+											<ObjectRef Name="WallImpact" ID="{2B1B67E2-2CF8-4A76-9065-D6CB96F0A347}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{55017728-5B15-444C-A21A-72A8069DC1BC}" ShortID="42161712">
+								<Action Name="" ID="{45C958EE-D4EC-44BE-B69F-C03FE241395B}" ShortID="217129182">
 									<PropertyList>
 										<Property Name="Delay" Type="Real64" Value="0.05"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="WallRubbing" ID="{4311A3A2-81BC-4FA4-B800-BD6A7D16C4CD}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
+											<ObjectRef Name="WallGrind" ID="{FD06CFCA-4AAE-4474-A4AB-877F02CFF46E}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
