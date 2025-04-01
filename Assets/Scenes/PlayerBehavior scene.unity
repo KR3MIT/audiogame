@@ -1214,18 +1214,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1701187783603960336, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
-      propertyPath: lookTask
-      value: 
-      objectReference: {fileID: 11400000, guid: e8b4aa380f49e5f4d9000828c3f8cd87, type: 2}
     - target: {fileID: 5398658719960121855, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 8073662611953702891, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
-      propertyPath: rockThrowTask
-      value: 
-      objectReference: {fileID: 11400000, guid: 4d31944d671fcf04a86d867e5dfbea37, type: 2}
     - target: {fileID: 8209019713667720385, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.14
@@ -1266,59 +1258,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9192045439036763573, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
-      propertyPath: checkpointEvent.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: f52e9c95fe922eb41b2e59309addbaa3, type: 2}
-    - target: {fileID: 9192045439036763573, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
-      propertyPath: takeDamageEvent.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 7bf777e1330530544adbc35e9ab86de7, type: 2}
-    - target: {fileID: 9192045439036763573, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
-      propertyPath: playerDeathEvent.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 7cf1d131c4a100d419655bd3f932ffdd, type: 2}
-    - target: {fileID: 9192045439036763573, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
-      propertyPath: playerReviveEvent.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 7828506794fb24a49bd47ba016f387fd, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5398658719960121855, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1818505012}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
---- !u!1 &1818504998 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5398658719960121855, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
-  m_PrefabInstance: {fileID: 1677960660}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1818505012
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1818504998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06db01f669a241c41a1697f30aa15086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 1
-  isStaticObject: 0
-  usePositionOffsetData: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  scalingFactor: 1
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1001 &1961655920
 PrefabInstance:
   m_ObjectHideFlags: 0
