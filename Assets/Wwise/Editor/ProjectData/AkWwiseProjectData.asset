@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c3d61869592f7241956bf3ebd662ac76
     GuidInternal: 
-    m_lastTime: -8584581131723702645
+    m_lastTime: -8584581119758902280
     List:
     - name: Main
       guid: 08192794cbd195478a29c0aa63f15f72
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: befe7aa783db144cbdf844a78d27198f
     GuidInternal: 
-    m_lastTime: -8584581133335603002
+    m_lastTime: -8584581119758786786
     List:
     - name: AxeSwingEvent
       guid: 40af1f4aad05564e9683cd3ef923c768
@@ -238,6 +238,57 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: PlayerCheckpointEvent
+      guid: 907ea2725029a34c8ab2b0fbc14e8411
+      id: 1953273240
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: PlayerCheckpointEvent
+        ObjectType: 3
+        guid: 907ea2725029a34c8ab2b0fbc14e8411
+      Path: Events\Default Work Unit\PlayerCheckpointEvent
+      maxAttenuation: 30
+      maxDuration: 0.76776296
+      minDuration: 0.76776296
+    - name: PlayerDeathEvent
+      guid: efe674ed6d09ba45b9742d1cdc241561
+      id: 4042825516
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: PlayerDeathEvent
+        ObjectType: 3
+        guid: efe674ed6d09ba45b9742d1cdc241561
+      Path: Events\Default Work Unit\PlayerDeathEvent
+      maxAttenuation: 30
+      maxDuration: 1.565008
+      minDuration: 1.565008
+    - name: PlayerReviveEvent
+      guid: e57db6eae14b024fb5145029f0696919
+      id: 1587523507
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: PlayerReviveEvent
+        ObjectType: 3
+        guid: e57db6eae14b024fb5145029f0696919
+      Path: Events\Default Work Unit\PlayerReviveEvent
+      maxAttenuation: 30
+      maxDuration: 1.4501262
+      minDuration: 1.4501262
     - name: RockHitSwitchEvent
       guid: 613239f64bfc264e9fcf1e26f521b94b
       id: 2895310559
@@ -276,7 +327,7 @@ MonoBehaviour:
       maxDuration: 0
       minDuration: 0
     - name: TakeDamageEvent
-      guid: 6277bc688cb730409cc25cd91b63f458
+      guid: 7e3d532013d47f438784cacf63d9a290
       id: 2985672797
       PathAndIcons:
       - ElementName: Events
@@ -287,7 +338,7 @@ MonoBehaviour:
         guid: befe7aa783db144cbdf844a78d27198f
       - ElementName: TakeDamageEvent
         ObjectType: 3
-        guid: 6277bc688cb730409cc25cd91b63f458
+        guid: 7e3d532013d47f438784cacf63d9a290
       Path: Events\Default Work Unit\TakeDamageEvent
       maxAttenuation: 30
       maxDuration: 0.47701633

@@ -17,6 +17,9 @@ namespace AK
         static const AkUniqueID FOOTSTEPEVENT = 3511205013U;
         static const AkUniqueID PLAY_GLOWSWITCHCONTROLLER = 3599396917U;
         static const AkUniqueID PLAY_WALLIMPACTANDRUB = 1324720394U;
+        static const AkUniqueID PLAYERCHECKPOINTEVENT = 1953273240U;
+        static const AkUniqueID PLAYERDEATHEVENT = 4042825516U;
+        static const AkUniqueID PLAYERREVIVEEVENT = 1587523507U;
         static const AkUniqueID ROCKHITSWITCHEVENT = 2895310559U;
         static const AkUniqueID STOP_WALLRUB = 2444696015U;
         static const AkUniqueID TAKEDAMAGEEVENT = 2985672797U;

@@ -92,9 +92,42 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="TakeDamageEvent" ID="{68BC7762-B78C-4030-9CC2-5CD91B63F458}">
+				<Event Name="PlayerDeathEvent" ID="{ED74E6EF-096D-45BA-B974-2D1CDC241561}">
 					<ChildrenList>
-						<Action Name="" ID="{E3EA6EC1-7A50-4668-AD37-204400DD5716}" ShortID="1014664201">
+						<Action Name="" ID="{2D9EB3EF-1804-4875-8E0A-DB0B017E1972}" ShortID="943124978">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Death Chime" ID="{9E04210E-826A-4288-86A7-F4C31CCAFC79}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayerReviveEvent" ID="{EAB67DE5-4BE1-4F02-B514-5029F0696919}">
+					<ChildrenList>
+						<Action Name="" ID="{7C233555-46E6-4D87-AD40-33AFF74DCA50}" ShortID="475602416">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RespawnSound" ID="{B04BBC45-5C49-417F-9ADA-DEE6A04E2218}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayerCheckpointEvent" ID="{72A27E90-2950-4CA3-8AB2-B0FBC14E8411}">
+					<ChildrenList>
+						<Action Name="" ID="{2EF77792-3C5C-4887-943E-D8FF70154758}" ShortID="588540755">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CheckpointSound" ID="{04635B62-7233-4EAC-8899-03472E93448D}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TakeDamageEvent" ID="{20533D7E-D413-437F-8784-CACF63D9A290}">
+					<ChildrenList>
+						<Action Name="" ID="{189DF49C-9222-4247-A800-83C8E8CA32BA}" ShortID="1055707983">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="TakeDamage" ID="{4629182D-818B-42F2-A7C4-616DCC7A04D3}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>

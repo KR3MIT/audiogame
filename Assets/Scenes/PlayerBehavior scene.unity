@@ -1267,9 +1267,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9192045439036763573, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
+      propertyPath: checkpointEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: f52e9c95fe922eb41b2e59309addbaa3, type: 2}
+    - target: {fileID: 9192045439036763573, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
       propertyPath: takeDamageEvent.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: a61997799b7d3fd4aa4395c63b53433a, type: 2}
+      objectReference: {fileID: 11400000, guid: 7bf777e1330530544adbc35e9ab86de7, type: 2}
+    - target: {fileID: 9192045439036763573, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
+      propertyPath: playerDeathEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 7cf1d131c4a100d419655bd3f932ffdd, type: 2}
+    - target: {fileID: 9192045439036763573, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
+      propertyPath: playerReviveEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 7828506794fb24a49bd47ba016f387fd, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

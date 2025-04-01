@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3a6d0dedd961c246b4dd5e7f55898ec, type: 3}
-  m_Name: 68BC7762-B78C-4030-9CC2-5CD91B63F458
+  m_Name: ED74E6EF-096D-45BA-B974-2D1CDC241561
   m_EditorClassIdentifier: 
-  objectName: TakeDamageEvent
-  id: 2985672797
-  guid: 68BC7762-B78C-4030-9CC2-5CD91B63F458
+  objectName: PlayerDeathEvent
+  id: 4042825516
+  guid: ED74E6EF-096D-45BA-B974-2D1CDC241561
   IsInUserDefinedSoundBank: 1
   IsAutoBankLoaded: 0

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{241A2344-85E0-AFCE-BE33-99FA410238BF}",
+    "Hash": "{073126AC-53A2-C9E3-81F3-C00C003A1244}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -80,6 +80,14 @@
       "CachePath": "5A/{5A2FCD5B-5118-C6C3-1387-78A0E308253D}.wem"
      },
      {
+      "Id": "166496500",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "CheckpointSound.wav",
+      "CachePath": "4D/{4D2F2F6A-223E-A052-65FA-710B7F0232FF}.wem"
+     },
+     {
       "Id": "166573158",
       "Language": "SFX",
       "Streaming": "false",
@@ -118,6 +126,14 @@
       "Location": "Memory",
       "ShortName": "Woosh.wav",
       "CachePath": "6B/{6BBDFC2A-E3C6-8C58-DB91-D13F5E046044}.wem"
+     },
+     {
+      "Id": "392511690",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RespawnSound.wav",
+      "CachePath": "E5/{E599BCC1-AC66-1622-7EB0-E70DA81D304C}.wem"
      },
      {
       "Id": "430613048",
@@ -254,6 +270,14 @@
       "Location": "Memory",
       "ShortName": "Tic3.wav",
       "CachePath": "07/{0778F2A9-4C30-FFD3-CA97-6EA2AC898F7D}.wem"
+     },
+     {
+      "Id": "1047885612",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Death Chime.wav",
+      "CachePath": "9A/{9A38ABD6-3BAB-378B-7C77-8F5A10EDB618}.wem"
      }
     ],
     "Plugins": {
@@ -405,6 +429,51 @@
       ]
      },
      {
+      "Id": "1953273240",
+      "Name": "PlayerCheckpointEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayerCheckpointEvent",
+      "GUID": "{72A27E90-2950-4CA3-8AB2-B0FBC14E8411}",
+      "MaxAttenuation": "30",
+      "DurationType": "OneShot",
+      "DurationMin": "0.76776296",
+      "DurationMax": "0.76776296",
+      "MediaRefs": [
+       {
+        "Id": "166496500"
+       }
+      ]
+     },
+     {
+      "Id": "4042825516",
+      "Name": "PlayerDeathEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayerDeathEvent",
+      "GUID": "{ED74E6EF-096D-45BA-B974-2D1CDC241561}",
+      "MaxAttenuation": "30",
+      "DurationType": "OneShot",
+      "DurationMin": "1.565008",
+      "DurationMax": "1.565008",
+      "MediaRefs": [
+       {
+        "Id": "1047885612"
+       }
+      ]
+     },
+     {
+      "Id": "1587523507",
+      "Name": "PlayerReviveEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayerReviveEvent",
+      "GUID": "{EAB67DE5-4BE1-4F02-B514-5029F0696919}",
+      "MaxAttenuation": "30",
+      "DurationType": "OneShot",
+      "DurationMin": "1.4501262",
+      "DurationMax": "1.4501262",
+      "MediaRefs": [
+       {
+        "Id": "392511690"
+       }
+      ]
+     },
+     {
       "Id": "2895310559",
       "Name": "RockHitSwitchEvent",
       "ObjectPath": "\\Events\\Default Work Unit\\RockHitSwitchEvent",
@@ -479,7 +548,7 @@
       "Id": "2985672797",
       "Name": "TakeDamageEvent",
       "ObjectPath": "\\Events\\Default Work Unit\\TakeDamageEvent",
-      "GUID": "{68BC7762-B78C-4030-9CC2-5CD91B63F458}",
+      "GUID": "{20533D7E-D413-437F-8784-CACF63D9A290}",
       "MaxAttenuation": "30",
       "DurationType": "OneShot",
       "DurationMin": "0.31316668",
@@ -567,6 +636,6 @@
     ]
    }
   ],
-  "FileHash": "{1C5210F8-5504-D504-672F-9579DDA005DE}"
+  "FileHash": "{45041DBF-F816-259F-E932-C1BCE3CFF54F}"
  }
 }

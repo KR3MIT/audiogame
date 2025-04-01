@@ -15,6 +15,9 @@ public class PlayerBehavior : MonoBehaviour
     private PlayerInput input;
 
     public AK.Wwise.Event takeDamageEvent;
+    public AK.Wwise.Event playerDeathEvent;
+    public AK.Wwise.Event playerReviveEvent;
+    public AK.Wwise.Event checkpointEvent;
 
     private void Awake()
     {
@@ -51,9 +54,8 @@ public class PlayerBehavior : MonoBehaviour
     }
     public void SetCheckpoint(Vector3 pos)
     {
-        //PLAY CHECKPOINT SOUND
+        checkpointEvent.Post(gameObject);
         checkpoint = pos;
-        //a checkpoint has been checked, play sound
         ApplyHaptics(0.25f, 0.25f, 0.1f);
     }
     public void TakeDamage(int damage)
@@ -68,12 +70,12 @@ public class PlayerBehavior : MonoBehaviour
     }
    public  IEnumerator Death()
     {
-        //PLAY DEATH SOUND
+        playerDeathEvent.Post(gameObject);
         controller.enabled = false;
         Debug.Log("A respawn has been respawned");
         transform.position = checkpoint;
         yield return new WaitForSeconds(respawnTime);
-        //play REVIVE SOUND
+        playerReviveEvent.Post(gameObject);
         health = 100;
         controller.enabled = true;
     }
