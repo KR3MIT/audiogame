@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{DB7A1DA3-4245-6FB2-A9D9-117E72CC340E}",
+    "Hash": "{272380F5-32BF-1E4B-EBB5-08EA79C09D0F}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -24,28 +24,20 @@
       "CachePath": "BB/{BBBE934F-7B12-18FD-39F8-759698C7C9F4}.wem"
      },
      {
+      "Id": "10129682",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WallImpactInside.wav",
+      "CachePath": "27/{277698F1-FBFB-9DEB-9A96-8A2A4FB43D68}.wem"
+     },
+     {
       "Id": "13984439",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "TakeDamage1.0.wav",
       "CachePath": "DE/{DE5C1CE9-EA79-630D-F0DA-32E03FA4A0B0}.wem"
-     },
-     {
-      "Id": "31611349",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "521590__fission9__hiking-boot-footsteps-on-stone.wav",
-      "CachePath": "20/{20FE3529-5B7C-D4D3-C7A3-098D07FCD29D}.wem"
-     },
-     {
-      "Id": "113282342",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "521590__fission9__hiking-boot-footsteps-on-stone.wav",
-      "CachePath": "85/{85C7A4AD-AB48-7E11-FBEA-E2A36232380F}.wem"
      },
      {
       "Id": "137710955",
@@ -88,12 +80,12 @@
       "CachePath": "4D/{4D2F2F6A-223E-A052-65FA-710B7F0232FF}.wem"
      },
      {
-      "Id": "166573158",
+      "Id": "169031252",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "521590__fission9__hiking-boot-footsteps-on-stone.wav",
-      "CachePath": "F7/{F7CB7D5E-A443-9F8D-26BD-F1F5DD9A1ADA}.wem"
+      "ShortName": "FootstepsStone.wav",
+      "CachePath": "A9/{A94D5307-D498-2B19-60D2-05C227217801}.wem"
      },
      {
       "Id": "210891056",
@@ -112,6 +104,14 @@
       "CachePath": "82/{82E0C26C-0F9D-11B2-4157-CD7783A28B31}.wem"
      },
      {
+      "Id": "269963085",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RockThrowStone.wav",
+      "CachePath": "7D/{7D3D2CA6-DF67-3C37-71F1-DE8642F04EBC}.wem"
+     },
+     {
       "Id": "330690429",
       "Language": "SFX",
       "Streaming": "false",
@@ -120,12 +120,12 @@
       "CachePath": "E6/{E6904F3C-C248-037E-7DA7-E4D72F793274}.wem"
      },
      {
-      "Id": "350527672",
+      "Id": "335112658",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "594623__edelhanie__kicking-rock-wall-and-almost-falling.wav",
-      "CachePath": "84/{843D07D0-1790-5FFC-F887-EB9FF4A500F6}.wem"
+      "ShortName": "FootstepsStone.wav",
+      "CachePath": "45/{4525F674-4F14-F2EC-0511-1368B542D5CC}.wem"
      },
      {
       "Id": "359865250",
@@ -134,6 +134,22 @@
       "Location": "Memory",
       "ShortName": "Woosh.wav",
       "CachePath": "6B/{6BBDFC2A-E3C6-8C58-DB91-D13F5E046044}.wem"
+     },
+     {
+      "Id": "384600095",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WallImpactInside.wav",
+      "CachePath": "F8/{F81EE7A5-1BBE-85BD-CDF5-A975220868EB}.wem"
+     },
+     {
+      "Id": "385467872",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FootstepsStone.wav",
+      "CachePath": "3E/{3E4E6D93-484F-EAB7-6217-61585FFD2199}.wem"
      },
      {
       "Id": "392511690",
@@ -160,6 +176,14 @@
       "CachePath": "1D/{1D0E0550-CB83-F0B4-702B-95C917D58A80}.wem"
      },
      {
+      "Id": "450430112",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RockThrowStone.wav",
+      "CachePath": "AF/{AF202EAC-6E4C-94D0-C818-8E82C3B90B6E}.wem"
+     },
+     {
       "Id": "456254043",
       "Language": "SFX",
       "Streaming": "false",
@@ -168,12 +192,28 @@
       "CachePath": "41/{419171E6-256E-A816-F8B9-662C498D4B51}.wem"
      },
      {
-      "Id": "593205648",
+      "Id": "462692331",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "521590__fission9__hiking-boot-footsteps-on-stone.wav",
-      "CachePath": "01/{013CFC30-8AB8-2152-2613-0EA4D3BF0D22}.wem"
+      "ShortName": "WallImpactInside.wav",
+      "CachePath": "C4/{C4C318F4-42CF-82B3-90F5-1F1E3C2395D7}.wem"
+     },
+     {
+      "Id": "475851401",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RockThrowStone.wav",
+      "CachePath": "7B/{7BCE3928-00F8-BF6B-A427-FFA82FF9A658}.wem"
+     },
+     {
+      "Id": "559777520",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RockThrowStone.wav",
+      "CachePath": "F6/{F6530B18-C2C3-44CD-9E48-F3574A042990}.wem"
      },
      {
       "Id": "632634852",
@@ -192,12 +232,20 @@
       "CachePath": "38/{3888CA04-8EC5-B445-A1A5-9C6AA3913E00}.wem"
      },
      {
-      "Id": "659278601",
+      "Id": "674967751",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "521590__fission9__hiking-boot-footsteps-on-stone.wav",
-      "CachePath": "7F/{7FE09927-CBF7-3EA7-187F-1980A3EAAF49}.wem"
+      "ShortName": "RockThrowStone.wav",
+      "CachePath": "60/{607A980B-2BF1-3856-F22A-F258DAA00F59}.wem"
+     },
+     {
+      "Id": "711467482",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RockThrowStone.wav",
+      "CachePath": "3D/{3DE1BBFA-ACF8-4DC8-781A-E4DF172EB185}.wem"
      },
      {
       "Id": "711891577",
@@ -216,12 +264,36 @@
       "CachePath": "A2/{A21D3BB2-F72A-4680-D846-3FCA425BF323}.wem"
      },
      {
+      "Id": "744729462",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RockThrowStone.wav",
+      "CachePath": "DD/{DDC3497D-DFD1-BA2D-229B-0E0E4293BEC5}.wem"
+     },
+     {
       "Id": "745509452",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "TakeDamage1.0.wav",
       "CachePath": "DB/{DB131206-5E0F-C7CC-9E52-D28C0F57DF67}.wem"
+     },
+     {
+      "Id": "782706024",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FootstepsStone.wav",
+      "CachePath": "BF/{BF2FA94E-DE45-73AF-ECBB-CFA93D7C8C94}.wem"
+     },
+     {
+      "Id": "814459543",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FootstepsStone.wav",
+      "CachePath": "D8/{D85B5FA3-73FA-262A-A72E-8F7C879239F6}.wem"
      },
      {
       "Id": "815087105",
@@ -232,12 +304,28 @@
       "CachePath": "41/{411FEA62-2CBA-7547-A168-4EFB3C54EF83}.wem"
      },
      {
+      "Id": "823371680",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FootstepsStone.wav",
+      "CachePath": "41/{41E6F633-CE02-E238-8A1E-D55DCE220C60}.wem"
+     },
+     {
       "Id": "841893982",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Pot5.wav",
       "CachePath": "A2/{A23F10A3-B5DE-DBAA-1616-19F4CB95DFB0}.wem"
+     },
+     {
+      "Id": "879063686",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WallImpactInside.wav",
+      "CachePath": "94/{94689735-5BAF-4558-F76A-F0D6ADDBBBA3}.wem"
      },
      {
       "Id": "880378824",
@@ -248,12 +336,28 @@
       "CachePath": "E3/{E377744E-EFAB-27D7-6488-B2DAFA3D1579}.wem"
      },
      {
-      "Id": "933969872",
+      "Id": "880648180",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "521590__fission9__hiking-boot-footsteps-on-stone.wav",
-      "CachePath": "28/{28322C74-7D16-813F-842D-171086A217B8}.wem"
+      "ShortName": "FootstepsStone.wav",
+      "CachePath": "70/{70784E6C-8CA5-97B9-6AF5-781DDBDA4D12}.wem"
+     },
+     {
+      "Id": "966737072",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WallImpactInside.wav",
+      "CachePath": "A4/{A48B33E0-CE90-1820-60DC-54B4D004CC62}.wem"
+     },
+     {
+      "Id": "969719700",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FootstepsStone.wav",
+      "CachePath": "09/{092F0E70-7CED-759C-A775-DD982AC6EBD2}.wem"
      },
      {
       "Id": "993891194",
@@ -286,6 +390,14 @@
       "Location": "Memory",
       "ShortName": "Death Chime.wav",
       "CachePath": "9A/{9A38ABD6-3BAB-378B-7C77-8F5A10EDB618}.wem"
+     },
+     {
+      "Id": "1072085083",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RockThrowStone.wav",
+      "CachePath": "C9/{C9DB11A4-8AE6-AB5D-9762-E77DAC521D9B}.wem"
      }
     ],
     "Plugins": {
@@ -333,26 +445,32 @@
       "ObjectPath": "\\Events\\Default Work Unit\\FootstepEvent",
       "GUID": "{0CFC6F27-5310-4A12-8217-A1CC7FA0B0B0}",
       "DurationType": "OneShot",
-      "DurationMin": "0.08171933",
-      "DurationMax": "0.21125472",
+      "DurationMin": "0.050984062",
+      "DurationMax": "0.26873988",
       "MediaRefs": [
        {
-        "Id": "31611349"
+        "Id": "169031252"
        },
        {
-        "Id": "113282342"
+        "Id": "335112658"
        },
        {
-        "Id": "166573158"
+        "Id": "385467872"
        },
        {
-        "Id": "593205648"
+        "Id": "782706024"
        },
        {
-        "Id": "659278601"
+        "Id": "814459543"
        },
        {
-        "Id": "933969872"
+        "Id": "823371680"
+       },
+       {
+        "Id": "880648180"
+       },
+       {
+        "Id": "969719700"
        }
       ]
      },
@@ -432,10 +550,22 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "350527672"
+        "Id": "10129682"
+       },
+       {
+        "Id": "384600095"
+       },
+       {
+        "Id": "462692331"
        },
        {
         "Id": "711891577"
+       },
+       {
+        "Id": "879063686"
+       },
+       {
+        "Id": "966737072"
        }
       ]
      },
@@ -552,10 +682,28 @@
         },
         "MediaRefs": [
          {
-          "Id": "249549327"
+          "Id": "269963085"
          },
          {
-          "Id": "330690429"
+          "Id": "450430112"
+         },
+         {
+          "Id": "475851401"
+         },
+         {
+          "Id": "559777520"
+         },
+         {
+          "Id": "674967751"
+         },
+         {
+          "Id": "711467482"
+         },
+         {
+          "Id": "744729462"
+         },
+         {
+          "Id": "1072085083"
          }
         ]
        }
@@ -677,6 +825,6 @@
     ]
    }
   ],
-  "FileHash": "{4DE7E72B-A4D6-8554-FE24-09658A106986}"
+  "FileHash": "{12722E50-81B3-308C-CF25-C39493B00263}"
  }
 }

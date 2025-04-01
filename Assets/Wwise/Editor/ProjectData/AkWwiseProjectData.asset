@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: befe7aa783db144cbdf844a78d27198f
     GuidInternal: 
-    m_lastTime: -8584581101307441256
+    m_lastTime: -8584580973365715040
     List:
     - name: AxeSwingEvent
       guid: 40af1f4aad05564e9683cd3ef923c768
@@ -182,8 +182,8 @@ MonoBehaviour:
         guid: 276ffc0c1053124a8217a1cc7fa0b0b0
       Path: Events\Default Work Unit\FootstepEvent
       maxAttenuation: 0
-      maxDuration: 0.21125472
-      minDuration: 0.08171933
+      maxDuration: 0.26873988
+      minDuration: 0.050984062
     - name: Play_GlowSwitchController
       guid: 6c7746ce628fa24c919c7369465865fa
       id: 3599396917
