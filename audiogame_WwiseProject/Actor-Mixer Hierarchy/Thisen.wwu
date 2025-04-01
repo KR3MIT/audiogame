@@ -947,9 +947,9 @@
 							<ChildrenList>
 								<AudioFileSource Name="CheckpointSound" ID="{C8725696-DD83-4FA4-897D-042F6BB679C4}">
 									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.170553937554359"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.44572018656168"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimEnd" Type="Real64" Value="1.05393585349832"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.767762954530706"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>CheckpointSound.wav</AudioFile>
@@ -974,9 +974,9 @@
 							<ChildrenList>
 								<AudioFileSource Name="Death Chime" ID="{76BD4A96-539D-4FEC-97E1-3489EFE806FC}">
 									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.778425663709641"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.833458913511105"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimEnd" Type="Real64" Value="2.63265305331775"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.45494150756642"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Death Chime.wav</AudioFile>
@@ -1000,6 +1000,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="RespawnSound" ID="{4210B50B-9AC9-4315-A024-1197CE4D27B5}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.484292598252886"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.45012611523869"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>RespawnSound.wav</AudioFile>
 									<MediaIDList>
