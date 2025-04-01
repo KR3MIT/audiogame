@@ -1299,6 +1299,11 @@
 								<RandomSequenceContainer Name="RockHitRock" ID="{EFE62375-58F3-46C7-B39E-1D620D073B9E}" ShortID="792534273">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
