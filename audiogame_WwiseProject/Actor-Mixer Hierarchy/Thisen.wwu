@@ -1016,6 +1016,377 @@
 								<ActiveSource Name="RespawnSound" ID="{4210B50B-9AC9-4315-A024-1197CE4D27B5}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<ActorMixer Name="FairySound" ID="{B00CE5A2-FE7C-4C1F-819C-113B0AE38923}" ShortID="375522911">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="FairyBells" ID="{4C916309-A41C-4EBF-9853-6678A9672111}" ShortID="402586234">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{ABACD0D0-4BA1-403E-A613-77829F649A21}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="0.4"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="FairyA1" ID="{5FF828DE-DD22-4741-A27E-D8ED5B60237A}" ShortID="105113491">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FairyA1" ID="{E1E5931B-3117-471B-818B-F591076854C8}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.478925778722638"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.756434156840437"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FairyA1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="846723884"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FairyA1" ID="{E1E5931B-3117-471B-818B-F591076854C8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FairyA2" ID="{236DB6EE-B251-463B-8A21-29ECF3B19233}" ShortID="148079631">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FairyA2" ID="{0D46D979-A187-4FBD-8E13-A79F5DA5B078}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.429690418293208"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.711674738268228"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FairyA2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="258284959"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FairyA2" ID="{0D46D979-A187-4FBD-8E13-A79F5DA5B078}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FairyB1" ID="{B94F35AA-D808-44E7-A109-8622A92DCF99}" ShortID="934265768">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FairyB1" ID="{A0211EE8-5176-4638-B32D-BAE9316A70C0}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.371503174149336"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.711674738268227"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FairyB1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="865587596"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FairyB1" ID="{A0211EE8-5176-4638-B32D-BAE9316A70C0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FairyB2" ID="{B149C4CF-7DF0-4C53-8125-564B853064BA}" ShortID="100088822">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FairyB2" ID="{4CAD4FBB-2904-45F4-9E2E-3A51BCA3B242}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.501305488008743"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.828049226555972"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FairyB2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="418454029"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FairyB2" ID="{4CAD4FBB-2904-45F4-9E2E-3A51BCA3B242}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FairyD1" ID="{2CE5A5B6-33AF-484A-831F-B8A8E6F288CE}" ShortID="625227954">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FairyD1" ID="{CE7D423F-66E2-48C6-85C5-307701911FC1}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.407310709007104"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.783289807983763"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FairyD1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="34398908"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FairyD1" ID="{CE7D423F-66E2-48C6-85C5-307701911FC1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FairyD2" ID="{F0793509-B31E-4240-8724-A3F50EB8818C}" ShortID="336231295">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FairyD2" ID="{E5FAECF3-AB7E-488E-ACAA-3B05E1434E2E}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.268556511433255"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.707198796411007"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FairyD2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="150379089"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FairyD2" ID="{E5FAECF3-AB7E-488E-ACAA-3B05E1434E2E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FairyE1" ID="{5C4EDEFE-385B-43B2-B4C1-F897C63CC2C5}" ShortID="55802931">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FairyE1" ID="{289280A1-FB60-401F-86DD-64D2BA9ACC56}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.358075348577674"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.783289807983763"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FairyE1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="978793047"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FairyE1" ID="{289280A1-FB60-401F-86DD-64D2BA9ACC56}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FairyE2" ID="{A7B8789C-5EC1-4190-A58A-860FA027D149}" ShortID="712702684">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FairyE2" ID="{A666DDF4-8CE8-413E-8EA8-FADEE04F5C51}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.398358825292662"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.787765749840984"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FairyE2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="764391143"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FairyE2" ID="{A666DDF4-8CE8-413E-8EA8-FADEE04F5C51}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FairyF#1" ID="{B7FC5C97-052A-4310-B702-B536AEA86C8D}" ShortID="142128149">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FairyF#1" ID="{26584C4F-DCDA-4C5B-A9CC-52FA86C593E3}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.34017158114879"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.729578505697111"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FairyF#1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="94592133"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FairyF#1" ID="{26584C4F-DCDA-4C5B-A9CC-52FA86C593E3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FairyF#2" ID="{E2BCB45A-F545-44AB-A3D5-CBC3B7206411}" ShortID="910424133">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FairyF#2" ID="{7EEA0137-91C2-4769-AB29-6DCF8FF0EF27}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.353599406720453"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.859380819556518"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FairyF#2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="318027306"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FairyF#2" ID="{7EEA0137-91C2-4769-AB29-6DCF8FF0EF27}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FairyG1" ID="{BFAD7285-3D1C-462E-8666-51DC197CD383}" ShortID="670117007">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FairyG1" ID="{B9A9CA84-6161-416D-8695-FF152EB65E7F}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.443118243864871"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.823573284698751"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FairyG1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="226201215"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FairyG1" ID="{B9A9CA84-6161-416D-8695-FF152EB65E7F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FairyG2" ID="{B7B6EE9F-DDE3-41AF-96DE-9DDB7BFECE61}" ShortID="721740836">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FairyG2" ID="{82C82BD8-FD4C-4A1A-954B-B5004E4CD2F5}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.407310709007104"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.86385676141374"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FairyG2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="620271480"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FairyG2" ID="{82C82BD8-FD4C-4A1A-954B-B5004E4CD2F5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
 				<Folder Name="Ambience" ID="{08BD6407-2B98-4AE2-8438-5766131DD69D}" ShortID="385441841"/>
