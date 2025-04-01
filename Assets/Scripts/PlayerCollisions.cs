@@ -84,6 +84,7 @@ public class PlayerCollisions : MonoBehaviour
     }
     private void OnCollisionExit(Collision other)
     {
+        if (Haptics.instance != null)
         Haptics.instance.PauseHaptics();
         
         if (other.gameObject.layer == LayerMask.NameToLayer("Wall"))

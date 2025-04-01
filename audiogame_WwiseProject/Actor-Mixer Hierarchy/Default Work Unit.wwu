@@ -1609,6 +1609,7 @@
 									<ChildrenList>
 										<AudioFileSource Name="TakeDamage1_0" ID="{5240089D-441A-44B2-8E10-A95966CB61A9}">
 											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.017809120313562"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.0827076992470057"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="1.34260971778094"/>
@@ -1647,6 +1648,7 @@
 									<ChildrenList>
 										<AudioFileSource Name="TakeDamage1_0" ID="{C400E219-E40D-4120-AC5F-2F56E2704002}">
 											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0110972292390477"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.120302107995645"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="3.06835863511487"/>
@@ -1685,6 +1687,7 @@
 									<ChildrenList>
 										<AudioFileSource Name="TakeDamage1_0" ID="{64905199-3EB5-4D37-920B-7C38F83E03FD}">
 											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0168208928581457"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.155776754599009"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="4.53921284193613"/>
@@ -1723,6 +1726,7 @@
 									<ChildrenList>
 										<AudioFileSource Name="TakeDamage1_0" ID="{B3684769-848C-4BA3-BFC2-503B520EB514}">
 											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0199834987467646"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.14787134107798"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="6.42096020775394"/>
@@ -1761,6 +1765,7 @@
 									<ChildrenList>
 										<AudioFileSource Name="TakeDamage1_0" ID="{E7B71FC6-60B0-4945-ACA0-1A4BA83DB8AF}">
 											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0242118806902916"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.146778596930353"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="8.46631450328466"/>
@@ -1799,6 +1804,7 @@
 									<ChildrenList>
 										<AudioFileSource Name="TakeDamage1_0" ID="{A22043DD-A23A-431B-AB6D-587A384A711A}">
 											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0220774218763147"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.0753206285973249"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="10.1034875770057"/>
@@ -1837,6 +1843,7 @@
 									<ChildrenList>
 										<AudioFileSource Name="TakeDamage1_0" ID="{25576F98-4202-4648-864D-69F71B84BA2D}">
 											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0147182812508788"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.111851133467024"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="12.0610698392504"/>

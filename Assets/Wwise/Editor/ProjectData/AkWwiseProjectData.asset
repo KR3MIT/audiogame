@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c3d61869592f7241956bf3ebd662ac76
     GuidInternal: 
-    m_lastTime: -8584584533258188603
+    m_lastTime: -8584581131723702645
     List:
     - name: Main
       guid: 08192794cbd195478a29c0aa63f15f72
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: befe7aa783db144cbdf844a78d27198f
     GuidInternal: 
-    m_lastTime: -8584581176035142550
+    m_lastTime: -8584581133335603002
     List:
     - name: AxeSwingEvent
       guid: 40af1f4aad05564e9683cd3ef923c768
@@ -164,9 +164,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 40af1f4aad05564e9683cd3ef923c768
       Path: Events\Default Work Unit\Traps\AxeSwingEvent
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 30
+      maxDuration: 0.5969677
+      minDuration: 0.3455742
     - name: FootstepEvent
       guid: 276ffc0c1053124a8217a1cc7fa0b0b0
       id: 3511205013
@@ -275,6 +275,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: TakeDamageEvent
+      guid: 6277bc688cb730409cc25cd91b63f458
+      id: 2985672797
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: TakeDamageEvent
+        ObjectType: 3
+        guid: 6277bc688cb730409cc25cd91b63f458
+      Path: Events\Default Work Unit\TakeDamageEvent
+      maxAttenuation: 30
+      maxDuration: 0.47701633
+      minDuration: 0.31316668
     - name: Traps
       guid: a1e29a300b0ba4409755d51b363c186d
       id: 3797942683
@@ -525,7 +542,7 @@ MonoBehaviour:
     m_lastTime: -8584593220592810358
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0300000004000000050000000600000007000000090000000b0000000c0000000d0000000e0000000f0000001000000011000000130000001400000015000000170000001800000019000000400000004100000043000000
+  ExpandedWaapiItemIds: 010000000300000004000000050000000600000007000000090000000b0000000c0000000d0000000e0000000f0000001000000011000000130000001400000015000000170000001800000019000000400000004100000043000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

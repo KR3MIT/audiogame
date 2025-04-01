@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1324720394	Play_WallImpactAndRub			\Default Work Unit\Player wall impact\Play_WallImpactAndRub	
 	2444696015	Stop_WallRub			\Default Work Unit\Player wall impact\Stop_WallRub	
 	2895310559	RockHitSwitchEvent			\Default Work Unit\RockHitSwitchEvent	
+	2985672797	TakeDamageEvent			\Default Work Unit\TakeDamageEvent	
 	3270970525	AxeSwingEvent			\Default Work Unit\Traps\AxeSwingEvent	
 	3511205013	FootstepEvent			\Default Work Unit\FootstepEvent	
 	3599396917	Play_GlowSwitchController			\Default Work Unit\Play_GlowSwitchController	
@@ -28,24 +29,31 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4812034	Tic1	C:\Github\audiogame\audiogame_WwiseProject\.cache\BB\{BBBE934F-7B12-18FD-39F8-759698C7C9F4}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\TicsContainer\Tics\Tic1		26816
+	13984439	TakeDamage1_03	C:\Github\audiogame\audiogame_WwiseProject\.cache\DE\{DE5C1CE9-EA79-630D-F0DA-32E03FA4A0B0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\TakeDamage\TakeDamage1_03		71624
 	31611349	StoneFootsteps_03	C:\Github\audiogame\audiogame_WwiseProject\.cache\20\{20FE3529-5B7C-D4D3-C7A3-098D07FCD29D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\Footsteps\FootstepsLeft\StoneFootsteps_03		13416
 	113282342	StoneFootsteps_11	C:\Github\audiogame\audiogame_WwiseProject\.cache\85\{85C7A4AD-AB48-7E11-FBEA-E2A36232380F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\Footsteps\FootstepsRight\StoneFootsteps_11		12032
 	137710955	Woosh_01	C:\Github\audiogame\audiogame_WwiseProject\.cache\9E\{9E491501-86D3-74C3-DD6B-131F249AE272}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\AxeTrap\AxeSequence\Woosh_01		38498
 	140299461	ChoirAah	C:\Github\audiogame\audiogame_WwiseProject\.cache\78\{783360DD-98B4-D1BB-24FB-1F420006F6D9}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\LoopingChoir\ChoirRandom\ChoirAah		907344
+	165046590	TakeDamage1_06	C:\Github\audiogame\audiogame_WwiseProject\.cache\5D\{5D289CAA-77A2-577B-7FF2-66A41C02C00A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\TakeDamage\TakeDamage1_06		68192
 	165970382	Pot3	C:\Github\audiogame\audiogame_WwiseProject\.cache\5A\{5A2FCD5B-5118-C6C3-1387-78A0E308253D}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\PotContainer\Pots\Pot3		25312
 	166573158	StoneFootsteps_01	C:\Github\audiogame\audiogame_WwiseProject\.cache\F7\{F7CB7D5E-A443-9F8D-26BD-F1F5DD9A1ADA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\Footsteps\FootstepsLeft\StoneFootsteps_01		12228
 	210891056	Tic2	C:\Github\audiogame\audiogame_WwiseProject\.cache\00\{004C60D3-00CB-667D-727B-648C95DE2F7D}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\TicsContainer\Tics\Tic2		27568
 	249549327	RockHit_Rock_01	C:\Github\audiogame\audiogame_WwiseProject\.cache\82\{82E0C26C-0F9D-11B2-4157-CD7783A28B31}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\RockHitSwitch\RockHitWater\RockHit_Rock_01		68988
 	330690429	RockHit_Rock	C:\Github\audiogame\audiogame_WwiseProject\.cache\E6\{E6904F3C-C248-037E-7DA7-E4D72F793274}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\RockHitSwitch\RockHitRock\RockHit_Rock		83560
 	359865250	Woosh	C:\Github\audiogame\audiogame_WwiseProject\.cache\6B\{6BBDFC2A-E3C6-8C58-DB91-D13F5E046044}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\AxeTrap\AxeSequence\Woosh		41886
+	430613048	TakeDamage1_01	C:\Github\audiogame\audiogame_WwiseProject\.cache\CE\{CEB38613-39FF-3EFD-C385-F640446A7065}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\TakeDamage\TakeDamage1_01		70468
 	433311367	ChoirAah2	C:\Github\audiogame\audiogame_WwiseProject\.cache\1D\{1D0E0550-CB83-F0B4-702B-95C917D58A80}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\LoopingChoir\ChoirRandom\ChoirAah2		907344
 	456254043	Pot4	C:\Github\audiogame\audiogame_WwiseProject\.cache\41\{419171E6-256E-A816-F8B9-662C498D4B51}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\PotContainer\Pots\Pot4		26064
 	593205648	StoneFootsteps	C:\Github\audiogame\audiogame_WwiseProject\.cache\01\{013CFC30-8AB8-2152-2613-0EA4D3BF0D22}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\Footsteps\FootstepsLeft\StoneFootsteps		11190
+	632634852	TakeDamage1_04	C:\Github\audiogame\audiogame_WwiseProject\.cache\90\{902EACEF-71AD-4995-9C68-837A7D7919CB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\TakeDamage\TakeDamage1_04		78384
 	643937551	Pot2	C:\Github\audiogame\audiogame_WwiseProject\.cache\38\{3888CA04-8EC5-B445-A1A5-9C6AA3913E00}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\PotContainer\Pots\Pot2		28316
 	659278601	StoneFootsteps_04	C:\Github\audiogame\audiogame_WwiseProject\.cache\7F\{7FE09927-CBF7-3EA7-187F-1980A3EAAF49}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\Footsteps\FootstepsLeft\StoneFootsteps_04		14436
 	711891577	WallGrind	C:\Github\audiogame\audiogame_WwiseProject\.cache\A6\{A674C3BA-331B-555A-954E-342B7F9B9BB1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\WallImpactAndRub\WallGrind		735488
 	724544279	Pot1	C:\Github\audiogame\audiogame_WwiseProject\.cache\A2\{A21D3BB2-F72A-4680-D846-3FCA425BF323}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\PotContainer\Pots\Pot1		30572
+	745509452	TakeDamage1_02	C:\Github\audiogame\audiogame_WwiseProject\.cache\DB\{DB131206-5E0F-C7CC-9E52-D28C0F57DF67}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\TakeDamage\TakeDamage1_02		59476
+	815087105	TakeDamage1_05	C:\Github\audiogame\audiogame_WwiseProject\.cache\41\{411FEA62-2CBA-7547-A168-4EFB3C54EF83}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\TakeDamage\TakeDamage1_05		62112
 	841893982	Pot5	C:\Github\audiogame\audiogame_WwiseProject\.cache\A2\{A23F10A3-B5DE-DBAA-1616-19F4CB95DFB0}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\PotContainer\Pots\Pot5		24184
+	880378824	TakeDamage1_0	C:\Github\audiogame\audiogame_WwiseProject\.cache\E3\{E377744E-EFAB-27D7-6488-B2DAFA3D1579}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\TakeDamage\TakeDamage1_0		72044
 	933969872	StoneFootsteps_02	C:\Github\audiogame\audiogame_WwiseProject\.cache\28\{28322C74-7D16-813F-842D-171086A217B8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\Footsteps\FootstepsLeft\StoneFootsteps_02		12866
 	993891194	Bass Strings_01	C:\Github\audiogame\audiogame_WwiseProject\.cache\A7\{A7682981-F5D1-81F9-2CA0-D0CA5DF4F509}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\LoopingString\Bass Strings_01		907344
 	1036082695	ChoirAah3	C:\Github\audiogame\audiogame_WwiseProject\.cache\91\{91068A37-9235-9247-81B9-5B20A412FF18}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\LoopingChoir\ChoirRandom\ChoirAah3		907344

@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID PLAY_WALLIMPACTANDRUB = 1324720394U;
         static const AkUniqueID ROCKHITSWITCHEVENT = 2895310559U;
         static const AkUniqueID STOP_WALLRUB = 2444696015U;
+        static const AkUniqueID TAKEDAMAGEEVENT = 2985672797U;
     } // namespace EVENTS
 
     namespace STATES

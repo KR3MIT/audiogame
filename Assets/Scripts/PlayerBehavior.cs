@@ -13,7 +13,9 @@ public class PlayerBehavior : MonoBehaviour
 
     private CharacterController controller;
     private PlayerInput input;
-    
+
+    public AK.Wwise.Event takeDamageEvent;
+
     private void Awake()
     {
         if (instance != null)
@@ -52,12 +54,12 @@ public class PlayerBehavior : MonoBehaviour
         //PLAY CHECKPOINT SOUND
         checkpoint = pos;
         //a checkpoint has been checked, play sound
-        Haptics.instance.PulseHaptics(0.25f,0.25f, 0.1f);
+        ApplyHaptics(0.25f, 0.25f, 0.1f);
     }
     public void TakeDamage(int damage)
     {
-        Haptics.instance.PulseHaptics(0.75f,0.75f, 0.2f);
-        //PLAY DAMAGE NOISE
+        ApplyHaptics(0.75f, 0.75f, 0.2f);
+        takeDamageEvent.Post(gameObject);
         health -= damage;
         Debug.Log("Player took "+ damage +" damage. Health is now: " + health);
         if (health <= 0)
@@ -84,8 +86,14 @@ public class PlayerBehavior : MonoBehaviour
             {
                 hit.collider.gameObject.GetComponent<Iinteractables>().Interact();
                 //PLAY INTERACTION SOUND
-                Haptics.instance.PulseHaptics(0.25f,0.25f, 0.1f);
+                ApplyHaptics(0.25f, 0.25f, 0.1f);
             }
         }
+    }
+
+    void ApplyHaptics(float lowFreq, float highFreq, float duration)
+    {
+        if (Haptics.instance != null)
+            Haptics.instance.PulseHaptics(lowFreq, highFreq, duration);
     }
 }

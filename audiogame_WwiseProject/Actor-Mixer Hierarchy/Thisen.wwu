@@ -976,7 +976,7 @@
 									<PropertyList>
 										<Property Name="FadeOutDuration" Type="Real64" Value="0.833458913511105"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimEnd" Type="Real64" Value="1.45494150756642"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.56500800716934"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Death Chime.wav</AudioFile>

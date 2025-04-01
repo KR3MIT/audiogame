@@ -18,7 +18,6 @@ public class AxeTrap : MonoBehaviour
         if (turbo)
             anim.SetBool("Turbo", true);
 
-        //PlayerSounds.FootstepEvent += PlaySound;
 
     }
 

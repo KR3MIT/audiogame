@@ -92,6 +92,17 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="TakeDamageEvent" ID="{68BC7762-B78C-4030-9CC2-5CD91B63F458}">
+					<ChildrenList>
+						<Action Name="" ID="{E3EA6EC1-7A50-4668-AD37-204400DD5716}" ShortID="1014664201">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TakeDamage" ID="{4629182D-818B-42F2-A7C4-616DCC7A04D3}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
