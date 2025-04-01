@@ -1259,6 +1259,11 @@
 						</ActorMixer>
 						<RandomSequenceContainer Name="WaterDroplets" ID="{51EFC357-C761-46BD-AD7B-0C6EB84E4165}" ShortID="46914715">
 							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>60</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -1551,6 +1556,16 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="TakeDamage" ID="{4629182D-818B-42F2-A7C4-616DCC7A04D3}" ShortID="129715159">
 							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>30</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>17</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>

@@ -33,6 +33,7 @@ public class PlayerThrow : MonoBehaviour
         canThrow = false;
         Invoke("ResetRockCooldown", RockThrowRate);
         
+        if (Haptics.instance != null)
         Haptics.instance.PulseHaptics(0.25f,0.75f, 0.1f);
         
         rockThrowTask?.CompleteTask();

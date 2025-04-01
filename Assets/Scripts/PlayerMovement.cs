@@ -30,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         #region PlayerControl
+        if (_controller.enabled == false) {return; }
         //move logic
         Vector2 move = _input.actions["Move"].ReadValue<Vector2>();
         Vector3 moveDirection = new Vector3(move.x, 0, move.y);
