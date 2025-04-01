@@ -14,10 +14,11 @@ public class PlayerThrow : MonoBehaviour
     bool canThrow = true;
     [Header("Rock logic :nerdge:")]
     public static float force = 10f;
-   
+    public CharacterController characterController;
 
     private void Start()
     {
+        characterController = GetComponent<CharacterController>();
         input = GetComponent<PlayerInput>();
         //subsribe to the throw action
         input.actions["Attack"].performed += ctx => RockThrow();
@@ -26,15 +27,15 @@ public class PlayerThrow : MonoBehaviour
     void RockThrow()
     {
         if(!canThrow) return;
-        Vector3 offset = transform.position + transform.forward + transform.up; 
+        Vector3 offset = transform.position + transform.up; 
         GameObject rock = Instantiate(RockPrefab, offset, quaternion.identity);
         Rigidbody rb = rock.GetComponent<Rigidbody>();
-        rb.AddForce(transform.forward * force, ForceMode.Impulse);
+        rb.AddForce(transform.forward * force + characterController.velocity, ForceMode.Impulse);
         canThrow = false;
-        Invoke("ResetRockCooldown", RockThrowRate);
+        Invoke("ResetRockCooldown", RockThrowRate);             //lefunnymemeface
         
         if (Haptics.instance != null)
-        Haptics.instance.PulseHaptics(0.25f,0.75f, 0.1f);
+        Haptics.instance.PulseHaptics(0.25f,0.25f, 0.1f);
         
         rockThrowTask?.CompleteTask();
     }
