@@ -13,6 +13,7 @@
 						<ObjectRef Name="Play_WaterDroplets" ID="{A1D4656F-6F33-4C5D-BFA7-7E9674689B20}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_GlowSwitchController" ID="{CE46776C-8F62-4CA2-919C-7369465865FA}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayerCheckpointEvent" ID="{72A27E90-2950-4CA3-8AB2-B0FBC14E8411}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_LedgeRocks" ID="{1BF278D8-EFAB-4D5F-8D79-EC2075920473}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RockHitSwitchEvent" ID="{F6393261-FC4B-4E26-9FCF-1E26F521B94B}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AxeSwingEvent" ID="{4A1FAF40-05AD-4E56-9683-CD3EF923C768}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayerReviveEvent" ID="{EAB67DE5-4BE1-4F02-B514-5029F0696919}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
