@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{A9EF007F-87E3-C751-3C2B-268C7E65EF73}",
+    "Hash": "{B05DFEF6-C7CB-347B-F22D-30E7D9B7FCC5}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -264,6 +264,22 @@
       "CachePath": "1D/{1D0E0550-CB83-F0B4-702B-95C917D58A80}.wem"
      },
      {
+      "Id": "435264456",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MetalShing.wav",
+      "CachePath": "EB/{EB5D94DD-6986-9BE6-D195-533D6E17469E}.wem"
+     },
+     {
+      "Id": "443998857",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WaterRunningFast.wav",
+      "CachePath": "F1/{F189A07D-A1AD-09B1-FCEA-BF54EF825612}.wem"
+     },
+     {
       "Id": "450430112",
       "Language": "SFX",
       "Streaming": "false",
@@ -294,6 +310,22 @@
       "Location": "Memory",
       "ShortName": "RockThrowStone.wav",
       "CachePath": "7B/{7BCE3928-00F8-BF6B-A427-FFA82FF9A658}.wem"
+     },
+     {
+      "Id": "481695635",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "567249__iwanplays__bricksstonesrocksgravel-falling.wav",
+      "CachePath": "E9/{E92EB274-CEEE-7F7D-EB6E-9E706840F619}.wem"
+     },
+     {
+      "Id": "490897574",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MetalShing.wav",
+      "CachePath": "58/{583E9E49-8193-6EE4-F020-0573E081494C}.wem"
      },
      {
       "Id": "559777520",
@@ -366,6 +398,14 @@
       "Location": "Memory",
       "ShortName": "RockThrowStone.wav",
       "CachePath": "DD/{DDC3497D-DFD1-BA2D-229B-0E0E4293BEC5}.wem"
+     },
+     {
+      "Id": "745117666",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WaterRunningSlow.wav",
+      "CachePath": "C7/{C7ABC2D4-BFAC-4CBD-7B3D-539CC1128357}.wem"
      },
      {
       "Id": "745509452",
@@ -472,6 +512,14 @@
       "CachePath": "70/{70784E6C-8CA5-97B9-6AF5-781DDBDA4D12}.wem"
      },
      {
+      "Id": "907644047",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MetalShing.wav",
+      "CachePath": "A2/{A2BF7036-50F6-482D-9241-5D8186D65E99}.wem"
+     },
+     {
       "Id": "966737072",
       "Language": "SFX",
       "Streaming": "false",
@@ -504,12 +552,28 @@
       "CachePath": "A7/{A7682981-F5D1-81F9-2CA0-D0CA5DF4F509}.wem"
      },
      {
+      "Id": "1027642574",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MetalShing.wav",
+      "CachePath": "FB/{FB582D25-6D11-517A-C7AF-B69418F2CD51}.wem"
+     },
+     {
       "Id": "1036082695",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ChoirAah3.wav",
       "CachePath": "91/{91068A37-9235-9247-81B9-5B20A412FF18}.wem"
+     },
+     {
+      "Id": "1038029385",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MetalShing.wav",
+      "CachePath": "F8/{F81088E0-CEE3-1973-05DB-5295423758A3}.wem"
      },
      {
       "Id": "1042931339",
@@ -572,6 +636,21 @@
        },
        {
         "Id": "359865250"
+       },
+       {
+        "Id": "435264456"
+       },
+       {
+        "Id": "490897574"
+       },
+       {
+        "Id": "907644047"
+       },
+       {
+        "Id": "1027642574"
+       },
+       {
+        "Id": "1038029385"
        }
       ]
      },
@@ -720,6 +799,37 @@
           }
          ]
         }
+       }
+      ]
+     },
+     {
+      "Id": "904967365",
+      "Name": "Play_LedgeRocks",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_LedgeRocks",
+      "GUID": "{1BF278D8-EFAB-4D5F-8D79-EC2075920473}",
+      "MaxAttenuation": "30",
+      "DurationType": "OneShot",
+      "DurationMin": "4.20195",
+      "DurationMax": "4.20195",
+      "MediaRefs": [
+       {
+        "Id": "481695635"
+       }
+      ]
+     },
+     {
+      "Id": "2493706327",
+      "Name": "Play_RiverSequence",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_RiverSequence",
+      "GUID": "{541525E6-94A9-4A21-B8F9-758C5E0442A4}",
+      "MaxAttenuation": "30",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "443998857"
+       },
+       {
+        "Id": "745117666"
        }
       ]
      },
@@ -1034,6 +1144,6 @@
     ]
    }
   ],
-  "FileHash": "{A01F6DA6-4392-3248-762B-81AA772A660E}"
+  "FileHash": "{D7342992-069A-EC2C-DEC7-996670A02255}"
  }
 }

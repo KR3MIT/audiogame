@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{100F5169-A5F3-51DD-9B4C-AD77D3D1F789}",
+    "Hash": "{B05DFEF6-C7CB-347B-F22D-30E7D9B7FCC5}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "WallImpactInside.wav",
-      "CachePath": "14/{14DFD8FE-46B1-2AF9-8AEB-9AE69BECF278}.wem"
+      "CachePath": "27/{277698F1-FBFB-9DEB-9A96-8A2A4FB43D68}.wem"
      },
      {
       "Id": "13984439",
@@ -125,7 +125,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FootstepsStone.wav",
-      "CachePath": "71/{7189AA6D-E486-9FF4-D287-EA5CAAF77C13}.wem"
+      "CachePath": "A9/{A94D5307-D498-2B19-60D2-05C227217801}.wem"
      },
      {
       "Id": "210891056",
@@ -165,7 +165,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "RockThrowStone.wav",
-      "CachePath": "3F/{3FC74432-E7A1-5F8B-8F9F-7FECA30C5EF4}.wem"
+      "CachePath": "7D/{7D3D2CA6-DF67-3C37-71F1-DE8642F04EBC}.wem"
      },
      {
       "Id": "318027306",
@@ -189,7 +189,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FootstepsStone.wav",
-      "CachePath": "27/{27FDC234-8BFE-38D2-83EF-B759C50D4F7F}.wem"
+      "CachePath": "45/{4525F674-4F14-F2EC-0511-1368B542D5CC}.wem"
      },
      {
       "Id": "359865250",
@@ -213,7 +213,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "WallImpactInside.wav",
-      "CachePath": "8B/{8B8785FE-4820-BABF-F02D-5B4B836414A1}.wem"
+      "CachePath": "F8/{F81EE7A5-1BBE-85BD-CDF5-A975220868EB}.wem"
      },
      {
       "Id": "385467872",
@@ -221,7 +221,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FootstepsStone.wav",
-      "CachePath": "14/{14C51FB6-B4A3-61C9-6C9B-95055F6F9ADB}.wem"
+      "CachePath": "3E/{3E4E6D93-484F-EAB7-6217-61585FFD2199}.wem"
      },
      {
       "Id": "392511690",
@@ -264,12 +264,28 @@
       "CachePath": "1D/{1D0E0550-CB83-F0B4-702B-95C917D58A80}.wem"
      },
      {
+      "Id": "435264456",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MetalShing.wav",
+      "CachePath": "EB/{EB5D94DD-6986-9BE6-D195-533D6E17469E}.wem"
+     },
+     {
+      "Id": "443998857",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WaterRunningFast.wav",
+      "CachePath": "F1/{F189A07D-A1AD-09B1-FCEA-BF54EF825612}.wem"
+     },
+     {
       "Id": "450430112",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "RockThrowStone.wav",
-      "CachePath": "E4/{E4CA5E8E-3327-E456-0388-849958E898B7}.wem"
+      "CachePath": "AF/{AF202EAC-6E4C-94D0-C818-8E82C3B90B6E}.wem"
      },
      {
       "Id": "456254043",
@@ -285,7 +301,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "WallImpactInside.wav",
-      "CachePath": "B7/{B700D981-5690-4217-7B2D-785130AFA541}.wem"
+      "CachePath": "C4/{C4C318F4-42CF-82B3-90F5-1F1E3C2395D7}.wem"
      },
      {
       "Id": "475851401",
@@ -293,7 +309,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "RockThrowStone.wav",
-      "CachePath": "DD/{DD3F1589-2145-1923-E98F-9638FE7F6744}.wem"
+      "CachePath": "7B/{7BCE3928-00F8-BF6B-A427-FFA82FF9A658}.wem"
      },
      {
       "Id": "481695635",
@@ -304,12 +320,20 @@
       "CachePath": "E9/{E92EB274-CEEE-7F7D-EB6E-9E706840F619}.wem"
      },
      {
+      "Id": "490897574",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MetalShing.wav",
+      "CachePath": "58/{583E9E49-8193-6EE4-F020-0573E081494C}.wem"
+     },
+     {
       "Id": "559777520",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "RockThrowStone.wav",
-      "CachePath": "44/{44C65194-257E-6FD9-8751-A5BE523F00C2}.wem"
+      "CachePath": "F6/{F6530B18-C2C3-44CD-9E48-F3574A042990}.wem"
      },
      {
       "Id": "620271480",
@@ -341,7 +365,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "RockThrowStone.wav",
-      "CachePath": "01/{01CCF7D4-681C-6CA0-7228-4B76A77254AD}.wem"
+      "CachePath": "60/{607A980B-2BF1-3856-F22A-F258DAA00F59}.wem"
      },
      {
       "Id": "711467482",
@@ -349,7 +373,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "RockThrowStone.wav",
-      "CachePath": "13/{130E23C6-6610-B7C1-F082-63F5260EFEF5}.wem"
+      "CachePath": "3D/{3DE1BBFA-ACF8-4DC8-781A-E4DF172EB185}.wem"
      },
      {
       "Id": "711891577",
@@ -373,7 +397,15 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "RockThrowStone.wav",
-      "CachePath": "0B/{0B491A2D-C696-28A8-B273-0101463AE37C}.wem"
+      "CachePath": "DD/{DDC3497D-DFD1-BA2D-229B-0E0E4293BEC5}.wem"
+     },
+     {
+      "Id": "745117666",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WaterRunningSlow.wav",
+      "CachePath": "C7/{C7ABC2D4-BFAC-4CBD-7B3D-539CC1128357}.wem"
      },
      {
       "Id": "745509452",
@@ -397,7 +429,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FootstepsStone.wav",
-      "CachePath": "F8/{F8E34D7E-F909-BBAC-4E1D-DFBD1A8EF21C}.wem"
+      "CachePath": "BF/{BF2FA94E-DE45-73AF-ECBB-CFA93D7C8C94}.wem"
      },
      {
       "Id": "814459543",
@@ -405,7 +437,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FootstepsStone.wav",
-      "CachePath": "E9/{E98BBACD-6C97-607C-7875-845768FD08E1}.wem"
+      "CachePath": "D8/{D85B5FA3-73FA-262A-A72E-8F7C879239F6}.wem"
      },
      {
       "Id": "815087105",
@@ -421,7 +453,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FootstepsStone.wav",
-      "CachePath": "BD/{BD1A4BE8-4ACE-06CC-8F72-FD91D0F95599}.wem"
+      "CachePath": "41/{41E6F633-CE02-E238-8A1E-D55DCE220C60}.wem"
      },
      {
       "Id": "840649587",
@@ -461,7 +493,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "WallImpactInside.wav",
-      "CachePath": "C1/{C1722D3B-CE91-EB6F-8F58-ADEEB56D68E9}.wem"
+      "CachePath": "94/{94689735-5BAF-4558-F76A-F0D6ADDBBBA3}.wem"
      },
      {
       "Id": "880378824",
@@ -477,7 +509,15 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FootstepsStone.wav",
-      "CachePath": "B1/{B1891BF3-CB1D-AE5D-84ED-341C2BD663AF}.wem"
+      "CachePath": "70/{70784E6C-8CA5-97B9-6AF5-781DDBDA4D12}.wem"
+     },
+     {
+      "Id": "907644047",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MetalShing.wav",
+      "CachePath": "A2/{A2BF7036-50F6-482D-9241-5D8186D65E99}.wem"
      },
      {
       "Id": "966737072",
@@ -485,7 +525,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "WallImpactInside.wav",
-      "CachePath": "1A/{1A346C0C-1562-8FB9-526C-21A8238543CB}.wem"
+      "CachePath": "A4/{A48B33E0-CE90-1820-60DC-54B4D004CC62}.wem"
      },
      {
       "Id": "969719700",
@@ -493,7 +533,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FootstepsStone.wav",
-      "CachePath": "99/{996BFA58-17E8-BAE5-3F76-899717666DDE}.wem"
+      "CachePath": "09/{092F0E70-7CED-759C-A775-DD982AC6EBD2}.wem"
      },
      {
       "Id": "978793047",
@@ -512,12 +552,28 @@
       "CachePath": "A7/{A7682981-F5D1-81F9-2CA0-D0CA5DF4F509}.wem"
      },
      {
+      "Id": "1027642574",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MetalShing.wav",
+      "CachePath": "FB/{FB582D25-6D11-517A-C7AF-B69418F2CD51}.wem"
+     },
+     {
       "Id": "1036082695",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ChoirAah3.wav",
       "CachePath": "91/{91068A37-9235-9247-81B9-5B20A412FF18}.wem"
+     },
+     {
+      "Id": "1038029385",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MetalShing.wav",
+      "CachePath": "F8/{F81088E0-CEE3-1973-05DB-5295423758A3}.wem"
      },
      {
       "Id": "1042931339",
@@ -541,7 +597,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "RockThrowStone.wav",
-      "CachePath": "B0/{B0078D8F-64DD-9519-8F87-B581322273FF}.wem"
+      "CachePath": "C9/{C9DB11A4-8AE6-AB5D-9762-E77DAC521D9B}.wem"
      }
     ],
     "Plugins": {
@@ -580,6 +636,21 @@
        },
        {
         "Id": "359865250"
+       },
+       {
+        "Id": "435264456"
+       },
+       {
+        "Id": "490897574"
+       },
+       {
+        "Id": "907644047"
+       },
+       {
+        "Id": "1027642574"
+       },
+       {
+        "Id": "1038029385"
        }
       ]
      },
@@ -743,6 +814,22 @@
       "MediaRefs": [
        {
         "Id": "481695635"
+       }
+      ]
+     },
+     {
+      "Id": "2493706327",
+      "Name": "Play_RiverSequence",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_RiverSequence",
+      "GUID": "{541525E6-94A9-4A21-B8F9-758C5E0442A4}",
+      "MaxAttenuation": "30",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "443998857"
+       },
+       {
+        "Id": "745117666"
        }
       ]
      },
@@ -1057,6 +1144,6 @@
     ]
    }
   ],
-  "FileHash": "{463C212B-52F0-2762-581F-C8D511309113}"
+  "FileHash": "{55BE709F-1132-D7E7-4803-B5381460B2D1}"
  }
 }
