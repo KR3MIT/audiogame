@@ -59,8 +59,8 @@ public class PlayerSounds : MonoBehaviour
                     FootstepEvent?.Invoke();
             }
 
-            //dogshit, iykyk
-           yield return new WaitForSeconds(steprate * (PlayerMovement.NormalizedSpeed));
+            float adjustedStepRate = steprate * (1 / Mathf.Max(PlayerMovement.NormalizedSpeed, 0.1f));
+           yield return new WaitForSeconds(adjustedStepRate);
         }
     }
 
