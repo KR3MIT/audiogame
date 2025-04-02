@@ -2734,8 +2734,9 @@
 										<ModifierInfo>
 											<Modifier Name="" ID="{BFCEBD4E-24B6-49F8-9255-59FD0A3FA648}">
 												<PropertyList>
-													<Property Name="Max" Type="Real64" Value="300"/>
-													<Property Name="Min" Type="Real64" Value="-450"/>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
@@ -2848,6 +2849,11 @@
 								<Sound Name="WaterDrip_02" ID="{C1FC921A-E49E-4E20-813D-FF3167027294}" ShortID="117687024">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
