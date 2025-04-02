@@ -7,6 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="TakeDamageEvent" ID="{20533D7E-D413-437F-8784-CACF63D9A290}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_WallRub" ID="{2C7BCA63-F985-44E2-BCB2-FB5EC9839FD5}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SpikeTrapCloseEvent" ID="{AFD0AF87-51C8-45AA-8237-050E540D9ABE}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayerDeathEvent" ID="{ED74E6EF-096D-45BA-B974-2D1CDC241561}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FootstepEvent" ID="{0CFC6F27-5310-4A12-8217-A1CC7FA0B0B0}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_RiverSequence" ID="{541525E6-94A9-4A21-B8F9-758C5E0442A4}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
@@ -18,6 +19,7 @@
 						<ObjectRef Name="RockHitSwitchEvent" ID="{F6393261-FC4B-4E26-9FCF-1E26F521B94B}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AxeSwingEvent" ID="{4A1FAF40-05AD-4E56-9683-CD3EF923C768}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayerReviveEvent" ID="{EAB67DE5-4BE1-4F02-B514-5029F0696919}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SpikeTrapOpenEvent" ID="{3022088E-EBC5-4F41-9210-E2925D5878A2}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FairyEvent" ID="{DA8D4378-9EEE-4F69-BC07-E330BB72F9C5}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

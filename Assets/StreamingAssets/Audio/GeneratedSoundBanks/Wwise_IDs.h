@@ -25,6 +25,8 @@ namespace AK
         static const AkUniqueID PLAYERDEATHEVENT = 4042825516U;
         static const AkUniqueID PLAYERREVIVEEVENT = 1587523507U;
         static const AkUniqueID ROCKHITSWITCHEVENT = 2895310559U;
+        static const AkUniqueID SPIKETRAPCLOSEEVENT = 2411449720U;
+        static const AkUniqueID SPIKETRAPOPENEVENT = 2836563388U;
         static const AkUniqueID STOP_WALLRUB = 2444696015U;
         static const AkUniqueID TAKEDAMAGEEVENT = 2985672797U;
     } // namespace EVENTS

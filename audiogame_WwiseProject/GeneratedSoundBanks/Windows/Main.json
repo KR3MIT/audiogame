@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{B05DFEF6-C7CB-347B-F22D-30E7D9B7FCC5}",
+    "Hash": "{5232EAF1-BF10-010B-C260-C6C55DD6D743}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -54,6 +54,14 @@
       "Location": "Memory",
       "ShortName": "WaterDrip.wav",
       "CachePath": "FE/{FE54039C-F8D0-7ED8-39DF-7B5052FABD4F}.wem"
+     },
+     {
+      "Id": "76045582",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SpikeTrapOpen.wav",
+      "CachePath": "06/{06999E8C-4353-3A34-8469-36847D602F4C}.wem"
      },
      {
       "Id": "94592133",
@@ -342,6 +350,14 @@
       "Location": "Memory",
       "ShortName": "FairyG2.wav",
       "CachePath": "2B/{2B609C06-5E32-0CEF-A900-3C4C281C8D54}.wem"
+     },
+     {
+      "Id": "630207922",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SpikeTrapClose.wav",
+      "CachePath": "2D/{2DBBAD4D-B540-8B10-07B6-F15DC2EC62F6}.wem"
      },
      {
       "Id": "632634852",
@@ -1029,6 +1045,36 @@
       ]
      },
      {
+      "Id": "2411449720",
+      "Name": "SpikeTrapCloseEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\SpikeTrapCloseEvent",
+      "GUID": "{AFD0AF87-51C8-45AA-8237-050E540D9ABE}",
+      "MaxAttenuation": "30",
+      "DurationType": "OneShot",
+      "DurationMin": "0.6952408",
+      "DurationMax": "0.6952408",
+      "MediaRefs": [
+       {
+        "Id": "630207922"
+       }
+      ]
+     },
+     {
+      "Id": "2836563388",
+      "Name": "SpikeTrapOpenEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\SpikeTrapOpenEvent",
+      "GUID": "{3022088E-EBC5-4F41-9210-E2925D5878A2}",
+      "MaxAttenuation": "30",
+      "DurationType": "OneShot",
+      "DurationMin": "0.7872594",
+      "DurationMax": "0.7872594",
+      "MediaRefs": [
+       {
+        "Id": "76045582"
+       }
+      ]
+     },
+     {
       "Id": "2444696015",
       "Name": "Stop_WallRub",
       "ObjectPath": "\\Events\\Default Work Unit\\Player wall impact\\Stop_WallRub",
@@ -1144,6 +1190,6 @@
     ]
    }
   ],
-  "FileHash": "{55BE709F-1132-D7E7-4803-B5381460B2D1}"
+  "FileHash": "{99E7254E-80F4-C8FF-819B-F76A80C27169}"
  }
 }
