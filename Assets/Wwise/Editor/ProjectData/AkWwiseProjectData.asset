@@ -181,9 +181,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 78438ddaee9e694fbc07e330bb72f9c5
       Path: Events\Default Work Unit\FairyEvent
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 30
+      maxDuration: 0
+      minDuration: 0
     - name: FootstepEvent
       guid: 276ffc0c1053124a8217a1cc7fa0b0b0
       id: 3511205013

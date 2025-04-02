@@ -37,7 +37,6 @@ public class FairyController : MonoBehaviour
     {
         currentSpline++;
         hasPlayedOnSpline = false;
-        splineAnimate.Restart(false);
         splineAnimate.Container = splines[currentSpline];
         splineAnimate.Play();
         yield return new WaitForSeconds(0.01f);
