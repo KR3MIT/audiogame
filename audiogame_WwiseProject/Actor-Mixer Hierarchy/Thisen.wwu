@@ -1249,6 +1249,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<ActorMixer Name="FairySound" ID="{B00CE5A2-FE7C-4C1F-819C-113B0AE38923}" ShortID="375522911">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-26</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
