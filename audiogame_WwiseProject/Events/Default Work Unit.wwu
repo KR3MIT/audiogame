@@ -209,6 +209,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="SpikeTrapOpenEvent" ID="{3022088E-EBC5-4F41-9210-E2925D5878A2}">
+					<ChildrenList>
+						<Action Name="" ID="{7F95FF23-9AB0-4E9A-A4E9-24AF02A7A880}" ShortID="995321301">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SpikeTrapOpen" ID="{4316196B-BFAD-4B9E-9D40-4D27AE8DD3A8}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SpikeTrapCloseEvent" ID="{AFD0AF87-51C8-45AA-8237-050E540D9ABE}">
+					<ChildrenList>
+						<Action Name="" ID="{708F0EF1-84E8-4731-B40A-81EDF2F2FA29}" ShortID="801263583">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SpikeTrapClose" ID="{CE178D2B-09DA-452B-9552-5BE5745DE3E1}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
