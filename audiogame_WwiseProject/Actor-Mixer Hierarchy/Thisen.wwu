@@ -1619,6 +1619,64 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
+						<Sound Name="SpikeTrapClose" ID="{CE178D2B-09DA-452B-9552-5BE5745DE3E1}" ShortID="262051444">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SpikeTrapClose" ID="{EB956A80-0AC8-48E0-81CA-EED5EB21245B}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.102998599364488"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0772489495233661"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="2.49771603458883"/>
+										<Property Name="TrimEnd" Type="Real64" Value="3.19295685848657"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>SpikeTrapClose.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="630207922"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SpikeTrapClose" ID="{EB956A80-0AC8-48E0-81CA-EED5EB21245B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SpikeTrapOpen" ID="{4316196B-BFAD-4B9E-9D40-4D27AE8DD3A8}" ShortID="873366443">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SpikeTrapOpen" ID="{15B968C7-9716-4F20-A998-9C1B677E46BB}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0774353534803476"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0645294612336236"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="2.83929629427942"/>
+										<Property Name="TrimEnd" Type="Real64" Value="3.62655571402028"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>SpikeTrapOpen.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="76045582"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SpikeTrapOpen" ID="{15B968C7-9716-4F20-A998-9C1B677E46BB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 				<Folder Name="Ambience" ID="{08BD6407-2B98-4AE2-8438-5766131DD69D}" ShortID="385441841"/>
