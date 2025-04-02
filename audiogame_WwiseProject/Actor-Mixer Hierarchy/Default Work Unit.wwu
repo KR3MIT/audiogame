@@ -2442,6 +2442,21 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{22C86055-F154-417E-92F5-74C4F355306C}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2743,6 +2758,9 @@
 									</ModifierList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{7F7C7058-7EBB-4F9E-9DB1-D2275380D203}">
@@ -3351,6 +3369,413 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="LedgeGravel" ID="{B45CCDEC-F568-4EDC-A8E1-777A33EA5321}" ShortID="521018069">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="LedgeGravel" ID="{6685CB70-A9B4-42B7-8291-F498A1E59418}" ShortID="23276124">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LedgeGravel" ID="{649561A4-425B-4549-B99E-107554676F28}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.18508810064904"/>
+												<Property Name="TrimEnd" Type="Real64" Value="30.2691248002346"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>LedgeGravel.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="297848920"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{E839B23C-39F9-4C77-8892-57056AE907C0}"/>
+										<Position Name="" ID="{A46BE2D6-D85F-49F6-83DD-5839BD218B75}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="LedgeGravel_Path" ID="{0CC022D2-8044-4FDA-81A7-0CCDA57D9A52}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="30000"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0.65963</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>16.08579</XPos>
+															<YPos>1.58311</YPos>
+															<ZPos>-3</ZPos>
+															<Flags>0</Flags>
+															<Time>6000</Time>
+														</Point>
+														<Point>
+															<XPos>6.16622</XPos>
+															<YPos>-15.56728</YPos>
+															<ZPos>-6</ZPos>
+															<Flags>0</Flags>
+															<Time>12000</Time>
+														</Point>
+														<Point>
+															<XPos>-23.59249</XPos>
+															<YPos>-7.91557</YPos>
+															<ZPos>-9</ZPos>
+															<Flags>0</Flags>
+															<Time>18000</Time>
+														</Point>
+														<Point>
+															<XPos>-9.65147</XPos>
+															<YPos>18.2058</YPos>
+															<ZPos>-12</ZPos>
+															<Flags>0</Flags>
+															<Time>24000</Time>
+														</Point>
+														<Point>
+															<XPos>34.04826</XPos>
+															<YPos>14.24802</YPos>
+															<ZPos>-15</ZPos>
+															<Flags>0</Flags>
+															<Time>30000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="LedgeGravel_Path_01" ID="{B24C7BDB-2365-422F-8731-DF79C8AC5ECF}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="30000"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-0</XPos>
+															<YPos>-0.92348</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>27.07775</XPos>
+															<YPos>-1.58311</YPos>
+															<ZPos>-3</ZPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+														<Point>
+															<XPos>46.91689</XPos>
+															<YPos>-7.38786</YPos>
+															<ZPos>-6</ZPos>
+															<Flags>0</Flags>
+															<Time>10000</Time>
+														</Point>
+														<Point>
+															<XPos>24.93298</XPos>
+															<YPos>-26.38522</YPos>
+															<ZPos>-9</ZPos>
+															<Flags>0</Flags>
+															<Time>15000</Time>
+														</Point>
+														<Point>
+															<XPos>-15.81769</XPos>
+															<YPos>-19.78892</YPos>
+															<ZPos>-12</ZPos>
+															<Flags>0</Flags>
+															<Time>20000</Time>
+														</Point>
+														<Point>
+															<XPos>-46.3807</XPos>
+															<YPos>-4.22164</YPos>
+															<ZPos>-15</ZPos>
+															<Flags>0</Flags>
+															<Time>25000</Time>
+														</Point>
+														<Point>
+															<XPos>-80.16086</XPos>
+															<YPos>7.65172</YPos>
+															<ZPos>-18</ZPos>
+															<Flags>0</Flags>
+															<Time>30000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="LedgeGravel" ID="{649561A4-425B-4549-B99E-107554676F28}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LedgeGravel_01" ID="{20988E8B-01AF-4C23-80B9-6C4300FED099}" ShortID="171155018">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LedgeGravel" ID="{9D14906A-426B-4306-AF80-E9CF6AC1A522}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.08633075892829"/>
+												<Property Name="TrimEnd" Type="Real64" Value="30.3185034710949"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>LedgeGravel.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="745599657"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{71F318F6-5239-47EC-8D83-CB9127D0F6A3}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="LedgeGravel" ID="{9D14906A-426B-4306-AF80-E9CF6AC1A522}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Playlist">
+									<Reference>
+										<ObjectRef Name="LedgeGravel" ID="{6685CB70-A9B4-42B7-8291-F498A1E59418}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="LedgeGravel_01" ID="{20988E8B-01AF-4C23-80B9-6C4300FED099}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</RandomSequenceContainer>
+						<Sound Name="takenLedgeRocks" ID="{427BD49D-78C0-44E2-B551-C06FC77962B5}" ShortID="706468787">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="1"/>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="567249__iwanplays__bricksstonesrocksgravel-falling" ID="{F5151E96-A94A-46B5-9E24-672577DB2E13}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>567249__iwanplays__bricksstonesrocksgravel-falling.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="481695635"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{73F7AD30-A9B0-4FED-9DE3-5A5ED626E793}"/>
+								<Position Name="" ID="{9AC52E96-C63B-40C0-BE58-961F2C3BD1B7}">
+									<PropertyList>
+										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="takenLedgeRocks_Path" ID="{E96B1066-ADDE-4C41-8313-A44627547B99}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="4000"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0.2681</XPos>
+													<YPos>0.39578</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>2.41287</XPos>
+													<YPos>6.0686</YPos>
+													<ZPos>-5</ZPos>
+													<Flags>0</Flags>
+													<Time>800</Time>
+												</Point>
+												<Point>
+													<XPos>8.0429</XPos>
+													<YPos>12.40106</YPos>
+													<ZPos>-10</ZPos>
+													<Flags>0</Flags>
+													<Time>1600</Time>
+												</Point>
+												<Point>
+													<XPos>19.83914</XPos>
+													<YPos>17.6781</YPos>
+													<ZPos>-15</ZPos>
+													<Flags>0</Flags>
+													<Time>2400</Time>
+												</Point>
+												<Point>
+													<XPos>-2.94906</XPos>
+													<YPos>30.60686</YPos>
+													<ZPos>-20</ZPos>
+													<Flags>0</Flags>
+													<Time>3200</Time>
+												</Point>
+												<Point>
+													<XPos>-20.91153</XPos>
+													<YPos>29.02375</YPos>
+													<ZPos>-25</ZPos>
+													<Flags>0</Flags>
+													<Time>4000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="takenLedgeRocks_Path_01" ID="{EE367F05-3689-46E9-A26A-695978AD0A42}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="4000"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0.2681</XPos>
+													<YPos>0.39578</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-6.16622</XPos>
+													<YPos>5.5409</YPos>
+													<ZPos>-5</ZPos>
+													<Flags>0</Flags>
+													<Time>800</Time>
+												</Point>
+												<Point>
+													<XPos>5.36193</XPos>
+													<YPos>14.77573</YPos>
+													<ZPos>-10</ZPos>
+													<Flags>0</Flags>
+													<Time>1600</Time>
+												</Point>
+												<Point>
+													<XPos>22.52011</XPos>
+													<YPos>18.99736</YPos>
+													<ZPos>-15</ZPos>
+													<Flags>0</Flags>
+													<Time>2400</Time>
+												</Point>
+												<Point>
+													<XPos>24.39678</XPos>
+													<YPos>40.36939</YPos>
+													<ZPos>-20</ZPos>
+													<Flags>0</Flags>
+													<Time>3200</Time>
+												</Point>
+												<Point>
+													<XPos>-10.18767</XPos>
+													<YPos>50.92349</YPos>
+													<ZPos>-25</ZPos>
+													<Flags>0</Flags>
+													<Time>4000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="takenLedgeRocks_Path_02" ID="{DD5E7526-F878-41C9-AF0A-185891398C19}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="4000"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0.2681</XPos>
+													<YPos>0.39578</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>12.86863</XPos>
+													<YPos>-4.74934</YPos>
+													<ZPos>-5</ZPos>
+													<Flags>0</Flags>
+													<Time>800</Time>
+												</Point>
+												<Point>
+													<XPos>-11.26005</XPos>
+													<YPos>-10.55409</YPos>
+													<ZPos>-10</ZPos>
+													<Flags>0</Flags>
+													<Time>1600</Time>
+												</Point>
+												<Point>
+													<XPos>-9.38338</XPos>
+													<YPos>16.88654</YPos>
+													<ZPos>-15</ZPos>
+													<Flags>0</Flags>
+													<Time>2400</Time>
+												</Point>
+												<Point>
+													<XPos>19.03485</XPos>
+													<YPos>13.72031</YPos>
+													<ZPos>-20</ZPos>
+													<Flags>0</Flags>
+													<Time>3200</Time>
+												</Point>
+												<Point>
+													<XPos>24.39678</XPos>
+													<YPos>-4.74933</YPos>
+													<ZPos>-25</ZPos>
+													<Flags>0</Flags>
+													<Time>4000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="567249__iwanplays__bricksstonesrocksgravel-falling" ID="{F5151E96-A94A-46B5-9E24-672577DB2E13}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<PositioningInfo>
 						<Panner Name="" ID="{98422D38-CE73-4454-9197-58BEE697C14A}"/>
