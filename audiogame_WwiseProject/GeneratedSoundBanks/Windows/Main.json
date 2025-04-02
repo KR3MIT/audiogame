@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{272380F5-32BF-1E4B-EBB5-08EA79C09D0F}",
+    "Hash": "{B27A051A-BA13-7972-745A-9A2A542B38EB}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -38,6 +38,22 @@
       "Location": "Memory",
       "ShortName": "TakeDamage1.0.wav",
       "CachePath": "DE/{DE5C1CE9-EA79-630D-F0DA-32E03FA4A0B0}.wem"
+     },
+     {
+      "Id": "62138234",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WaterDrip.wav",
+      "CachePath": "FE/{FE54039C-F8D0-7ED8-39DF-7B5052FABD4F}.wem"
+     },
+     {
+      "Id": "107015913",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WaterDrip.wav",
+      "CachePath": "70/{70B65F85-1677-F724-C83F-A388FF07B6AB}.wem"
      },
      {
       "Id": "137710955",
@@ -136,6 +152,14 @@
       "CachePath": "6B/{6BBDFC2A-E3C6-8C58-DB91-D13F5E046044}.wem"
      },
      {
+      "Id": "367453762",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WaterDrip.wav",
+      "CachePath": "F7/{F7E03176-A874-62EB-B1CD-CB4E16040953}.wem"
+     },
+     {
       "Id": "384600095",
       "Language": "SFX",
       "Streaming": "false",
@@ -158,6 +182,14 @@
       "Location": "Memory",
       "ShortName": "RespawnSound.wav",
       "CachePath": "E5/{E599BCC1-AC66-1622-7EB0-E70DA81D304C}.wem"
+     },
+     {
+      "Id": "426616645",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WaterDrip.wav",
+      "CachePath": "FE/{FE731D57-6175-2BFE-2EB1-A5CE7201706A}.wem"
      },
      {
       "Id": "430613048",
@@ -310,6 +342,14 @@
       "Location": "Memory",
       "ShortName": "FootstepsStone.wav",
       "CachePath": "41/{41E6F633-CE02-E238-8A1E-D55DCE220C60}.wem"
+     },
+     {
+      "Id": "840649587",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WaterDrip.wav",
+      "CachePath": "BD/{BD8F66EC-851F-5AE9-26AB-DE2C78699FFE}.wem"
      },
      {
       "Id": "841893982",
@@ -570,6 +610,33 @@
       ]
      },
      {
+      "Id": "2298613774",
+      "Name": "Play_WaterDroplets",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_WaterDroplets",
+      "GUID": "{A1D4656F-6F33-4C5D-BFA7-7E9674689B20}",
+      "MaxAttenuation": "30",
+      "DurationType": "OneShot",
+      "DurationMin": "0.17947231",
+      "DurationMax": "0.3212609",
+      "MediaRefs": [
+       {
+        "Id": "62138234"
+       },
+       {
+        "Id": "107015913"
+       },
+       {
+        "Id": "367453762"
+       },
+       {
+        "Id": "426616645"
+       },
+       {
+        "Id": "840649587"
+       }
+      ]
+     },
+     {
       "Id": "1953273240",
       "Name": "PlayerCheckpointEvent",
       "ObjectPath": "\\Events\\Default Work Unit\\PlayerCheckpointEvent",
@@ -825,6 +892,6 @@
     ]
    }
   ],
-  "FileHash": "{43A7A850-19FF-4424-6B2A-38EC9F3342C4}"
+  "FileHash": "{19E2D0A7-E8EB-3D59-2E57-988D8B207333}"
  }
 }
