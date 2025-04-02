@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{B27A051A-BA13-7972-745A-9A2A542B38EB}",
+    "Hash": "{A9EF007F-87E3-C751-3C2B-268C7E65EF73}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -40,12 +40,28 @@
       "CachePath": "DE/{DE5C1CE9-EA79-630D-F0DA-32E03FA4A0B0}.wem"
      },
      {
+      "Id": "34398908",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FairyD1.wav",
+      "CachePath": "BC/{BC8DCF9E-DB90-BFCE-97AF-A42BEAEDDA8B}.wem"
+     },
+     {
       "Id": "62138234",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "WaterDrip.wav",
       "CachePath": "FE/{FE54039C-F8D0-7ED8-39DF-7B5052FABD4F}.wem"
+     },
+     {
+      "Id": "94592133",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FairyF#1.wav",
+      "CachePath": "0F/{0FA7AF8D-29C0-D859-851E-AF15F3D21473}.wem"
      },
      {
       "Id": "107015913",
@@ -70,6 +86,14 @@
       "Location": "Memory",
       "ShortName": "ChoirAah.wav",
       "CachePath": "78/{783360DD-98B4-D1BB-24FB-1F420006F6D9}.wem"
+     },
+     {
+      "Id": "150379089",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FairyD2.wav",
+      "CachePath": "E3/{E3E63FC6-E563-7607-5B92-C24E4B3C5331}.wem"
      },
      {
       "Id": "165046590",
@@ -112,6 +136,14 @@
       "CachePath": "00/{004C60D3-00CB-667D-727B-648C95DE2F7D}.wem"
      },
      {
+      "Id": "226201215",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FairyG1.wav",
+      "CachePath": "7D/{7DA4194F-1BB6-9685-B3F3-84B6E32AD104}.wem"
+     },
+     {
       "Id": "249549327",
       "Language": "SFX",
       "Streaming": "false",
@@ -120,12 +152,28 @@
       "CachePath": "82/{82E0C26C-0F9D-11B2-4157-CD7783A28B31}.wem"
      },
      {
+      "Id": "258284959",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FairyA2.wav",
+      "CachePath": "86/{864BA677-20B7-6A02-75CA-F97965CEE54A}.wem"
+     },
+     {
       "Id": "269963085",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "RockThrowStone.wav",
       "CachePath": "7D/{7D3D2CA6-DF67-3C37-71F1-DE8642F04EBC}.wem"
+     },
+     {
+      "Id": "318027306",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FairyF#2.wav",
+      "CachePath": "6F/{6F917D82-BDF0-FEC7-5503-D1D09C7308DC}.wem"
      },
      {
       "Id": "330690429",
@@ -182,6 +230,14 @@
       "Location": "Memory",
       "ShortName": "RespawnSound.wav",
       "CachePath": "E5/{E599BCC1-AC66-1622-7EB0-E70DA81D304C}.wem"
+     },
+     {
+      "Id": "418454029",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FairyB2.wav",
+      "CachePath": "56/{56C85E39-CE34-1CD3-7368-CC9169292EA4}.wem"
      },
      {
       "Id": "426616645",
@@ -248,6 +304,14 @@
       "CachePath": "F6/{F6530B18-C2C3-44CD-9E48-F3574A042990}.wem"
      },
      {
+      "Id": "620271480",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FairyG2.wav",
+      "CachePath": "2B/{2B609C06-5E32-0CEF-A900-3C4C281C8D54}.wem"
+     },
+     {
       "Id": "632634852",
       "Language": "SFX",
       "Streaming": "false",
@@ -312,6 +376,14 @@
       "CachePath": "DB/{DB131206-5E0F-C7CC-9E52-D28C0F57DF67}.wem"
      },
      {
+      "Id": "764391143",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FairyE2.wav",
+      "CachePath": "6F/{6F7B8795-87CC-1849-EB29-56FCB6FD8ABF}.wem"
+     },
+     {
       "Id": "782706024",
       "Language": "SFX",
       "Streaming": "false",
@@ -360,6 +432,22 @@
       "CachePath": "A2/{A23F10A3-B5DE-DBAA-1616-19F4CB95DFB0}.wem"
      },
      {
+      "Id": "846723884",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FairyA1.wav",
+      "CachePath": "0B/{0B975309-23CD-9C74-4DB0-0A3D61C4D238}.wem"
+     },
+     {
+      "Id": "865587596",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FairyB1.wav",
+      "CachePath": "C7/{C7AD7BBC-3CE4-0E73-F917-66352F74DFA0}.wem"
+     },
+     {
       "Id": "879063686",
       "Language": "SFX",
       "Streaming": "false",
@@ -398,6 +486,14 @@
       "Location": "Memory",
       "ShortName": "FootstepsStone.wav",
       "CachePath": "09/{092F0E70-7CED-759C-A775-DD982AC6EBD2}.wem"
+     },
+     {
+      "Id": "978793047",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FairyE1.wav",
+      "CachePath": "A7/{A7535E18-C7E4-C81F-6EAC-B39E9F06AEDA}.wem"
      },
      {
       "Id": "993891194",
@@ -476,6 +572,52 @@
        },
        {
         "Id": "359865250"
+       }
+      ]
+     },
+     {
+      "Id": "3885387924",
+      "Name": "FairyEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\FairyEvent",
+      "GUID": "{DA8D4378-9EEE-4F69-BC07-E330BB72F9C5}",
+      "MaxAttenuation": "30",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "34398908"
+       },
+       {
+        "Id": "94592133"
+       },
+       {
+        "Id": "150379089"
+       },
+       {
+        "Id": "226201215"
+       },
+       {
+        "Id": "258284959"
+       },
+       {
+        "Id": "318027306"
+       },
+       {
+        "Id": "418454029"
+       },
+       {
+        "Id": "620271480"
+       },
+       {
+        "Id": "764391143"
+       },
+       {
+        "Id": "846723884"
+       },
+       {
+        "Id": "865587596"
+       },
+       {
+        "Id": "978793047"
        }
       ]
      },
@@ -892,6 +1034,6 @@
     ]
    }
   ],
-  "FileHash": "{19E2D0A7-E8EB-3D59-2E57-988D8B207333}"
+  "FileHash": "{0FDAD0C0-0F45-6644-CF0C-194225204B64}"
  }
 }

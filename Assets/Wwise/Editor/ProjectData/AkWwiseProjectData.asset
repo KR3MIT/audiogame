@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c3d61869592f7241956bf3ebd662ac76
     GuidInternal: 
-    m_lastTime: -8584580257037362425
+    m_lastTime: -8584580250647603618
     List:
     - name: Main
       guid: 08192794cbd195478a29c0aa63f15f72
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: befe7aa783db144cbdf844a78d27198f
     GuidInternal: 
-    m_lastTime: -8584580257037480112
+    m_lastTime: -8584580250647415629
     List:
     - name: AxeSwingEvent
       guid: 40af1f4aad05564e9683cd3ef923c768
@@ -167,6 +167,23 @@ MonoBehaviour:
       maxAttenuation: 30
       maxDuration: 0.5969677
       minDuration: 0.3455742
+    - name: FairyEvent
+      guid: 78438ddaee9e694fbc07e330bb72f9c5
+      id: 3885387924
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: FairyEvent
+        ObjectType: 3
+        guid: 78438ddaee9e694fbc07e330bb72f9c5
+      Path: Events\Default Work Unit\FairyEvent
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: FootstepEvent
       guid: 276ffc0c1053124a8217a1cc7fa0b0b0
       id: 3511205013

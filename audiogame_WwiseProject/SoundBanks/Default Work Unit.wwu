@@ -16,6 +16,7 @@
 						<ObjectRef Name="RockHitSwitchEvent" ID="{F6393261-FC4B-4E26-9FCF-1E26F521B94B}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AxeSwingEvent" ID="{4A1FAF40-05AD-4E56-9683-CD3EF923C768}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayerReviveEvent" ID="{EAB67DE5-4BE1-4F02-B514-5029F0696919}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="FairyEvent" ID="{DA8D4378-9EEE-4F69-BC07-E330BB72F9C5}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
