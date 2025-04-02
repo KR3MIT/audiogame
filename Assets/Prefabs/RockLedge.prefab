@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.22, y: 0.06, z: -8.2}
-  m_LocalScale: {x: 1, y: 1.4731575, z: 1}
+  m_LocalScale: {x: 1, y: 1.4731575, z: 1.2994}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8427293573243238754}
@@ -71,7 +71,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 6aa80c4045ad1a64eab1b75b896e5a54, type: 2}
-  bc: {fileID: 0}
+  soundCooldown: 10
 --- !u!1 &8773185456949181128
 GameObject:
   m_ObjectHideFlags: 0

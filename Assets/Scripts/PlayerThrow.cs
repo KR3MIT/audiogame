@@ -35,7 +35,7 @@ public class PlayerThrow : MonoBehaviour
         Invoke("ResetRockCooldown", RockThrowRate);             //lefunnymemeface
         
         if (Haptics.instance != null)
-        Haptics.instance.PulseHaptics(0.25f,0.25f, 0.1f);
+        Haptics.instance.PulseHaptics(0.1f,0.1f, 0.05f);
         
         rockThrowTask?.CompleteTask();
     }

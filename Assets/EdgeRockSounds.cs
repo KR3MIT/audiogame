@@ -4,7 +4,9 @@ using UnityEngine;
 public class EdgeRockSounds : MonoBehaviour
 {
     public AK.Wwise.Event soundEvent;
-    public BoxCollider bc;
+    private BoxCollider bc;
+    public float soundCooldown = 10f;
+   
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
@@ -17,8 +19,10 @@ public class EdgeRockSounds : MonoBehaviour
     {
         if(other.TryGetComponent(out PlayerBehavior player))
         {
-            Debug.Log("fall rocks r falling");
+            //Debug.Log("fall rocks r falling");
             soundEvent.Post(gameObject);
+            if (Haptics.instance != null)
+                Haptics.instance.PulseHaptics(0.50f, 0.75f, 1f);
             StartCoroutine(SoundReset());
         }
         
@@ -26,7 +30,7 @@ public class EdgeRockSounds : MonoBehaviour
     IEnumerator SoundReset()
     {
         bc.enabled = false;
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(soundCooldown);
         bc.enabled = true;
     }
     

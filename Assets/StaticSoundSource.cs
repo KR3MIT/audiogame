@@ -24,7 +24,7 @@ public class StaticSoundSource : MonoBehaviour
         isPlaying = true;
             
         yield return new WaitForSeconds(Delay + _randomTime);
-        Debug.Log("Playing Sound");
+        //Debug.Log("Playing Sound");
         soundEvent.Post(gameObject);
         isPlaying = false;
     }
