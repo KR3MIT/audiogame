@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Splines;
@@ -24,12 +25,27 @@ public class FairyController : MonoBehaviour
     {
         if (splineAnimate.IsPlaying == false && hasPlayedOnSpline == true)
         {
-            splineAnimate.Pause();
-            
-            splineAnimate.Container = splines[currentSpline];
-            
+            //splineAnimate.Restart(false);
+            //splineAnimate.Container = splines[currentSpline];
+            //hasPlayedOnSpline = false;
+            StartCoroutine(SwitchSpline());
+            //splineAnimate.Pause();
+
         }
     }
+
+    IEnumerator SwitchSpline()
+    {
+        hasPlayedOnSpline = false;
+        splineAnimate.Restart(false);
+        splineAnimate.Container = splines[currentSpline];
+        splineAnimate.Play();
+        yield return new WaitForSeconds(0.01f);
+        //splineAnimate.Pause();
+        splineAnimate.Restart(false);
+    }
+
+
 
     void OnTriggerEnter(Collider other)
     {
