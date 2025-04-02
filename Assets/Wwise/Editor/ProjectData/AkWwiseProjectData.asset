@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c3d61869592f7241956bf3ebd662ac76
     GuidInternal: 
-    m_lastTime: -8584581080004818136
+    m_lastTime: -8584580257037362425
     List:
     - name: Main
       guid: 08192794cbd195478a29c0aa63f15f72
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: befe7aa783db144cbdf844a78d27198f
     GuidInternal: 
-    m_lastTime: -8584580279324070244
+    m_lastTime: -8584580257037480112
     List:
     - name: AxeSwingEvent
       guid: 40af1f4aad05564e9683cd3ef923c768
@@ -221,6 +221,23 @@ MonoBehaviour:
       maxAttenuation: 30
       maxDuration: 0
       minDuration: 0
+    - name: Play_WaterDroplets
+      guid: 6f65d4a1336f5d4cbfa77e9674689b20
+      id: 2298613774
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: Play_WaterDroplets
+        ObjectType: 3
+        guid: 6f65d4a1336f5d4cbfa77e9674689b20
+      Path: Events\Default Work Unit\Play_WaterDroplets
+      maxAttenuation: 30
+      maxDuration: 0.3212609
+      minDuration: 0.17947231
     - name: Player wall impact
       guid: a1fd5878b179d44bae489af49635b3f9
       id: 1854479028
