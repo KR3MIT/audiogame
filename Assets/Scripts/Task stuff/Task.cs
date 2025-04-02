@@ -27,6 +27,5 @@ public class Task : ScriptableObject
         onTaskComplete?.Invoke();
         onTaskComplete = null;
         // insert end dialogue here
-        Debug.Log(taskCompleteNarration);
     }
 }

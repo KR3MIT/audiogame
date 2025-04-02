@@ -48,12 +48,10 @@ public class FairyController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log(splineAnimate.IsPlaying);
         if (other.gameObject.tag == "Player" && splineAnimate.IsPlaying != true)
         { 
             splineAnimate.Play();
             hasPlayedOnSpline = true;
-            Debug.Log("Triggered");
 
         }
 
