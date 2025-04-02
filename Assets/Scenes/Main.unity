@@ -11911,6 +11911,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 239215366}
     m_Modifications:
+    - target: {fileID: 4495011087446182445, guid: a1b2451aebd39a94fb0ba9113222ca43, type: 3}
+      propertyPath: spikeRate
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4866193536097096352, guid: a1b2451aebd39a94fb0ba9113222ca43, type: 3}
       propertyPath: m_Name
       value: Spiketrap (2)
