@@ -1,6 +1,8 @@
 using NUnit.Framework;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Splines;
 
@@ -23,25 +25,23 @@ public class FairyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (splineAnimate.IsPlaying == false && hasPlayedOnSpline == true)
+        if (splineAnimate.IsPlaying == false && hasPlayedOnSpline == true && currentSpline != splines.Count - 1)
         {
-            //splineAnimate.Restart(false);
-            //splineAnimate.Container = splines[currentSpline];
-            //hasPlayedOnSpline = false;
+
             StartCoroutine(SwitchSpline());
-            //splineAnimate.Pause();
 
         }
     }
 
     IEnumerator SwitchSpline()
     {
+        currentSpline++;
         hasPlayedOnSpline = false;
         splineAnimate.Restart(false);
         splineAnimate.Container = splines[currentSpline];
         splineAnimate.Play();
         yield return new WaitForSeconds(0.01f);
-        //splineAnimate.Pause();
+        splineAnimate.Pause();
         splineAnimate.Restart(false);
     }
 
@@ -53,7 +53,6 @@ public class FairyController : MonoBehaviour
         if (other.gameObject.tag == "Player" && splineAnimate.IsPlaying != true)
         { 
             splineAnimate.Play();
-            currentSpline++;
             hasPlayedOnSpline = true;
             Debug.Log("Triggered");
 
