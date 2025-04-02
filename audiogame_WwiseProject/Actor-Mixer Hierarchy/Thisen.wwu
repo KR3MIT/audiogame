@@ -1252,7 +1252,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-26</Value>
+										<Value>-37</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1277,7 +1277,7 @@
 													<Modifier Name="" ID="{ABACD0D0-4BA1-403E-A613-77829F649A21}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="0.4"/>
+															<Property Name="Max" Type="Real64" Value="0.6"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
