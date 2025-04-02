@@ -10,6 +10,7 @@
 						<ObjectRef Name="PlayerDeathEvent" ID="{ED74E6EF-096D-45BA-B974-2D1CDC241561}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FootstepEvent" ID="{0CFC6F27-5310-4A12-8217-A1CC7FA0B0B0}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_WallImpactAndRub" ID="{C6D4B25F-82D2-4BF6-B8B5-24B9A8A1C2E1}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_WaterDroplets" ID="{A1D4656F-6F33-4C5D-BFA7-7E9674689B20}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_GlowSwitchController" ID="{CE46776C-8F62-4CA2-919C-7369465865FA}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayerCheckpointEvent" ID="{72A27E90-2950-4CA3-8AB2-B0FBC14E8411}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RockHitSwitchEvent" ID="{F6393261-FC4B-4E26-9FCF-1E26F521B94B}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
