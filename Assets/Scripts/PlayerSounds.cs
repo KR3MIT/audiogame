@@ -69,21 +69,4 @@ public class PlayerSounds : MonoBehaviour
         }
     }
 
-    IEnumerator Footsteps()
-    {
-        while (true)
-        {
-            if (PlayerMovement.NormalizedSpeed > threshold)
-            {
-                //Debug.Log("Footstep has been stepped");
-                if (PlayerBehavior.WwiseActive)
-                    FootstepEvent?.Invoke();
-            }
-
-            // Adjust step rate based on normalized speed
-            float speedFactor = Mathf.Lerp(2.0f, 1.0f, PlayerMovement.NormalizedSpeed);
-            float adjustedStepRate = steprate * speedFactor;
-            yield return new WaitForSeconds(adjustedStepRate);
-        }
-    }
 }
