@@ -1,22 +1,22 @@
 Event	ID	Name			Wwise Object Path	Notes
 	767398485	PauseFairyBellEvent			\Default Work Unit\Fairy\PauseFairyBellEvent	
-	904967365	Play_LedgeRocks			\Default Work Unit\Play_LedgeRocks	
+	904967365	Play_LedgeRocks			\Default Work Unit\Traps\Play_LedgeRocks	
 	1056060213	FairyBellEvent			\Default Work Unit\Fairy\FairyBellEvent	
 	1324720394	Play_WallImpactAndRub			\Default Work Unit\Player wall impact\Play_WallImpactAndRub	
-	1587523507	PlayerReviveEvent			\Default Work Unit\PlayerReviveEvent	
-	1953273240	PlayerCheckpointEvent			\Default Work Unit\PlayerCheckpointEvent	
-	2298613774	Play_WaterDroplets			\Default Work Unit\Play_WaterDroplets	
+	1587523507	PlayerReviveEvent			\Default Work Unit\PlayerSounds\PlayerReviveEvent	
+	1953273240	PlayerCheckpointEvent			\Default Work Unit\PlayerSounds\PlayerCheckpointEvent	
+	2298613774	Play_WaterDroplets			\Default Work Unit\Ambience\Play_WaterDroplets	
 	2411449720	SpikeTrapCloseEvent			\Default Work Unit\Traps\SpikeTrapCloseEvent	
 	2444696015	Stop_WallRub			\Default Work Unit\Player wall impact\Stop_WallRub	
-	2493706327	Play_RiverSequence			\Default Work Unit\Play_RiverSequence	
+	2493706327	Play_RiverSequence			\Default Work Unit\Ambience\Play_RiverSequence	
 	2836563388	SpikeTrapOpenEvent			\Default Work Unit\Traps\SpikeTrapOpenEvent	
 	2895310559	RockHitSwitchEvent			\Default Work Unit\RockHitSwitchEvent	
-	2985672797	TakeDamageEvent			\Default Work Unit\TakeDamageEvent	
+	2985672797	TakeDamageEvent			\Default Work Unit\PlayerSounds\TakeDamageEvent	
 	3270970525	AxeSwingEvent			\Default Work Unit\Traps\AxeSwingEvent	
-	3511205013	FootstepEvent			\Default Work Unit\FootstepEvent	
-	3599396917	Play_GlowSwitchController			\Default Work Unit\Play_GlowSwitchController	
+	3511205013	FootstepEvent			\Default Work Unit\PlayerSounds\FootstepEvent	
+	3589471410	ButtonGlowEvent			\Default Work Unit\Interactables\ButtonGlowEvent	
 	3617176563	FairyFlyAwayEvent			\Default Work Unit\Fairy\FairyFlyAwayEvent	
-	4042825516	PlayerDeathEvent			\Default Work Unit\PlayerDeathEvent	
+	4042825516	PlayerDeathEvent			\Default Work Unit\PlayerSounds\PlayerDeathEvent	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	868718117	RockHitMaterials			\Default Work Unit\RockHitMaterials	

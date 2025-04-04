@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{971DBAF0-FDEB-F9CA-B9E5-1680A8B66813}",
+    "Hash": "{ACE562AE-1052-2AAE-6986-CCEAD0CF174C}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -671,130 +671,9 @@
       ]
      },
      {
-      "Id": "1056060213",
-      "Name": "FairyBellEvent",
-      "ObjectPath": "\\Events\\Default Work Unit\\Fairy\\FairyBellEvent",
-      "GUID": "{DA8D4378-9EEE-4F69-BC07-E330BB72F9C5}",
-      "MaxAttenuation": "30",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "34398908"
-       },
-       {
-        "Id": "94592133"
-       },
-       {
-        "Id": "150379089"
-       },
-       {
-        "Id": "226201215"
-       },
-       {
-        "Id": "258284959"
-       },
-       {
-        "Id": "318027306"
-       },
-       {
-        "Id": "418454029"
-       },
-       {
-        "Id": "620271480"
-       },
-       {
-        "Id": "764391143"
-       },
-       {
-        "Id": "846723884"
-       },
-       {
-        "Id": "865587596"
-       },
-       {
-        "Id": "978793047"
-       }
-      ]
-     },
-     {
-      "Id": "3617176563",
-      "Name": "FairyFlyAwayEvent",
-      "ObjectPath": "\\Events\\Default Work Unit\\Fairy\\FairyFlyAwayEvent",
-      "GUID": "{E76E55CA-AF91-4983-A595-B7F475870A53}",
-      "MaxAttenuation": "30",
-      "DurationType": "OneShot",
-      "DurationMin": "0.9735733",
-      "DurationMax": "0.9735733",
-      "MediaRefs": [
-       {
-        "Id": "34398908"
-       },
-       {
-        "Id": "94592133"
-       },
-       {
-        "Id": "226201215"
-       },
-       {
-        "Id": "846723884"
-       },
-       {
-        "Id": "865587596"
-       },
-       {
-        "Id": "978793047"
-       }
-      ]
-     },
-     {
-      "Id": "3511205013",
-      "Name": "FootstepEvent",
-      "ObjectPath": "\\Events\\Default Work Unit\\FootstepEvent",
-      "GUID": "{0CFC6F27-5310-4A12-8217-A1CC7FA0B0B0}",
-      "DurationType": "OneShot",
-      "DurationMin": "0.050984062",
-      "DurationMax": "0.26873988",
-      "MediaRefs": [
-       {
-        "Id": "169031252"
-       },
-       {
-        "Id": "335112658"
-       },
-       {
-        "Id": "385467872"
-       },
-       {
-        "Id": "782706024"
-       },
-       {
-        "Id": "814459543"
-       },
-       {
-        "Id": "823371680"
-       },
-       {
-        "Id": "880648180"
-       },
-       {
-        "Id": "969719700"
-       }
-      ]
-     },
-     {
-      "Id": "767398485",
-      "Name": "PauseFairyBellEvent",
-      "ObjectPath": "\\Events\\Default Work Unit\\Fairy\\PauseFairyBellEvent",
-      "GUID": "{10836FC4-E4B2-4CC0-A0E9-5F8205685C6D}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     },
-     {
-      "Id": "3599396917",
-      "Name": "Play_GlowSwitchController",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_GlowSwitchController",
+      "Id": "3589471410",
+      "Name": "ButtonGlowEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\Interactables\\ButtonGlowEvent",
       "GUID": "{CE46776C-8F62-4CA2-919C-7369465865FA}",
       "MaxAttenuation": "30",
       "DurationType": "Infinite",
@@ -971,9 +850,130 @@
       ]
      },
      {
+      "Id": "1056060213",
+      "Name": "FairyBellEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\Fairy\\FairyBellEvent",
+      "GUID": "{DA8D4378-9EEE-4F69-BC07-E330BB72F9C5}",
+      "MaxAttenuation": "30",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "34398908"
+       },
+       {
+        "Id": "94592133"
+       },
+       {
+        "Id": "150379089"
+       },
+       {
+        "Id": "226201215"
+       },
+       {
+        "Id": "258284959"
+       },
+       {
+        "Id": "318027306"
+       },
+       {
+        "Id": "418454029"
+       },
+       {
+        "Id": "620271480"
+       },
+       {
+        "Id": "764391143"
+       },
+       {
+        "Id": "846723884"
+       },
+       {
+        "Id": "865587596"
+       },
+       {
+        "Id": "978793047"
+       }
+      ]
+     },
+     {
+      "Id": "3617176563",
+      "Name": "FairyFlyAwayEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\Fairy\\FairyFlyAwayEvent",
+      "GUID": "{E76E55CA-AF91-4983-A595-B7F475870A53}",
+      "MaxAttenuation": "30",
+      "DurationType": "OneShot",
+      "DurationMin": "0.9735733",
+      "DurationMax": "0.9735733",
+      "MediaRefs": [
+       {
+        "Id": "34398908"
+       },
+       {
+        "Id": "94592133"
+       },
+       {
+        "Id": "226201215"
+       },
+       {
+        "Id": "846723884"
+       },
+       {
+        "Id": "865587596"
+       },
+       {
+        "Id": "978793047"
+       }
+      ]
+     },
+     {
+      "Id": "3511205013",
+      "Name": "FootstepEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayerSounds\\FootstepEvent",
+      "GUID": "{0CFC6F27-5310-4A12-8217-A1CC7FA0B0B0}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.050984062",
+      "DurationMax": "0.26873988",
+      "MediaRefs": [
+       {
+        "Id": "169031252"
+       },
+       {
+        "Id": "335112658"
+       },
+       {
+        "Id": "385467872"
+       },
+       {
+        "Id": "782706024"
+       },
+       {
+        "Id": "814459543"
+       },
+       {
+        "Id": "823371680"
+       },
+       {
+        "Id": "880648180"
+       },
+       {
+        "Id": "969719700"
+       }
+      ]
+     },
+     {
+      "Id": "767398485",
+      "Name": "PauseFairyBellEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\Fairy\\PauseFairyBellEvent",
+      "GUID": "{10836FC4-E4B2-4CC0-A0E9-5F8205685C6D}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
       "Id": "904967365",
       "Name": "Play_LedgeRocks",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_LedgeRocks",
+      "ObjectPath": "\\Events\\Default Work Unit\\Traps\\Play_LedgeRocks",
       "GUID": "{1BF278D8-EFAB-4D5F-8D79-EC2075920473}",
       "MaxAttenuation": "30",
       "DurationType": "OneShot",
@@ -988,7 +988,7 @@
      {
       "Id": "2493706327",
       "Name": "Play_RiverSequence",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_RiverSequence",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\Play_RiverSequence",
       "GUID": "{541525E6-94A9-4A21-B8F9-758C5E0442A4}",
       "MaxAttenuation": "30",
       "DurationType": "Infinite",
@@ -1032,7 +1032,7 @@
      {
       "Id": "2298613774",
       "Name": "Play_WaterDroplets",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_WaterDroplets",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\Play_WaterDroplets",
       "GUID": "{A1D4656F-6F33-4C5D-BFA7-7E9674689B20}",
       "MaxAttenuation": "30",
       "DurationType": "OneShot",
@@ -1059,7 +1059,7 @@
      {
       "Id": "1953273240",
       "Name": "PlayerCheckpointEvent",
-      "ObjectPath": "\\Events\\Default Work Unit\\PlayerCheckpointEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayerSounds\\PlayerCheckpointEvent",
       "GUID": "{72A27E90-2950-4CA3-8AB2-B0FBC14E8411}",
       "MaxAttenuation": "30",
       "DurationType": "OneShot",
@@ -1074,7 +1074,7 @@
      {
       "Id": "4042825516",
       "Name": "PlayerDeathEvent",
-      "ObjectPath": "\\Events\\Default Work Unit\\PlayerDeathEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayerSounds\\PlayerDeathEvent",
       "GUID": "{ED74E6EF-096D-45BA-B974-2D1CDC241561}",
       "MaxAttenuation": "30",
       "DurationType": "OneShot",
@@ -1089,7 +1089,7 @@
      {
       "Id": "1587523507",
       "Name": "PlayerReviveEvent",
-      "ObjectPath": "\\Events\\Default Work Unit\\PlayerReviveEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayerSounds\\PlayerReviveEvent",
       "GUID": "{EAB67DE5-4BE1-4F02-B514-5029F0696919}",
       "MaxAttenuation": "30",
       "DurationType": "OneShot",
@@ -1239,7 +1239,7 @@
      {
       "Id": "2985672797",
       "Name": "TakeDamageEvent",
-      "ObjectPath": "\\Events\\Default Work Unit\\TakeDamageEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayerSounds\\TakeDamageEvent",
       "GUID": "{20533D7E-D413-437F-8784-CACF63D9A290}",
       "MaxAttenuation": "30",
       "DurationType": "OneShot",
@@ -1342,6 +1342,6 @@
     ]
    }
   ],
-  "FileHash": "{19B758A0-281C-884A-ABD9-AE6C001D4376}"
+  "FileHash": "{8886BF31-7A2B-ECF0-7CE7-D4BE33CE4F36}"
  }
 }
