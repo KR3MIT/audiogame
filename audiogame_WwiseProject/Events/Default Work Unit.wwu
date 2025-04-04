@@ -146,6 +146,16 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{8A59E222-600A-4013-8159-D75D71D2FC0E}" ShortID="278808701">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FairyBells" ID="{4C916309-A41C-4EBF-9853-6678A9672111}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="FairyBellEvent" ID="{DA8D4378-9EEE-4F69-BC07-E330BB72F9C5}">

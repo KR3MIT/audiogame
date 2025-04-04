@@ -42,7 +42,6 @@ public class FairyController : MonoBehaviour
         hasPlayedOnSpline = false;
         splineAnimate.Container = splines[currentSpline];
         splineAnimate.Play();
-        fairyBellSound.Post(gameObject);
         yield return new WaitForSeconds(0.01f);
         splineAnimate.Pause();
         splineAnimate.Restart(false);

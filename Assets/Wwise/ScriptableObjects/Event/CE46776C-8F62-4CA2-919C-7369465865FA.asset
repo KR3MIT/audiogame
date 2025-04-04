@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3a6d0dedd961c246b4dd5e7f55898ec, type: 3}
   m_Name: CE46776C-8F62-4CA2-919C-7369465865FA
   m_EditorClassIdentifier: 
-  objectName: Play_GlowSwitchController
-  id: 3599396917
+  objectName: ButtonGlowEvent
+  id: 3589471410
   guid: CE46776C-8F62-4CA2-919C-7369465865FA
   IsInUserDefinedSoundBank: 1
   IsAutoBankLoaded: 0

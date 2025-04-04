@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{ACE562AE-1052-2AAE-6986-CCEAD0CF174C}",
+    "Hash": "{164D938F-DA00-7EA1-01BB-757BC568399A}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -642,7 +642,7 @@
       "Name": "AxeSwingEvent",
       "ObjectPath": "\\Events\\Default Work Unit\\Traps\\AxeSwingEvent",
       "GUID": "{4A1FAF40-05AD-4E56-9683-CD3EF923C768}",
-      "MaxAttenuation": "30",
+      "MaxAttenuation": "40",
       "DurationType": "OneShot",
       "DurationMin": "0.3455742",
       "DurationMax": "0.5969677",
@@ -965,10 +965,46 @@
       "Name": "PauseFairyBellEvent",
       "ObjectPath": "\\Events\\Default Work Unit\\Fairy\\PauseFairyBellEvent",
       "GUID": "{10836FC4-E4B2-4CC0-A0E9-5F8205685C6D}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "MaxAttenuation": "30",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "34398908"
+       },
+       {
+        "Id": "94592133"
+       },
+       {
+        "Id": "150379089"
+       },
+       {
+        "Id": "226201215"
+       },
+       {
+        "Id": "258284959"
+       },
+       {
+        "Id": "318027306"
+       },
+       {
+        "Id": "418454029"
+       },
+       {
+        "Id": "620271480"
+       },
+       {
+        "Id": "764391143"
+       },
+       {
+        "Id": "846723884"
+       },
+       {
+        "Id": "865587596"
+       },
+       {
+        "Id": "978793047"
+       }
+      ]
      },
      {
       "Id": "904967365",
@@ -1201,7 +1237,7 @@
       "Name": "SpikeTrapCloseEvent",
       "ObjectPath": "\\Events\\Default Work Unit\\Traps\\SpikeTrapCloseEvent",
       "GUID": "{AFD0AF87-51C8-45AA-8237-050E540D9ABE}",
-      "MaxAttenuation": "30",
+      "MaxAttenuation": "20",
       "DurationType": "OneShot",
       "DurationMin": "0.6952408",
       "DurationMax": "0.6952408",
@@ -1216,7 +1252,7 @@
       "Name": "SpikeTrapOpenEvent",
       "ObjectPath": "\\Events\\Default Work Unit\\Traps\\SpikeTrapOpenEvent",
       "GUID": "{3022088E-EBC5-4F41-9210-E2925D5878A2}",
-      "MaxAttenuation": "30",
+      "MaxAttenuation": "20",
       "DurationType": "OneShot",
       "DurationMin": "0.7872594",
       "DurationMax": "0.7872594",
@@ -1342,6 +1378,6 @@
     ]
    }
   ],
-  "FileHash": "{454A8CD1-0880-D8AB-A648-92100C3CE536}"
+  "FileHash": "{EF8680CA-A043-CF78-DF37-5A2395214A47}"
  }
 }
