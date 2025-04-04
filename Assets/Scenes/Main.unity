@@ -7970,7 +7970,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4495011087446182445, guid: a1b2451aebd39a94fb0ba9113222ca43, type: 3}
       propertyPath: spikeRate
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4866193536097096352, guid: a1b2451aebd39a94fb0ba9113222ca43, type: 3}
       propertyPath: m_Name
@@ -16380,7 +16380,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8209019713667720385, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.96
+      value: -55.2
       objectReference: {fileID: 0}
     - target: {fileID: 8209019713667720385, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16388,7 +16388,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8209019713667720385, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.86
+      value: 60.9
       objectReference: {fileID: 0}
     - target: {fileID: 8209019713667720385, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18497,6 +18497,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 239215366}
     m_Modifications:
+    - target: {fileID: 4495011087446182445, guid: a1b2451aebd39a94fb0ba9113222ca43, type: 3}
+      propertyPath: spikeRate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4866193536097096352, guid: a1b2451aebd39a94fb0ba9113222ca43, type: 3}
       propertyPath: m_Name
       value: Spiketrap (2)
@@ -23998,6 +24002,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 239215366}
     m_Modifications:
+    - target: {fileID: 4495011087446182445, guid: a1b2451aebd39a94fb0ba9113222ca43, type: 3}
+      propertyPath: spikeRate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4866193536097096352, guid: a1b2451aebd39a94fb0ba9113222ca43, type: 3}
       propertyPath: m_Name
       value: Spiketrap (1)
@@ -25152,6 +25160,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 239215366}
     m_Modifications:
+    - target: {fileID: 4495011087446182445, guid: a1b2451aebd39a94fb0ba9113222ca43, type: 3}
+      propertyPath: spikeRate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4866193536097096352, guid: a1b2451aebd39a94fb0ba9113222ca43, type: 3}
       propertyPath: m_Name
       value: Spiketrap

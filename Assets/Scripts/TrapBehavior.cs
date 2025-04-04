@@ -17,7 +17,7 @@ public class TrapBehavior : MonoBehaviour
        mr = GetComponent<MeshRenderer>();
        StartCoroutine(SpikeTrap());
        
-        spikeRate += Random.Range(1, 5);
+        spikeRate += Random.Range(1, 3);
       
     }
     private void OnTriggerEnter(Collider other)
@@ -36,7 +36,7 @@ public class TrapBehavior : MonoBehaviour
             spikeExtendTrapSound.Post(gameObject);
             bc.enabled = true;
             mr.enabled = true;
-            yield return new WaitForSeconds(spikeOpenDuration);
+            yield return new WaitForSeconds(spikeRate);
             //PLAY SPIKE RETRACT TRAP SOUND
             spikeRetractTrapSound.Post(gameObject);
             bc.enabled = false;
