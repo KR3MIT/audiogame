@@ -16378,6 +16378,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8073662611953702891, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
+      propertyPath: RockThrowReleaseEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: d6fea5206314b1d4f9b4e14e7d20e1f1, type: 2}
     - target: {fileID: 8209019713667720385, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -55.2
