@@ -17,30 +17,33 @@ public class PlayerSounds : MonoBehaviour
     [Tooltip("The time is contained in this floaaat")]
     private Coroutine footstepCoroutine;
 
+    private float lastFootstepTime;
+    private bool isMoving;
+
     private void Start()
     {
         controller = GetComponent<CharacterController>();
         StartCoroutine(Breathing());
 
-        PlayerMovement.OnMove += () =>
-        {
-            if (footstepCoroutine == null)
-            {
-                footstepCoroutine = StartCoroutine(Footsteps());
-            }
-        };
-        PlayerMovement.OnStopMove += () =>
-        {
-            if (footstepCoroutine != null)
-            {
-                StopCoroutine(footstepCoroutine);
-                footstepCoroutine = null;
-            }
-        };
+        PlayerMovement.OnMove += () => { isMoving = true; };
+        PlayerMovement.OnStopMove += () => { isMoving = false; };
     }
 
     void Update()
     {
+        float speedFactor = Mathf.Lerp(2.0f, 1.0f, PlayerMovement.NormalizedSpeed);
+        float adjustedStepRate = steprate * speedFactor;
+        
+        if (isMoving & Time.time - lastFootstepTime > adjustedStepRate)
+        {
+            if (PlayerBehavior.WwiseActive)
+            {
+                FootstepEvent?.Invoke();
+                lastFootstepTime = Time.time;
+            }
+        }
+
+
         #region Falling
 
         if (controller.velocity.y < -1)
