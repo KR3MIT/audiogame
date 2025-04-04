@@ -67,7 +67,6 @@ public class PlayerCollisions : MonoBehaviour
                 if(Haptics.instance != null)
                 {
                     Haptics.instance.SetMotorSpeeds(0.25f,0.25f);
-                    Haptics.instance.ResumeHaptics();
                 }
                 
                 if (!touchingWalls.Contains(other.gameObject))
