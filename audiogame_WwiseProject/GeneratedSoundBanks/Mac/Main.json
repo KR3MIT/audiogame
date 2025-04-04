@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{50897645-AAFF-855E-6CBA-4C106448A6D2}",
+    "Hash": "{CBF75F8B-96A8-4331-017C-B9EBD9C6170B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -237,7 +237,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "RespawnSound.wav",
-      "CachePath": "E5/{E599BCC1-AC66-1622-7EB0-E70DA81D304C}.wem"
+      "CachePath": "51/{51A055E4-DFD1-AD91-DF99-39452FA6E936}.wem"
      },
      {
       "Id": "418454029",
@@ -815,6 +815,118 @@
           }
          ]
         }
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "654387190",
+         "Id": "748895195",
+         "GUID": "{6F94C287-4F6A-45E3-AC1C-3C901E0602B0}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "4812034"
+         },
+         {
+          "Id": "140299461"
+         },
+         {
+          "Id": "165970382"
+         },
+         {
+          "Id": "210891056"
+         },
+         {
+          "Id": "433311367"
+         },
+         {
+          "Id": "456254043"
+         },
+         {
+          "Id": "643937551"
+         },
+         {
+          "Id": "724544279"
+         },
+         {
+          "Id": "841893982"
+         },
+         {
+          "Id": "993891194"
+         },
+         {
+          "Id": "1036082695"
+         },
+         {
+          "Id": "1042931339"
+         }
+        ],
+        "PluginRefs": {
+         "Custom": [
+          {
+           "Id": "295979053"
+          },
+          {
+           "Id": "390811305"
+          }
+         ]
+        }
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "654387190",
+         "Id": "1668749452",
+         "GUID": "{265113B6-B4A8-42FE-801A-BD04941E3788}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "4812034"
+         },
+         {
+          "Id": "140299461"
+         },
+         {
+          "Id": "165970382"
+         },
+         {
+          "Id": "210891056"
+         },
+         {
+          "Id": "433311367"
+         },
+         {
+          "Id": "456254043"
+         },
+         {
+          "Id": "643937551"
+         },
+         {
+          "Id": "724544279"
+         },
+         {
+          "Id": "841893982"
+         },
+         {
+          "Id": "993891194"
+         },
+         {
+          "Id": "1036082695"
+         },
+         {
+          "Id": "1042931339"
+         }
+        ],
+        "PluginRefs": {
+         "Custom": [
+          {
+           "Id": "295979053"
+          },
+          {
+           "Id": "390811305"
+          }
+         ]
+        }
        }
       ]
      },
@@ -941,8 +1053,8 @@
       "GUID": "{EAB67DE5-4BE1-4F02-B514-5029F0696919}",
       "MaxAttenuation": "30",
       "DurationType": "OneShot",
-      "DurationMin": "1.4501262",
-      "DurationMax": "1.4501262",
+      "DurationMin": "0.8865612",
+      "DurationMax": "0.8865612",
       "MediaRefs": [
        {
         "Id": "392511690"
@@ -1190,6 +1302,6 @@
     ]
    }
   ],
-  "FileHash": "{97FD2912-34D3-B0B1-485E-616AB5CCABC6}"
+  "FileHash": "{39FDE03D-0D86-14CE-177F-C43FFD1C192A}"
  }
 }

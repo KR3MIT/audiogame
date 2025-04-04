@@ -3,7 +3,13 @@ using UnityEngine;
 public class ButtonBehavior : MonoBehaviour, Iinteractables
 {
     public DoorBehavior door;
-    
+    public AK.Wwise.Event buttonGlowSound;
+
+    void Start()
+    {
+        buttonGlowSound.Post(gameObject);
+    }
+
     public void Interact()
     {
         // play button sound

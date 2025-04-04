@@ -355,8 +355,8 @@ MonoBehaviour:
         guid: e57db6eae14b024fb5145029f0696919
       Path: Events\Default Work Unit\PlayerReviveEvent
       maxAttenuation: 30
-      maxDuration: 1.4501262
-      minDuration: 1.4501262
+      maxDuration: 0.8865612
+      minDuration: 0.8865612
     - name: RockHitSwitchEvent
       guid: 613239f64bfc264e9fcf1e26f521b94b
       id: 2895310559

@@ -796,6 +796,24 @@
 													<ItemRef Name="PotContainer" ID="{77FE365F-2351-43E0-9FCA-4A5B12671264}"/>
 												</ItemList>
 											</Grouping>
+											<Grouping>
+												<SwitchRef Name="None" ID="{6F94C287-4F6A-45E3-AC1C-3C901E0602B0}"/>
+												<ItemList>
+													<ItemRef Name="LoopingChoir" ID="{CCCBDF13-F26D-4356-AFED-E9A43E4F9571}"/>
+													<ItemRef Name="PotContainer" ID="{77FE365F-2351-43E0-9FCA-4A5B12671264}"/>
+													<ItemRef Name="LoopingString" ID="{93A6BDD1-FA1C-40F5-A3EC-7CA4477771D4}"/>
+													<ItemRef Name="TicsContainer" ID="{21D90D16-CA98-421A-92A2-337C72663E4B}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="No" ID="{265113B6-B4A8-42FE-801A-BD04941E3788}"/>
+												<ItemList>
+													<ItemRef Name="LoopingChoir" ID="{CCCBDF13-F26D-4356-AFED-E9A43E4F9571}"/>
+													<ItemRef Name="LoopingString" ID="{93A6BDD1-FA1C-40F5-A3EC-7CA4477771D4}"/>
+													<ItemRef Name="PotContainer" ID="{77FE365F-2351-43E0-9FCA-4A5B12671264}"/>
+													<ItemRef Name="TicsContainer" ID="{21D90D16-CA98-421A-92A2-337C72663E4B}"/>
+												</ItemList>
+											</Grouping>
 										</GroupingList>
 									</GroupingInfo>
 								</SwitchContainer>
