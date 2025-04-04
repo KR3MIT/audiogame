@@ -3,6 +3,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static event System.Action OnMove;
+    public static event System.Action OnStopMove;
+    
     public ContinuousTask lookTask;
     public ContinuousTask moveTask;
     
@@ -45,6 +48,13 @@ public class PlayerMovement : MonoBehaviour
         //speed for rtpc
         var horizontalSpeed = new Vector2(_controller.velocity.x, _controller.velocity.z).magnitude;
         NormalizedSpeed = horizontalSpeed / moveSpeed;
+        if (NormalizedSpeed > 0)
+        {
+            OnMove?.Invoke();
+        }else
+        {
+            OnStopMove?.Invoke();
+        }
         
         playerSpeedRTPC.SetValue(gameObject, NormalizedSpeed);
         
