@@ -4,7 +4,13 @@
 		<WorkUnit Name="WilliamTheGOAT" ID="{28E2E73C-5996-4653-AE2D-7002CF2FD467}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="Jesus" ID="{0AE6374F-0A9C-4BBC-A687-518390EF2622}" ShortID="126164553">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
 						</Reference>
@@ -12,6 +18,356 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="DoorRattling" ID="{B9ABD98D-BC83-466A-8893-7A9A0D3EA247}" ShortID="332260974">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="DoorRattling" ID="{65CCF757-62F5-4632-B9ED-6673F4753977}" ShortID="1067781442">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{5B60E88E-12BB-4FBD-8D41-76B67460EB7D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="DoorRattling" ID="{35778DF0-CBDB-48C8-A6D7-1434D3A0BAC2}" ShortID="738743710">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="DoorRattling" ID="{C99C802F-8033-4716-86A8-D182863E20EE}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.48428045687991"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.62496019237049"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.91648089530691"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>-7.5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>DoorRattling.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="326469481"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="DoorRattling" ID="{C99C802F-8033-4716-86A8-D182863E20EE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="DoorRattling_01" ID="{7332103E-C8BA-48D0-AAFB-0933BC36B24D}" ShortID="313762563">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="DoorRattling" ID="{486E241C-58EF-49C4-A743-62DE4CB6FAC9}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.51032046489535"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.41124105002226"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.62464172891237"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>DoorRattling.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="11040675"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="DoorRattling" ID="{486E241C-58EF-49C4-A743-62DE4CB6FAC9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="DoorRattling_02" ID="{F58BFF1D-FCA2-4AA7-A340-FF6903325666}" ShortID="88401635">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="DoorRattling" ID="{5283E01E-27DD-412E-87AF-91C429297F31}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.937440288555736"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="10.9368033664836"/>
+														<Property Name="TrimEnd" Type="Real64" Value="12.7596039251421"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>DoorRattling.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="21677575"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="DoorRattling" ID="{5283E01E-27DD-412E-87AF-91C429297F31}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="DoorRattling_03" ID="{58875FE6-3F96-4E68-87A2-21E2A8D93C89}" ShortID="457838430">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="DoorRattling" ID="{CEF7C4FC-9CBA-45BB-AD97-4FCC74610E1F}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.937440288555736"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="14.4261644405522"/>
+														<Property Name="TrimEnd" Type="Real64" Value="15.9364849030255"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>DoorRattling.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="453939632"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="DoorRattling" ID="{CEF7C4FC-9CBA-45BB-AD97-4FCC74610E1F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+						<RandomSequenceContainer Name="RockThrowBegin" ID="{261C4DCC-E6F8-412E-ACA5-A445DA1556C8}" ShortID="2650438">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0C1D1FCE-0522-437E-B529-38172B498827}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="3"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="RockThrowRelease" ID="{2CC12FA8-8C50-4BC4-B80D-0CEE536353A4}" ShortID="412550973">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="RockThrowRelease" ID="{8C1AD438-B885-4DBC-9FD8-93F0F2CDB86B}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.299349639565051"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="10.7067541922376"/>
+												<Property Name="TrimEnd" Type="Real64" Value="11.184446018597"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>24</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>RockThrowRelease.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="656246752"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="RockThrowRelease" ID="{8C1AD438-B885-4DBC-9FD8-93F0F2CDB86B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="RockThrowRelease_01" ID="{756D877A-3FCF-401A-B3FC-39874A60578B}" ShortID="371126449">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="RockThrowRelease" ID="{0B468AF8-3229-481F-9C0B-5AC60DBB650A}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.131314935158207"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.38307307461791"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.73916177511405"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>24</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>RockThrowRelease.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="520118903"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="RockThrowRelease" ID="{0B468AF8-3229-481F-9C0B-5AC60DBB650A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="RockThrowRelease_03" ID="{F7D5A44A-35C2-4986-909B-C38EA5C76A7B}" ShortID="367000969">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="RockThrowRelease" ID="{52B6C4D6-4DB0-455D-A3E4-793697D82DD2}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.102381830000162"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="7.9496420482088"/>
+												<Property Name="TrimEnd" Type="Real64" Value="8.31503519949137"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>24</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>RockThrowRelease.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="700979515"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="RockThrowRelease" ID="{52B6C4D6-4DB0-455D-A3E4-793697D82DD2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="RockThrowRelease_02" ID="{3D8747F4-6280-4244-94C9-48C85A6416B4}" ShortID="476812558">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="RockThrowRelease" ID="{B597B866-191B-4F9A-8A51-4FED941F170E}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.118242174094107"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.19185867559481"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.49348253567887"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>24</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>RockThrowRelease.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="811327516"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="RockThrowRelease" ID="{B597B866-191B-4F9A-8A51-4FED941F170E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

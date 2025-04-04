@@ -10,6 +10,8 @@ public class ChestBehavior : MonoBehaviour, Iinteractables
     }
     public void Interact()
     {
+        if (Haptics.instance != null)
+            Haptics.instance.PulseHaptics(0.50f, 0.50f, 0.5f);
         Debug.Log("Potion has been Drunk");
         bc.enabled = false;
     // do the potion drinking 
