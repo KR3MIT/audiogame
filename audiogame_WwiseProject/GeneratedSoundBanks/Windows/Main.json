@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{CBF75F8B-96A8-4331-017C-B9EBD9C6170B}",
+    "Hash": "{971DBAF0-FDEB-F9CA-B9E5-1680A8B66813}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -671,9 +671,9 @@
       ]
      },
      {
-      "Id": "3885387924",
-      "Name": "FairyEvent",
-      "ObjectPath": "\\Events\\Default Work Unit\\FairyEvent",
+      "Id": "1056060213",
+      "Name": "FairyBellEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\Fairy\\FairyBellEvent",
       "GUID": "{DA8D4378-9EEE-4F69-BC07-E330BB72F9C5}",
       "MaxAttenuation": "30",
       "DurationType": "Infinite",
@@ -704,6 +704,36 @@
        },
        {
         "Id": "764391143"
+       },
+       {
+        "Id": "846723884"
+       },
+       {
+        "Id": "865587596"
+       },
+       {
+        "Id": "978793047"
+       }
+      ]
+     },
+     {
+      "Id": "3617176563",
+      "Name": "FairyFlyAwayEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\Fairy\\FairyFlyAwayEvent",
+      "GUID": "{E76E55CA-AF91-4983-A595-B7F475870A53}",
+      "MaxAttenuation": "30",
+      "DurationType": "OneShot",
+      "DurationMin": "0.9735733",
+      "DurationMax": "0.9735733",
+      "MediaRefs": [
+       {
+        "Id": "34398908"
+       },
+       {
+        "Id": "94592133"
+       },
+       {
+        "Id": "226201215"
        },
        {
         "Id": "846723884"
@@ -750,6 +780,16 @@
         "Id": "969719700"
        }
       ]
+     },
+     {
+      "Id": "767398485",
+      "Name": "PauseFairyBellEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\Fairy\\PauseFairyBellEvent",
+      "GUID": "{10836FC4-E4B2-4CC0-A0E9-5F8205685C6D}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
      },
      {
       "Id": "3599396917",
@@ -1159,7 +1199,7 @@
      {
       "Id": "2411449720",
       "Name": "SpikeTrapCloseEvent",
-      "ObjectPath": "\\Events\\Default Work Unit\\SpikeTrapCloseEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\Traps\\SpikeTrapCloseEvent",
       "GUID": "{AFD0AF87-51C8-45AA-8237-050E540D9ABE}",
       "MaxAttenuation": "30",
       "DurationType": "OneShot",
@@ -1174,7 +1214,7 @@
      {
       "Id": "2836563388",
       "Name": "SpikeTrapOpenEvent",
-      "ObjectPath": "\\Events\\Default Work Unit\\SpikeTrapOpenEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\Traps\\SpikeTrapOpenEvent",
       "GUID": "{3022088E-EBC5-4F41-9210-E2925D5878A2}",
       "MaxAttenuation": "30",
       "DurationType": "OneShot",
@@ -1302,6 +1342,6 @@
     ]
    }
   ],
-  "FileHash": "{DDC6BE10-A9FA-24AA-B9E4-48D7F88CD1A1}"
+  "FileHash": "{19B758A0-281C-884A-ABD9-AE6C001D4376}"
  }
 }

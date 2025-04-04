@@ -1,19 +1,21 @@
 Event	ID	Name			Wwise Object Path	Notes
+	767398485	PauseFairyBellEvent			\Default Work Unit\Fairy\PauseFairyBellEvent	
 	904967365	Play_LedgeRocks			\Default Work Unit\Play_LedgeRocks	
+	1056060213	FairyBellEvent			\Default Work Unit\Fairy\FairyBellEvent	
 	1324720394	Play_WallImpactAndRub			\Default Work Unit\Player wall impact\Play_WallImpactAndRub	
 	1587523507	PlayerReviveEvent			\Default Work Unit\PlayerReviveEvent	
 	1953273240	PlayerCheckpointEvent			\Default Work Unit\PlayerCheckpointEvent	
 	2298613774	Play_WaterDroplets			\Default Work Unit\Play_WaterDroplets	
-	2411449720	SpikeTrapCloseEvent			\Default Work Unit\SpikeTrapCloseEvent	
+	2411449720	SpikeTrapCloseEvent			\Default Work Unit\Traps\SpikeTrapCloseEvent	
 	2444696015	Stop_WallRub			\Default Work Unit\Player wall impact\Stop_WallRub	
 	2493706327	Play_RiverSequence			\Default Work Unit\Play_RiverSequence	
-	2836563388	SpikeTrapOpenEvent			\Default Work Unit\SpikeTrapOpenEvent	
+	2836563388	SpikeTrapOpenEvent			\Default Work Unit\Traps\SpikeTrapOpenEvent	
 	2895310559	RockHitSwitchEvent			\Default Work Unit\RockHitSwitchEvent	
 	2985672797	TakeDamageEvent			\Default Work Unit\TakeDamageEvent	
 	3270970525	AxeSwingEvent			\Default Work Unit\Traps\AxeSwingEvent	
 	3511205013	FootstepEvent			\Default Work Unit\FootstepEvent	
 	3599396917	Play_GlowSwitchController			\Default Work Unit\Play_GlowSwitchController	
-	3885387924	FairyEvent			\Default Work Unit\FairyEvent	
+	3617176563	FairyFlyAwayEvent			\Default Work Unit\Fairy\FairyFlyAwayEvent	
 	4042825516	PlayerDeathEvent			\Default Work Unit\PlayerDeathEvent	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -44,10 +46,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4812034	Tic1	C:\Github\audiogame\audiogame_WwiseProject\.cache\BB\{BBBE934F-7B12-18FD-39F8-759698C7C9F4}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\TicsContainer\Tics\Tic1		26816
 	10129682	WallImpactInside_04	C:\Github\audiogame\audiogame_WwiseProject\.cache\27\{277698F1-FBFB-9DEB-9A96-8A2A4FB43D68}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\WallImpactAndRub\WallImpacts\WallImpactInside_04		56320
 	13984439	TakeDamage1_03	C:\Github\audiogame\audiogame_WwiseProject\.cache\DE\{DE5C1CE9-EA79-630D-F0DA-32E03FA4A0B0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\TakeDamage\TakeDamage1_03		71624
-	34398908	FairyD1	C:\Github\audiogame\audiogame_WwiseProject\.cache\BC\{BC8DCF9E-DB90-BFCE-97AF-A42BEAEDDA8B}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\FairySound\FairyBells\FairyD1		138316
+	34398908	FairyD1	C:\Github\audiogame\audiogame_WwiseProject\.cache\BC\{BC8DCF9E-DB90-BFCE-97AF-A42BEAEDDA8B}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\FairySound\FairyFlyAway\FairyD1		138316
 	62138234	WaterDrip_06	C:\Github\audiogame\audiogame_WwiseProject\.cache\FE\{FE54039C-F8D0-7ED8-39DF-7B5052FABD4F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\WaterDroplets\WaterDrip_06		36900
 	76045582	SpikeTrapOpen	C:\Github\audiogame\audiogame_WwiseProject\.cache\06\{06999E8C-4353-3A34-8469-36847D602F4C}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\SpikeTrapOpen		69532
-	94592133	FairyF#1	C:\Github\audiogame\audiogame_WwiseProject\.cache\0F\{0FA7AF8D-29C0-D859-851E-AF15F3D21473}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\FairySound\FairyBells\FairyF#1		128840
+	94592133	FairyF#1	C:\Github\audiogame\audiogame_WwiseProject\.cache\0F\{0FA7AF8D-29C0-D859-851E-AF15F3D21473}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\FairySound\FairyFlyAway\FairyF#1		128840
 	107015913	WaterDrip	C:\Github\audiogame\audiogame_WwiseProject\.cache\70\{70B65F85-1677-F724-C83F-A388FF07B6AB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\WaterDroplets\WaterDrip		40916
 	137710955	Woosh_01	C:\Github\audiogame\audiogame_WwiseProject\.cache\9E\{9E491501-86D3-74C3-DD6B-131F249AE272}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\AxeTrap\AxeSequence\Woosh_01		38498
 	140299461	ChoirAah	C:\Github\audiogame\audiogame_WwiseProject\.cache\78\{783360DD-98B4-D1BB-24FB-1F420006F6D9}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\LoopingChoir\ChoirRandom\ChoirAah		907344
@@ -100,8 +102,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	823371680	FootstepStone_06	C:\Github\audiogame\audiogame_WwiseProject\.cache\41\{41E6F633-CE02-E238-8A1E-D55DCE220C60}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\Footsteps\FootstepsStoneRight\FootstepStone_06		13156
 	840649587	WaterDrip_04	C:\Github\audiogame\audiogame_WwiseProject\.cache\BD\{BD8F66EC-851F-5AE9-26AB-DE2C78699FFE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\WaterDroplets\WaterDrip_04		50584
 	841893982	Pot5	C:\Github\audiogame\audiogame_WwiseProject\.cache\A2\{A23F10A3-B5DE-DBAA-1616-19F4CB95DFB0}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\PotContainer\Pots\Pot5		24184
-	846723884	FairyA1	C:\Github\audiogame\audiogame_WwiseProject\.cache\0B\{0B975309-23CD-9C74-4DB0-0A3D61C4D238}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\FairySound\FairyBells\FairyA1		133580
-	865587596	FairyB1	C:\Github\audiogame\audiogame_WwiseProject\.cache\C7\{C7AD7BBC-3CE4-0E73-F917-66352F74DFA0}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\FairySound\FairyBells\FairyB1		125684
+	846723884	FairyA1	C:\Github\audiogame\audiogame_WwiseProject\.cache\0B\{0B975309-23CD-9C74-4DB0-0A3D61C4D238}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\FairySound\FairyFlyAway\FairyA1		133580
+	865587596	FairyB1	C:\Github\audiogame\audiogame_WwiseProject\.cache\C7\{C7AD7BBC-3CE4-0E73-F917-66352F74DFA0}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\FairySound\FairyFlyAway\FairyB1		125684
 	879063686	WallImpactInside_02	C:\Github\audiogame\audiogame_WwiseProject\.cache\94\{94689735-5BAF-4558-F76A-F0D6ADDBBBA3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\WallImpactAndRub\WallImpacts\WallImpactInside_02		28116
 	880378824	TakeDamage1_0	C:\Github\audiogame\audiogame_WwiseProject\.cache\E3\{E377744E-EFAB-27D7-6488-B2DAFA3D1579}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\TakeDamage\TakeDamage1_0		72044
 	880648180	FootstepStone	C:\Github\audiogame\audiogame_WwiseProject\.cache\70\{70784E6C-8CA5-97B9-6AF5-781DDBDA4D12}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\Footsteps\FootstepsStoneLeft\FootstepStone		17516

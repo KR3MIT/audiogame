@@ -108,6 +108,18 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  fairyFlyAwaySound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 41ca8249a540cc04385f2d96ff44312d, type: 2}
+  fairyBellSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 974e3693b31e4ad4a82f82127b3eaba1, type: 2}
+  pauseFairyBellSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a8d8ffe5ba198194a8f04402f136bfa6, type: 2}
 --- !u!114 &7615940078749947627
 MonoBehaviour:
   m_ObjectHideFlags: 0

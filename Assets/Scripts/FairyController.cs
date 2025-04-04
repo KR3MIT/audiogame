@@ -13,6 +13,9 @@ public class FairyController : MonoBehaviour
     public List<SplineContainer> splines;
     int currentSpline = 0;
     bool hasPlayedOnSpline = false;
+    public AK.Wwise.Event fairyFlyAwaySound;
+    public AK.Wwise.Event fairyBellSound;
+    public AK.Wwise.Event pauseFairyBellSound;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -39,6 +42,7 @@ public class FairyController : MonoBehaviour
         hasPlayedOnSpline = false;
         splineAnimate.Container = splines[currentSpline];
         splineAnimate.Play();
+        fairyBellSound.Post(gameObject);
         yield return new WaitForSeconds(0.01f);
         splineAnimate.Pause();
         splineAnimate.Restart(false);
@@ -49,7 +53,9 @@ public class FairyController : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player" && splineAnimate.IsPlaying != true)
-        { 
+        {
+            pauseFairyBellSound.Post(gameObject);
+            fairyFlyAwaySound.Post(gameObject);
             splineAnimate.Play();
             hasPlayedOnSpline = true;
 
