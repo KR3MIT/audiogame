@@ -181,7 +181,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 40af1f4aad05564e9683cd3ef923c768
       Path: Events\Default Work Unit\Traps\AxeSwingEvent
-      maxAttenuation: 10
+      maxAttenuation: 30
       maxDuration: 0.5969677
       minDuration: 0.3455742
     - name: ButtonGlowEvent
@@ -526,7 +526,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 87afd0afc851aa458237050e540d9abe
       Path: Events\Default Work Unit\Traps\SpikeTrapCloseEvent
-      maxAttenuation: 10
+      maxAttenuation: 30
       maxDuration: 0.6952408
       minDuration: 0.6952408
     - name: SpikeTrapOpenEvent
@@ -546,7 +546,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 8e082230c5eb414f9210e2925d5878a2
       Path: Events\Default Work Unit\Traps\SpikeTrapOpenEvent
-      maxAttenuation: 10
+      maxAttenuation: 30
       maxDuration: 0.7872594
       minDuration: 0.7872594
     - name: Stop_WallRub

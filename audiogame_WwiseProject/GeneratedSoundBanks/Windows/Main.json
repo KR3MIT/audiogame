@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{06EEBCED-8FD6-B37D-3192-6FB0A6D70353}",
+    "Hash": "{164D938F-DA00-7EA1-01BB-757BC568399A}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -642,7 +642,7 @@
       "Name": "AxeSwingEvent",
       "ObjectPath": "\\Events\\Default Work Unit\\Traps\\AxeSwingEvent",
       "GUID": "{4A1FAF40-05AD-4E56-9683-CD3EF923C768}",
-      "MaxAttenuation": "10",
+      "MaxAttenuation": "40",
       "DurationType": "OneShot",
       "DurationMin": "0.3455742",
       "DurationMax": "0.5969677",
@@ -1237,7 +1237,7 @@
       "Name": "SpikeTrapCloseEvent",
       "ObjectPath": "\\Events\\Default Work Unit\\Traps\\SpikeTrapCloseEvent",
       "GUID": "{AFD0AF87-51C8-45AA-8237-050E540D9ABE}",
-      "MaxAttenuation": "10",
+      "MaxAttenuation": "20",
       "DurationType": "OneShot",
       "DurationMin": "0.6952408",
       "DurationMax": "0.6952408",
@@ -1252,7 +1252,7 @@
       "Name": "SpikeTrapOpenEvent",
       "ObjectPath": "\\Events\\Default Work Unit\\Traps\\SpikeTrapOpenEvent",
       "GUID": "{3022088E-EBC5-4F41-9210-E2925D5878A2}",
-      "MaxAttenuation": "10",
+      "MaxAttenuation": "20",
       "DurationType": "OneShot",
       "DurationMin": "0.7872594",
       "DurationMax": "0.7872594",
@@ -1378,6 +1378,6 @@
     ]
    }
   ],
-  "FileHash": "{8FCECE1D-5506-379B-B27C-BE6B7E2FBE89}"
+  "FileHash": "{E18B7C83-B0CA-C0FC-38AE-337E44B70449}"
  }
 }

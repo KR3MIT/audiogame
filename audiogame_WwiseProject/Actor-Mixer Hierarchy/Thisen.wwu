@@ -825,6 +825,7 @@
 						<ActorMixer Name="AxeTrap" ID="{CC7EBDD9-BA57-4615-A9CC-42842DE18D04}" ShortID="313435489">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="AttenuationDistanceScaling" Type="Real32" Value="2"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>

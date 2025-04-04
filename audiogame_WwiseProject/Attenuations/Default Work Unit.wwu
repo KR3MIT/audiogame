@@ -110,7 +110,7 @@
 				</Attenuation>
 				<Attenuation Name="TrapAttenuation" ID="{B8EA0CD8-BBFA-42CD-99D7-DAF7856A84D2}" ShortID="340928852">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="10"/>
+						<Property Name="RadiusMax" Type="Real64" Value="20"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -124,14 +124,16 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
+											<SegmentShape>Log3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>6.207172</XPos>
-											<YPos>-16.33303</YPos>
+											<XPos>7.57609</XPos>
+											<YPos>-18.71996</YPos>
 											<Flags>0</Flags>
+											<SegmentShape>InvertedSCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>10</XPos>
+											<XPos>20</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -158,7 +160,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>10</XPos>
+											<XPos>20</XPos>
 											<YPos>24</YPos>
 											<Flags>37</Flags>
 										</Point>
