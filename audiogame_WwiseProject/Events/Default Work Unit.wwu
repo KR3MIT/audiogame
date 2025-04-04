@@ -3,17 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="FootstepEvent" ID="{0CFC6F27-5310-4A12-8217-A1CC7FA0B0B0}">
-					<ChildrenList>
-						<Action Name="" ID="{55960188-5B79-4BDA-9B81-50BE6D65A510}" ShortID="439843889">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Footsteps" ID="{A541CD2E-74E8-4322-81A5-7C9FA87D9275}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="RockHitSwitchEvent" ID="{F6393261-FC4B-4E26-9FCF-1E26F521B94B}">
 					<ChildrenList>
 						<Action Name="" ID="{33CC6327-60CE-44DC-817C-A0AAF8719B8D}" ShortID="422405359">
@@ -66,17 +55,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Play_GlowSwitchController" ID="{CE46776C-8F62-4CA2-919C-7369465865FA}">
-					<ChildrenList>
-						<Action Name="" ID="{341065A2-8720-423B-8002-E11770E88003}" ShortID="467192884">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="GlowSwitchController" ID="{DE82F7E4-C42B-4A05-95BD-ADF3F9A4E755}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="Traps" ID="{309AE2A1-0B0B-40A4-9755-D51B363C186D}" ShortID="137658704">
 					<ChildrenList>
 						<Event Name="AxeSwingEvent" ID="{4A1FAF40-05AD-4E56-9683-CD3EF923C768}">
@@ -141,85 +119,19 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_LedgeRocks" ID="{1BF278D8-EFAB-4D5F-8D79-EC2075920473}">
+							<ChildrenList>
+								<Action Name="" ID="{08C52B10-CFED-4547-8F2A-FD335DE8EBBF}" ShortID="279565195">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="takenLedgeRocks" ID="{427BD49D-78C0-44E2-B551-C06FC77962B5}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="PlayerDeathEvent" ID="{ED74E6EF-096D-45BA-B974-2D1CDC241561}">
-					<ChildrenList>
-						<Action Name="" ID="{2D9EB3EF-1804-4875-8E0A-DB0B017E1972}" ShortID="943124978">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Death Chime" ID="{9E04210E-826A-4288-86A7-F4C31CCAFC79}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="PlayerReviveEvent" ID="{EAB67DE5-4BE1-4F02-B514-5029F0696919}">
-					<ChildrenList>
-						<Action Name="" ID="{7C233555-46E6-4D87-AD40-33AFF74DCA50}" ShortID="475602416">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="RespawnSound" ID="{B04BBC45-5C49-417F-9ADA-DEE6A04E2218}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="PlayerCheckpointEvent" ID="{72A27E90-2950-4CA3-8AB2-B0FBC14E8411}">
-					<ChildrenList>
-						<Action Name="" ID="{2EF77792-3C5C-4887-943E-D8FF70154758}" ShortID="588540755">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="CheckpointSound" ID="{04635B62-7233-4EAC-8899-03472E93448D}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="TakeDamageEvent" ID="{20533D7E-D413-437F-8784-CACF63D9A290}">
-					<ChildrenList>
-						<Action Name="" ID="{189DF49C-9222-4247-A800-83C8E8CA32BA}" ShortID="1055707983">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="TakeDamage" ID="{4629182D-818B-42F2-A7C4-616DCC7A04D3}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_WaterDroplets" ID="{A1D4656F-6F33-4C5D-BFA7-7E9674689B20}">
-					<ChildrenList>
-						<Action Name="" ID="{91357D80-E2BB-44C1-B98F-FD8991B1F34D}" ShortID="471972857">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="WaterDroplets" ID="{51EFC357-C761-46BD-AD7B-0C6EB84E4165}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_LedgeRocks" ID="{1BF278D8-EFAB-4D5F-8D79-EC2075920473}">
-					<ChildrenList>
-						<Action Name="" ID="{08C52B10-CFED-4547-8F2A-FD335DE8EBBF}" ShortID="279565195">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="takenLedgeRocks" ID="{427BD49D-78C0-44E2-B551-C06FC77962B5}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_RiverSequence" ID="{541525E6-94A9-4A21-B8F9-758C5E0442A4}">
-					<ChildrenList>
-						<Action Name="" ID="{EA21252A-F239-496D-9C2A-60A1D1A5CECB}" ShortID="72716009">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="RiverSequence" ID="{E72BEEA2-CA56-43BA-93BD-9EA8BC9D697B}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="Fairy" ID="{37B87F83-E78E-46C1-9B43-13532AB97E11}" ShortID="171764911">
 					<ChildrenList>
 						<Event Name="PauseFairyBellEvent" ID="{10836FC4-E4B2-4CC0-A0E9-5F8205685C6D}">
@@ -253,6 +165,106 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="FairyFlyAway" ID="{09389484-7319-4A2C-BC45-D2B99A63025A}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Ambience" ID="{8BD4EF97-5567-47C5-8FE3-97F096FD59FE}" ShortID="250517312">
+					<ChildrenList>
+						<Event Name="Play_RiverSequence" ID="{541525E6-94A9-4A21-B8F9-758C5E0442A4}">
+							<ChildrenList>
+								<Action Name="" ID="{EA21252A-F239-496D-9C2A-60A1D1A5CECB}" ShortID="72716009">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RiverSequence" ID="{E72BEEA2-CA56-43BA-93BD-9EA8BC9D697B}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_WaterDroplets" ID="{A1D4656F-6F33-4C5D-BFA7-7E9674689B20}">
+							<ChildrenList>
+								<Action Name="" ID="{91357D80-E2BB-44C1-B98F-FD8991B1F34D}" ShortID="471972857">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WaterDroplets" ID="{51EFC357-C761-46BD-AD7B-0C6EB84E4165}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Interactables" ID="{A0B6B4A2-19A2-4853-870D-3C88553825CC}" ShortID="756475110">
+					<ChildrenList>
+						<Event Name="ButtonGlowEvent" ID="{CE46776C-8F62-4CA2-919C-7369465865FA}">
+							<ChildrenList>
+								<Action Name="" ID="{341065A2-8720-423B-8002-E11770E88003}" ShortID="467192884">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GlowSwitchController" ID="{DE82F7E4-C42B-4A05-95BD-ADF3F9A4E755}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="PlayerSounds" ID="{BD798E23-E0F1-48D4-987E-5B92CFF07F71}" ShortID="702806123">
+					<ChildrenList>
+						<Event Name="PlayerDeathEvent" ID="{ED74E6EF-096D-45BA-B974-2D1CDC241561}">
+							<ChildrenList>
+								<Action Name="" ID="{2D9EB3EF-1804-4875-8E0A-DB0B017E1972}" ShortID="943124978">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Death Chime" ID="{9E04210E-826A-4288-86A7-F4C31CCAFC79}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayerCheckpointEvent" ID="{72A27E90-2950-4CA3-8AB2-B0FBC14E8411}">
+							<ChildrenList>
+								<Action Name="" ID="{2EF77792-3C5C-4887-943E-D8FF70154758}" ShortID="588540755">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CheckpointSound" ID="{04635B62-7233-4EAC-8899-03472E93448D}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayerReviveEvent" ID="{EAB67DE5-4BE1-4F02-B514-5029F0696919}">
+							<ChildrenList>
+								<Action Name="" ID="{7C233555-46E6-4D87-AD40-33AFF74DCA50}" ShortID="475602416">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RespawnSound" ID="{B04BBC45-5C49-417F-9ADA-DEE6A04E2218}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="TakeDamageEvent" ID="{20533D7E-D413-437F-8784-CACF63D9A290}">
+							<ChildrenList>
+								<Action Name="" ID="{189DF49C-9222-4247-A800-83C8E8CA32BA}" ShortID="1055707983">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TakeDamage" ID="{4629182D-818B-42F2-A7C4-616DCC7A04D3}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="FootstepEvent" ID="{0CFC6F27-5310-4A12-8217-A1CC7FA0B0B0}">
+							<ChildrenList>
+								<Action Name="" ID="{55960188-5B79-4BDA-9B81-50BE6D65A510}" ShortID="439843889">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps" ID="{A541CD2E-74E8-4322-81A5-7C9FA87D9275}" WorkUnitID="{2D0F5A2F-1A24-4139-AE7B-29F77C39E724}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
