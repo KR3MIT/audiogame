@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c3d61869592f7241956bf3ebd662ac76
     GuidInternal: 
-    m_lastTime: -8584578546664442034
+    m_lastTime: -8584578542515671908
     List:
     - name: Main
       guid: 08192794cbd195478a29c0aa63f15f72
@@ -145,8 +145,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: befe7aa783db144cbdf844a78d27198f
     GuidInternal: 
-    m_lastTime: -8584578546664349817
+    m_lastTime: -8584578506332477609
     List:
+    - name: Ambience
+      guid: 97efd48b6755c5478fe397f096fd59fe
+      id: 85412153
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: 97efd48b6755c5478fe397f096fd59fe
+      Path: Events\Default Work Unit\Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: AxeSwingEvent
       guid: 40af1f4aad05564e9683cd3ef923c768
       id: 3270970525
@@ -164,9 +181,46 @@ MonoBehaviour:
         ObjectType: 3
         guid: 40af1f4aad05564e9683cd3ef923c768
       Path: Events\Default Work Unit\Traps\AxeSwingEvent
-      maxAttenuation: 30
+      maxAttenuation: 10
       maxDuration: 0.5969677
       minDuration: 0.3455742
+    - name: ButtonGlowEvent
+      guid: 6c7746ce628fa24c919c7369465865fa
+      id: 3589471410
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: Interactables
+        ObjectType: 4
+        guid: a2b4b6a0a2195348870d3c88553825cc
+      - ElementName: ButtonGlowEvent
+        ObjectType: 3
+        guid: 6c7746ce628fa24c919c7369465865fa
+      Path: Events\Default Work Unit\Interactables\ButtonGlowEvent
+      maxAttenuation: 30
+      maxDuration: 0
+      minDuration: 0
+    - name: Fairy
+      guid: 837fb8378ee7c1469b4313532ab97e11
+      id: 2469822380
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: Fairy
+        ObjectType: 4
+        guid: 837fb8378ee7c1469b4313532ab97e11
+      Path: Events\Default Work Unit\Fairy
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: FairyBellEvent
       guid: 78438ddaee9e694fbc07e330bb72f9c5
       id: 1056060213
@@ -177,10 +231,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: Fairy
+        ObjectType: 4
+        guid: 837fb8378ee7c1469b4313532ab97e11
       - ElementName: FairyBellEvent
         ObjectType: 3
         guid: 78438ddaee9e694fbc07e330bb72f9c5
-      Path: Events\Default Work Unit\FairyBellEvent
+      Path: Events\Default Work Unit\Fairy\FairyBellEvent
       maxAttenuation: 30
       maxDuration: 0
       minDuration: 0
@@ -194,13 +251,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: Fairy
+        ObjectType: 4
+        guid: 837fb8378ee7c1469b4313532ab97e11
       - ElementName: FairyFlyAwayEvent
         ObjectType: 3
         guid: ca556ee791af8349a595b7f475870a53
-      Path: Events\Default Work Unit\FairyFlyAwayEvent
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      Path: Events\Default Work Unit\Fairy\FairyFlyAwayEvent
+      maxAttenuation: 30
+      maxDuration: 0.9735733
+      minDuration: 0.9735733
     - name: FootstepEvent
       guid: 276ffc0c1053124a8217a1cc7fa0b0b0
       id: 3511205013
@@ -211,16 +271,19 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: PlayerSounds
+        ObjectType: 4
+        guid: 238e79bdf1e0d448987e5b92cff07f71
       - ElementName: FootstepEvent
         ObjectType: 3
         guid: 276ffc0c1053124a8217a1cc7fa0b0b0
-      Path: Events\Default Work Unit\FootstepEvent
+      Path: Events\Default Work Unit\PlayerSounds\FootstepEvent
       maxAttenuation: 0
       maxDuration: 0.26873988
       minDuration: 0.050984062
-    - name: Play_GlowSwitchController
-      guid: 6c7746ce628fa24c919c7369465865fa
-      id: 3599396917
+    - name: Interactables
+      guid: a2b4b6a0a2195348870d3c88553825cc
+      id: 181270742
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -228,10 +291,30 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: befe7aa783db144cbdf844a78d27198f
-      - ElementName: Play_GlowSwitchController
+      - ElementName: Interactables
+        ObjectType: 4
+        guid: a2b4b6a0a2195348870d3c88553825cc
+      Path: Events\Default Work Unit\Interactables
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PauseFairyBellEvent
+      guid: c46f8310b2e4c04ca0e95f8205685c6d
+      id: 767398485
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: Fairy
+        ObjectType: 4
+        guid: 837fb8378ee7c1469b4313532ab97e11
+      - ElementName: PauseFairyBellEvent
         ObjectType: 3
-        guid: 6c7746ce628fa24c919c7369465865fa
-      Path: Events\Default Work Unit\Play_GlowSwitchController
+        guid: c46f8310b2e4c04ca0e95f8205685c6d
+      Path: Events\Default Work Unit\Fairy\PauseFairyBellEvent
       maxAttenuation: 30
       maxDuration: 0
       minDuration: 0
@@ -245,10 +328,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: Traps
+        ObjectType: 4
+        guid: a1e29a300b0ba4409755d51b363c186d
       - ElementName: Play_LedgeRocks
         ObjectType: 3
         guid: d878f21babef5f4d8d79ec2075920473
-      Path: Events\Default Work Unit\Play_LedgeRocks
+      Path: Events\Default Work Unit\Traps\Play_LedgeRocks
       maxAttenuation: 30
       maxDuration: 4.20195
       minDuration: 4.20195
@@ -262,10 +348,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: 97efd48b6755c5478fe397f096fd59fe
       - ElementName: Play_RiverSequence
         ObjectType: 3
         guid: e6251554a994214ab8f9758c5e0442a4
-      Path: Events\Default Work Unit\Play_RiverSequence
+      Path: Events\Default Work Unit\Ambience\Play_RiverSequence
       maxAttenuation: 30
       maxDuration: 0
       minDuration: 0
@@ -299,10 +388,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: 97efd48b6755c5478fe397f096fd59fe
       - ElementName: Play_WaterDroplets
         ObjectType: 3
         guid: 6f65d4a1336f5d4cbfa77e9674689b20
-      Path: Events\Default Work Unit\Play_WaterDroplets
+      Path: Events\Default Work Unit\Ambience\Play_WaterDroplets
       maxAttenuation: 30
       maxDuration: 0.3212609
       minDuration: 0.17947231
@@ -333,10 +425,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: PlayerSounds
+        ObjectType: 4
+        guid: 238e79bdf1e0d448987e5b92cff07f71
       - ElementName: PlayerCheckpointEvent
         ObjectType: 3
         guid: 907ea2725029a34c8ab2b0fbc14e8411
-      Path: Events\Default Work Unit\PlayerCheckpointEvent
+      Path: Events\Default Work Unit\PlayerSounds\PlayerCheckpointEvent
       maxAttenuation: 30
       maxDuration: 0.76776296
       minDuration: 0.76776296
@@ -350,10 +445,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: PlayerSounds
+        ObjectType: 4
+        guid: 238e79bdf1e0d448987e5b92cff07f71
       - ElementName: PlayerDeathEvent
         ObjectType: 3
         guid: efe674ed6d09ba45b9742d1cdc241561
-      Path: Events\Default Work Unit\PlayerDeathEvent
+      Path: Events\Default Work Unit\PlayerSounds\PlayerDeathEvent
       maxAttenuation: 30
       maxDuration: 1.565008
       minDuration: 1.565008
@@ -367,13 +465,33 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: PlayerSounds
+        ObjectType: 4
+        guid: 238e79bdf1e0d448987e5b92cff07f71
       - ElementName: PlayerReviveEvent
         ObjectType: 3
         guid: e57db6eae14b024fb5145029f0696919
-      Path: Events\Default Work Unit\PlayerReviveEvent
+      Path: Events\Default Work Unit\PlayerSounds\PlayerReviveEvent
       maxAttenuation: 30
       maxDuration: 0.8865612
       minDuration: 0.8865612
+    - name: PlayerSounds
+      guid: 238e79bdf1e0d448987e5b92cff07f71
+      id: 1327972334
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: PlayerSounds
+        ObjectType: 4
+        guid: 238e79bdf1e0d448987e5b92cff07f71
+      Path: Events\Default Work Unit\PlayerSounds
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: RockHitSwitchEvent
       guid: 613239f64bfc264e9fcf1e26f521b94b
       id: 2895310559
@@ -401,11 +519,14 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: Traps
+        ObjectType: 4
+        guid: a1e29a300b0ba4409755d51b363c186d
       - ElementName: SpikeTrapCloseEvent
         ObjectType: 3
         guid: 87afd0afc851aa458237050e540d9abe
-      Path: Events\Default Work Unit\SpikeTrapCloseEvent
-      maxAttenuation: 30
+      Path: Events\Default Work Unit\Traps\SpikeTrapCloseEvent
+      maxAttenuation: 10
       maxDuration: 0.6952408
       minDuration: 0.6952408
     - name: SpikeTrapOpenEvent
@@ -418,11 +539,14 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: Traps
+        ObjectType: 4
+        guid: a1e29a300b0ba4409755d51b363c186d
       - ElementName: SpikeTrapOpenEvent
         ObjectType: 3
         guid: 8e082230c5eb414f9210e2925d5878a2
-      Path: Events\Default Work Unit\SpikeTrapOpenEvent
-      maxAttenuation: 30
+      Path: Events\Default Work Unit\Traps\SpikeTrapOpenEvent
+      maxAttenuation: 10
       maxDuration: 0.7872594
       minDuration: 0.7872594
     - name: Stop_WallRub
@@ -455,10 +579,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: PlayerSounds
+        ObjectType: 4
+        guid: 238e79bdf1e0d448987e5b92cff07f71
       - ElementName: TakeDamageEvent
         ObjectType: 3
         guid: 7e3d532013d47f438784cacf63d9a290
-      Path: Events\Default Work Unit\TakeDamageEvent
+      Path: Events\Default Work Unit\PlayerSounds\TakeDamageEvent
       maxAttenuation: 30
       maxDuration: 0.47701633
       minDuration: 0.31316668
@@ -728,7 +855,7 @@ MonoBehaviour:
     m_lastTime: -8584593220592810358
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000020000000300000004000000050000000600000007000000090000000b0000000c0000000d0000000e0000000f0000001000000011000000130000001400000015000000170000001800000019000000400000004100000043000000
+  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000b0000000c0000000d0000000f00000010000000110000001300000015000000170000001800000019000000400000004100000043000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
