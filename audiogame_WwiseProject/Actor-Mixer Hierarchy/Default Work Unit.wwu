@@ -47,7 +47,7 @@
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-11</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -3483,7 +3483,7 @@
 													</PropertyList>
 													<PointList>
 														<Point>
-															<XPos>-0</XPos>
+															<XPos>0</XPos>
 															<YPos>-0.92348</YPos>
 															<Flags>12</Flags>
 															<Time>0</Time>
