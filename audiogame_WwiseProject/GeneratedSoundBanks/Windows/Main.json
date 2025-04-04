@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{164D938F-DA00-7EA1-01BB-757BC568399A}",
+    "Hash": "{E67F6810-F77C-EC38-F5F7-FE40747EB457}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -32,12 +32,28 @@
       "CachePath": "27/{277698F1-FBFB-9DEB-9A96-8A2A4FB43D68}.wem"
      },
      {
+      "Id": "11040675",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "DoorRattling.wav",
+      "CachePath": "3E/{3E5E23A7-83C3-FA96-F4A7-1FB8EC846C2D}.wem"
+     },
+     {
       "Id": "13984439",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "TakeDamage1.0.wav",
       "CachePath": "DE/{DE5C1CE9-EA79-630D-F0DA-32E03FA4A0B0}.wem"
+     },
+     {
+      "Id": "21677575",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "DoorRattling.wav",
+      "CachePath": "FE/{FE2347A6-F156-6A11-3E16-20BFE05D5624}.wem"
      },
      {
       "Id": "34398908",
@@ -184,6 +200,14 @@
       "CachePath": "6F/{6F917D82-BDF0-FEC7-5503-D1D09C7308DC}.wem"
      },
      {
+      "Id": "326469481",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "DoorRattling.wav",
+      "CachePath": "FC/{FC6CC008-B897-0464-9070-52D39BBF54BB}.wem"
+     },
+     {
       "Id": "330690429",
       "Language": "SFX",
       "Streaming": "false",
@@ -296,6 +320,14 @@
       "CachePath": "AF/{AF202EAC-6E4C-94D0-C818-8E82C3B90B6E}.wem"
      },
      {
+      "Id": "453939632",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "DoorRattling.wav",
+      "CachePath": "28/{284FD1F2-5E84-BB2C-E171-E596B9ACE831}.wem"
+     },
+     {
       "Id": "456254043",
       "Language": "SFX",
       "Streaming": "false",
@@ -334,6 +366,14 @@
       "Location": "Memory",
       "ShortName": "MetalShing.wav",
       "CachePath": "58/{583E9E49-8193-6EE4-F020-0573E081494C}.wem"
+     },
+     {
+      "Id": "520118903",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RockThrowRelease.wav",
+      "CachePath": "C2/{C2657174-BD3C-B027-F28F-6E039471BEAD}.wem"
      },
      {
       "Id": "559777520",
@@ -376,12 +416,28 @@
       "CachePath": "38/{3888CA04-8EC5-B445-A1A5-9C6AA3913E00}.wem"
      },
      {
+      "Id": "656246752",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RockThrowRelease.wav",
+      "CachePath": "78/{78CC084A-1BA8-281D-48AF-B62D4735F7EA}.wem"
+     },
+     {
       "Id": "674967751",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "RockThrowStone.wav",
       "CachePath": "60/{607A980B-2BF1-3856-F22A-F258DAA00F59}.wem"
+     },
+     {
+      "Id": "700979515",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RockThrowRelease.wav",
+      "CachePath": "C0/{C0A0DC45-8A55-D80D-D795-43FE87D61518}.wem"
      },
      {
       "Id": "711467482",
@@ -446,6 +502,14 @@
       "Location": "Memory",
       "ShortName": "FootstepsStone.wav",
       "CachePath": "BF/{BF2FA94E-DE45-73AF-ECBB-CFA93D7C8C94}.wem"
+     },
+     {
+      "Id": "811327516",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RockThrowRelease.wav",
+      "CachePath": "8A/{8AF50474-0EB2-08B3-A0E3-C99CB249EB78}.wem"
      },
      {
       "Id": "814459543",
@@ -850,6 +914,30 @@
       ]
      },
      {
+      "Id": "1184232069",
+      "Name": "DoorRattleEvent",
+      "ObjectPath": "\\Events\\WillEvents\\DoorSounds\\DoorRattleEvent",
+      "GUID": "{79A6EB65-F803-4835-83F0-AA3A6946F046}",
+      "MaxAttenuation": "30",
+      "DurationType": "OneShot",
+      "DurationMin": "1.3455426",
+      "DurationMax": "2.572145",
+      "MediaRefs": [
+       {
+        "Id": "11040675"
+       },
+       {
+        "Id": "21677575"
+       },
+       {
+        "Id": "326469481"
+       },
+       {
+        "Id": "453939632"
+       }
+      ]
+     },
+     {
       "Id": "1056060213",
       "Name": "FairyBellEvent",
       "ObjectPath": "\\Events\\Default Work Unit\\Fairy\\FairyBellEvent",
@@ -1233,6 +1321,30 @@
       ]
      },
      {
+      "Id": "2133386887",
+      "Name": "RockThrowReleaseEvent",
+      "ObjectPath": "\\Events\\WillEvents\\RockThrowReleaseEvent",
+      "GUID": "{2F820D24-07E3-47DD-9032-1AE71F065B63}",
+      "MaxAttenuation": "30",
+      "DurationType": "OneShot",
+      "DurationMin": "0.30162385",
+      "DurationMax": "0.47769183",
+      "MediaRefs": [
+       {
+        "Id": "520118903"
+       },
+       {
+        "Id": "656246752"
+       },
+       {
+        "Id": "700979515"
+       },
+       {
+        "Id": "811327516"
+       }
+      ]
+     },
+     {
       "Id": "2411449720",
       "Name": "SpikeTrapCloseEvent",
       "ObjectPath": "\\Events\\Default Work Unit\\Traps\\SpikeTrapCloseEvent",
@@ -1378,6 +1490,6 @@
     ]
    }
   ],
-  "FileHash": "{E18B7C83-B0CA-C0FC-38AE-337E44B70449}"
+  "FileHash": "{9BD2CD0C-62EF-09B4-2AF4-6DB3BFDDF9DC}"
  }
 }

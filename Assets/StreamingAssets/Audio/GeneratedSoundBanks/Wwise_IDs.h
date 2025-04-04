@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID AXESWINGEVENT = 3270970525U;
         static const AkUniqueID BUTTONGLOWEVENT = 3589471410U;
+        static const AkUniqueID DOORRATTLEEVENT = 1184232069U;
         static const AkUniqueID FAIRYBELLEVENT = 1056060213U;
         static const AkUniqueID FAIRYFLYAWAYEVENT = 3617176563U;
         static const AkUniqueID FOOTSTEPEVENT = 3511205013U;
@@ -27,6 +28,7 @@ namespace AK
         static const AkUniqueID PLAYERDEATHEVENT = 4042825516U;
         static const AkUniqueID PLAYERREVIVEEVENT = 1587523507U;
         static const AkUniqueID ROCKHITSWITCHEVENT = 2895310559U;
+        static const AkUniqueID ROCKTHROWRELEASEEVENT = 2133386887U;
         static const AkUniqueID SPIKETRAPCLOSEEVENT = 2411449720U;
         static const AkUniqueID SPIKETRAPOPENEVENT = 2836563388U;
         static const AkUniqueID STOP_WALLRUB = 2444696015U;

@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c3d61869592f7241956bf3ebd662ac76
     GuidInternal: 
-    m_lastTime: -8584578542515671908
+    m_lastTime: -8584578464989240166
     List:
     - name: Main
       guid: 08192794cbd195478a29c0aa63f15f72
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: befe7aa783db144cbdf844a78d27198f
     GuidInternal: 
-    m_lastTime: -8584578506332477609
+    m_lastTime: -8584578481427087576
     List:
     - name: Ambience
       guid: 97efd48b6755c5478fe397f096fd59fe
@@ -181,7 +181,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 40af1f4aad05564e9683cd3ef923c768
       Path: Events\Default Work Unit\Traps\AxeSwingEvent
-      maxAttenuation: 30
+      maxAttenuation: 40
       maxDuration: 0.5969677
       minDuration: 0.3455742
     - name: ButtonGlowEvent
@@ -526,7 +526,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 87afd0afc851aa458237050e540d9abe
       Path: Events\Default Work Unit\Traps\SpikeTrapCloseEvent
-      maxAttenuation: 30
+      maxAttenuation: 20
       maxDuration: 0.6952408
       minDuration: 0.6952408
     - name: SpikeTrapOpenEvent
@@ -546,7 +546,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 8e082230c5eb414f9210e2925d5878a2
       Path: Events\Default Work Unit\Traps\SpikeTrapOpenEvent
-      maxAttenuation: 30
+      maxAttenuation: 20
       maxDuration: 0.7872594
       minDuration: 0.7872594
     - name: Stop_WallRub
@@ -606,6 +606,73 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+  - PhysicalPath: Events\WillEvents.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: WillEvents
+      ObjectType: 12
+      guid: d2b6e6629258944b891e2d5ce2d57e22
+    ParentPath: Events\WillEvents
+    guid: d2b6e6629258944b891e2d5ce2d57e22
+    GuidInternal: 
+    m_lastTime: -8584578476053405166
+    List:
+    - name: DoorRattleEvent
+      guid: 65eba67903f8354883f0aa3a6946f046
+      id: 1184232069
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: WillEvents
+        ObjectType: 12
+        guid: d2b6e6629258944b891e2d5ce2d57e22
+      - ElementName: DoorSounds
+        ObjectType: 4
+        guid: 9bdf6efef5201f41bd422c08ac27388a
+      - ElementName: DoorRattleEvent
+        ObjectType: 3
+        guid: 65eba67903f8354883f0aa3a6946f046
+      Path: Events\WillEvents\DoorSounds\DoorRattleEvent
+      maxAttenuation: 30
+      maxDuration: 2.572145
+      minDuration: 1.3455426
+    - name: DoorSounds
+      guid: 9bdf6efef5201f41bd422c08ac27388a
+      id: 598115837
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: WillEvents
+        ObjectType: 12
+        guid: d2b6e6629258944b891e2d5ce2d57e22
+      - ElementName: DoorSounds
+        ObjectType: 4
+        guid: 9bdf6efef5201f41bd422c08ac27388a
+      Path: Events\WillEvents\DoorSounds
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: RockThrowReleaseEvent
+      guid: 240d822fe307dd4790321ae71f065b63
+      id: 2133386887
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: WillEvents
+        ObjectType: 12
+        guid: d2b6e6629258944b891e2d5ce2d57e22
+      - ElementName: RockThrowReleaseEvent
+        ObjectType: 3
+        guid: 240d822fe307dd4790321ae71f065b63
+      Path: Events\WillEvents\RockThrowReleaseEvent
+      maxAttenuation: 30
+      maxDuration: 0.47769183
+      minDuration: 0.30162385
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -855,7 +922,7 @@ MonoBehaviour:
     m_lastTime: -8584593220592810358
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000b0000000c0000000d0000000f00000010000000110000001300000015000000170000001800000019000000400000004100000043000000
+  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000b0000000c0000000d0000000f000000100000001100000013000000150000001700000018000000190000001e000000400000004100000043000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
