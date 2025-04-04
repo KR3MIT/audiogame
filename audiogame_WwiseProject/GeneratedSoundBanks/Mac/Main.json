@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{E67F6810-F77C-EC38-F5F7-FE40747EB457}",
+    "Hash": "{B1B92612-E102-7BF3-E278-C862F499A598}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -683,6 +683,14 @@
     "Plugins": {
      "Custom": [
       {
+       "Id": "151523271",
+       "Name": "Silence",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Thisen\\Sounds\\FairySound\\FairyBellSequence\\Silence\\Silence",
+       "GUID": "{11E3F263-7DCE-45E8-B9A2-5DB1372BB74A}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      },
+      {
        "Id": "295979053",
        "Name": "Silence",
        "ObjectPath": "\\Actor-Mixer Hierarchy\\Thisen\\Sounds\\Glow Sound\\GlowSwitchController\\TicsContainer\\Silence\\Silence",
@@ -981,7 +989,14 @@
        {
         "Id": "978793047"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "151523271"
+        }
+       ]
+      }
      },
      {
       "Id": "3617176563",
@@ -1054,7 +1069,9 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Fairy\\PauseFairyBellEvent",
       "GUID": "{10836FC4-E4B2-4CC0-A0E9-5F8205685C6D}",
       "MaxAttenuation": "30",
-      "DurationType": "Infinite",
+      "DurationType": "OneShot",
+      "DurationMin": "1.8638568",
+      "DurationMax": "5.163857",
       "MediaRefs": [
        {
         "Id": "34398908"
@@ -1490,6 +1507,6 @@
     ]
    }
   ],
-  "FileHash": "{5C83A452-83B2-49EE-A589-090F11D3A001}"
+  "FileHash": "{D7FEF623-904C-8E60-57AF-0BCAC63AD011}"
  }
 }
