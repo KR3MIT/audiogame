@@ -77,7 +77,9 @@ public class PlayerSounds : MonoBehaviour
                     FootstepEvent?.Invoke();
             }
 
-            float adjustedStepRate = steprate * (1 / Mathf.Max(PlayerMovement.NormalizedSpeed, 0.1f));
+            // Adjust step rate based on normalized speed
+            float speedFactor = Mathf.Lerp(2.0f, 1.0f, PlayerMovement.NormalizedSpeed);
+            float adjustedStepRate = steprate * speedFactor;
             yield return new WaitForSeconds(adjustedStepRate);
         }
     }
