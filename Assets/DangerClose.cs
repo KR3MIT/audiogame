@@ -31,15 +31,12 @@ public class DangerClose : MonoBehaviour
 
             Debug.Log($"Closest object: {colliders.First().name}, Distance: {intensity}");
             if (Haptics.instance != null)
-            {
                 Haptics.instance.SetMotorSpeeds(intensity, intensity);
-
-            }
-        
         }
         else
         {
-            Haptics.instance.ResetHaptics(); 
+            if (Haptics.instance != null)
+                Haptics.instance.ResetHaptics(); 
         }
 
     }
