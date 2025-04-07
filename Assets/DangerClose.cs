@@ -19,12 +19,7 @@ public class DangerClose : MonoBehaviour
 
                 float distance = Vector3.Distance(transform.position, collider.transform.position);
                 if (distance < closestDistance)
-                {
-
                     closestDistance = distance;
-                    Debug.Log($"Closest object: {collider.name}, Distance: {distance}");
-                }
-
             }
 
             var intensity = Mathf.Lerp(1, 0, closestDistance / searchDistance);
