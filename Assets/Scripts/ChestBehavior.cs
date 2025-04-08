@@ -3,6 +3,7 @@ using UnityEngine;
 public class ChestBehavior : MonoBehaviour, Iinteractables
 {
     public BoxCollider bc;
+    public AK.Wwise.Event drinkEvent;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,6 +14,7 @@ public class ChestBehavior : MonoBehaviour, Iinteractables
         if (Haptics.instance != null)
             Haptics.instance.PulseHaptics(0.50f, 0.50f, 0.5f);
         Debug.Log("Potion has been Drunk");
+        drinkEvent.Post(gameObject);
         bc.enabled = false;
     // do the potion drinking 
      PlayerBehavior.instance.health = 100;

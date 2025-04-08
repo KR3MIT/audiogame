@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c3d61869592f7241956bf3ebd662ac76
     GuidInternal: 
-    m_lastTime: -8584574983817083632
+    m_lastTime: -8584574960071845425
     List:
     - name: Main
       guid: 08192794cbd195478a29c0aa63f15f72
@@ -634,7 +634,7 @@ MonoBehaviour:
     ParentPath: Events\WillEvents
     guid: d2b6e6629258944b891e2d5ce2d57e22
     GuidInternal: 
-    m_lastTime: -8584574983821968158
+    m_lastTime: -8584574960075227992
     List:
     - name: DoorRattleEvent
       guid: 65eba67903f8354883f0aa3a6946f046
@@ -673,9 +673,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: HealingMoan
+    - name: Healing
       guid: 7237f590560c0a41a59ccd5ba6dc54d4
-      id: 204031988
+      id: 3413347345
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -683,13 +683,13 @@ MonoBehaviour:
       - ElementName: WillEvents
         ObjectType: 12
         guid: d2b6e6629258944b891e2d5ce2d57e22
-      - ElementName: HealingMoan
+      - ElementName: Healing
         ObjectType: 3
         guid: 7237f590560c0a41a59ccd5ba6dc54d4
-      Path: Events\WillEvents\HealingMoan
+      Path: Events\WillEvents\Healing
       maxAttenuation: 30
-      maxDuration: 1.1234795
-      minDuration: 0.51040626
+      maxDuration: 3.8958483
+      minDuration: 1.5324299
     - name: RockThrowReleaseEvent
       guid: 240d822fe307dd4790321ae71f065b63
       id: 2133386887

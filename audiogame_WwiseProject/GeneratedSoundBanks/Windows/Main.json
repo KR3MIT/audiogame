@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{E3DEB44D-06F5-AA01-7550-9B6F00CA5B3E}",
+    "Hash": "{D7B40806-095A-CA61-655E-F4F2F85439C6}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -62,6 +62,14 @@
       "Location": "Memory",
       "ShortName": "FairyD1.wav",
       "CachePath": "BC/{BC8DCF9E-DB90-BFCE-97AF-A42BEAEDDA8B}.wem"
+     },
+     {
+      "Id": "53361661",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WaterSlurp.wav",
+      "CachePath": "55/{55128D1B-7597-F426-BB50-DE83CE2FAF0F}.wem"
      },
      {
       "Id": "62138234",
@@ -280,6 +288,14 @@
       "CachePath": "51/{51A055E4-DFD1-AD91-DF99-39452FA6E936}.wem"
      },
      {
+      "Id": "416703143",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WaterSlurp.wav",
+      "CachePath": "E7/{E7AE4382-4A4C-9B3C-C525-FFF9889CC5FE}.wem"
+     },
+     {
       "Id": "418454029",
       "Language": "SFX",
       "Streaming": "false",
@@ -384,6 +400,14 @@
       "CachePath": "E9/{E92EB274-CEEE-7F7D-EB6E-9E706840F619}.wem"
      },
      {
+      "Id": "486399605",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WaterSlurp.wav",
+      "CachePath": "E3/{E3C778DB-3E32-7EA1-8966-AA7A794F08BC}.wem"
+     },
+     {
       "Id": "490897574",
       "Language": "SFX",
       "Streaming": "false",
@@ -398,6 +422,14 @@
       "Location": "Memory",
       "ShortName": "RockThrowRelease.wav",
       "CachePath": "C2/{C2657174-BD3C-B027-F28F-6E039471BEAD}.wem"
+     },
+     {
+      "Id": "544736418",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WaterSlurp.wav",
+      "CachePath": "BD/{BD301337-0948-83FD-DB5E-11533F20275B}.wem"
      },
      {
       "Id": "559777520",
@@ -470,6 +502,14 @@
       "Location": "Memory",
       "ShortName": "RockThrowStone.wav",
       "CachePath": "60/{607A980B-2BF1-3856-F22A-F258DAA00F59}.wem"
+     },
+     {
+      "Id": "689988897",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WaterSlurp.wav",
+      "CachePath": "C5/{C593308B-C68D-A508-25A1-523F6E6CAAED}.wem"
      },
      {
       "Id": "700979515",
@@ -739,10 +779,26 @@
     "Plugins": {
      "Custom": [
       {
+       "Id": "117820908",
+       "Name": "Silence",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\WilliamTheGOAT\\Jesus\\HealingWaterSlurp\\DelayMoan\\Silence",
+       "GUID": "{EEF8FA8C-71FD-4EB5-B1A7-14E135E048D8}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      },
+      {
        "Id": "151523271",
        "Name": "Silence",
        "ObjectPath": "\\Actor-Mixer Hierarchy\\Thisen\\Sounds\\FairySound\\FairyBellSequence\\Silence\\Silence",
        "GUID": "{11E3F263-7DCE-45E8-B9A2-5DB1372BB74A}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      },
+      {
+       "Id": "163979009",
+       "Name": "Silence",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\WilliamTheGOAT\\Jesus\\HealingWaterSlurp\\DelaySlurp\\Silence",
+       "GUID": "{1918C819-E433-4474-8294-CAE47AFF690A}",
        "LibName": "Wwise Silence",
        "LibId": "6619138"
       },
@@ -1128,20 +1184,32 @@
       ]
      },
      {
-      "Id": "204031988",
-      "Name": "HealingMoan",
-      "ObjectPath": "\\Events\\WillEvents\\HealingMoan",
+      "Id": "3413347345",
+      "Name": "Healing",
+      "ObjectPath": "\\Events\\WillEvents\\Healing",
       "GUID": "{90F53772-0C56-410A-A59C-CD5BA6DC54D4}",
       "MaxAttenuation": "30",
       "DurationType": "OneShot",
-      "DurationMin": "0.51040626",
-      "DurationMax": "1.1234795",
+      "DurationMin": "1.5324299",
+      "DurationMax": "3.8958483",
       "MediaRefs": [
+       {
+        "Id": "53361661"
+       },
        {
         "Id": "342591491"
        },
        {
+        "Id": "416703143"
+       },
+       {
         "Id": "459340268"
+       },
+       {
+        "Id": "486399605"
+       },
+       {
+        "Id": "544736418"
        },
        {
         "Id": "569969898"
@@ -1150,12 +1218,25 @@
         "Id": "578285320"
        },
        {
+        "Id": "689988897"
+       },
+       {
         "Id": "873634884"
        },
        {
         "Id": "909129382"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "117820908"
+        },
+        {
+         "Id": "163979009"
+        }
+       ]
+      }
      },
      {
       "Id": "767398485",
@@ -1627,6 +1708,6 @@
     ]
    }
   ],
-  "FileHash": "{ECD2D258-2247-83B6-C153-8C599BEAE9AE}"
+  "FileHash": "{5BCB6BC0-4373-F035-E0A7-00D32F461688}"
  }
 }

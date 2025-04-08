@@ -5,6 +5,7 @@ public class DoorBehavior : MonoBehaviour, Iinteractables
     public BoxCollider bc;
     public bool Interactiable;
     private MeshRenderer mc;
+    public AK.Wwise.Event lockedEvent;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,6 +22,11 @@ public class DoorBehavior : MonoBehaviour, Iinteractables
             // play door opening sound
             bc.enabled = false;
             mc.enabled = false;
+        }
+        else
+        {
+            lockedEvent.Post(gameObject);
+            Debug.Log("Door is not interactable");
         }
       
 
