@@ -85,6 +85,7 @@ public class PlayerBehavior : MonoBehaviour
         yield return new WaitForSeconds(respawnTime);
         playerReviveEvent.Post(gameObject);
         health = 100;
+        PlayerBehavior.instance.healthRTPC.SetValue(PlayerBehavior.instance.gameObject, PlayerBehavior.instance.health);
         controller.enabled = true;
     }
 
