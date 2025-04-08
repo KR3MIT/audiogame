@@ -29,6 +29,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="HealingMoan" ID="{90F53772-0C56-410A-A59C-CD5BA6DC54D4}">
+					<ChildrenList>
+						<Action Name="" ID="{F12B5C63-D6C2-4735-853E-D942A0777737}" ShortID="607695766">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Healing" ID="{0BBA2646-64AD-47B7-8123-371B608A4D90}" WorkUnitID="{28E2E73C-5996-4653-AE2D-7002CF2FD467}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
