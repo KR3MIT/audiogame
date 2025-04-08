@@ -28,6 +28,11 @@ public class RockBehavior : MonoBehaviour
             
             audioMaterial.materialSwitch.SetValue(gameObject);
             rockHitEvent.Post(gameObject);
+
+            if(collision.gameObject.layer == LayerMask.NameToLayer("Water"))
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }
