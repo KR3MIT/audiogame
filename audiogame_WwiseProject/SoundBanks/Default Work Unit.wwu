@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{94271908-D1CB-4795-8A29-C0AA63F15F72}">
 					<ObjectInclusionList>
+						<ObjectRef Name="HealingMoan" ID="{90F53772-0C56-410A-A59C-CD5BA6DC54D4}" WorkUnitID="{62E6B6D2-5892-4B94-891E-2D5CE2D57E22}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="DoorSounds" ID="{FE6EDF9B-20F5-411F-BD42-2C08AC27388A}" WorkUnitID="{62E6B6D2-5892-4B94-891E-2D5CE2D57E22}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Breath" ID="{83BBD59D-6E24-4348-A865-3B7DA6BE0203}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TakeDamageEvent" ID="{20533D7E-D413-437F-8784-CACF63D9A290}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
