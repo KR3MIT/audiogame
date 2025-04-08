@@ -19,6 +19,8 @@ public class PlayerBehavior : MonoBehaviour
     public AK.Wwise.Event playerReviveEvent;
     public AK.Wwise.Event checkpointEvent;
 
+    public AK.Wwise.Event heartbeatEvent;
+    public AK.Wwise.RTPC healthRTPC;
     private void Awake()
     {
         if (instance != null)
@@ -37,6 +39,12 @@ public class PlayerBehavior : MonoBehaviour
         
         controller = GetComponent<CharacterController>();
         checkpoint = transform.position;
+
+        if (WwiseActive)
+        {
+            heartbeatEvent.Post(gameObject);
+            healthRTPC.SetValue(gameObject, health);
+        }
     }
     private void Update()
     {
@@ -60,6 +68,9 @@ public class PlayerBehavior : MonoBehaviour
         ApplyHaptics(0.75f, 0.75f, 0.2f);
         takeDamageEvent.Post(gameObject);
         health -= damage;
+
+        healthRTPC.SetValue(gameObject, health);
+
         Debug.Log("Player took "+ damage +" damage. Health is now: " + health);
         if (health <= 0)
             StartCoroutine(Death());

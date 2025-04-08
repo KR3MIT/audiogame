@@ -16467,7 +16467,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: d6fea5206314b1d4f9b4e14e7d20e1f1, type: 2}
     - target: {fileID: 8209019713667720385, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 40.9
+      value: -1.7
       objectReference: {fileID: 0}
     - target: {fileID: 8209019713667720385, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16475,7 +16475,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8209019713667720385, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 169.8
+      value: -2.47
       objectReference: {fileID: 0}
     - target: {fileID: 8209019713667720385, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16505,6 +16505,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9192045439036763573, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
+      propertyPath: healthRTPC.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 94d10175e480b9c4aa513bdc56dad909, type: 2}
+    - target: {fileID: 9192045439036763573, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
+      propertyPath: heartbeatEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: c27562b86f9450b478ce3c3d8b855414, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
