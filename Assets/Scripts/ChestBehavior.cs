@@ -16,6 +16,7 @@ public class ChestBehavior : MonoBehaviour, Iinteractables
         bc.enabled = false;
     // do the potion drinking 
      PlayerBehavior.instance.health = 100;
+        PlayerBehavior.instance.healthRTPC.SetValue(PlayerBehavior.instance.gameObject, PlayerBehavior.instance.health);
        Debug.Log("Player new health is" +PlayerBehavior.instance.health);
     }
 }

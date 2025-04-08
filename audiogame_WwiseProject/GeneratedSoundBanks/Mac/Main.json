@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{B1B92612-E102-7BF3-E278-C862F499A598}",
+    "Hash": "{A7A3CC40-5FA3-88D9-F747-8F6ACBB3B44F}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -150,6 +150,14 @@
       "Location": "Memory",
       "ShortName": "FootstepsStone.wav",
       "CachePath": "A9/{A94D5307-D498-2B19-60D2-05C227217801}.wem"
+     },
+     {
+      "Id": "197236906",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "oskarbeat.wav",
+      "CachePath": "E3/{E3E94983-AE94-0974-2752-7F3F797F3900}.wem"
      },
      {
       "Id": "210891056",
@@ -705,6 +713,14 @@
        "GUID": "{2C980393-E639-4D68-9D1F-385E55AB7BE7}",
        "LibName": "Wwise Silence",
        "LibId": "6619138"
+      },
+      {
+       "Id": "752394186",
+       "Name": "Silence",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Main\\Breath\\NoBreath\\Silence",
+       "GUID": "{50E5D868-F029-41D5-B9CA-F31DAB4211BB}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
       }
      ]
     },
@@ -1112,6 +1128,26 @@
       ]
      },
      {
+      "Id": "3698047240",
+      "Name": "Play_Breath",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Breath",
+      "GUID": "{83BBD59D-6E24-4348-A865-3B7DA6BE0203}",
+      "MaxAttenuation": "30",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "197236906"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "752394186"
+        }
+       ]
+      }
+     },
+     {
       "Id": "904967365",
       "Name": "Play_LedgeRocks",
       "ObjectPath": "\\Events\\Default Work Unit\\Traps\\Play_LedgeRocks",
@@ -1437,6 +1473,12 @@
     ],
     "GameParameters": [
      {
+      "Id": "151362964",
+      "Name": "PlayerHealth",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerHealth",
+      "GUID": "{239C6C50-ACD5-45F4-8BB8-5E80E2BAC887}"
+     },
+     {
       "Id": "1493153371",
       "Name": "PlayerSpeed",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerSpeed",
@@ -1507,6 +1549,6 @@
     ]
    }
   ],
-  "FileHash": "{D7FEF623-904C-8E60-57AF-0BCAC63AD011}"
+  "FileHash": "{2F940A2C-3378-FDC3-78B3-D0DABE588EC5}"
  }
 }

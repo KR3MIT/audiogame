@@ -20,6 +20,7 @@ namespace AK
         static const AkUniqueID FAIRYFLYAWAYEVENT = 3617176563U;
         static const AkUniqueID FOOTSTEPEVENT = 3511205013U;
         static const AkUniqueID PAUSEFAIRYBELLEVENT = 767398485U;
+        static const AkUniqueID PLAY_BREATH = 3698047240U;
         static const AkUniqueID PLAY_LEDGEROCKS = 904967365U;
         static const AkUniqueID PLAY_RIVERSEQUENCE = 2493706327U;
         static const AkUniqueID PLAY_WALLIMPACTANDRUB = 1324720394U;
@@ -70,6 +71,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID PLAYERHEALTH = 151362964U;
         static const AkUniqueID PLAYERSPEED = 1493153371U;
     } // namespace GAME_PARAMETERS
 
