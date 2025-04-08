@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID FAIRYBELLEVENT = 1056060213U;
         static const AkUniqueID FAIRYFLYAWAYEVENT = 3617176563U;
         static const AkUniqueID FOOTSTEPEVENT = 3511205013U;
+        static const AkUniqueID HEALINGMOAN = 204031988U;
         static const AkUniqueID PAUSEFAIRYBELLEVENT = 767398485U;
         static const AkUniqueID PLAY_BREATH = 3698047240U;
         static const AkUniqueID PLAY_LEDGEROCKS = 904967365U;

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{A7A3CC40-5FA3-88D9-F747-8F6ACBB3B44F}",
+    "Hash": "{E3DEB44D-06F5-AA01-7550-9B6F00CA5B3E}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -232,6 +232,14 @@
       "CachePath": "45/{4525F674-4F14-F2EC-0511-1368B542D5CC}.wem"
      },
      {
+      "Id": "342591491",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "HealingMoans.wav",
+      "CachePath": "A2/{A21ECE8B-7AA0-6CD8-F6BB-E6C7869BC31A}.wem"
+     },
+     {
       "Id": "359865250",
       "Language": "SFX",
       "Streaming": "false",
@@ -344,6 +352,14 @@
       "CachePath": "41/{419171E6-256E-A816-F8B9-662C498D4B51}.wem"
      },
      {
+      "Id": "459340268",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "HealingMoans.wav",
+      "CachePath": "3D/{3D400ADC-9558-E73F-A466-A60A47A0DB07}.wem"
+     },
+     {
       "Id": "462692331",
       "Language": "SFX",
       "Streaming": "false",
@@ -390,6 +406,22 @@
       "Location": "Memory",
       "ShortName": "RockThrowStone.wav",
       "CachePath": "F6/{F6530B18-C2C3-44CD-9E48-F3574A042990}.wem"
+     },
+     {
+      "Id": "569969898",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "HealingMoans.wav",
+      "CachePath": "A2/{A2F0699A-0C38-F1BB-D410-ABF7A1AC447A}.wem"
+     },
+     {
+      "Id": "578285320",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "HealingMoans.wav",
+      "CachePath": "FF/{FFAD6700-4C9D-AD29-1EFD-0FC9AAB0761A}.wem"
      },
      {
       "Id": "620271480",
@@ -576,6 +608,14 @@
       "CachePath": "C7/{C7AD7BBC-3CE4-0E73-F917-66352F74DFA0}.wem"
      },
      {
+      "Id": "873634884",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "HealingMoans.wav",
+      "CachePath": "02/{02899257-E571-D92F-92A1-921078A158D8}.wem"
+     },
+     {
       "Id": "879063686",
       "Language": "SFX",
       "Streaming": "false",
@@ -606,6 +646,14 @@
       "Location": "Memory",
       "ShortName": "MetalShing.wav",
       "CachePath": "A2/{A2BF7036-50F6-482D-9241-5D8186D65E99}.wem"
+     },
+     {
+      "Id": "909129382",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "HealingMoans.wav",
+      "CachePath": "C9/{C9B8C7B1-ADF0-6305-5377-D20FC6BD959C}.wem"
      },
      {
       "Id": "966737072",
@@ -1080,6 +1128,36 @@
       ]
      },
      {
+      "Id": "204031988",
+      "Name": "HealingMoan",
+      "ObjectPath": "\\Events\\WillEvents\\HealingMoan",
+      "GUID": "{90F53772-0C56-410A-A59C-CD5BA6DC54D4}",
+      "MaxAttenuation": "30",
+      "DurationType": "OneShot",
+      "DurationMin": "0.51040626",
+      "DurationMax": "1.1234795",
+      "MediaRefs": [
+       {
+        "Id": "342591491"
+       },
+       {
+        "Id": "459340268"
+       },
+       {
+        "Id": "569969898"
+       },
+       {
+        "Id": "578285320"
+       },
+       {
+        "Id": "873634884"
+       },
+       {
+        "Id": "909129382"
+       }
+      ]
+     },
+     {
       "Id": "767398485",
       "Name": "PauseFairyBellEvent",
       "ObjectPath": "\\Events\\Default Work Unit\\Fairy\\PauseFairyBellEvent",
@@ -1549,6 +1627,6 @@
     ]
    }
   ],
-  "FileHash": "{A3CD55D5-FB85-BA87-C004-5C3FB1F1B893}"
+  "FileHash": "{ECD2D258-2247-83B6-C153-8C599BEAE9AE}"
  }
 }
