@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{19282C22-F37D-F865-C742-606D4DB9902E}",
+    "Hash": "{A998401C-1AD7-0066-D990-868613B45214}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -414,6 +414,14 @@
       "Location": "Memory",
       "ShortName": "RockThrowStone.wav",
       "CachePath": "7B/{7BCE3928-00F8-BF6B-A427-FFA82FF9A658}.wem"
+     },
+     {
+      "Id": "478129153",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Cauldron2.wav",
+      "CachePath": "E7/{E714042A-310B-52C5-D25F-88B8D7791C64}.wem"
      },
      {
       "Id": "481695635",
@@ -1109,6 +1117,29 @@
       ]
      },
      {
+      "Id": "2324335845",
+      "Name": "CauldronStart",
+      "ObjectPath": "\\Events\\WillEvents\\CauldronStart",
+      "GUID": "{E2C14E99-1C9B-4397-931E-BE43993252CA}",
+      "MaxAttenuation": "30",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "478129153"
+       }
+      ]
+     },
+     {
+      "Id": "1721085703",
+      "Name": "CauldronStop",
+      "ObjectPath": "\\Events\\WillEvents\\CauldronStop",
+      "GUID": "{D908D94D-8F5B-451F-B598-55A2A571B628}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
       "Id": "1184232069",
       "Name": "DoorRattleEvent",
       "ObjectPath": "\\Events\\WillEvents\\DoorSounds\\DoorRattleEvent",
@@ -1780,6 +1811,6 @@
     ]
    }
   ],
-  "FileHash": "{E279791C-1CE9-7C79-5439-AA377C8C5A96}"
+  "FileHash": "{A0FCBC77-454A-A556-EF58-B075AF4BD38E}"
  }
 }

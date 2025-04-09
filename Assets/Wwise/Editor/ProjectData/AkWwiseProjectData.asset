@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c3d61869592f7241956bf3ebd662ac76
     GuidInternal: 
-    m_lastTime: -8584574090260707766
+    m_lastTime: -8584574067190750580
     List:
     - name: Main
       guid: 08192794cbd195478a29c0aa63f15f72
@@ -654,8 +654,42 @@ MonoBehaviour:
     ParentPath: Events\WillEvents
     guid: d2b6e6629258944b891e2d5ce2d57e22
     GuidInternal: 
-    m_lastTime: -8584574945532217439
+    m_lastTime: -8584574064150412704
     List:
+    - name: CauldronStart
+      guid: 994ec1e29b1c9743931ebe43993252ca
+      id: 2324335845
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: WillEvents
+        ObjectType: 12
+        guid: d2b6e6629258944b891e2d5ce2d57e22
+      - ElementName: CauldronStart
+        ObjectType: 3
+        guid: 994ec1e29b1c9743931ebe43993252ca
+      Path: Events\WillEvents\CauldronStart
+      maxAttenuation: 30
+      maxDuration: 0
+      minDuration: 0
+    - name: CauldronStop
+      guid: 4dd908d95b8f1f45b59855a2a571b628
+      id: 1721085703
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: WillEvents
+        ObjectType: 12
+        guid: d2b6e6629258944b891e2d5ce2d57e22
+      - ElementName: CauldronStop
+        ObjectType: 3
+        guid: 4dd908d95b8f1f45b59855a2a571b628
+      Path: Events\WillEvents\CauldronStop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: DoorRattleEvent
       guid: 65eba67903f8354883f0aa3a6946f046
       id: 1184232069

@@ -40,7 +40,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Cauldron" ID="{E2C14E99-1C9B-4397-931E-BE43993252CA}">
+				<Event Name="CauldronStart" ID="{E2C14E99-1C9B-4397-931E-BE43993252CA}">
 					<ChildrenList>
 						<Action Name="" ID="{C7184BEA-F1B6-479E-8245-FF404C06BD19}" ShortID="417210822">
 							<ReferenceList>
@@ -49,9 +49,14 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{05F5F9E1-CD36-4964-A46C-B689DDDAF28C}" ShortID="476967169">
+					</ChildrenList>
+				</Event>
+				<Event Name="CauldronStop" ID="{D908D94D-8F5B-451F-B598-55A2A571B628}">
+					<ChildrenList>
+						<Action Name="" ID="{541F4155-FE45-4C3E-AACF-280851B31F82}" ShortID="341172260">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">

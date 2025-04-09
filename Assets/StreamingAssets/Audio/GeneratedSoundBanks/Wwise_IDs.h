@@ -16,6 +16,8 @@ namespace AK
         static const AkUniqueID AXESWINGEVENT = 3270970525U;
         static const AkUniqueID BUTTONCLICKEVENT = 1406980521U;
         static const AkUniqueID BUTTONGLOWEVENT = 3589471410U;
+        static const AkUniqueID CAULDRONSTART = 2324335845U;
+        static const AkUniqueID CAULDRONSTOP = 1721085703U;
         static const AkUniqueID DOORRATTLEEVENT = 1184232069U;
         static const AkUniqueID FAIRYBELLEVENT = 1056060213U;
         static const AkUniqueID FAIRYFLYAWAYEVENT = 3617176563U;

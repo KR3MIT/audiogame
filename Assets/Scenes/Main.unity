@@ -1724,9 +1724,25 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5744959417742261088, guid: 1f2722b2351535847b1eab899352db69, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 1767957043}
+    - target: {fileID: 5744959417742261088, guid: 1f2722b2351535847b1eab899352db69, type: 3}
       propertyPath: drinkEvent.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: f5a0d64b4daca544ead1a220f812260c, type: 2}
+    - target: {fileID: 5744959417742261088, guid: 1f2722b2351535847b1eab899352db69, type: 3}
+      propertyPath: cauldronStop.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 1fb15f35b4362a7459c767a65b571e8d, type: 2}
+    - target: {fileID: 5744959417742261088, guid: 1f2722b2351535847b1eab899352db69, type: 3}
+      propertyPath: cauldronSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: bebee1d48f851b34190e640e198dec85, type: 2}
+    - target: {fileID: 5744959417742261088, guid: 1f2722b2351535847b1eab899352db69, type: 3}
+      propertyPath: cauldronStart.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: bebee1d48f851b34190e640e198dec85, type: 2}
     - target: {fileID: 5781836520467284384, guid: 1f2722b2351535847b1eab899352db69, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.4488
@@ -6588,6 +6604,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5744959417742261088, guid: 1f2722b2351535847b1eab899352db69, type: 3}
+      propertyPath: drinkEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: f5a0d64b4daca544ead1a220f812260c, type: 2}
     - target: {fileID: 5781836520467284384, guid: 1f2722b2351535847b1eab899352db69, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.3603
@@ -23624,6 +23644,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   searchDistance: 5
+--- !u!4 &1767957043 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8209019713667720385, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
+  m_PrefabInstance: {fileID: 1262987712}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1779432274
 GameObject:
   m_ObjectHideFlags: 0
@@ -29041,6 +29066,10 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 1303448803}
+    - target: {fileID: 3266960757103762053, guid: 99a8c6df983661941b943a9526b380d2, type: 3}
+      propertyPath: buttonAttentuationScaling
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5283751822328879414, guid: 99a8c6df983661941b943a9526b380d2, type: 3}
       propertyPath: m_Name
       value: Button

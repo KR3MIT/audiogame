@@ -6,9 +6,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	1324720394	Play_WallImpactAndRub			\Default Work Unit\Player wall impact\Play_WallImpactAndRub	
 	1406980521	ButtonClickEvent			\Default Work Unit\Interactables\ButtonClickEvent	
 	1587523507	PlayerReviveEvent			\Default Work Unit\PlayerSounds\PlayerReviveEvent	
+	1721085703	CauldronStop			\WillEvents\CauldronStop	
 	1953273240	PlayerCheckpointEvent			\Default Work Unit\PlayerSounds\PlayerCheckpointEvent	
 	2133386887	RockThrowReleaseEvent			\WillEvents\RockThrowReleaseEvent	
 	2298613774	Play_WaterDroplets			\Default Work Unit\Ambience\Play_WaterDroplets	
+	2324335845	CauldronStart			\WillEvents\CauldronStart	
 	2411449720	SpikeTrapCloseEvent			\Default Work Unit\Traps\SpikeTrapCloseEvent	
 	2444696015	Stop_WallRub			\Default Work Unit\Player wall impact\Stop_WallRub	
 	2493706327	Play_RiverSequence			\Default Work Unit\Ambience\Play_RiverSequence	
@@ -103,6 +105,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	462692331	WallImpactInside_01	C:\Github\audiogame\audiogame_WwiseProject\.cache\C4\{C4C318F4-42CF-82B3-90F5-1F1E3C2395D7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\WallImpactAndRub\WallImpacts\WallImpactInside_01		33700
 	463604287	ButtonClick_02	C:\Github\audiogame\audiogame_WwiseProject\.cache\32\{3254161E-5418-1206-904E-034685923148}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\ButtonClickSound\ButtonClick_02		240820
 	475851401	RockThrowStone_03	C:\Github\audiogame\audiogame_WwiseProject\.cache\7B\{7BCE3928-00F8-BF6B-A427-FFA82FF9A658}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\RockHitSwitch\RockToRock\RockThrowStone_03		80732
+	478129153	Cauldron2	C:\Github\audiogame\audiogame_WwiseProject\.cache\E7\{E714042A-310B-52C5-D25F-88B8D7791C64}.wem		\Actor-Mixer Hierarchy\WilliamTheGOAT\Jesus\Cauldron2		2722032
 	481695635	takenLedgeRocks	C:\Github\audiogame\audiogame_WwiseProject\.cache\E9\{E92EB274-CEEE-7F7D-EB6E-9E706840F619}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\takenLedgeRocks		741320
 	486399605	WaterSlurp	C:\Github\audiogame\audiogame_WwiseProject\.cache\E3\{E3C778DB-3E32-7EA1-8966-AA7A794F08BC}.wem		\Actor-Mixer Hierarchy\WilliamTheGOAT\Jesus\HealingWaterSlurp\SlurpWater\WaterSlurp		42548
 	490897574	MetalShing_07	C:\Github\audiogame\audiogame_WwiseProject\.cache\58\{583E9E49-8193-6EE4-F020-0573E081494C}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\AxeTrap\ShingRandom\MetalShing_07		71564
