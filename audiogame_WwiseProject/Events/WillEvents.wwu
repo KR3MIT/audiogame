@@ -40,6 +40,27 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Cauldron" ID="{E2C14E99-1C9B-4397-931E-BE43993252CA}">
+					<ChildrenList>
+						<Action Name="" ID="{C7184BEA-F1B6-479E-8245-FF404C06BD19}" ShortID="417210822">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cauldron2" ID="{4C13634B-7F76-4275-8D0D-F224FF43851A}" WorkUnitID="{28E2E73C-5996-4653-AE2D-7002CF2FD467}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{05F5F9E1-CD36-4964-A46C-B689DDDAF28C}" ShortID="476967169">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cauldron2" ID="{4C13634B-7F76-4275-8D0D-F224FF43851A}" WorkUnitID="{28E2E73C-5996-4653-AE2D-7002CF2FD467}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

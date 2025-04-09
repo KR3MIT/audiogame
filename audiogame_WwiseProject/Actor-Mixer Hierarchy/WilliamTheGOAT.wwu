@@ -929,6 +929,86 @@
 								</ObjectList>
 							</ObjectLists>
 						</RandomSequenceContainer>
+						<Sound Name="Cauldron1" ID="{DC6D1612-E18D-4389-A2F0-DC15AA0C8720}" ShortID="1009057338">
+							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-1430</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Cauldron1" ID="{982A4AF3-1CF6-4D44-A25F-ECA71EED4981}">
+									<Language>SFX</Language>
+									<AudioFile>Cauldron1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="703793055"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Cauldron1" ID="{982A4AF3-1CF6-4D44-A25F-ECA71EED4981}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Cauldron2" ID="{4C13634B-7F76-4275-8D0D-F224FF43851A}" ShortID="228132126">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-1000</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{1CFCC0EE-BCBB-4E04-BD4D-8D80441F93AA}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="250"/>
+													<Property Name="Min" Type="Real64" Value="-150"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Cauldron2" ID="{09919A4F-BDC3-40FF-A211-001AB68BF9F2}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.15728524673817"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Cauldron2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="478129153"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Cauldron2" ID="{09919A4F-BDC3-40FF-A211-001AB68BF9F2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
