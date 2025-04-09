@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c3d61869592f7241956bf3ebd662ac76
     GuidInternal: 
-    m_lastTime: -8584574960071845425
+    m_lastTime: -8584574090260707766
     List:
     - name: Main
       guid: 08192794cbd195478a29c0aa63f15f72
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: befe7aa783db144cbdf844a78d27198f
     GuidInternal: 
-    m_lastTime: -8584574983822055327
+    m_lastTime: -8584574084579051756
     List:
     - name: Ambience
       guid: 97efd48b6755c5478fe397f096fd59fe
@@ -184,6 +184,26 @@ MonoBehaviour:
       maxAttenuation: 40
       maxDuration: 0.5969677
       minDuration: 0.3455742
+    - name: ButtonClickEvent
+      guid: a4816bf6d6ef4044bd05f6a1ff9f7c44
+      id: 1406980521
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: Interactables
+        ObjectType: 4
+        guid: a2b4b6a0a2195348870d3c88553825cc
+      - ElementName: ButtonClickEvent
+        ObjectType: 3
+        guid: a4816bf6d6ef4044bd05f6a1ff9f7c44
+      Path: Events\Default Work Unit\Interactables\ButtonClickEvent
+      maxAttenuation: 30
+      maxDuration: 1.817531
+      minDuration: 0.9476746
     - name: ButtonGlowEvent
       guid: 6c7746ce628fa24c919c7369465865fa
       id: 3589471410
@@ -316,8 +336,8 @@ MonoBehaviour:
         guid: c46f8310b2e4c04ca0e95f8205685c6d
       Path: Events\Default Work Unit\Fairy\PauseFairyBellEvent
       maxAttenuation: 30
-      maxDuration: 5.163857
-      minDuration: 1.8638568
+      maxDuration: 0
+      minDuration: 0
     - name: Play_Breath
       guid: 9dd5bb83246e4843a8653b7da6be0203
       id: 3698047240
@@ -634,7 +654,7 @@ MonoBehaviour:
     ParentPath: Events\WillEvents
     guid: d2b6e6629258944b891e2d5ce2d57e22
     GuidInternal: 
-    m_lastTime: -8584574960075227992
+    m_lastTime: -8584574945532217439
     List:
     - name: DoorRattleEvent
       guid: 65eba67903f8354883f0aa3a6946f046
@@ -970,7 +990,7 @@ MonoBehaviour:
     m_lastTime: -8584593220592810358
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000b0000000c0000000d0000000f000000100000001100000013000000150000001700000018000000190000001e000000400000004100000043000000
+  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000f000000100000001100000013000000150000001700000018000000190000001e000000400000004100000043000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

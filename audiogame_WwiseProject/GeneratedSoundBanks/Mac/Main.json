@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{A0D0D984-4120-44E3-ACEF-D1C377475F2D}",
+    "Hash": "{19282C22-F37D-F865-C742-606D4DB9902E}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -1311,9 +1311,7 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Fairy\\PauseFairyBellEvent",
       "GUID": "{10836FC4-E4B2-4CC0-A0E9-5F8205685C6D}",
       "MaxAttenuation": "30",
-      "DurationType": "OneShot",
-      "DurationMin": "1.8638568",
-      "DurationMax": "5.163857",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "34398908"
@@ -1351,7 +1349,14 @@
        {
         "Id": "978793047"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "151523271"
+        }
+       ]
+      }
      },
      {
       "Id": "3698047240",
@@ -1775,6 +1780,6 @@
     ]
    }
   ],
-  "FileHash": "{7A5B9CC7-EDF2-E18E-8207-0DD0FCDA401D}"
+  "FileHash": "{E279791C-1CE9-7C79-5439-AA377C8C5A96}"
  }
 }

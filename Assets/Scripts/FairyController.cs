@@ -51,7 +51,7 @@ public class FairyController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player" && splineAnimate.IsPlaying != true)
+        if (other.gameObject.tag == "Player" && splineAnimate.IsPlaying != true && currentSpline != splines.Count - 1)
         {
             pauseFairyBellSound.Post(gameObject);
             fairyFlyAwaySound.Post(gameObject);

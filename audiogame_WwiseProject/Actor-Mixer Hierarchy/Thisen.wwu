@@ -1881,7 +1881,7 @@
 											<ChildrenList>
 												<SourcePlugin Name="Silence" ID="{11E3F263-7DCE-45E8-B9A2-5DB1372BB74A}" ShortID="151523271" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
 													<PropertyList>
-														<Property Name="Length" Type="Real32" Value="7"/>
+														<Property Name="Length" Type="Real32" Value="5"/>
 													</PropertyList>
 													<Language>SFX</Language>
 												</SourcePlugin>
