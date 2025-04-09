@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{D7B40806-095A-CA61-655E-F4F2F85439C6}",
+    "Hash": "{A0D0D984-4120-44E3-ACEF-D1C377475F2D}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -104,6 +104,14 @@
       "CachePath": "70/{70B65F85-1677-F724-C83F-A388FF07B6AB}.wem"
      },
      {
+      "Id": "126216804",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ButtonClick.wav",
+      "CachePath": "5F/{5F061F47-0814-0B13-98DD-E3C698658B62}.wem"
+     },
+     {
       "Id": "137710955",
       "Language": "SFX",
       "Streaming": "false",
@@ -190,6 +198,14 @@
       "Location": "Memory",
       "ShortName": "543024__leon23323328kiwn__rock-hit-against-another-rock-owi.wav",
       "CachePath": "82/{82E0C26C-0F9D-11B2-4157-CD7783A28B31}.wem"
+     },
+     {
+      "Id": "252649949",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ButtonClick.wav",
+      "CachePath": "0B/{0B2F3E06-1871-C65B-B5A1-BCB8E2D80373}.wem"
      },
      {
       "Id": "258284959",
@@ -382,6 +398,14 @@
       "Location": "Memory",
       "ShortName": "WallImpactInside.wav",
       "CachePath": "C4/{C4C318F4-42CF-82B3-90F5-1F1E3C2395D7}.wem"
+     },
+     {
+      "Id": "463604287",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ButtonClick.wav",
+      "CachePath": "32/{3254161E-5418-1206-904E-034685923148}.wem"
      },
      {
       "Id": "475851401",
@@ -640,6 +664,14 @@
       "CachePath": "0B/{0B975309-23CD-9C74-4DB0-0A3D61C4D238}.wem"
      },
      {
+      "Id": "848471567",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ButtonClick.wav",
+      "CachePath": "7F/{7F48270A-3291-A7D5-B97B-D0B375E65F3F}.wem"
+     },
+     {
       "Id": "865587596",
       "Language": "SFX",
       "Streaming": "false",
@@ -710,6 +742,14 @@
       "Location": "Memory",
       "ShortName": "FootstepsStone.wav",
       "CachePath": "09/{092F0E70-7CED-759C-A775-DD982AC6EBD2}.wem"
+     },
+     {
+      "Id": "972139919",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ButtonClick.wav",
+      "CachePath": "96/{961C8532-20A1-A388-605E-0AD5DDA7AE30}.wem"
      },
      {
       "Id": "978793047",
@@ -859,6 +899,33 @@
        },
        {
         "Id": "1038029385"
+       }
+      ]
+     },
+     {
+      "Id": "1406980521",
+      "Name": "ButtonClickEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\Interactables\\ButtonClickEvent",
+      "GUID": "{F66B81A4-EFD6-4440-BD05-F6A1FF9F7C44}",
+      "MaxAttenuation": "30",
+      "DurationType": "OneShot",
+      "DurationMin": "0.9476746",
+      "DurationMax": "1.817531",
+      "MediaRefs": [
+       {
+        "Id": "126216804"
+       },
+       {
+        "Id": "252649949"
+       },
+       {
+        "Id": "463604287"
+       },
+       {
+        "Id": "848471567"
+       },
+       {
+        "Id": "972139919"
        }
       ]
      },
@@ -1708,6 +1775,6 @@
     ]
    }
   ],
-  "FileHash": "{DA2BBFDD-1354-EAA0-D964-71B0EFC871BC}"
+  "FileHash": "{7A5B9CC7-EDF2-E18E-8207-0DD0FCDA401D}"
  }
 }

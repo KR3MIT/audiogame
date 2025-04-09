@@ -221,6 +221,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="ButtonClickEvent" ID="{F66B81A4-EFD6-4440-BD05-F6A1FF9F7C44}">
+							<ChildrenList>
+								<Action Name="" ID="{1333B615-102A-4700-AB33-FDAFF1DCC264}" ShortID="590959080">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ButtonClickSound" ID="{10B4E163-ED94-41D4-9516-CB478B48ADA8}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6D03DDCF-A128-4A88-8C83-30D15E5E4B47}" ShortID="246868844">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GlowSwitchController" ID="{DE82F7E4-C42B-4A05-95BD-ADF3F9A4E755}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="PlayerSounds" ID="{BD798E23-E0F1-48D4-987E-5B92CFF07F71}" ShortID="702806123">

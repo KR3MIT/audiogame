@@ -4,6 +4,7 @@ public class ButtonBehavior : MonoBehaviour, Iinteractables
 {
     public DoorBehavior door;
     public AK.Wwise.Event buttonGlowSound;
+    public AK.Wwise.Event buttonPressSound;
     public float buttonAttentuationScaling;
 
     void Start()
@@ -15,7 +16,7 @@ public class ButtonBehavior : MonoBehaviour, Iinteractables
 
     public void Interact()
     {
-        // play button sound
+        buttonPressSound.Post(gameObject);
         Debug.Log("Button has been pressed");
         door.Enabled();
     }

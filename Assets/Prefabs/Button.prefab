@@ -127,6 +127,11 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 3609e007ca9eeab419ed7025188edbfc, type: 2}
+  buttonPressSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7dbaa2c468829ae4d9ce913b3da17c35, type: 2}
+  buttonAttentuationScaling: 0
 --- !u!114 &834449144569332478
 MonoBehaviour:
   m_ObjectHideFlags: 0
