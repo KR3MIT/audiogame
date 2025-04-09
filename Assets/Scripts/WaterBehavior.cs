@@ -8,7 +8,7 @@ public class WaterBehavior : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent(out PlayerBehavior playerBehavior))
         {
-            PlayerBehavior.instance.StartCoroutine(PlayerBehavior.instance.Death());
+            playerBehavior.StartCoroutine(playerBehavior.Death());
         }
     }
 }

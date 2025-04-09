@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -21,6 +22,8 @@ public class PlayerBehavior : MonoBehaviour
 
     public AK.Wwise.Event heartbeatEvent;
     public AK.Wwise.RTPC healthRTPC;
+
+   
     private void Awake()
     {
         if (instance != null)
@@ -31,6 +34,8 @@ public class PlayerBehavior : MonoBehaviour
         {
             instance = this;
         }
+
+     
     }
     void Start()
     {
@@ -76,6 +81,7 @@ public class PlayerBehavior : MonoBehaviour
             StartCoroutine(Death());
         
     }
+    
    public  IEnumerator Death()
     {
         playerDeathEvent.Post(gameObject);
@@ -85,7 +91,7 @@ public class PlayerBehavior : MonoBehaviour
         yield return new WaitForSeconds(respawnTime);
         playerReviveEvent.Post(gameObject);
         health = 100;
-        PlayerBehavior.instance.healthRTPC.SetValue(PlayerBehavior.instance.gameObject, PlayerBehavior.instance.health);
+        instance.healthRTPC.SetValue(instance.gameObject,instance.health);
         controller.enabled = true;
     }
 
