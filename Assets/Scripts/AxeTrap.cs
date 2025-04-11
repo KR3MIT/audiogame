@@ -7,6 +7,7 @@ public class AxeTrap : MonoBehaviour
     public Animator anim;
     private float _randomTime;
     public bool axeSwinging = false;
+    public bool applyHapticsForAxe = false;
     public AK.Wwise.Event axeSwingEvent;
     void Start()
     {
@@ -37,7 +38,15 @@ public class AxeTrap : MonoBehaviour
             //Debug.Log("Axe Swing Event Posted");
             axeSwinging = false;
             //Debug.Log("Axe Swinging is now false");
+
+            if (applyHapticsForAxe)
+            {
+                Haptics.instance.PulseHaptics(1, 1, 0.2f);
+                applyHapticsForAxe = false;
+            }
         }
+
+
 
     }
 

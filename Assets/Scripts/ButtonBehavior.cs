@@ -6,6 +6,7 @@ public class ButtonBehavior : MonoBehaviour, Iinteractables
     public AK.Wwise.Event buttonGlowSound;
     public AK.Wwise.Event buttonPressSound;
     public float buttonAttentuationScaling;
+    private bool buttonHasBeenPressed = false;
 
     void Start()
     {
@@ -16,8 +17,12 @@ public class ButtonBehavior : MonoBehaviour, Iinteractables
 
     public void Interact()
     {
-        buttonPressSound.Post(gameObject);
-        Debug.Log("Button has been pressed");
-        door.Enabled();
+        if (!buttonHasBeenPressed)
+        {
+            buttonPressSound.Post(gameObject);
+            Debug.Log("Button has been pressed");
+            buttonHasBeenPressed = true;
+            door.Enabled();
+        }
     }
 }
