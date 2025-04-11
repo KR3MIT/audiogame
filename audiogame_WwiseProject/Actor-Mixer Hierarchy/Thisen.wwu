@@ -39,6 +39,8 @@
 							<ChildrenList>
 								<SwitchContainer Name="GlowSwitchController" ID="{DE82F7E4-C42B-4A05-95BD-ADF3F9A4E755}" ShortID="716899699">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ModifierList>
@@ -49,6 +51,9 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="TrapAttenuation" ID="{B8EA0CD8-BBFA-42CD-99D7-DAF7856A84D2}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
 										</Reference>

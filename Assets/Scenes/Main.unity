@@ -24598,7 +24598,7 @@ MonoBehaviour:
   dangerLayer:
     serializedVersion: 2
     m_Bits: 8
-  searchDistance: 8
+  searchDistance: 5
 --- !u!4 &1767957043 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8209019713667720385, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}

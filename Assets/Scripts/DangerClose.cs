@@ -4,7 +4,7 @@ using UnityEngine;
 public class DangerClose : MonoBehaviour
 {
     public LayerMask dangerLayer;
-    public float searchDistance = 5f;
+    public float searchDistance = 3f;
     private bool shouldStop = false;
     private Collider trapCollider;
 
