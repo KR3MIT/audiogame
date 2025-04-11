@@ -32,6 +32,5 @@ public class ChestBehavior : MonoBehaviour, Iinteractables
      PlayerBehavior.instance.health = 100;
         PlayerBehavior.instance.healthRTPC.SetValue(PlayerBehavior.instance.gameObject, PlayerBehavior.instance.health);
        Debug.Log("Player new health is" +PlayerBehavior.instance.health);
-        gameObject.layer = LayerMask.NameToLayer("Default");
     }
 }

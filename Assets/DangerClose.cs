@@ -5,14 +5,12 @@ public class DangerClose : MonoBehaviour
 {
     public LayerMask dangerLayer;
     public float searchDistance = 5f;
-    private bool shouldStop = false;
 
     void Update()
     {
         Collider[] colliders = Physics.OverlapSphere(transform.position, searchDistance, dangerLayer);
         if (colliders.Any())
         {
-            shouldStop = true;
            
             float closestDistance = float.MaxValue;
             foreach (Collider collider in colliders)
@@ -32,11 +30,8 @@ public class DangerClose : MonoBehaviour
         }
         else
         {
-            if (Haptics.instance != null && shouldStop)
-            {
-                Haptics.instance.SetMotorSpeeds(0f, 0f); 
-                shouldStop = false;
-            }
+            if (Haptics.instance != null)
+                Haptics.instance.ResetHaptics(); 
         }
 
     }

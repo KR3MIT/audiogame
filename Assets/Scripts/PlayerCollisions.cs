@@ -66,7 +66,7 @@ public class PlayerCollisions : MonoBehaviour
                 
                 if(Haptics.instance != null)
                 {
-                    Haptics.instance.PulseHaptics(0.1f,0.1f, 0.1f);
+                    Haptics.instance.SetMotorSpeeds(0.25f,0.25f);
                 }
                 
                 if (!touchingWalls.Contains(other.gameObject))
@@ -108,8 +108,8 @@ public class PlayerCollisions : MonoBehaviour
     private void OnCollisionExit(Collision other)
     {
         isTouchingWall = false;
-        //if (Haptics.instance != null)
-        //    Haptics.instance.PauseHaptics();
+        if (Haptics.instance != null)
+            Haptics.instance.PauseHaptics();
         
         if (other.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
