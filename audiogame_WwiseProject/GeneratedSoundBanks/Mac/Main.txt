@@ -23,6 +23,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3589471410	ButtonGlowEvent			\Default Work Unit\Interactables\ButtonGlowEvent	
 	3617176563	FairyFlyAwayEvent			\Default Work Unit\Fairy\FairyFlyAwayEvent	
 	3698047240	Play_Breath			\Default Work Unit\Play_Breath	
+	4000411161	Play_Campfire			\Default Work Unit\Ambience\Play_Campfire	
 	4042825516	PlayerDeathEvent			\Default Work Unit\PlayerSounds\PlayerDeathEvent	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -145,6 +146,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	880648180	FootstepStone	C:\Github\audiogame\audiogame_WwiseProject\.cache\70\{70784E6C-8CA5-97B9-6AF5-781DDBDA4D12}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\Footsteps\FootstepsStoneLeft\FootstepStone		17516
 	907644047	MetalShing_03	C:\Github\audiogame\audiogame_WwiseProject\.cache\A2\{A2BF7036-50F6-482D-9241-5D8186D65E99}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\AxeTrap\ShingRandom\MetalShing_03		55392
 	909129382	HealingMoan	C:\Github\audiogame\audiogame_WwiseProject\.cache\C9\{C9B8C7B1-ADF0-6305-5377-D20FC6BD959C}.wem		\Actor-Mixer Hierarchy\WilliamTheGOAT\Jesus\HealingWaterSlurp\Healing\HealingMoan		137480
+	926325598	subtle-campfire-29540	C:\Github\audiogame\audiogame_WwiseProject\.cache\DC\{DC20F795-203D-9F75-11E1-31647C50588A}.wem		\Actor-Mixer Hierarchy\Thisen\Ambience\CampfirePLACEHOLDER\subtle-campfire-29540		2956128
 	966737072	WallImpactInside_05	C:\Github\audiogame\audiogame_WwiseProject\.cache\A4\{A48B33E0-CE90-1820-60DC-54B4D004CC62}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\WallImpactAndRub\WallImpacts\WallImpactInside_05		40104
 	969719700	FootstepStone_07	C:\Github\audiogame\audiogame_WwiseProject\.cache\09\{092F0E70-7CED-759C-A775-DD982AC6EBD2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\Footsteps\FootstepsStoneLeft\FootstepStone_07		15340
 	972139919	ButtonClick_01	C:\Github\audiogame\audiogame_WwiseProject\.cache\96\{961C8532-20A1-A388-605E-0AD5DDA7AE30}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\ButtonClickSound\ButtonClick_01		167264

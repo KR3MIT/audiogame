@@ -25,6 +25,7 @@ namespace AK
         static const AkUniqueID HEALING = 3413347345U;
         static const AkUniqueID PAUSEFAIRYBELLEVENT = 767398485U;
         static const AkUniqueID PLAY_BREATH = 3698047240U;
+        static const AkUniqueID PLAY_CAMPFIRE = 4000411161U;
         static const AkUniqueID PLAY_LEDGEROCKS = 904967365U;
         static const AkUniqueID PLAY_RIVERSEQUENCE = 2493706327U;
         static const AkUniqueID PLAY_WALLIMPACTANDRUB = 1324720394U;

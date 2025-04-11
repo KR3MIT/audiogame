@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{A998401C-1AD7-0066-D990-868613B45214}",
+    "Hash": "{D6941193-AAB0-87A6-F61C-9A76B3727C30}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -736,6 +736,14 @@
       "CachePath": "C9/{C9B8C7B1-ADF0-6305-5377-D20FC6BD959C}.wem"
      },
      {
+      "Id": "926325598",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "subtle-campfire-29540.wav",
+      "CachePath": "DC/{DC20F795-203D-9F75-11E1-31647C50588A}.wem"
+     },
+     {
       "Id": "966737072",
       "Language": "SFX",
       "Streaming": "false",
@@ -1410,6 +1418,19 @@
       }
      },
      {
+      "Id": "4000411161",
+      "Name": "Play_Campfire",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\Play_Campfire",
+      "GUID": "{4CE63854-FC7C-4A3F-9D7F-108A08F18B15}",
+      "MaxAttenuation": "100",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "926325598"
+       }
+      ]
+     },
+     {
       "Id": "904967365",
       "Name": "Play_LedgeRocks",
       "ObjectPath": "\\Events\\Default Work Unit\\Traps\\Play_LedgeRocks",
@@ -1811,6 +1832,6 @@
     ]
    }
   ],
-  "FileHash": "{A0FCBC77-454A-A556-EF58-B075AF4BD38E}"
+  "FileHash": "{A41E7D7E-4329-90CC-264D-7BF7B55595D9}"
  }
 }

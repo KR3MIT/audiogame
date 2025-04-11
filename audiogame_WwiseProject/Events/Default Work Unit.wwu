@@ -206,6 +206,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Campfire" ID="{4CE63854-FC7C-4A3F-9D7F-108A08F18B15}">
+							<ChildrenList>
+								<Action Name="" ID="{9EBFAE9C-8F69-4BAB-B66E-3CD3812F2B72}" ShortID="644132765">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CampfirePLACEHOLDER" ID="{67CABB2D-B417-4E03-9636-BAD36E09E239}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Interactables" ID="{A0B6B4A2-19A2-4853-870D-3C88553825CC}" ShortID="756475110">
