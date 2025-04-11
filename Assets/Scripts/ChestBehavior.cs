@@ -7,6 +7,7 @@ public class ChestBehavior : MonoBehaviour, Iinteractables
     public AK.Wwise.Event cauldronStart;
     public AK.Wwise.Event cauldronStop;
     private AkGameObj akGameObject;
+    public float attenuationScaling = 1.5f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created 
     void Start()
@@ -15,7 +16,7 @@ public class ChestBehavior : MonoBehaviour, Iinteractables
         akGameObject = GetComponent<AkGameObj>();
         if (akGameObject != null)
         {
-            akGameObject.ScalingFactor = 1.5f;
+            akGameObject.ScalingFactor = attenuationScaling;
         }
         cauldronStart.Post(gameObject);
     }
