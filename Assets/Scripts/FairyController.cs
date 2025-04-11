@@ -16,7 +16,7 @@ public class FairyController : MonoBehaviour
     public AK.Wwise.Event fairyFlyAwaySound;
     public AK.Wwise.Event fairyBellSound;
     public AK.Wwise.Event pauseFairyBellSound;
-
+    private bool hasReachedEndOfSplines = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -51,12 +51,21 @@ public class FairyController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player" && splineAnimate.IsPlaying != true && currentSpline != splines.Count - 1)
-        {
-            pauseFairyBellSound.Post(gameObject);
-            fairyFlyAwaySound.Post(gameObject);
+        if (other.gameObject.tag == "Player" && splineAnimate.IsPlaying != true)
+        {   
+            Debug.Log("Current spline: " + currentSpline + " spline count:" + splines.Count);
+
+            if (hasReachedEndOfSplines == false)
+            {
+                pauseFairyBellSound.Post(gameObject);
+                fairyFlyAwaySound.Post(gameObject);
+            }
             splineAnimate.Play();
             hasPlayedOnSpline = true;
+            if (currentSpline == splines.Count - 1)
+            {
+                hasReachedEndOfSplines = true;
+            }
 
         }
 

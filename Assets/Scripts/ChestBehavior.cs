@@ -6,11 +6,17 @@ public class ChestBehavior : MonoBehaviour, Iinteractables
     public AK.Wwise.Event drinkEvent;
     public AK.Wwise.Event cauldronStart;
     public AK.Wwise.Event cauldronStop;
+    private AkGameObj akGameObject;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created 
     void Start()
     {
         bc = GetComponent<BoxCollider>();
+        akGameObject = GetComponent<AkGameObj>();
+        if (akGameObject != null)
+        {
+            akGameObject.ScalingFactor = 1.5f;
+        }
         cauldronStart.Post(gameObject);
     }
     public void Interact()
