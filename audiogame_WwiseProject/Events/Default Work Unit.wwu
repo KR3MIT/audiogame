@@ -106,6 +106,18 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{FDF43902-AFEB-492F-9730-9223A7E81523}" ShortID="921295155">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpikeTrapTicks" ID="{CCE2CC8A-4C03-4129-B3A3-52C00A9AFDDB}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="SpikeTrapOpenEvent" ID="{3022088E-EBC5-4F41-9210-E2925D5878A2}">
@@ -114,6 +126,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SpikeTrapOpen" ID="{4316196B-BFAD-4B9E-9D40-4D27AE8DD3A8}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4BA95D14-BF3B-4BE6-9FA4-4C35732CCE85}" ShortID="117290216">
+									<PropertyList>
+										<Property Name="FadeInCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpikeTrapTicks" ID="{CCE2CC8A-4C03-4129-B3A3-52C00A9AFDDB}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

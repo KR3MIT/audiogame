@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{D6941193-AAB0-87A6-F61C-9A76B3727C30}",
+    "Hash": "{F5EC6D42-2A03-A9D1-7F48-76FA243ABF80}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -518,6 +518,14 @@
       "Location": "Memory",
       "ShortName": "Pot2.wav",
       "CachePath": "38/{3888CA04-8EC5-B445-A1A5-9C6AA3913E00}.wem"
+     },
+     {
+      "Id": "652581457",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SpikeTrapTick.wav",
+      "CachePath": "3F/{3FAF7598-E69E-B79E-3930-E583CBB5BECD}.wem"
      },
      {
       "Id": "656246752",
@@ -1700,13 +1708,14 @@
       "Name": "SpikeTrapOpenEvent",
       "ObjectPath": "\\Events\\Default Work Unit\\Traps\\SpikeTrapOpenEvent",
       "GUID": "{3022088E-EBC5-4F41-9210-E2925D5878A2}",
-      "MaxAttenuation": "20",
-      "DurationType": "OneShot",
-      "DurationMin": "0.7872594",
-      "DurationMax": "0.7872594",
+      "MaxAttenuation": "30",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "76045582"
+       },
+       {
+        "Id": "652581457"
        }
       ]
      },
@@ -1832,6 +1841,6 @@
     ]
    }
   ],
-  "FileHash": "{0F6931E2-8EBF-2A02-23F4-4890AA13C1C4}"
+  "FileHash": "{7CB448F6-7009-53C1-4F0E-996A3748E0F4}"
  }
 }

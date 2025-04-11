@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: befe7aa783db144cbdf844a78d27198f
     GuidInternal: 
-    m_lastTime: -8584572438220418380
+    m_lastTime: -8584572359783948432
     List:
     - name: Ambience
       guid: 97efd48b6755c5478fe397f096fd59fe
@@ -603,9 +603,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 8e082230c5eb414f9210e2925d5878a2
       Path: Events\Default Work Unit\Traps\SpikeTrapOpenEvent
-      maxAttenuation: 20
-      maxDuration: 0.7872594
-      minDuration: 0.7872594
+      maxAttenuation: 30
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_WallRub
       guid: 63ca7b2c85f9e244bcb2fb5ec9839fd5
       id: 2444696015

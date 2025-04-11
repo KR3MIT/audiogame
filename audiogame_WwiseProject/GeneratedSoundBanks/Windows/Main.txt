@@ -119,6 +119,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	630207922	SpikeTrapClose	C:\Github\audiogame\audiogame_WwiseProject\.cache\2D\{2DBBAD4D-B540-8B10-07B6-F15DC2EC62F6}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\SpikeTrapClose		61416
 	632634852	TakeDamage1_04	C:\Github\audiogame\audiogame_WwiseProject\.cache\90\{902EACEF-71AD-4995-9C68-837A7D7919CB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\TakeDamage\TakeDamage1_04		78384
 	643937551	Pot2	C:\Github\audiogame\audiogame_WwiseProject\.cache\38\{3888CA04-8EC5-B445-A1A5-9C6AA3913E00}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\PotContainer\Pots\Pot2		28316
+	652581457	SpikeTrapTick	C:\Github\audiogame\audiogame_WwiseProject\.cache\3F\{3FAF7598-E69E-B79E-3930-E583CBB5BECD}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\SpikeTrapTicks\SpikeTrapTick		79180
 	656246752	RockThrowRelease	C:\Github\audiogame\audiogame_WwiseProject\.cache\78\{78CC084A-1BA8-281D-48AF-B62D4735F7EA}.wem		\Actor-Mixer Hierarchy\WilliamTheGOAT\Jesus\RockThrowBegin\RockThrowRelease		84360
 	674967751	RockThrowStone_05	C:\Github\audiogame\audiogame_WwiseProject\.cache\60\{607A980B-2BF1-3856-F22A-F258DAA00F59}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\RockHitSwitch\RockToRock\RockThrowStone_05		81336
 	689988897	WaterSlurp_03	C:\Github\audiogame\audiogame_WwiseProject\.cache\C5\{C593308B-C68D-A508-25A1-523F6E6CAAED}.wem		\Actor-Mixer Hierarchy\WilliamTheGOAT\Jesus\HealingWaterSlurp\SlurpWater\WaterSlurp_03		104308
