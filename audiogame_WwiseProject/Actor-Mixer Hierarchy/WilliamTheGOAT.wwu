@@ -974,6 +974,927 @@
 								<ActiveSource Name="Cauldron2" ID="{09919A4F-BDC3-40FF-A211-001AB68BF9F2}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Folder Name="Fire" ID="{D75806B5-5DB4-41F6-B46C-1AC0E7CB21C0}" ShortID="148657859">
+							<ChildrenList>
+								<Sound Name="FireAmbienceHard" ID="{4FE09997-A1D7-4E4E-9B6D-38779D85B7DA}" ShortID="124061984">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FireAmbienceHard" ID="{873ADDFC-B71F-421F-AC6D-6EC360D86879}">
+											<Language>SFX</Language>
+											<AudioFile>Fire\FireAmbienceHard.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="957558074"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FireAmbienceHard" ID="{873ADDFC-B71F-421F-AC6D-6EC360D86879}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<BlendContainer Name="Fireplace" ID="{79203BEC-2B09-4BEF-A48D-1E7AD70EEDE6}" ShortID="909370209">
+									<PropertyList>
+										<Property Name="BlendBehavior" Type="int16" Value="1"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{D15B3A97-57E8-472D-8261-ACCAEE007ED9}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="0.25"/>
+															<Property Name="Min" Type="Real64" Value="-0.2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="FireAmbienceChill" ID="{A3598669-A2DC-4551-A75E-EDEF64531FB2}" ShortID="773315736">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FireAmbienceChill" ID="{C101ACF1-BA70-400D-85DE-F6616CD085EF}">
+													<Language>SFX</Language>
+													<AudioFile>Fire\FireAmbienceChill.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="520137651"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FireAmbienceChill" ID="{C101ACF1-BA70-400D-85DE-F6616CD085EF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FireAmbienceMedium" ID="{D82DBE83-FD00-4B37-8BA5-7939B6187CE4}" ShortID="345806740">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-180</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-31</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FireAmbienceMedium" ID="{D2AE24EF-F48B-423D-8606-131BA7A0DE23}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.232000563468462"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.134710004594591"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.95717566536067"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Fire\FireAmbienceMedium.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="266638130"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FireAmbienceMedium" ID="{D2AE24EF-F48B-423D-8606-131BA7A0DE23}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="BigCracklesSequence" ID="{89BF16B2-5BF5-4225-B012-4F3D47800EBA}" ShortID="850335798">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{8A2BB8AB-439D-4FFD-AC2B-188EFAD69265}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="BigCrackles" ID="{022A62D0-0100-4B96-B958-5978547D012B}" ShortID="888999563">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="InitialDelay" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{ECC1C8D0-BA81-46C5-8DE5-EC328FD0FACB}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>16</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-210</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{F2740EE5-54B7-4F4B-825B-F8073E72BC9D}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-22</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="FireBigCrackle_11" ID="{78608B58-F6FF-4329-98C5-28B9C6987E30}" ShortID="286322714">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FireBigCrackle" ID="{45303F18-69AC-4B64-B182-EE3A1C9C4ADA}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.213503036701404"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="21.325820301748"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="21.6595343183247"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Fire\FireBigCrackle.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="347845079"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FireBigCrackle" ID="{45303F18-69AC-4B64-B182-EE3A1C9C4ADA}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FireBigCrackle" ID="{5C1FA047-ABD6-48F7-8AFD-953D8AB913DF}" ShortID="985788148">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FireBigCrackle" ID="{930530C7-7FEE-4DDA-A40C-50121ADFEEF3}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.878442518787917"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.113669016739827"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.992111535527744"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Fire\FireBigCrackle.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="980124634"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FireBigCrackle" ID="{930530C7-7FEE-4DDA-A40C-50121ADFEEF3}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FireBigCrackle_04" ID="{37391747-600C-4CA3-9046-B563250447ED}" ShortID="1043095299">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FireBigCrackle" ID="{6B9F0F38-6603-4AE0-9EC1-E48028844E10}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.772941146662205"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="9.95904938968611"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="10.76461469118"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Fire\FireBigCrackle.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="702611496"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FireBigCrackle" ID="{6B9F0F38-6603-4AE0-9EC1-E48028844E10}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FireBigCrackle_09" ID="{D2656BAD-402E-478C-B053-0CB290D41EEE}" ShortID="213405010">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FireBigCrackle" ID="{01D2229B-973B-442D-8F9D-7BAEA01396D8}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.388187339457097"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="18.1280812705176"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="18.5513285744932"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Fire\FireBigCrackle.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="731092514"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FireBigCrackle" ID="{01D2229B-973B-442D-8F9D-7BAEA01396D8}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FireBigCrackle_02" ID="{40FF4B4E-5C8E-4DD5-8033-0D5F29A88ED9}" ShortID="763588048">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FireBigCrackle" ID="{4DF10E97-12CA-4968-80C2-E4AAE869A6D0}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.442242232673862"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="4.98098277523414"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="5.46670339022715"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Fire\FireBigCrackle.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="427107830"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FireBigCrackle" ID="{4DF10E97-12CA-4968-80C2-E4AAE869A6D0}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FireBigCrackle_12" ID="{7A1AD013-36EF-49E7-9E6C-229F76767591}" ShortID="496879287">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FireBigCrackle" ID="{40E230B9-DC41-45E9-AC7F-8EC7B1932767}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.427006073402808"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="22.8373476659853"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="23.4214595059981"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Fire\FireBigCrackle.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="570547535"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FireBigCrackle" ID="{40E230B9-DC41-45E9-AC7F-8EC7B1932767}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FireBigCrackle_08" ID="{26BA1256-02FA-4E62-9F00-9DB9A426B032}" ShortID="1041341402">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FireBigCrackle" ID="{7C28C23E-E72F-4CF6-B04B-8D8938070EDA}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.148740448901979"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="16.9938041564365"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="17.3293923497728"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Fire\FireBigCrackle.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="275313372"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FireBigCrackle" ID="{7C28C23E-E72F-4CF6-B04B-8D8938070EDA}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FireBigCrackle_06" ID="{FEBA2B9C-2502-41F2-B7B3-A703881BEF03}" ShortID="185115232">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FireBigCrackle" ID="{336BFDD5-7EC4-446F-978B-1B9987A48C78}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.370542460390865"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="13.6917963522677"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="14.1461490671122"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Fire\FireBigCrackle.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="783309856"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FireBigCrackle" ID="{336BFDD5-7EC4-446F-978B-1B9987A48C78}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FireBigCrackle_10" ID="{2F884E4F-ED68-4DDB-812F-861108049D42}" ShortID="685039526">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FireBigCrackle" ID="{2411CBAF-A64B-44F2-B091-86FBCC988884}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.374285313526123"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="19.6980238783303"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="20.1865715319134"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Fire\FireBigCrackle.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="81050006"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FireBigCrackle" ID="{2411CBAF-A64B-44F2-B091-86FBCC988884}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FireBigCrackle_03" ID="{09952DD0-8991-4E35-BE73-0DAE50440350}" ShortID="103892337">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FireBigCrackle" ID="{526EB12A-1932-4845-AA0B-D2D896211FC9}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.428664806962011"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="8.17533905123487"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="8.73401270337629"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Fire\FireBigCrackle.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="355095475"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FireBigCrackle" ID="{526EB12A-1932-4845-AA0B-D2D896211FC9}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FireBigCrackle_05" ID="{9A1D1EC9-1C14-4E09-BEF8-64A55420A908}" ShortID="402477252">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FireBigCrackle" ID="{45EB4BFF-72CC-425A-B8C3-CBA61E8C1905}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.713484135380497"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="11.5049316830105"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="12.5454305142965"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Fire\FireBigCrackle.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="93922395"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FireBigCrackle" ID="{45EB4BFF-72CC-425A-B8C3-CBA61E8C1905}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FireBigCrackle_01" ID="{98906849-3541-4A41-B2F3-9F04A8BC226F}" ShortID="943016066">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FireBigCrackle" ID="{CB1A8330-D64F-4C1B-A799-78498D6371A2}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.564842741032281"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="2.8689476232776"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="3.68633583332196"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Fire\FireBigCrackle.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="471303328"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FireBigCrackle" ID="{CB1A8330-D64F-4C1B-A799-78498D6371A2}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FireBigCrackle_07" ID="{CB62ECD9-1638-4F61-8EC5-8401D98CC5F6}" ShortID="1063057718">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FireBigCrackle" ID="{B1642190-CE61-45C0-AFB8-BE5BB7A6DCA7}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.198852882038672"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="15.6604928966587"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="16.0119708067741"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Fire\FireBigCrackle.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1056284373"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FireBigCrackle" ID="{B1642190-CE61-45C0-AFB8-BE5BB7A6DCA7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<Sound Name="BigCrackleDelay" ID="{8938D179-25F9-4E10-84B2-33F52CFE41AF}" ShortID="451271359">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="Silence" ID="{E84F916F-7806-4AC6-9800-E3441145C361}" ShortID="723153880" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+															<PropertyList>
+																<Property Name="Length" Type="Real32" Value="30"/>
+																<Property Name="LengthMax" Type="Real32" Value="0.15"/>
+																<Property Name="LengthMin" Type="Real32" Value="-5"/>
+															</PropertyList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Silence" ID="{E84F916F-7806-4AC6-9800-E3441145C361}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Playlist">
+													<Reference>
+														<ObjectRef Name="BigCrackles" ID="{022A62D0-0100-4B96-B958-5978547D012B}" WorkUnitID="{28E2E73C-5996-4653-AE2D-7002CF2FD467}"/>
+													</Reference>
+													<Reference>
+														<ObjectRef Name="BigCrackleDelay" ID="{8938D179-25F9-4E10-84B2-33F52CFE41AF}" WorkUnitID="{28E2E73C-5996-4653-AE2D-7002CF2FD467}"/>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="SmallCrackle" ID="{EB3CE3B9-F737-47C5-9389-0562B8FA6EB7}" ShortID="740453428">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{11BA8FBF-8DC9-4D9D-887D-B8AC9FA4507F}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-225"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{3D04D530-AC27-480B-8953-32BA92A0FE18}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="3"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="FireSmallCrackleType1" ID="{AACCDC6C-F990-457A-B23B-F372D0BF31FC}" ShortID="167280379">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{6DDA724D-FD8B-491C-97DE-8EDB8F944113}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-9</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FireSmallCrackle" ID="{3980DF91-4288-4B38-A8CB-917468D278A0}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.800323863088349"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.6006477261767"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.65188144317646"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Fire\FireSmallCrackle.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="33862716"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FireSmallCrackle" ID="{3980DF91-4288-4B38-A8CB-917468D278A0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FireSmallCrackleType2_01" ID="{5217871D-90BB-46FC-9A8F-F50110ADB60E}" ShortID="901449903">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{6E17B6DB-5F27-4CA3-A7E6-9FBC1D0D41D8}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-15</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FireSmallCrackle2" ID="{7EE76401-C1A6-463D-907C-54ED04A5481E}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.668656725942353"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="8.99779376865904"/>
+																<Property Name="TrimEnd" Type="Real64" Value="10.2769631574183"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Fire\FireSmallCrackle2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="239383418"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FireSmallCrackle2" ID="{7EE76401-C1A6-463D-907C-54ED04A5481E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FireSmallCrackleType1_01" ID="{97CF2000-5B38-4F37-A3A1-83E2EF3EBF83}" ShortID="496216892">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{C15CDCBB-149D-430B-A142-E77A56AA6A4F}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FireSmallCrackle" ID="{D6F41D5E-FA61-49FB-B386-AAABA6F481B9}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.00040482886044"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="21.882060286955"/>
+																<Property Name="TrimEnd" Type="Real64" Value="25.741936922293"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Fire\FireSmallCrackle.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1011773945"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FireSmallCrackle" ID="{D6F41D5E-FA61-49FB-B386-AAABA6F481B9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FireSmallCrackleType1_02" ID="{D23F5F94-9B1A-4E75-A673-F85CA94C6744}" ShortID="81349438">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{A3BD02E5-445B-4726-B98F-CB8DE61EB3DB}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FireSmallCrackle" ID="{57012C3B-44F6-424B-93B9-11993775E1DF}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.16981556247793"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="29.2118210027247"/>
+																<Property Name="TrimEnd" Type="Real64" Value="31.5967320081207"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Fire\FireSmallCrackle.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="211874417"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FireSmallCrackle" ID="{57012C3B-44F6-424B-93B9-11993775E1DF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</BlendContainer>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
