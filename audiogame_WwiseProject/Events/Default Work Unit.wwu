@@ -349,6 +349,109 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="FairyTutorial" ID="{55999EBB-1191-4919-9388-4B6E22847BAD}" ShortID="85992046">
+					<ChildrenList>
+						<Event Name="Introduction" ID="{8DC065FA-CA9E-4201-9855-2B319EA00298}">
+							<ChildrenList>
+								<Action Name="" ID="{0928DA3D-113F-457A-97AB-F4B3F785352E}" ShortID="1071651775">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FairyIntro1" ID="{BC16918D-6A28-4304-8645-0ACB36108054}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MoveAndRotate" ID="{20BACAFA-1DB6-4515-82ED-EBB9D36525EF}">
+							<ChildrenList>
+								<Action Name="" ID="{EDE6F0B2-45EF-4647-85C1-E9C35ACB9AB7}" ShortID="940224150">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FairyMoveAndRotate" ID="{78D022C5-9986-4E34-94B6-2E679DEA21F8}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="TrapWarning" ID="{89507EA9-7029-41EE-A3E7-FE0B985913AB}">
+							<ChildrenList>
+								<Action Name="" ID="{28BDF9CD-500C-4567-847A-115EB6664CCA}" ShortID="909051038">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FairyTrapWarning" ID="{34EC913D-9BF5-4D4D-8F4E-C3F70FF872CF}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="CauldronIntro" ID="{938B15F6-1184-423D-BA64-C900E1BACA58}">
+							<ChildrenList>
+								<Action Name="" ID="{B48D0D20-141C-4B9F-952D-FE4FB982D83A}" ShortID="230486041">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FairyCauldron" ID="{2A826B50-ED70-454C-9F5F-566DC7F9382E}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="CheckpointIntro" ID="{78894E3B-2886-4D7E-9B8C-062FF0885C7D}">
+							<ChildrenList>
+								<Action Name="" ID="{08C8A4BD-4B60-49DA-9E72-77B8415E93B4}" ShortID="1049000540">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FairyCheckpoint" ID="{E35081EA-FEB3-42A0-B013-57E498D156E3}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="FairyTutorialEnd" ID="{B1E55F58-2763-4106-8514-2947E858F734}">
+							<ChildrenList>
+								<Action Name="" ID="{07BA721C-5489-413C-B06C-65162529E36A}" ShortID="270976944">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FairyTutorialEnd" ID="{0E134B56-F79F-48CE-872B-1B6F052BAB3C}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="FairyFollowFairy" ID="{44E31DFB-B5D6-459E-B824-512CF08936CE}">
+							<ChildrenList>
+								<Action Name="" ID="{1C6BA84C-F26C-4F3D-BAA0-8284C2833D21}" ShortID="22111920">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FairyFollowFairy" ID="{6D4F89F8-596D-49F5-AF62-A0ED4A9FE989}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="FairyFollowThroughDoor" ID="{9C385594-8089-473B-B428-8F5C6ABEDC55}">
+							<ChildrenList>
+								<Action Name="" ID="{D9C9C302-E4E5-4A8B-AF83-6FBFF8BEAE3D}" ShortID="1047237875">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FairyFollowThroughDoor" ID="{8560BD92-7E74-430F-91A1-64D316B333D4}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="FairyLeverAfterCauldron" ID="{543C2E3B-079B-41C9-AA83-439938CEC5F9}">
+							<ChildrenList>
+								<Action Name="" ID="{A185E60F-7C29-4561-A8C0-2E30732AD2EB}" ShortID="171355304">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FairyLeverAfterCauldron" ID="{2A2FBB66-F32D-4B71-A997-DE6DF6C1ADB6}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -2435,7 +2435,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="FairyVoice1" ID="{BC16918D-6A28-4304-8645-0ACB36108054}" ShortID="402523746">
+								<Sound Name="FairyIntro1" ID="{BC16918D-6A28-4304-8645-0ACB36108054}" ShortID="402523746">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
@@ -2464,7 +2464,7 @@
 										<ActiveSource Name="FairyVoice1" ID="{A103A968-C65E-4291-9238-8D613EBDAA2C}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="FairyVoice2" ID="{78D022C5-9986-4E34-94B6-2E679DEA21F8}" ShortID="961455517">
+								<Sound Name="FairyMoveAndRotate" ID="{78D022C5-9986-4E34-94B6-2E679DEA21F8}" ShortID="961455517">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
@@ -2493,7 +2493,7 @@
 										<ActiveSource Name="ZOOM0009" ID="{D525C3C8-35F6-4A34-A22E-A94361A6B00F}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="FairyVoice3" ID="{6D4F89F8-596D-49F5-AF62-A0ED4A9FE989}" ShortID="34199464">
+								<Sound Name="FairyFollowFairy" ID="{6D4F89F8-596D-49F5-AF62-A0ED4A9FE989}" ShortID="34199464">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
@@ -2522,7 +2522,7 @@
 										<ActiveSource Name="ZOOM0011-2" ID="{30F9A4F4-7006-4A76-B7C9-3132B223B6C7}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="FairyVoice4" ID="{34EC913D-9BF5-4D4D-8F4E-C3F70FF872CF}" ShortID="363540426">
+								<Sound Name="FairyTrapWarning" ID="{34EC913D-9BF5-4D4D-8F4E-C3F70FF872CF}" ShortID="363540426">
 									<PropertyList>
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
@@ -2558,7 +2558,7 @@
 										<ActiveSource Name="ZOOM0012" ID="{156AB195-05CA-44A7-9BC3-3767C5DBAF38}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="FairyVoice5" ID="{2A826B50-ED70-454C-9F5F-566DC7F9382E}" ShortID="864720426">
+								<Sound Name="FairyCauldron" ID="{2A826B50-ED70-454C-9F5F-566DC7F9382E}" ShortID="864720426">
 									<PropertyList>
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
@@ -2594,36 +2594,7 @@
 										<ActiveSource Name="ZOOM0014" ID="{79ED7665-F1CF-4D2B-BF8C-6EB5C27CB26A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="FairyVoice6" ID="{8D146A7B-4A6F-44E4-A3C2-522EE770691D}" ShortID="39567720">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="ZOOM0016" ID="{0836F46C-2CE4-4EFC-84D4-AC0ED64B6B3F}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.503761923283113"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.213717179574655"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.396903333495786"/>
-												<Property Name="TrimEnd" Type="Real64" Value="11.6017888904207"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>ZOOM0016.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="619423744"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="ZOOM0016" ID="{0836F46C-2CE4-4EFC-84D4-AC0ED64B6B3F}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="FairyVoice7" ID="{2A2FBB66-F32D-4B71-A997-DE6DF6C1ADB6}" ShortID="38970102">
+								<Sound Name="FairyLeverAfterCauldron" ID="{2A2FBB66-F32D-4B71-A997-DE6DF6C1ADB6}" ShortID="38970102">
 									<PropertyList>
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
@@ -2659,7 +2630,7 @@
 										<ActiveSource Name="ZOOM0019" ID="{28140EB3-9605-48A9-93B0-BC2888CC7C7F}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="FairyVoice8" ID="{8560BD92-7E74-430F-91A1-64D316B333D4}" ShortID="183697014">
+								<Sound Name="FairyFollowThroughDoor" ID="{8560BD92-7E74-430F-91A1-64D316B333D4}" ShortID="183697014">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
@@ -2688,7 +2659,7 @@
 										<ActiveSource Name="ZOOM0020" ID="{0B3066C1-3094-423E-B49C-56985510BE23}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="FairyVoice9" ID="{E35081EA-FEB3-42A0-B013-57E498D156E3}" ShortID="649819657">
+								<Sound Name="FairyCheckpoint" ID="{E35081EA-FEB3-42A0-B013-57E498D156E3}" ShortID="649819657">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
@@ -2717,7 +2688,7 @@
 										<ActiveSource Name="ZOOM0022" ID="{E1E534E4-288E-45C3-B178-A4BF10589BA5}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="FairyVoice10" ID="{0E134B56-F79F-48CE-872B-1B6F052BAB3C}" ShortID="997442533">
+								<Sound Name="FairyTutorialEnd" ID="{0E134B56-F79F-48CE-872B-1B6F052BAB3C}" ShortID="997442533">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>

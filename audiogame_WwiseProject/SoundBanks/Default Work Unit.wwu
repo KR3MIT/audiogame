@@ -18,6 +18,7 @@
 						<ObjectRef Name="Ambience" ID="{8BD4EF97-5567-47C5-8FE3-97F096FD59FE}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RockThrowReleaseEvent" ID="{2F820D24-07E3-47DD-9032-1AE71F065B63}" WorkUnitID="{62E6B6D2-5892-4B94-891E-2D5CE2D57E22}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Interactables" ID="{A0B6B4A2-19A2-4853-870D-3C88553825CC}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="FairyTutorial" ID="{55999EBB-1191-4919-9388-4B6E22847BAD}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FootstepEvent" ID="{0CFC6F27-5310-4A12-8217-A1CC7FA0B0B0}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_RiverSequence" ID="{541525E6-94A9-4A21-B8F9-758C5E0442A4}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Campfire" ID="{4CE63854-FC7C-4A3F-9D7F-108A08F18B15}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
