@@ -26481,6 +26481,10 @@ PrefabInstance:
       value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 4793453861586208634, guid: 9efa649c1f57a8a429f94e707ba08c4b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 12.105909
+      objectReference: {fileID: 0}
+    - target: {fileID: 4793453861586208634, guid: 9efa649c1f57a8a429f94e707ba08c4b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.738964
       objectReference: {fileID: 0}
@@ -26490,7 +26494,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4793453861586208634, guid: 9efa649c1f57a8a429f94e707ba08c4b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -29.774683
+      value: -28.92
       objectReference: {fileID: 0}
     - target: {fileID: 4793453861586208634, guid: 9efa649c1f57a8a429f94e707ba08c4b, type: 3}
       propertyPath: m_LocalRotation.w
