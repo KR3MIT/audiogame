@@ -11,7 +11,7 @@ public class FairyController : MonoBehaviour
 {
     public SplineAnimate splineAnimate;
     public List<SplineContainer> splines;
-    int currentSpline = 0;
+    public int currentSpline = 0;
     bool hasPlayedOnSpline = false;
     public AK.Wwise.Event fairyFlyAwaySound;
     public AK.Wwise.Event fairyBellSound;
@@ -47,7 +47,16 @@ public class FairyController : MonoBehaviour
         splineAnimate.Restart(false);
     }
 
-
+    public IEnumerator Backtrack(int triggerID)
+    {
+        currentSpline = triggerID;
+        hasPlayedOnSpline = false;
+        splineAnimate.Container = splines[currentSpline];
+        splineAnimate.Play();
+        yield return new WaitForSeconds(0.01f);
+        splineAnimate.Pause();
+        splineAnimate.Restart(false);
+    }
 
     void OnTriggerEnter(Collider other)
     {
