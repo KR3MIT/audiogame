@@ -1,8 +1,5 @@
-using NUnit.Framework;
 using System.Collections;
 using System.Collections.Generic;
-using System.Net;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Splines;
 
@@ -18,9 +15,20 @@ public class FairyController : MonoBehaviour
     public AK.Wwise.Event pauseFairyBellSound;
     private bool hasReachedEndOfSplines = false;
 
+    public static FairyController instance;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if(instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
         SplineAnimate splineAnimate = GetComponent<SplineAnimate>();
         splineAnimate.Container = splines[currentSpline];
     }

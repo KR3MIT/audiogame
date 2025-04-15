@@ -10,7 +10,9 @@ public class Task : ScriptableObject
     
     public UnityEvent onTaskStart;
     public UnityAction onTaskComplete;
-    
+
+    public AK.Wwise.Event taskSound;
+
     public virtual void StartTask(UnityAction onTaskCompleteCallback)
     {
         Debug.Log(taskStartNarration);
@@ -27,5 +29,10 @@ public class Task : ScriptableObject
         onTaskComplete?.Invoke();
         onTaskComplete = null;
         // insert end dialogue here
+    }
+
+    public void PlayTaskSound()
+    {
+        taskSound.Post(FairyController.instance.gameObject);
     }
 }
