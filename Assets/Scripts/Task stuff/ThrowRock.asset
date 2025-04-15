@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6e804e9d1892d94f94590467473fbea, type: 3}
   m_Name: ThrowRock
   m_EditorClassIdentifier: 
-  name: Rock throw
   taskStartNarration: throw da rock pls
   taskCompleteNarration: u done throw da rock
+  dialogueLength: 0
   onTaskStart:
     m_PersistentCalls:
       m_Calls: []
+  taskSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f52e9c95fe922eb41b2e59309addbaa3, type: 2}

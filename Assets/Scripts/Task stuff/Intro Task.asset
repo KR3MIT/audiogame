@@ -18,3 +18,7 @@ MonoBehaviour:
   onTaskStart:
     m_PersistentCalls:
       m_Calls: []
+  taskSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f52e9c95fe922eb41b2e59309addbaa3, type: 2}

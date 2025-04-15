@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f9b27af02ed3164fbabbc3e793d16bd, type: 3}
   m_Name: EndTask
   m_EditorClassIdentifier: 
-  name: End of tutorial
   taskStartNarration: 'hello dawg '
   taskCompleteNarration: see ya later gator
   dialogueLength: 5
   onTaskStart:
     m_PersistentCalls:
       m_Calls: []
+  taskSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f52e9c95fe922eb41b2e59309addbaa3, type: 2}
