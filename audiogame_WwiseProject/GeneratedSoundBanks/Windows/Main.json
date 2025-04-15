@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{81C84274-688E-0051-FF1D-0741449CC627}",
+    "Hash": "{A3AD8ACB-94FE-DD12-FD79-9343766EA2EF}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -64,6 +64,14 @@
       "CachePath": "BC/{BC8DCF9E-DB90-BFCE-97AF-A42BEAEDDA8B}.wem"
      },
      {
+      "Id": "38227980",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ZOOM0009.wav",
+      "CachePath": "A1/{A1CDE2DE-01BA-3DE9-183B-723A13907BF9}.wem"
+     },
+     {
       "Id": "53361661",
       "Language": "SFX",
       "Streaming": "false",
@@ -86,6 +94,14 @@
       "Location": "Memory",
       "ShortName": "SpikeTrapOpen.wav",
       "CachePath": "06/{06999E8C-4353-3A34-8469-36847D602F4C}.wem"
+     },
+     {
+      "Id": "87427055",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ZOOM0022.wav",
+      "CachePath": "BC/{BC5CAF82-3F36-462A-C5AF-711CAC264C06}.wem"
      },
      {
       "Id": "94592133",
@@ -126,6 +142,14 @@
       "Location": "Memory",
       "ShortName": "ChoirAah.wav",
       "CachePath": "78/{783360DD-98B4-D1BB-24FB-1F420006F6D9}.wem"
+     },
+     {
+      "Id": "141303822",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ZOOM0014.wav",
+      "CachePath": "48/{48AA2BC9-9299-263C-F3D3-8E3A8BD5078F}.wem"
      },
      {
       "Id": "150379089",
@@ -304,6 +328,14 @@
       "CachePath": "51/{51A055E4-DFD1-AD91-DF99-39452FA6E936}.wem"
      },
      {
+      "Id": "411977813",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ZOOM0012.wav",
+      "CachePath": "32/{3282D268-E707-7951-9629-9EDFB3CA3540}.wem"
+     },
+     {
       "Id": "416703143",
       "Language": "SFX",
       "Streaming": "false",
@@ -358,6 +390,14 @@
       "Location": "Memory",
       "ShortName": "WaterRunningFast.wav",
       "CachePath": "F1/{F189A07D-A1AD-09B1-FCEA-BF54EF825612}.wem"
+     },
+     {
+      "Id": "445451674",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ZOOM0025.wav",
+      "CachePath": "1D/{1DC549EB-71E4-854D-3C4E-9293AA0E4D5D}.wem"
      },
      {
       "Id": "450430112",
@@ -422,6 +462,14 @@
       "Location": "Memory",
       "ShortName": "Cauldron2.wav",
       "CachePath": "E7/{E714042A-310B-52C5-D25F-88B8D7791C64}.wem"
+     },
+     {
+      "Id": "478303752",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ZOOM0007.wav",
+      "CachePath": "DC/{DCD99647-2574-58EC-CCC0-A172543F11D0}.wem"
      },
      {
       "Id": "481695635",
@@ -560,6 +608,14 @@
       "CachePath": "C0/{C0A0DC45-8A55-D80D-D795-43FE87D61518}.wem"
      },
      {
+      "Id": "704475362",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ZOOM0020.wav",
+      "CachePath": "0B/{0B270D81-1AB9-9EAA-875F-52163A6D60B8}.wem"
+     },
+     {
       "Id": "711467482",
       "Language": "SFX",
       "Streaming": "false",
@@ -608,6 +664,14 @@
       "CachePath": "DB/{DB131206-5E0F-C7CC-9E52-D28C0F57DF67}.wem"
      },
      {
+      "Id": "760915648",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ZOOM0019.wav",
+      "CachePath": "E0/{E07CC2D9-3C5A-B305-DAC0-F81EDC00A45D}.wem"
+     },
+     {
       "Id": "764391143",
       "Language": "SFX",
       "Streaming": "false",
@@ -622,6 +686,14 @@
       "Location": "Memory",
       "ShortName": "FootstepsStone.wav",
       "CachePath": "BF/{BF2FA94E-DE45-73AF-ECBB-CFA93D7C8C94}.wem"
+     },
+     {
+      "Id": "803635225",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ZOOM0011-2.wav",
+      "CachePath": "CF/{CF59C406-580F-FBC4-AE9A-62C2626B47AF}.wem"
      },
      {
       "Id": "811327516",
@@ -958,7 +1030,7 @@
       "Name": "ButtonGlowEvent",
       "ObjectPath": "\\Events\\Default Work Unit\\Interactables\\ButtonGlowEvent",
       "GUID": "{CE46776C-8F62-4CA2-919C-7369465865FA}",
-      "MaxAttenuation": "30",
+      "MaxAttenuation": "20",
       "DurationType": "Infinite",
       "SwitchContainers": [
        {
@@ -1133,6 +1205,20 @@
       ]
      },
      {
+      "Id": "3823172619",
+      "Name": "CauldronIntro",
+      "ObjectPath": "\\Events\\Default Work Unit\\FairyTutorial\\CauldronIntro",
+      "GUID": "{938B15F6-1184-423D-BA64-C900E1BACA58}",
+      "DurationType": "OneShot",
+      "DurationMin": "7.7544346",
+      "DurationMax": "7.7544346",
+      "MediaRefs": [
+       {
+        "Id": "141303822"
+       }
+      ]
+     },
+     {
       "Id": "2324335845",
       "Name": "CauldronStart",
       "ObjectPath": "\\Events\\WillEvents\\CauldronStart",
@@ -1154,6 +1240,20 @@
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "0"
+     },
+     {
+      "Id": "2359492547",
+      "Name": "CheckpointIntro",
+      "ObjectPath": "\\Events\\Default Work Unit\\FairyTutorial\\CheckpointIntro",
+      "GUID": "{78894E3B-2886-4D7E-9B8C-062FF0885C7D}",
+      "DurationType": "OneShot",
+      "DurationMin": "4.6945715",
+      "DurationMax": "4.6945715",
+      "MediaRefs": [
+       {
+        "Id": "87427055"
+       }
+      ]
      },
      {
       "Id": "1184232069",
@@ -1263,6 +1363,62 @@
       ]
      },
      {
+      "Id": "882162926",
+      "Name": "FairyFollowFairy",
+      "ObjectPath": "\\Events\\Default Work Unit\\FairyTutorial\\FairyFollowFairy",
+      "GUID": "{44E31DFB-B5D6-459E-B824-512CF08936CE}",
+      "DurationType": "OneShot",
+      "DurationMin": "10.11287",
+      "DurationMax": "10.11287",
+      "MediaRefs": [
+       {
+        "Id": "803635225"
+       }
+      ]
+     },
+     {
+      "Id": "1778918934",
+      "Name": "FairyFollowThroughDoor",
+      "ObjectPath": "\\Events\\Default Work Unit\\FairyTutorial\\FairyFollowThroughDoor",
+      "GUID": "{9C385594-8089-473B-B428-8F5C6ABEDC55}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.081492",
+      "DurationMax": "2.081492",
+      "MediaRefs": [
+       {
+        "Id": "704475362"
+       }
+      ]
+     },
+     {
+      "Id": "839203844",
+      "Name": "FairyLeverAfterCauldron",
+      "ObjectPath": "\\Events\\Default Work Unit\\FairyTutorial\\FairyLeverAfterCauldron",
+      "GUID": "{543C2E3B-079B-41C9-AA83-439938CEC5F9}",
+      "DurationType": "OneShot",
+      "DurationMin": "8.090985",
+      "DurationMax": "8.090985",
+      "MediaRefs": [
+       {
+        "Id": "760915648"
+       }
+      ]
+     },
+     {
+      "Id": "2257484729",
+      "Name": "FairyTutorialEnd",
+      "ObjectPath": "\\Events\\Default Work Unit\\FairyTutorial\\FairyTutorialEnd",
+      "GUID": "{B1E55F58-2763-4106-8514-2947E858F734}",
+      "DurationType": "OneShot",
+      "DurationMin": "4.5650296",
+      "DurationMax": "4.5650296",
+      "MediaRefs": [
+       {
+        "Id": "445451674"
+       }
+      ]
+     },
+     {
       "Id": "3511205013",
       "Name": "FootstepEvent",
       "ObjectPath": "\\Events\\Default Work Unit\\PlayerSounds\\FootstepEvent",
@@ -1351,6 +1507,34 @@
         }
        ]
       }
+     },
+     {
+      "Id": "1034344105",
+      "Name": "Introduction",
+      "ObjectPath": "\\Events\\Default Work Unit\\FairyTutorial\\Introduction",
+      "GUID": "{8DC065FA-CA9E-4201-9855-2B319EA00298}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.3527043",
+      "DurationMax": "2.3527043",
+      "MediaRefs": [
+       {
+        "Id": "478303752"
+       }
+      ]
+     },
+     {
+      "Id": "1189265860",
+      "Name": "MoveAndRotate",
+      "ObjectPath": "\\Events\\Default Work Unit\\FairyTutorial\\MoveAndRotate",
+      "GUID": "{20BACAFA-1DB6-4515-82ED-EBB9D36525EF}",
+      "DurationType": "OneShot",
+      "DurationMin": "5.5344214",
+      "DurationMax": "5.5344214",
+      "MediaRefs": [
+       {
+        "Id": "38227980"
+       }
+      ]
      },
      {
       "Id": "767398485",
@@ -1761,6 +1945,20 @@
         "Id": "880378824"
        }
       ]
+     },
+     {
+      "Id": "1699501468",
+      "Name": "TrapWarning",
+      "ObjectPath": "\\Events\\Default Work Unit\\FairyTutorial\\TrapWarning",
+      "GUID": "{89507EA9-7029-41EE-A3E7-FE0B985913AB}",
+      "DurationType": "OneShot",
+      "DurationMin": "9.479971",
+      "DurationMax": "9.479971",
+      "MediaRefs": [
+       {
+        "Id": "411977813"
+       }
+      ]
      }
     ],
     "GameParameters": [
@@ -1841,6 +2039,6 @@
     ]
    }
   ],
-  "FileHash": "{1A683853-36E3-E31E-CA36-4B5CC59C4DB4}"
+  "FileHash": "{91C051B6-CC3B-827D-6483-C73B823218E3}"
  }
 }

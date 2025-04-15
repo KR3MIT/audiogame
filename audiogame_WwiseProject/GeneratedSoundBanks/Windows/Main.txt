@@ -1,16 +1,24 @@
 Event	ID	Name			Wwise Object Path	Notes
 	767398485	PauseFairyBellEvent			\Default Work Unit\Fairy\PauseFairyBellEvent	
+	839203844	FairyLeverAfterCauldron			\Default Work Unit\FairyTutorial\FairyLeverAfterCauldron	
+	882162926	FairyFollowFairy			\Default Work Unit\FairyTutorial\FairyFollowFairy	
 	904967365	Play_LedgeRocks			\Default Work Unit\Traps\Play_LedgeRocks	
+	1034344105	Introduction			\Default Work Unit\FairyTutorial\Introduction	
 	1056060213	FairyBellEvent			\Default Work Unit\Fairy\FairyBellEvent	
 	1184232069	DoorRattleEvent			\WillEvents\DoorSounds\DoorRattleEvent	
+	1189265860	MoveAndRotate			\Default Work Unit\FairyTutorial\MoveAndRotate	
 	1324720394	Play_WallImpactAndRub			\Default Work Unit\Player wall impact\Play_WallImpactAndRub	
 	1406980521	ButtonClickEvent			\Default Work Unit\Interactables\ButtonClickEvent	
 	1587523507	PlayerReviveEvent			\Default Work Unit\PlayerSounds\PlayerReviveEvent	
+	1699501468	TrapWarning			\Default Work Unit\FairyTutorial\TrapWarning	
 	1721085703	CauldronStop			\WillEvents\CauldronStop	
+	1778918934	FairyFollowThroughDoor			\Default Work Unit\FairyTutorial\FairyFollowThroughDoor	
 	1953273240	PlayerCheckpointEvent			\Default Work Unit\PlayerSounds\PlayerCheckpointEvent	
 	2133386887	RockThrowReleaseEvent			\WillEvents\RockThrowReleaseEvent	
+	2257484729	FairyTutorialEnd			\Default Work Unit\FairyTutorial\FairyTutorialEnd	
 	2298613774	Play_WaterDroplets			\Default Work Unit\Ambience\Play_WaterDroplets	
 	2324335845	CauldronStart			\WillEvents\CauldronStart	
+	2359492547	CheckpointIntro			\Default Work Unit\FairyTutorial\CheckpointIntro	
 	2411449720	SpikeTrapCloseEvent			\Default Work Unit\Traps\SpikeTrapCloseEvent	
 	2444696015	Stop_WallRub			\Default Work Unit\Player wall impact\Stop_WallRub	
 	2493706327	Play_RiverSequence			\Default Work Unit\Ambience\Play_RiverSequence	
@@ -23,6 +31,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3589471410	ButtonGlowEvent			\Default Work Unit\Interactables\ButtonGlowEvent	
 	3617176563	FairyFlyAwayEvent			\Default Work Unit\Fairy\FairyFlyAwayEvent	
 	3698047240	Play_Breath			\Default Work Unit\Play_Breath	
+	3823172619	CauldronIntro			\Default Work Unit\FairyTutorial\CauldronIntro	
 	4000411161	Play_Campfire			\Default Work Unit\Ambience\Play_Campfire	
 	4042825516	PlayerDeathEvent			\Default Work Unit\PlayerSounds\PlayerDeathEvent	
 
@@ -62,14 +71,17 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	13984439	TakeDamage1_03	C:\Github\audiogame\audiogame_WwiseProject\.cache\DE\{DE5C1CE9-EA79-630D-F0DA-32E03FA4A0B0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\TakeDamage\TakeDamage1_03		71624
 	21677575	DoorRattling_02	C:\Github\audiogame\audiogame_WwiseProject\.cache\FE\{FE2347A6-F156-6A11-3E16-20BFE05D5624}.wem		\Actor-Mixer Hierarchy\WilliamTheGOAT\Jesus\DoorRattling\DoorRattling\DoorRattling_02		321640
 	34398908	FairyD1	C:\Github\audiogame\audiogame_WwiseProject\.cache\BC\{BC8DCF9E-DB90-BFCE-97AF-A42BEAEDDA8B}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\FairySound\FairyFlyAway\FairyD1		138316
+	38227980	FairyMoveAndRotate	C:\Github\audiogame\audiogame_WwiseProject\.cache\A1\{A1CDE2DE-01BA-3DE9-183B-723A13907BF9}.wem		\Actor-Mixer Hierarchy\Thisen\TutorialVoicelines\Voicelines\FairyMoveAndRotate		1641984
 	53361661	WaterSlurp_04	C:\Github\audiogame\audiogame_WwiseProject\.cache\55\{55128D1B-7597-F426-BB50-DE83CE2FAF0F}.wem		\Actor-Mixer Hierarchy\WilliamTheGOAT\Jesus\HealingWaterSlurp\SlurpWater\WaterSlurp_04		81600
 	62138234	WaterDrip_06	C:\Github\audiogame\audiogame_WwiseProject\.cache\FE\{FE54039C-F8D0-7ED8-39DF-7B5052FABD4F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\WaterDroplets\WaterDrip_06		36900
 	76045582	SpikeTrapOpen	C:\Github\audiogame\audiogame_WwiseProject\.cache\06\{06999E8C-4353-3A34-8469-36847D602F4C}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\SpikeTrapOpen		69532
+	87427055	FairyCheckpoint	C:\Github\audiogame\audiogame_WwiseProject\.cache\BC\{BC5CAF82-3F36-462A-C5AF-711CAC264C06}.wem		\Actor-Mixer Hierarchy\Thisen\TutorialVoicelines\Voicelines\FairyCheckpoint		1392824
 	94592133	FairyF#1	C:\Github\audiogame\audiogame_WwiseProject\.cache\0F\{0FA7AF8D-29C0-D859-851E-AF15F3D21473}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\FairySound\FairyFlyAway\FairyF#1		128840
 	107015913	WaterDrip	C:\Github\audiogame\audiogame_WwiseProject\.cache\70\{70B65F85-1677-F724-C83F-A388FF07B6AB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\WaterDroplets\WaterDrip		40916
 	126216804	ButtonClick_03	C:\Github\audiogame\audiogame_WwiseProject\.cache\5F\{5F061F47-0814-0B13-98DD-E3C698658B62}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\ButtonClickSound\ButtonClick_03		190672
 	137710955	Woosh_01	C:\Github\audiogame\audiogame_WwiseProject\.cache\9E\{9E491501-86D3-74C3-DD6B-131F249AE272}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\AxeTrap\AxeSequence\Woosh_01		38498
 	140299461	ChoirAah	C:\Github\audiogame\audiogame_WwiseProject\.cache\78\{783360DD-98B4-D1BB-24FB-1F420006F6D9}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\LoopingChoir\ChoirRandom\ChoirAah		907344
+	141303822	FairyCauldron	C:\Github\audiogame\audiogame_WwiseProject\.cache\48\{48AA2BC9-9299-263C-F3D3-8E3A8BD5078F}.wem		\Actor-Mixer Hierarchy\Thisen\TutorialVoicelines\Voicelines\FairyCauldron		2300592
 	150379089	FairyD2	C:\Github\audiogame\audiogame_WwiseProject\.cache\E3\{E3E63FC6-E563-7607-5B92-C24E4B3C5331}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\FairySound\FairyBellSequence\FairyBells\FairyD2		124892
 	165046590	TakeDamage1_06	C:\Github\audiogame\audiogame_WwiseProject\.cache\5D\{5D289CAA-77A2-577B-7FF2-66A41C02C00A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\TakeDamage\TakeDamage1_06		68192
 	165970382	Pot3	C:\Github\audiogame\audiogame_WwiseProject\.cache\5A\{5A2FCD5B-5118-C6C3-1387-78A0E308253D}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\PotContainer\Pots\Pot3		25312
@@ -92,6 +104,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	384600095	WallImpactInside_03	C:\Github\audiogame\audiogame_WwiseProject\.cache\F8\{F81EE7A5-1BBE-85BD-CDF5-A975220868EB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\WallImpactAndRub\WallImpacts\WallImpactInside_03		33276
 	385467872	FootstepStone_01	C:\Github\audiogame\audiogame_WwiseProject\.cache\3E\{3E4E6D93-484F-EAB7-6217-61585FFD2199}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\Footsteps\FootstepsStoneLeft\FootstepStone_01		16516
 	392511690	RespawnSound	C:\Github\audiogame\audiogame_WwiseProject\.cache\51\{51A055E4-DFD1-AD91-DF99-39452FA6E936}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\RespawnSound		156536
+	411977813	FairyTrapWarning	C:\Github\audiogame\audiogame_WwiseProject\.cache\32\{3282D268-E707-7951-9629-9EDFB3CA3540}.wem		\Actor-Mixer Hierarchy\Thisen\TutorialVoicelines\Voicelines\FairyTrapWarning		2812500
 	416703143	WaterSlurp_02	C:\Github\audiogame\audiogame_WwiseProject\.cache\E7\{E7AE4382-4A4C-9B3C-C525-FFF9889CC5FE}.wem		\Actor-Mixer Hierarchy\WilliamTheGOAT\Jesus\HealingWaterSlurp\SlurpWater\WaterSlurp_02		64472
 	418454029	FairyB2	C:\Github\audiogame\audiogame_WwiseProject\.cache\56\{56C85E39-CE34-1CD3-7368-CC9169292EA4}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\FairySound\FairyBellSequence\FairyBells\FairyB2		146212
 	426616645	WaterDrip_01	C:\Github\audiogame\audiogame_WwiseProject\.cache\FE\{FE731D57-6175-2BFE-2EB1-A5CE7201706A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\WaterDroplets\WaterDrip_01		38084
@@ -99,6 +112,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	433311367	ChoirAah2	C:\Github\audiogame\audiogame_WwiseProject\.cache\1D\{1D0E0550-CB83-F0B4-702B-95C917D58A80}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\LoopingChoir\ChoirRandom\ChoirAah2		907344
 	435264456	MetalShing_08	C:\Github\audiogame\audiogame_WwiseProject\.cache\EB\{EB5D94DD-6986-9BE6-D195-533D6E17469E}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\AxeTrap\ShingRandom\MetalShing_08		56944
 	443998857	WaterRunningFast	C:\Github\audiogame\audiogame_WwiseProject\.cache\F1\{F189A07D-A1AD-09B1-FCEA-BF54EF825612}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\RiverSequence\WaterRunningFast		1200668
+	445451674	FairyTutorialEnd	C:\Github\audiogame\audiogame_WwiseProject\.cache\1D\{1DC549EB-71E4-854D-3C4E-9293AA0E4D5D}.wem		\Actor-Mixer Hierarchy\Thisen\TutorialVoicelines\Voicelines\FairyTutorialEnd		1354392
 	450430112	RockThrowStone	C:\Github\audiogame\audiogame_WwiseProject\.cache\AF\{AF202EAC-6E4C-94D0-C818-8E82C3B90B6E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\RockHitSwitch\RockToRock\RockThrowStone		64036
 	453939632	DoorRattling_03	C:\Github\audiogame\audiogame_WwiseProject\.cache\28\{284FD1F2-5E84-BB2C-E171-E596B9ACE831}.wem		\Actor-Mixer Hierarchy\WilliamTheGOAT\Jesus\DoorRattling\DoorRattling\DoorRattling_03		266516
 	456254043	Pot4	C:\Github\audiogame\audiogame_WwiseProject\.cache\41\{419171E6-256E-A816-F8B9-662C498D4B51}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\PotContainer\Pots\Pot4		26064
@@ -107,6 +121,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	463604287	ButtonClick_02	C:\Github\audiogame\audiogame_WwiseProject\.cache\32\{3254161E-5418-1206-904E-034685923148}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\ButtonClickSound\ButtonClick_02		240820
 	475851401	RockThrowStone_03	C:\Github\audiogame\audiogame_WwiseProject\.cache\7B\{7BCE3928-00F8-BF6B-A427-FFA82FF9A658}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\RockHitSwitch\RockToRock\RockThrowStone_03		80732
 	478129153	Cauldron2	C:\Github\audiogame\audiogame_WwiseProject\.cache\E7\{E714042A-310B-52C5-D25F-88B8D7791C64}.wem		\Actor-Mixer Hierarchy\WilliamTheGOAT\Jesus\Cauldron2		2722032
+	478303752	FairyIntro1	C:\Github\audiogame\audiogame_WwiseProject\.cache\DC\{DCD99647-2574-58EC-CCC0-A172543F11D0}.wem		\Actor-Mixer Hierarchy\Thisen\TutorialVoicelines\Voicelines\FairyIntro1		698068
 	481695635	takenLedgeRocks	C:\Github\audiogame\audiogame_WwiseProject\.cache\E9\{E92EB274-CEEE-7F7D-EB6E-9E706840F619}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\takenLedgeRocks		741320
 	486399605	WaterSlurp	C:\Github\audiogame\audiogame_WwiseProject\.cache\E3\{E3C778DB-3E32-7EA1-8966-AA7A794F08BC}.wem		\Actor-Mixer Hierarchy\WilliamTheGOAT\Jesus\HealingWaterSlurp\SlurpWater\WaterSlurp		42548
 	490897574	MetalShing_07	C:\Github\audiogame\audiogame_WwiseProject\.cache\58\{583E9E49-8193-6EE4-F020-0573E081494C}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\AxeTrap\ShingRandom\MetalShing_07		71564
@@ -124,14 +139,17 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	674967751	RockThrowStone_05	C:\Github\audiogame\audiogame_WwiseProject\.cache\60\{607A980B-2BF1-3856-F22A-F258DAA00F59}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\RockHitSwitch\RockToRock\RockThrowStone_05		81336
 	689988897	WaterSlurp_03	C:\Github\audiogame\audiogame_WwiseProject\.cache\C5\{C593308B-C68D-A508-25A1-523F6E6CAAED}.wem		\Actor-Mixer Hierarchy\WilliamTheGOAT\Jesus\HealingWaterSlurp\SlurpWater\WaterSlurp_03		104308
 	700979515	RockThrowRelease_03	C:\Github\audiogame\audiogame_WwiseProject\.cache\C0\{C0A0DC45-8A55-D80D-D795-43FE87D61518}.wem		\Actor-Mixer Hierarchy\WilliamTheGOAT\Jesus\RockThrowBegin\RockThrowRelease_03		64552
+	704475362	FairyFollowThroughDoor	C:\Github\audiogame\audiogame_WwiseProject\.cache\0B\{0B270D81-1AB9-9EAA-875F-52163A6D60B8}.wem		\Actor-Mixer Hierarchy\Thisen\TutorialVoicelines\Voicelines\FairyFollowThroughDoor		617608
 	711467482	RockThrowStone_06	C:\Github\audiogame\audiogame_WwiseProject\.cache\3D\{3DE1BBFA-ACF8-4DC8-781A-E4DF172EB185}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\RockHitSwitch\RockToRock\RockThrowStone_06		88952
 	711891577	WallGrind	C:\Github\audiogame\audiogame_WwiseProject\.cache\A6\{A674C3BA-331B-555A-954E-342B7F9B9BB1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\WallImpactAndRub\WallGrind		735488
 	724544279	Pot1	C:\Github\audiogame\audiogame_WwiseProject\.cache\A2\{A21D3BB2-F72A-4680-D846-3FCA425BF323}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\Glow Sound\GlowSwitchController\PotContainer\Pots\Pot1		30572
 	744729462	RockThrowStone_01	C:\Github\audiogame\audiogame_WwiseProject\.cache\DD\{DDC3497D-DFD1-BA2D-229B-0E0E4293BEC5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\RockHitSwitch\RockToRock\RockThrowStone_01		57860
 	745117666	WaterRunningSlow	C:\Github\audiogame\audiogame_WwiseProject\.cache\C7\{C7ABC2D4-BFAC-4CBD-7B3D-539CC1128357}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\RiverSequence\WaterRunningSlow		1329692
 	745509452	TakeDamage1_02	C:\Github\audiogame\audiogame_WwiseProject\.cache\DB\{DB131206-5E0F-C7CC-9E52-D28C0F57DF67}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\TakeDamage\TakeDamage1_02		59476
+	760915648	FairyLeverAfterCauldron	C:\Github\audiogame\audiogame_WwiseProject\.cache\E0\{E07CC2D9-3C5A-B305-DAC0-F81EDC00A45D}.wem		\Actor-Mixer Hierarchy\Thisen\TutorialVoicelines\Voicelines\FairyLeverAfterCauldron		2400432
 	764391143	FairyE2	C:\Github\audiogame\audiogame_WwiseProject\.cache\6F\{6F7B8795-87CC-1849-EB29-56FCB6FD8ABF}.wem		\Actor-Mixer Hierarchy\Thisen\Sounds\FairySound\FairyBellSequence\FairyBells\FairyE2		139104
 	782706024	FootstepStone_10	C:\Github\audiogame\audiogame_WwiseProject\.cache\BF\{BF2FA94E-DE45-73AF-ECBB-CFA93D7C8C94}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\Footsteps\FootstepsStoneRight\FootstepStone_10		14052
+	803635225	FairyFollowFairy	C:\Github\audiogame\audiogame_WwiseProject\.cache\CF\{CF59C406-580F-FBC4-AE9A-62C2626B47AF}.wem		\Actor-Mixer Hierarchy\Thisen\TutorialVoicelines\Voicelines\FairyFollowFairy		3000264
 	811327516	RockThrowRelease_02	C:\Github\audiogame\audiogame_WwiseProject\.cache\8A\{8AF50474-0EB2-08B3-A0E3-C99CB249EB78}.wem		\Actor-Mixer Hierarchy\WilliamTheGOAT\Jesus\RockThrowBegin\RockThrowRelease_02		53304
 	814459543	FootstepStone_08	C:\Github\audiogame\audiogame_WwiseProject\.cache\D8\{D85B5FA3-73FA-262A-A72E-8F7C879239F6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\Footsteps\FootstepsStoneRight\FootstepStone_08		27480
 	815087105	TakeDamage1_05	C:\Github\audiogame\audiogame_WwiseProject\.cache\41\{411FEA62-2CBA-7547-A168-4EFB3C54EF83}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main\TakeDamage\TakeDamage1_05		62112

@@ -16,13 +16,21 @@ namespace AK
         static const AkUniqueID AXESWINGEVENT = 3270970525U;
         static const AkUniqueID BUTTONCLICKEVENT = 1406980521U;
         static const AkUniqueID BUTTONGLOWEVENT = 3589471410U;
+        static const AkUniqueID CAULDRONINTRO = 3823172619U;
         static const AkUniqueID CAULDRONSTART = 2324335845U;
         static const AkUniqueID CAULDRONSTOP = 1721085703U;
+        static const AkUniqueID CHECKPOINTINTRO = 2359492547U;
         static const AkUniqueID DOORRATTLEEVENT = 1184232069U;
         static const AkUniqueID FAIRYBELLEVENT = 1056060213U;
         static const AkUniqueID FAIRYFLYAWAYEVENT = 3617176563U;
+        static const AkUniqueID FAIRYFOLLOWFAIRY = 882162926U;
+        static const AkUniqueID FAIRYFOLLOWTHROUGHDOOR = 1778918934U;
+        static const AkUniqueID FAIRYLEVERAFTERCAULDRON = 839203844U;
+        static const AkUniqueID FAIRYTUTORIALEND = 2257484729U;
         static const AkUniqueID FOOTSTEPEVENT = 3511205013U;
         static const AkUniqueID HEALING = 3413347345U;
+        static const AkUniqueID INTRODUCTION = 1034344105U;
+        static const AkUniqueID MOVEANDROTATE = 1189265860U;
         static const AkUniqueID PAUSEFAIRYBELLEVENT = 767398485U;
         static const AkUniqueID PLAY_BREATH = 3698047240U;
         static const AkUniqueID PLAY_CAMPFIRE = 4000411161U;
@@ -39,6 +47,7 @@ namespace AK
         static const AkUniqueID SPIKETRAPOPENEVENT = 2836563388U;
         static const AkUniqueID STOP_WALLRUB = 2444696015U;
         static const AkUniqueID TAKEDAMAGEEVENT = 2985672797U;
+        static const AkUniqueID TRAPWARNING = 1699501468U;
     } // namespace EVENTS
 
     namespace STATES
