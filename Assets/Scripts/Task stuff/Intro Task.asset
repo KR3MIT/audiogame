@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f9b27af02ed3164fbabbc3e793d16bd, type: 3}
   m_Name: Intro Task
   m_EditorClassIdentifier: 
-  taskStartNarration: sup drilla
+  taskStartNarration: Hello and welcome to the moisture cave, u gotta learn the basics
+    first tho
   taskCompleteNarration: 
   dialogueLength: 5
+  endDialogueDelay: 0
   onTaskStart:
     m_PersistentCalls:
       m_Calls: []
@@ -22,3 +24,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: f52e9c95fe922eb41b2e59309addbaa3, type: 2}
+  endTaskSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}

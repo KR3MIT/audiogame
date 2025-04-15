@@ -7,32 +7,54 @@ public class Task : ScriptableObject
     public string taskStartNarration;
     public string taskCompleteNarration;
     public float dialogueLength;
+    public float endDialogueDelay;
     
     public UnityEvent onTaskStart;
     public UnityAction onTaskComplete;
 
-    public AK.Wwise.Event taskSound;
+    protected bool isActiveTask;
 
+    public AK.Wwise.Event taskSound;
+    public AK.Wwise.Event endTaskSound;
     public virtual void StartTask(UnityAction onTaskCompleteCallback)
     {
-        Debug.Log(taskStartNarration);
-        // insert start dialogue here
+        StartDialogue();
+        isActiveTask = true;
         onTaskStart?.Invoke();
         onTaskComplete = onTaskCompleteCallback;
     }
+
+    public void StartDialogue()
+    {
+        Debug.Log("tut " + taskStartNarration);
+        PlayTaskSound();
+    }
+    
+    public void EndDialogue()
+    {
+        Debug.Log(taskCompleteNarration);
+        PlayEndTaskSound();
+    }
+    
     public void CompleteTask()
     {
+        isActiveTask = false;
+        
+        EndDialogue();
         if (onTaskComplete == null)
         {
             return;
         }
         onTaskComplete?.Invoke();
         onTaskComplete = null;
-        // insert end dialogue here
     }
 
     public void PlayTaskSound()
     {
         taskSound.Post(FairyController.instance.gameObject);
+    }
+    public void PlayEndTaskSound()
+    {
+        endTaskSound.Post(FairyController.instance.gameObject);
     }
 }

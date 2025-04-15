@@ -58,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
         
         playerSpeedRTPC.SetValue(gameObject, NormalizedSpeed);
         
-        if (lookTask != null)
+        if (moveTask != null)
         {
             moveTask.TrackAmount(Speed);
         }

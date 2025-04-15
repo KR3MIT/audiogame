@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3722812569d940b4bb15a7ce155fef72, type: 3}
   m_Name: LookTask
   m_EditorClassIdentifier: 
-  taskStartNarration: start looking
-  taskCompleteNarration: you done lookin
-  dialogueLength: 0
+  taskStartNarration: try rotating in place
+  taskCompleteNarration: 'nice looking around, i mean, umm... '
+  dialogueLength: 5
+  endDialogueDelay: 2
   onTaskStart:
     m_PersistentCalls:
       m_Calls: []
@@ -22,5 +23,9 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: f52e9c95fe922eb41b2e59309addbaa3, type: 2}
+  endTaskSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   requiredAmount: 5000
-  currentAmount: 0
+  currentAmount: 2925

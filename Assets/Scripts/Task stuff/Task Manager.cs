@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class TaskManager : MonoBehaviour
 {
+    public UnityEvent tutorialComplete;
+    private bool _coroutineRunning;
+    
     [SerializeField] private bool onStart = false;
     [SerializeField] private List<Task> taskList;
     [SerializeField] private int currentTask = 0;
@@ -14,17 +18,13 @@ public class TaskManager : MonoBehaviour
     }
     private void StartNextTask()
     {
-        if (currentTask == 0)
+        StartCoroutine(DialogueDelay());
+    }
+    void EndTutorial()
+    {
+        if (currentTask == taskList.Count && !_coroutineRunning)
         {
-            StartCoroutine(DialogueDelay());
-        }
-        if (currentTask == taskList.Count)
-        {
-            StartCoroutine(DialogueDelay());
-        }
-        else if (currentTask < taskList.Count)
-        {
-            taskList[currentTask].StartTask(CompleteTask);
+            tutorialComplete.Invoke();
         }
     }
     private void CompleteTask()
@@ -34,9 +34,11 @@ public class TaskManager : MonoBehaviour
     }
     private IEnumerator DialogueDelay()
     {
+        _coroutineRunning = true;
         var _delay = taskList[currentTask].dialogueLength;
-        //insert end dialogue here
         yield return new WaitForSeconds(_delay);
-        CompleteTask();
+        taskList[currentTask].StartTask(CompleteTask);
+        _coroutineRunning = false;
+        EndTutorial();
     }
 }

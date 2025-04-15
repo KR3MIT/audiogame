@@ -15,6 +15,11 @@ public class ContinuousTask : Task
     }
     public void TrackAmount(float amount)
     {
+        if (!isActiveTask)
+        {
+            return;
+        }
+        
         // this function is called to track the amount of progress made towards the task
         currentAmount += Mathf.Abs(amount);
         if (currentAmount >= requiredAmount)

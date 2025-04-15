@@ -9,6 +9,8 @@ public class ChestBehavior : MonoBehaviour, Iinteractables
     private AkGameObj akGameObject;
     public float cauldronAttenuationScaling = 1.5f;
 
+    public Task task;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created 
     void Start()
     {
@@ -33,5 +35,10 @@ public class ChestBehavior : MonoBehaviour, Iinteractables
         PlayerBehavior.instance.healthRTPC.SetValue(PlayerBehavior.instance.gameObject, PlayerBehavior.instance.health);
        Debug.Log("Player new health is" +PlayerBehavior.instance.health);
         gameObject.layer = LayerMask.NameToLayer("Default");
+        
+        if (task != null)
+        {
+            task.CompleteTask();
+        }
     }
 }

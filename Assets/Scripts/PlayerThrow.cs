@@ -1,6 +1,4 @@
-using System.Collections;
 using Unity.Mathematics;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -38,7 +36,7 @@ public class PlayerThrow : MonoBehaviour
         RockThrowReleaseEvent.Post(gameObject);
 
         if (Haptics.instance != null)
-        Haptics.instance.PulseHaptics(0.1f,0.1f, 0.05f);
+            Haptics.instance.PulseHaptics(0.1f,0.1f, 0.05f);
         
       
         rockThrowTask?.CompleteTask();
