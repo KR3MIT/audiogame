@@ -13,8 +13,19 @@ public class TaskManager : MonoBehaviour
     [SerializeField] private bool onStart = false;
     [SerializeField] private List<Task> taskList;
     [SerializeField] private int currentTask = 0;
+
+    private Dictionary<Task, UnityEvent> taskEventRelays = new Dictionary<Task, UnityEvent>();
     public void Start()
     {
+        foreach (var task in taskList)
+        {
+            UnityEvent relayEvent = new UnityEvent();
+            taskEventRelays[task] = relayEvent;
+
+            // Subscribe to the task's taskCompletedEvent
+            task.taskCompletedEvent.AddListener(() => relayEvent.Invoke());
+        }
+
         if (onStart)
             StartNextTask();
     }
@@ -43,5 +54,16 @@ public class TaskManager : MonoBehaviour
         taskList[currentTask].StartTask(CompleteTask);
         _coroutineRunning = false;
         EndTutorial();
+    }
+
+    public UnityEvent GetTaskEvent(Task task)
+    {
+        if (taskEventRelays.TryGetValue(task, out var relayEvent))
+        {
+            return relayEvent;
+        }
+
+        Debug.LogWarning($"Task {task.name} does not exist in the task list.");
+        return null;
     }
 }
