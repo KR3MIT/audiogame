@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cedc81fbb71e681459ab90a7d75fa263, type: 3}
   m_Name: Trap 2
   m_EditorClassIdentifier: 
-  taskStartNarration: 
+  taskStartNarration: ur getting pretty close now, try not to get hit
   taskCompleteNarration: 
   dialogueLength: 0
   endDialogueDelay: 0
   onTaskStart:
     m_PersistentCalls:
       m_Calls: []
+  isActiveTask: 0
   taskSound:
     idInternal: 0
     valueGuidInternal: 

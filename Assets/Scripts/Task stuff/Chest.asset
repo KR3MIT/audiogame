@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cedc81fbb71e681459ab90a7d75fa263, type: 3}
   m_Name: Chest
   m_EditorClassIdentifier: 
-  taskStartNarration: you hear that new sound?! go interact with it my guy.
+  taskStartNarration: nice job getting past. You hear that new sound?! go interact
+    with it my guy.
   taskCompleteNarration: 
   dialogueLength: 3
   endDialogueDelay: 0
   onTaskStart:
     m_PersistentCalls:
       m_Calls: []
+  isActiveTask: 0
   taskSound:
     idInternal: 0
     valueGuidInternal: 

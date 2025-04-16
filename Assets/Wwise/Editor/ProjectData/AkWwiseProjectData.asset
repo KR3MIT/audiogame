@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 43ad1165b3aabb41a2ee5525afb46bcc
     GuidInternal: 
-    m_lastTime: -8584593220592769705
+    m_lastTime: -8584568181808207149
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: ba26dab5bb73944984c13df76e93b0af
     GuidInternal: 
-    m_lastTime: -8584574137836922802
+    m_lastTime: -8584568181817827867
     List:
     - name: LargeRoom
       guid: e2e0a1039847b74dbb89b3da573fb608
@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c3d61869592f7241956bf3ebd662ac76
     GuidInternal: 
-    m_lastTime: -8584569043838392575
+    m_lastTime: -8584568181808227160
     List:
     - name: Main
       guid: 08192794cbd195478a29c0aa63f15f72
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: befe7aa783db144cbdf844a78d27198f
     GuidInternal: 
-    m_lastTime: -8584569043847694934
+    m_lastTime: -8584568181823184098
     List:
     - name: Ambience
       guid: 97efd48b6755c5478fe397f096fd59fe
@@ -221,9 +221,49 @@ MonoBehaviour:
         ObjectType: 3
         guid: 6c7746ce628fa24c919c7369465865fa
       Path: Events\Default Work Unit\Interactables\ButtonGlowEvent
-      maxAttenuation: 30
+      maxAttenuation: 20
       maxDuration: 0
       minDuration: 0
+    - name: CauldronIntro
+      guid: f6158b9384113d42ba64c900e1baca58
+      id: 3823172619
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: FairyTutorial
+        ObjectType: 4
+        guid: bb9e99559111194993884b6e22847bad
+      - ElementName: CauldronIntro
+        ObjectType: 3
+        guid: f6158b9384113d42ba64c900e1baca58
+      Path: Events\Default Work Unit\FairyTutorial\CauldronIntro
+      maxAttenuation: 30
+      maxDuration: 7.7544346
+      minDuration: 7.7544346
+    - name: CheckpointIntro
+      guid: 3b4e897886287e4d9b8c062ff0885c7d
+      id: 2359492547
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: FairyTutorial
+        ObjectType: 4
+        guid: bb9e99559111194993884b6e22847bad
+      - ElementName: CheckpointIntro
+        ObjectType: 3
+        guid: 3b4e897886287e4d9b8c062ff0885c7d
+      Path: Events\Default Work Unit\FairyTutorial\CheckpointIntro
+      maxAttenuation: 30
+      maxDuration: 4.6945715
+      minDuration: 4.6945715
     - name: Fairy
       guid: 837fb8378ee7c1469b4313532ab97e11
       id: 2469822380
@@ -281,6 +321,103 @@ MonoBehaviour:
       maxAttenuation: 30
       maxDuration: 0.9735733
       minDuration: 0.9735733
+    - name: FairyFollowFairy
+      guid: fb1de344d6b59e45b824512cf08936ce
+      id: 882162926
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: FairyTutorial
+        ObjectType: 4
+        guid: bb9e99559111194993884b6e22847bad
+      - ElementName: FairyFollowFairy
+        ObjectType: 3
+        guid: fb1de344d6b59e45b824512cf08936ce
+      Path: Events\Default Work Unit\FairyTutorial\FairyFollowFairy
+      maxAttenuation: 30
+      maxDuration: 10.11287
+      minDuration: 10.11287
+    - name: FairyFollowThroughDoor
+      guid: 9455389c89803b47b4288f5c6abedc55
+      id: 1778918934
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: FairyTutorial
+        ObjectType: 4
+        guid: bb9e99559111194993884b6e22847bad
+      - ElementName: FairyFollowThroughDoor
+        ObjectType: 3
+        guid: 9455389c89803b47b4288f5c6abedc55
+      Path: Events\Default Work Unit\FairyTutorial\FairyFollowThroughDoor
+      maxAttenuation: 30
+      maxDuration: 2.081492
+      minDuration: 2.081492
+    - name: FairyLeverAfterCauldron
+      guid: 3b2e3c549b07c941aa83439938cec5f9
+      id: 839203844
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: FairyTutorial
+        ObjectType: 4
+        guid: bb9e99559111194993884b6e22847bad
+      - ElementName: FairyLeverAfterCauldron
+        ObjectType: 3
+        guid: 3b2e3c549b07c941aa83439938cec5f9
+      Path: Events\Default Work Unit\FairyTutorial\FairyLeverAfterCauldron
+      maxAttenuation: 30
+      maxDuration: 8.090985
+      minDuration: 8.090985
+    - name: FairyTutorial
+      guid: bb9e99559111194993884b6e22847bad
+      id: 166155050
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: FairyTutorial
+        ObjectType: 4
+        guid: bb9e99559111194993884b6e22847bad
+      Path: Events\Default Work Unit\FairyTutorial
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: FairyTutorialEnd
+      guid: 585fe5b16327064185142947e858f734
+      id: 2257484729
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: FairyTutorial
+        ObjectType: 4
+        guid: bb9e99559111194993884b6e22847bad
+      - ElementName: FairyTutorialEnd
+        ObjectType: 3
+        guid: 585fe5b16327064185142947e858f734
+      Path: Events\Default Work Unit\FairyTutorial\FairyTutorialEnd
+      maxAttenuation: 30
+      maxDuration: 4.5650296
+      minDuration: 4.5650296
     - name: FootstepEvent
       guid: 276ffc0c1053124a8217a1cc7fa0b0b0
       id: 3511205013
@@ -318,6 +455,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Introduction
+      guid: fa65c08d9eca014298552b319ea00298
+      id: 1034344105
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: FairyTutorial
+        ObjectType: 4
+        guid: bb9e99559111194993884b6e22847bad
+      - ElementName: Introduction
+        ObjectType: 3
+        guid: fa65c08d9eca014298552b319ea00298
+      Path: Events\Default Work Unit\FairyTutorial\Introduction
+      maxAttenuation: 30
+      maxDuration: 2.3527043
+      minDuration: 2.3527043
+    - name: MoveAndRotate
+      guid: facaba20b61d154582edebb9d36525ef
+      id: 1189265860
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: FairyTutorial
+        ObjectType: 4
+        guid: bb9e99559111194993884b6e22847bad
+      - ElementName: MoveAndRotate
+        ObjectType: 3
+        guid: facaba20b61d154582edebb9d36525ef
+      Path: Events\Default Work Unit\FairyTutorial\MoveAndRotate
+      maxAttenuation: 30
+      maxDuration: 5.5344214
+      minDuration: 5.5344214
     - name: PauseFairyBellEvent
       guid: c46f8310b2e4c04ca0e95f8205685c6d
       id: 767398485
@@ -372,7 +549,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 5438e64c7cfc3f4a9d7f108a08f18b15
       Path: Events\Default Work Unit\Ambience\Play_Campfire
-      maxAttenuation: 100
+      maxAttenuation: 30
       maxDuration: 0
       minDuration: 0
     - name: Play_LedgeRocks
@@ -663,6 +840,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: TrapWarning
+      guid: a97e50892970ee41a3e7fe0b985913ab
+      id: 1699501468
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: befe7aa783db144cbdf844a78d27198f
+      - ElementName: FairyTutorial
+        ObjectType: 4
+        guid: bb9e99559111194993884b6e22847bad
+      - ElementName: TrapWarning
+        ObjectType: 3
+        guid: a97e50892970ee41a3e7fe0b985913ab
+      Path: Events\Default Work Unit\FairyTutorial\TrapWarning
+      maxAttenuation: 30
+      maxDuration: 9.479971
+      minDuration: 9.479971
   - PhysicalPath: Events\WillEvents.wwu
     PathAndIcons:
     - ElementName: Events
@@ -674,7 +871,7 @@ MonoBehaviour:
     ParentPath: Events\WillEvents
     guid: d2b6e6629258944b891e2d5ce2d57e22
     GuidInternal: 
-    m_lastTime: -8584572438220392927
+    m_lastTime: -8584568181823174095
     List:
     - name: CauldronStart
       guid: 994ec1e29b1c9743931ebe43993252ca
@@ -793,7 +990,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 369525a7a2c8f84bbdafd28b9fcd98a3
     GuidInternal: 
-    m_lastTime: -8584574137838953387
+    m_lastTime: -8584568181823174095
     List:
     - name: PlayerHealth
       guid: 506c9c23d5acf4458bb85e80e2bac887
@@ -835,7 +1032,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: e899d777795c5049ba12c7e5b40fbacf
     GuidInternal: 
-    m_lastTime: -8584581983690618411
+    m_lastTime: -8584568181808217133
     List:
     - name: IsCloseToInteractable
       guid: a70baa90a17847429f0e13e67d893de7
@@ -945,7 +1142,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 44545e4495816747a4eb7791d5137314
     GuidInternal: 
-    m_lastTime: -8584581068823752322
+    m_lastTime: -8584568181808217133
     List:
     - name: RockHitMaterials
       guid: 12c996a02581e5488b43dcf16806d942
@@ -1041,7 +1238,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 50f5717bc1f5c142af4b0f9408c904be
     GuidInternal: 
-    m_lastTime: -8584593220592810358
+    m_lastTime: -8584568181808207149
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000f000000100000001100000013000000150000001700000018000000190000001e00000040000000410000004300000058000000670000006800000069000000

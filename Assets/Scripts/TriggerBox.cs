@@ -3,11 +3,14 @@ using UnityEngine;
 public class TriggerBox : MonoBehaviour
 {
     public Task task;
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (task != null)
+        if(other.TryGetComponent(out PlayerBehavior behaviour))
         {
-            task?.CompleteTask();
+            if (task != null)
+            {
+                task?.CompleteTask();
+            }
         }
     }
 }

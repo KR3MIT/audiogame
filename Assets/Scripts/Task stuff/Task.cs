@@ -7,12 +7,11 @@ public class Task : ScriptableObject
     public string taskStartNarration;
     public string taskCompleteNarration;
     public float dialogueLength;
-    public float endDialogueDelay;
     
     public UnityEvent onTaskStart;
     public UnityAction onTaskComplete;
 
-    protected bool isActiveTask;
+    public bool isActiveTask;
 
     public AK.Wwise.Event taskSound;
     public AK.Wwise.Event endTaskSound;
