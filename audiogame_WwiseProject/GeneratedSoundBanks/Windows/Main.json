@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{D1FF8F65-A81F-6071-E11A-425B017E8951}",
+    "Hash": "{5BBAE125-FEB8-F5A0-D712-9C40A1F81819}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -56,6 +56,14 @@
       "CachePath": "FE/{FE2347A6-F156-6A11-3E16-20BFE05D5624}.wem"
      },
      {
+      "Id": "33862716",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fire\\FireSmallCrackle.wav",
+      "CachePath": "76/{76A25597-5D9B-5ECA-2CE8-70B22579D8AD}.wem"
+     },
+     {
       "Id": "34398908",
       "Language": "SFX",
       "Streaming": "false",
@@ -96,12 +104,28 @@
       "CachePath": "06/{06999E8C-4353-3A34-8469-36847D602F4C}.wem"
      },
      {
+      "Id": "81050006",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fire\\FireBigCrackle.wav",
+      "CachePath": "69/{69D0ED44-D4C4-B6AF-B9D1-4864B723EE28}.wem"
+     },
+     {
       "Id": "87427055",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ZOOM0022.wav",
       "CachePath": "BC/{BC5CAF82-3F36-462A-C5AF-711CAC264C06}.wem"
+     },
+     {
+      "Id": "93922395",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fire\\FireBigCrackle.wav",
+      "CachePath": "73/{73F7E866-A6EF-8C93-966C-5C59B4B1A5F7}.wem"
      },
      {
       "Id": "94592133",
@@ -208,12 +232,28 @@
       "CachePath": "00/{004C60D3-00CB-667D-727B-648C95DE2F7D}.wem"
      },
      {
+      "Id": "211874417",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fire\\FireSmallCrackle.wav",
+      "CachePath": "09/{09EB82F2-114C-6BA7-C48C-680E8CD9326E}.wem"
+     },
+     {
       "Id": "226201215",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FairyG1.wav",
       "CachePath": "7D/{7DA4194F-1BB6-9685-B3F3-84B6E32AD104}.wem"
+     },
+     {
+      "Id": "239383418",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fire\\FireSmallCrackle2.wav",
+      "CachePath": "1F/{1FD76550-6C41-77D5-9319-9BA7BF5CD8D0}.wem"
      },
      {
       "Id": "249549327",
@@ -240,12 +280,28 @@
       "CachePath": "86/{864BA677-20B7-6A02-75CA-F97965CEE54A}.wem"
      },
      {
+      "Id": "266638130",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fire\\FireAmbienceMedium.wav",
+      "CachePath": "9A/{9ACB50F3-E790-AE98-A6DD-61ADB383B31A}.wem"
+     },
+     {
       "Id": "269963085",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "RockThrowStone.wav",
       "CachePath": "7D/{7D3D2CA6-DF67-3C37-71F1-DE8642F04EBC}.wem"
+     },
+     {
+      "Id": "275313372",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fire\\FireBigCrackle.wav",
+      "CachePath": "B9/{B9F4D980-B1E5-0367-2B10-8122E4819F2C}.wem"
      },
      {
       "Id": "318027306",
@@ -286,6 +342,22 @@
       "Location": "Memory",
       "ShortName": "HealingMoans.wav",
       "CachePath": "A2/{A21ECE8B-7AA0-6CD8-F6BB-E6C7869BC31A}.wem"
+     },
+     {
+      "Id": "347845079",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fire\\FireBigCrackle.wav",
+      "CachePath": "CE/{CEB31300-FB53-671C-5B72-B9E4EC5D76E6}.wem"
+     },
+     {
+      "Id": "355095475",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fire\\FireBigCrackle.wav",
+      "CachePath": "05/{05F79E5C-E4EF-8BFE-0EDE-28B942744C81}.wem"
      },
      {
       "Id": "359865250",
@@ -358,6 +430,14 @@
       "Location": "Memory",
       "ShortName": "WaterDrip.wav",
       "CachePath": "FE/{FE731D57-6175-2BFE-2EB1-A5CE7201706A}.wem"
+     },
+     {
+      "Id": "427107830",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fire\\FireBigCrackle.wav",
+      "CachePath": "C2/{C24CC708-934A-0CB7-E3BB-C1AE7D449D4F}.wem"
      },
      {
       "Id": "430613048",
@@ -448,6 +528,14 @@
       "CachePath": "32/{3254161E-5418-1206-904E-034685923148}.wem"
      },
      {
+      "Id": "471303328",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fire\\FireBigCrackle.wav",
+      "CachePath": "48/{488FB27D-7275-D7AD-40B3-08365ECC37F3}.wem"
+     },
+     {
       "Id": "475851401",
       "Language": "SFX",
       "Streaming": "false",
@@ -526,6 +614,14 @@
       "Location": "Memory",
       "ShortName": "HealingMoans.wav",
       "CachePath": "A2/{A2F0699A-0C38-F1BB-D410-ABF7A1AC447A}.wem"
+     },
+     {
+      "Id": "570547535",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fire\\FireBigCrackle.wav",
+      "CachePath": "44/{440A4C88-EE5F-C453-C995-162D59FC0A54}.wem"
      },
      {
       "Id": "578285320",
@@ -608,6 +704,14 @@
       "CachePath": "C0/{C0A0DC45-8A55-D80D-D795-43FE87D61518}.wem"
      },
      {
+      "Id": "702611496",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fire\\FireBigCrackle.wav",
+      "CachePath": "6E/{6E97EEDD-E5A8-EF02-984E-36EF36204640}.wem"
+     },
+     {
       "Id": "704475362",
       "Language": "SFX",
       "Streaming": "false",
@@ -638,6 +742,14 @@
       "Location": "Memory",
       "ShortName": "Pot1.wav",
       "CachePath": "A2/{A21D3BB2-F72A-4680-D846-3FCA425BF323}.wem"
+     },
+     {
+      "Id": "731092514",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fire\\FireBigCrackle.wav",
+      "CachePath": "34/{3476F8F7-AACC-8D29-737A-25B9EC90F1A5}.wem"
      },
      {
       "Id": "744729462",
@@ -686,6 +798,14 @@
       "Location": "Memory",
       "ShortName": "FootstepsStone.wav",
       "CachePath": "BF/{BF2FA94E-DE45-73AF-ECBB-CFA93D7C8C94}.wem"
+     },
+     {
+      "Id": "783309856",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fire\\FireBigCrackle.wav",
+      "CachePath": "7B/{7B0DC466-A16D-DA7A-3B0B-0EE59AED64B7}.wem"
      },
      {
       "Id": "803635225",
@@ -816,14 +936,6 @@
       "CachePath": "C9/{C9B8C7B1-ADF0-6305-5377-D20FC6BD959C}.wem"
      },
      {
-      "Id": "926325598",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "subtle-campfire-29540.wav",
-      "CachePath": "DC/{DC20F795-203D-9F75-11E1-31647C50588A}.wem"
-     },
-     {
       "Id": "966737072",
       "Language": "SFX",
       "Streaming": "false",
@@ -856,12 +968,28 @@
       "CachePath": "A7/{A7535E18-C7E4-C81F-6EAC-B39E9F06AEDA}.wem"
      },
      {
+      "Id": "980124634",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fire\\FireBigCrackle.wav",
+      "CachePath": "3A/{3AAD1B6F-9462-F7D8-C8D8-DF3CAA3B6927}.wem"
+     },
+     {
       "Id": "993891194",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Bass Strings.wav",
       "CachePath": "A7/{A7682981-F5D1-81F9-2CA0-D0CA5DF4F509}.wem"
+     },
+     {
+      "Id": "1011773945",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fire\\FireSmallCrackle.wav",
+      "CachePath": "64/{640BBF01-2159-608B-0557-2C4B7CC8A2C0}.wem"
      },
      {
       "Id": "1027642574",
@@ -902,6 +1030,14 @@
       "Location": "Memory",
       "ShortName": "Death Chime.wav",
       "CachePath": "9A/{9A38ABD6-3BAB-378B-7C77-8F5A10EDB618}.wem"
+     },
+     {
+      "Id": "1056284373",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fire\\FireBigCrackle.wav",
+      "CachePath": "88/{885B7F97-C8E0-90B5-A3AF-94D50F7AF8AA}.wem"
      },
      {
       "Id": "1072085083",
@@ -951,6 +1087,14 @@
        "Name": "Silence",
        "ObjectPath": "\\Actor-Mixer Hierarchy\\Thisen\\Sounds\\Glow Sound\\GlowSwitchController\\PotContainer\\Silence\\Silence",
        "GUID": "{2C980393-E639-4D68-9D1F-385E55AB7BE7}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      },
+      {
+       "Id": "723153880",
+       "Name": "Silence",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\WilliamTheGOAT\\Jesus\\Fire\\Fireplace\\BigCracklesSequence\\BigCrackleDelay\\Silence",
+       "GUID": "{E84F916F-7806-4AC6-9800-E3441145C361}",
        "LibName": "Wwise Silence",
        "LibId": "6619138"
       },
@@ -1626,9 +1770,67 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "926325598"
+        "Id": "33862716"
+       },
+       {
+        "Id": "81050006"
+       },
+       {
+        "Id": "93922395"
+       },
+       {
+        "Id": "211874417"
+       },
+       {
+        "Id": "239383418"
+       },
+       {
+        "Id": "266638130"
+       },
+       {
+        "Id": "275313372"
+       },
+       {
+        "Id": "347845079"
+       },
+       {
+        "Id": "355095475"
+       },
+       {
+        "Id": "427107830"
+       },
+       {
+        "Id": "471303328"
+       },
+       {
+        "Id": "570547535"
+       },
+       {
+        "Id": "702611496"
+       },
+       {
+        "Id": "731092514"
+       },
+       {
+        "Id": "783309856"
+       },
+       {
+        "Id": "980124634"
+       },
+       {
+        "Id": "1011773945"
+       },
+       {
+        "Id": "1056284373"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "723153880"
+        }
+       ]
+      }
      },
      {
       "Id": "904967365",
@@ -2048,6 +2250,6 @@
     ]
    }
   ],
-  "FileHash": "{69C3E753-21BB-96D9-BB04-E8E6F628EFCC}"
+  "FileHash": "{8AEB1CED-5654-1EAE-FF51-80A1C1CEBCAD}"
  }
 }

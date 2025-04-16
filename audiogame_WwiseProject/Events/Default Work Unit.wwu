@@ -234,7 +234,7 @@
 								<Action Name="" ID="{9EBFAE9C-8F69-4BAB-B66E-3CD3812F2B72}" ShortID="644132765">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="CampfirePLACEHOLDER" ID="{67CABB2D-B417-4E03-9636-BAD36E09E239}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+											<ObjectRef Name="Fireplace" ID="{79203BEC-2B09-4BEF-A48D-1E7AD70EEDE6}" WorkUnitID="{28E2E73C-5996-4653-AE2D-7002CF2FD467}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
