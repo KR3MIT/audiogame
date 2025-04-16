@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{A3AD8ACB-94FE-DD12-FD79-9343766EA2EF}",
+    "Hash": "{D1FF8F65-A81F-6071-E11A-425B017E8951}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -1209,6 +1209,7 @@
       "Name": "CauldronIntro",
       "ObjectPath": "\\Events\\Default Work Unit\\FairyTutorial\\CauldronIntro",
       "GUID": "{938B15F6-1184-423D-BA64-C900E1BACA58}",
+      "MaxAttenuation": "30",
       "DurationType": "OneShot",
       "DurationMin": "7.7544346",
       "DurationMax": "7.7544346",
@@ -1246,6 +1247,7 @@
       "Name": "CheckpointIntro",
       "ObjectPath": "\\Events\\Default Work Unit\\FairyTutorial\\CheckpointIntro",
       "GUID": "{78894E3B-2886-4D7E-9B8C-062FF0885C7D}",
+      "MaxAttenuation": "30",
       "DurationType": "OneShot",
       "DurationMin": "4.6945715",
       "DurationMax": "4.6945715",
@@ -1367,6 +1369,7 @@
       "Name": "FairyFollowFairy",
       "ObjectPath": "\\Events\\Default Work Unit\\FairyTutorial\\FairyFollowFairy",
       "GUID": "{44E31DFB-B5D6-459E-B824-512CF08936CE}",
+      "MaxAttenuation": "30",
       "DurationType": "OneShot",
       "DurationMin": "10.11287",
       "DurationMax": "10.11287",
@@ -1381,6 +1384,7 @@
       "Name": "FairyFollowThroughDoor",
       "ObjectPath": "\\Events\\Default Work Unit\\FairyTutorial\\FairyFollowThroughDoor",
       "GUID": "{9C385594-8089-473B-B428-8F5C6ABEDC55}",
+      "MaxAttenuation": "30",
       "DurationType": "OneShot",
       "DurationMin": "2.081492",
       "DurationMax": "2.081492",
@@ -1395,6 +1399,7 @@
       "Name": "FairyLeverAfterCauldron",
       "ObjectPath": "\\Events\\Default Work Unit\\FairyTutorial\\FairyLeverAfterCauldron",
       "GUID": "{543C2E3B-079B-41C9-AA83-439938CEC5F9}",
+      "MaxAttenuation": "30",
       "DurationType": "OneShot",
       "DurationMin": "8.090985",
       "DurationMax": "8.090985",
@@ -1409,6 +1414,7 @@
       "Name": "FairyTutorialEnd",
       "ObjectPath": "\\Events\\Default Work Unit\\FairyTutorial\\FairyTutorialEnd",
       "GUID": "{B1E55F58-2763-4106-8514-2947E858F734}",
+      "MaxAttenuation": "30",
       "DurationType": "OneShot",
       "DurationMin": "4.5650296",
       "DurationMax": "4.5650296",
@@ -1513,6 +1519,7 @@
       "Name": "Introduction",
       "ObjectPath": "\\Events\\Default Work Unit\\FairyTutorial\\Introduction",
       "GUID": "{8DC065FA-CA9E-4201-9855-2B319EA00298}",
+      "MaxAttenuation": "30",
       "DurationType": "OneShot",
       "DurationMin": "2.3527043",
       "DurationMax": "2.3527043",
@@ -1527,6 +1534,7 @@
       "Name": "MoveAndRotate",
       "ObjectPath": "\\Events\\Default Work Unit\\FairyTutorial\\MoveAndRotate",
       "GUID": "{20BACAFA-1DB6-4515-82ED-EBB9D36525EF}",
+      "MaxAttenuation": "30",
       "DurationType": "OneShot",
       "DurationMin": "5.5344214",
       "DurationMax": "5.5344214",
@@ -1614,7 +1622,7 @@
       "Name": "Play_Campfire",
       "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\Play_Campfire",
       "GUID": "{4CE63854-FC7C-4A3F-9D7F-108A08F18B15}",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "30",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -1951,6 +1959,7 @@
       "Name": "TrapWarning",
       "ObjectPath": "\\Events\\Default Work Unit\\FairyTutorial\\TrapWarning",
       "GUID": "{89507EA9-7029-41EE-A3E7-FE0B985913AB}",
+      "MaxAttenuation": "30",
       "DurationType": "OneShot",
       "DurationMin": "9.479971",
       "DurationMax": "9.479971",
@@ -2039,6 +2048,6 @@
     ]
    }
   ],
-  "FileHash": "{16D96E92-330A-53AA-6D22-4B4E9D83C179}"
+  "FileHash": "{288D073A-BB16-B489-2E9A-BACA8213A0C8}"
  }
 }
