@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{5BBAE125-FEB8-F5A0-D712-9C40A1F81819}",
+    "Hash": "{519447ED-683E-5544-3422-255F2244EDA0}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -405,7 +405,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ZOOM0012.wav",
-      "CachePath": "32/{3282D268-E707-7951-9629-9EDFB3CA3540}.wem"
+      "CachePath": "83/{83E53BF2-721B-3604-66CA-465B56069592}.wem"
      },
      {
       "Id": "416703143",
@@ -2163,8 +2163,8 @@
       "GUID": "{89507EA9-7029-41EE-A3E7-FE0B985913AB}",
       "MaxAttenuation": "30",
       "DurationType": "OneShot",
-      "DurationMin": "9.479971",
-      "DurationMax": "9.479971",
+      "DurationMin": "8.2396",
+      "DurationMax": "8.2396",
       "MediaRefs": [
        {
         "Id": "411977813"
@@ -2250,6 +2250,6 @@
     ]
    }
   ],
-  "FileHash": "{4396B6BE-5453-FF66-BE4D-B0DEE407CF9E}"
+  "FileHash": "{95EAAF32-E9FF-E236-8231-3CA877874C81}"
  }
 }

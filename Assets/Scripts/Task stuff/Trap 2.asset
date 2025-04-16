@@ -15,11 +15,14 @@ MonoBehaviour:
   taskStartNarration: ur getting pretty close now, try not to get hit
   taskCompleteNarration: 
   dialogueLength: 0
-  endDialogueDelay: 0
   onTaskStart:
     m_PersistentCalls:
       m_Calls: []
+  taskCompletedEvent:
+    m_PersistentCalls:
+      m_Calls: []
   isActiveTask: 0
+  shouldMoveFairyOnComplete: 0
   taskSound:
     idInternal: 0
     valueGuidInternal: 
@@ -27,4 +30,4 @@ MonoBehaviour:
   endTaskSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 1c732ceeb90fb7044ae6b33a1667e716, type: 2}

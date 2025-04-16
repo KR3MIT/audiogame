@@ -14,18 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskStartNarration: try rotating in place
   taskCompleteNarration: 'nice looking around, i mean, umm... '
-  dialogueLength: 5
-  endDialogueDelay: 2
+  dialogueLength: 3
   onTaskStart:
     m_PersistentCalls:
       m_Calls: []
+  taskCompletedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  isActiveTask: 0
+  shouldMoveFairyOnComplete: 0
   taskSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f52e9c95fe922eb41b2e59309addbaa3, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 084848425486a7241bf284bd53ddc048, type: 2}
   endTaskSound:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
-  requiredAmount: 5000
-  currentAmount: 2925
+  requiredAmount: 180
+  currentAmount: 180.79391

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4419239918137696289}
   - component: {fileID: 5746671164202874715}
   - component: {fileID: 6403076953992981134}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SoundEmitter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9121643844416016043}
   - component: {fileID: 4709941869465916633}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Axetrap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,7 +154,7 @@ GameObject:
   - component: {fileID: 803220390817818123}
   - component: {fileID: 6395528466659929104}
   - component: {fileID: 4741793950358942197}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TheAxe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,11 +266,12 @@ MonoBehaviour:
   axeTrapDamage: 50
   turbo: 0
   anim: {fileID: 0}
+  axeSwinging: 0
+  applyHapticsForAxe: 0
   axeSwingEvent:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: a222cea3df60b7e468bf32c23bd9930a, type: 2}
-  axeSwinging: 0
 --- !u!1 &6959193272641417532
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,7 +281,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1951446116476898888}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Axetrap
   m_TagString: Untagged
   m_Icon: {fileID: 0}

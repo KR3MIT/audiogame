@@ -15,14 +15,18 @@ MonoBehaviour:
   taskStartNarration: Now for some intermediet stuff
   taskCompleteNarration: 
   dialogueLength: 2
-  endDialogueDelay: 0
   onTaskStart:
     m_PersistentCalls:
       m_Calls: []
+  taskCompletedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  isActiveTask: 0
+  shouldMoveFairyOnComplete: 0
   taskSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f52e9c95fe922eb41b2e59309addbaa3, type: 2}
+    WwiseObjectReference: {fileID: 0}
   endTaskSound:
     idInternal: 0
     valueGuidInternal: 

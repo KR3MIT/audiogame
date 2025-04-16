@@ -7,6 +7,8 @@ public class TaskManager : MonoBehaviour
 {
     public UnityEvent tutorialComplete;
     private bool _coroutineRunning;
+
+    public UnityEvent onAnyTaskComplete;
     
     [SerializeField] private bool onStart = false;
     [SerializeField] private List<Task> taskList;
@@ -30,6 +32,7 @@ public class TaskManager : MonoBehaviour
     private void CompleteTask()
     {
         currentTask++;
+        onAnyTaskComplete?.Invoke();
         StartNextTask();
     }
     private IEnumerator DialogueDelay()

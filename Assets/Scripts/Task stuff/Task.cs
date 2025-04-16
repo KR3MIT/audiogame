@@ -10,8 +10,11 @@ public class Task : ScriptableObject
     
     public UnityEvent onTaskStart;
     public UnityAction onTaskComplete;
+    public UnityEvent taskCompletedEvent;
 
     public bool isActiveTask;
+
+    public bool shouldMoveFairyOnComplete;
 
     public AK.Wwise.Event taskSound;
     public AK.Wwise.Event endTaskSound;
@@ -45,6 +48,8 @@ public class Task : ScriptableObject
             return;
         }
         onTaskComplete?.Invoke();
+        taskCompletedEvent?.Invoke();
+        if (shouldMoveFairyOnComplete) { FairyController.instance.TutorialSwitchSpline(); }
         onTaskComplete = null;
     }
 

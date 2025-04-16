@@ -14,16 +14,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskStartNarration: you hear that trap, try apphroching it
   taskCompleteNarration: 
-  dialogueLength: 0
-  endDialogueDelay: 0
+  dialogueLength: 3
   onTaskStart:
     m_PersistentCalls:
       m_Calls: []
+  taskCompletedEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   isActiveTask: 1
+  shouldMoveFairyOnComplete: 0
   taskSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 80f066011698a784cb3d5b40a086d4cf, type: 2}
   endTaskSound:
     idInternal: 0
     valueGuidInternal: 

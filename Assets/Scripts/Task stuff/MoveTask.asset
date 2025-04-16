@@ -14,18 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskStartNarration: ok try moving now
   taskCompleteNarration: good job moving
-  dialogueLength: 5
-  endDialogueDelay: 5
+  dialogueLength: 1
   onTaskStart:
     m_PersistentCalls:
       m_Calls: []
+  taskCompletedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  isActiveTask: 0
+  shouldMoveFairyOnComplete: 0
   taskSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f52e9c95fe922eb41b2e59309addbaa3, type: 2}
+    WwiseObjectReference: {fileID: 0}
   endTaskSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  requiredAmount: 1000
+    WwiseObjectReference: {fileID: 11400000, guid: 3aa801b7754640d4d99aee5185ffcf70, type: 2}
+  requiredAmount: 500
   currentAmount: 500

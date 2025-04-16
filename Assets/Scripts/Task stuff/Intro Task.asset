@@ -15,15 +15,19 @@ MonoBehaviour:
   taskStartNarration: Hello and welcome to the moisture cave, u gotta learn the basics
     first tho
   taskCompleteNarration: 
-  dialogueLength: 5
-  endDialogueDelay: 0
+  dialogueLength: 4
   onTaskStart:
     m_PersistentCalls:
       m_Calls: []
+  taskCompletedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  isActiveTask: 0
+  shouldMoveFairyOnComplete: 0
   taskSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f52e9c95fe922eb41b2e59309addbaa3, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 0226f6577429edb4ea1018cca50441c5, type: 2}
   endTaskSound:
     idInternal: 0
     valueGuidInternal: 

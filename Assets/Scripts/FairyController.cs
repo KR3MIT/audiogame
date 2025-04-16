@@ -8,12 +8,16 @@ public class FairyController : MonoBehaviour
 {
     public SplineAnimate splineAnimate;
     public List<SplineContainer> splines;
+    public List<SplineContainer> tutorialSplines;
+    public List<GameObject> tutorialBlockers;
     public int currentSpline = 0;
     bool hasPlayedOnSpline = false;
     public AK.Wwise.Event fairyFlyAwaySound;
     public AK.Wwise.Event fairyBellSound;
     public AK.Wwise.Event pauseFairyBellSound;
     private bool hasReachedEndOfSplines = false;
+    private bool isInTutorialMode = true;
+    private bool isOnFirstTutorialSpline = true;
 
     public static FairyController instance;
 
@@ -30,13 +34,13 @@ public class FairyController : MonoBehaviour
         }
 
         SplineAnimate splineAnimate = GetComponent<SplineAnimate>();
-        splineAnimate.Container = splines[currentSpline];
+        splineAnimate.Container = tutorialSplines[currentSpline];
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (splineAnimate.IsPlaying == false && hasPlayedOnSpline == true && currentSpline != splines.Count - 1)
+        if (splineAnimate.IsPlaying == false && hasPlayedOnSpline == true && currentSpline != splines.Count - 1 && !isInTutorialMode)
         {
 
             StartCoroutine(SwitchSpline());
@@ -55,6 +59,33 @@ public class FairyController : MonoBehaviour
         splineAnimate.Restart(false);
     }
 
+    public void TutorialSwitchSpline()
+    {
+
+        if (!isOnFirstTutorialSpline)
+        {
+            currentSpline++;
+            splineAnimate.Container = tutorialSplines[currentSpline];
+            splineAnimate.Restart(true);
+            splineAnimate.Play();
+
+            if (currentSpline == tutorialSplines.Count - 1)
+            {
+                tutorialBlockers[currentSpline].SetActive(false);
+                currentSpline = 0;
+                isInTutorialMode = false;
+            }
+        }
+        else
+        {
+            splineAnimate.Play();
+            isOnFirstTutorialSpline = false;
+        }
+
+        tutorialBlockers[currentSpline].SetActive(false);
+
+    }
+
     public IEnumerator Backtrack(int triggerID)
     {
         currentSpline = triggerID;
@@ -68,7 +99,7 @@ public class FairyController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player" && splineAnimate.IsPlaying != true)
+        if (other.gameObject.tag == "Player" && splineAnimate.IsPlaying != true && !isInTutorialMode)
         {   
             Debug.Log("Current spline: " + currentSpline + " spline count:" + splines.Count);
 

@@ -15,11 +15,15 @@ MonoBehaviour:
   taskStartNarration: do you feel better after drinking that gooie goo? Good! now
     go on, be a hero, king!
   taskCompleteNarration: 
-  dialogueLength: 2
-  endDialogueDelay: 0
+  dialogueLength: 4
   onTaskStart:
     m_PersistentCalls:
       m_Calls: []
+  taskCompletedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  isActiveTask: 0
+  shouldMoveFairyOnComplete: 1
   taskSound:
     idInternal: 0
     valueGuidInternal: 

@@ -15,11 +15,15 @@ MonoBehaviour:
   taskStartNarration: you hear that? that is the sound of a checkpoint, try and reach
     it!
   taskCompleteNarration: 
-  dialogueLength: 2
-  endDialogueDelay: 0
+  dialogueLength: 0
   onTaskStart:
     m_PersistentCalls:
       m_Calls: []
+  taskCompletedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  isActiveTask: 0
+  shouldMoveFairyOnComplete: 0
   taskSound:
     idInternal: 0
     valueGuidInternal: 
