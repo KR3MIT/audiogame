@@ -28,6 +28,13 @@ public class TaskManager : MonoBehaviour
 
         if (onStart)
             StartNextTask();
+
+
+
+        foreach(var subscriber in GetComponents<TaskSubscriber>())
+        {
+            subscriber.Initialize();
+        }
     }
     private void StartNextTask()
     {

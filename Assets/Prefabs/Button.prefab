@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2960874323286216905}
   - component: {fileID: 3266960757103762053}
   - component: {fileID: 834449144569332478}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 93.83, y: 0.97, z: 105.52}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 6.1181755}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -131,7 +131,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 7dbaa2c468829ae4d9ce913b3da17c35, type: 2}
-  buttonAttentuationScaling: 3
+  buttonAttenuationScaling: 3
 --- !u!114 &834449144569332478
 MonoBehaviour:
   m_ObjectHideFlags: 0

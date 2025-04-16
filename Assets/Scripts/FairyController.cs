@@ -71,8 +71,9 @@ public class FairyController : MonoBehaviour
 
             if (currentSpline == tutorialSplines.Count - 1)
             {
-                tutorialBlockers[currentSpline].SetActive(false);
-                currentSpline = 0;
+                currentSpline = -1;
+                splineAnimate.Pause();
+                SwitchSpline();
                 isInTutorialMode = false;
             }
         }

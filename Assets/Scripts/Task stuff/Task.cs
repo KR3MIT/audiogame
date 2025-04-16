@@ -40,6 +40,7 @@ public class Task : ScriptableObject
     
     public void CompleteTask()
     {
+        if (!isActiveTask) { return; }
         isActiveTask = false;
         
         EndDialogue();

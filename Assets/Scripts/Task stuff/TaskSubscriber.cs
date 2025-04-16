@@ -10,6 +10,11 @@ public class TaskSubscriber : MonoBehaviour
 
     private void Start()
     {
+        
+    }
+
+    public void Initialize()
+    {
         UnityEvent taskEvent = taskManager.GetTaskEvent(taskToSubscribe);
         if (taskEvent != null)
         {

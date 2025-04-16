@@ -1,16 +1,24 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ButtonBehavior : MonoBehaviour, Iinteractables
 {
     public DoorBehavior door;
     public AK.Wwise.Event buttonGlowSound;
     public AK.Wwise.Event buttonPressSound;
-    public float buttonAttentuationScaling;
+    public float buttonAttenuationScaling;
     private bool buttonHasBeenPressed = false;
+    private AkGameObj akGameObject;
+
+    public UnityEvent buttonPressedEvent;
 
     void Start()
     {
-        GetComponent<AkGameObj>().ScalingFactor = buttonAttentuationScaling;
+        akGameObject = GetComponent<AkGameObj>();
+        if (akGameObject != null)
+        {
+            akGameObject.ScalingFactor = buttonAttenuationScaling;
+        }
 
         buttonGlowSound.Post(gameObject);
     }
@@ -22,7 +30,13 @@ public class ButtonBehavior : MonoBehaviour, Iinteractables
             buttonPressSound.Post(gameObject);
             Debug.Log("Button has been pressed");
             buttonHasBeenPressed = true;
-            door.Enabled();
+            buttonPressedEvent?.Invoke();
+
+            if (door)
+            {
+                door.Enabled();
+            }
+
         }
     }
 }
