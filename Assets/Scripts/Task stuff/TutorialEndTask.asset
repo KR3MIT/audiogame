@@ -26,8 +26,8 @@ MonoBehaviour:
   taskSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 80eaa6aceeb30304f81cf96f63cb622c, type: 2}
+    WwiseObjectReference: {fileID: 0}
   endTaskSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f5bb8c593a4d2304ea7db82a85e16ed0, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: c38e25d7e84a36e4080f3d2c6c5c22f8, type: 2}

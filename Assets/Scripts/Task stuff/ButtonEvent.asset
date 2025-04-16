@@ -22,7 +22,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   isActiveTask: 0
-  shouldMoveFairyOnComplete: 0
+  shouldMoveFairyOnComplete: 1
   taskSound:
     idInternal: 0
     valueGuidInternal: 
