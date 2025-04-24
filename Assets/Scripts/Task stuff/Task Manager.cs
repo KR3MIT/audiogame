@@ -14,6 +14,8 @@ public class TaskManager : MonoBehaviour
     [SerializeField] private List<Task> taskList;
     [SerializeField] private int currentTask = 0;
 
+    [SerializeField] private Task taskOccurAtAnyTime;
+    
     private Dictionary<Task, UnityEvent> taskEventRelays = new Dictionary<Task, UnityEvent>();
     public void Start()
     {
@@ -29,7 +31,10 @@ public class TaskManager : MonoBehaviour
         if (onStart)
             StartNextTask();
 
-
+        if (taskOccurAtAnyTime != null)
+        {
+            taskOccurAtAnyTime.StartTask(CompleteTask);
+        }
 
         foreach(var subscriber in GetComponents<TaskSubscriber>())
         {

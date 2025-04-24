@@ -17,6 +17,8 @@ public class PlayerCollisions : MonoBehaviour
     private bool isTouchingWall = false;
     private float wallTouchDelay = 0.5f;
     public List<GameObject> touchingWalls = new List<GameObject>();
+
+    [SerializeField] private Task WallTouchTask;
     
     private void Start()
     {
@@ -51,6 +53,7 @@ public class PlayerCollisions : MonoBehaviour
             else
             {
                 isTouchingWall = true;
+                isTouchingWall = true;
                 
                 Debug.Log("Player hit a wall!");
                 
@@ -73,6 +76,12 @@ public class PlayerCollisions : MonoBehaviour
                 {
                     touchingWalls.Add(other.gameObject);
                 }
+                
+                if (WallTouchTask != null)
+                {
+                    WallTouchTask?.CompleteTask();
+                }
+                
                 //StartCoroutine(WallHitDelay());
             }
         }
