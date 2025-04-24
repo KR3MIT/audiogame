@@ -56,6 +56,7 @@ public class PlayerBehavior : MonoBehaviour
         if (input.actions["Interact"].triggered)
         {
             PlayerInteraction();
+            Debug   .Log("Interact button pressed");
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -97,13 +98,18 @@ public class PlayerBehavior : MonoBehaviour
 
     void PlayerInteraction()
     {
-        if(Physics.BoxCast(transform.position, Vector3.zero, transform.forward, out RaycastHit hit, transform.rotation, 2f))
-        {
-            if(hit.collider.gameObject.GetComponent<Iinteractables>() != null)
+        var sphereCast = Physics.OverlapSphere(transform.position, 3f, LayerMask.GetMask("InteractableLayer"));
+    
+        foreach (var hit in sphereCast)
+        { 
+           
+            if(hit.gameObject.GetComponent<Iinteractables>() != null)
             {
-                hit.collider.gameObject.GetComponent<Iinteractables>().Interact();
+               
+                hit.gameObject.GetComponent<Iinteractables>().Interact();
                 //PLAY INTERACTION SOUND
                 ApplyHaptics(0.25f, 0.25f, 0.1f);
+                return;
             }
         }
     }
