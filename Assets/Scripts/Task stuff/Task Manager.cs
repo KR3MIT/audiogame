@@ -2,19 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-
+using UnityEngine.InputSystem;
 public class TaskManager : MonoBehaviour
 {
     public UnityEvent tutorialComplete;
     private bool _coroutineRunning;
-
+    
     public UnityEvent onAnyTaskComplete;
     
     [SerializeField] private bool onStart = false;
     [SerializeField] private List<Task> taskList;
     [SerializeField] private int currentTask = 0;
-
     [SerializeField] private Task taskOccurAtAnyTime;
+    
+    public float timeTillRepeatDialogue = 2f;
+    private bool canRepeat = false;
+    public PlayerInput playerInput;
     
     private Dictionary<Task, UnityEvent> taskEventRelays = new Dictionary<Task, UnityEvent>();
     public void Start()
@@ -40,6 +43,9 @@ public class TaskManager : MonoBehaviour
         {
             subscriber.Initialize();
         }
+        
+        playerInput.actions["RepeatDialogue"].performed += ctx => RepeatDialogue();
+        
     }
     private void StartNextTask()
     {
@@ -60,6 +66,7 @@ public class TaskManager : MonoBehaviour
     }
     private IEnumerator DialogueDelay()
     {
+        StartCoroutine(RepeatDelay());
         _coroutineRunning = true;
         var _delay = taskList[currentTask].dialogueLength;
         yield return new WaitForSeconds(_delay);
@@ -77,5 +84,20 @@ public class TaskManager : MonoBehaviour
 
         Debug.LogWarning($"Task {task.name} does not exist in the task list.");
         return null;
+    }
+    
+    void RepeatDialogue()
+    {
+        if (canRepeat)
+        {
+            StartCoroutine(DialogueDelay());
+        }
+    }
+
+    private IEnumerator RepeatDelay()
+    {
+        canRepeat = false;
+        yield return new WaitForSeconds(timeTillRepeatDialogue);
+        canRepeat = true;
     }
 }

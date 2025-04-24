@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cedc81fbb71e681459ab90a7d75fa263, type: 3}
   m_Name: WallTouch
   m_EditorClassIdentifier: 
-  taskStartNarration: 
+  taskStartNarration: lmao omg u touch wall haha
   taskCompleteNarration: 
   dialogueLength: 0
   onTaskStart:
@@ -21,7 +21,7 @@ MonoBehaviour:
   taskCompletedEvent:
     m_PersistentCalls:
       m_Calls: []
-  isActiveTask: 0
+  isActiveTask: 1
   shouldMoveFairyOnComplete: 0
   taskSound:
     idInternal: 0

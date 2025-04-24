@@ -31,7 +31,7 @@ public class Task : ScriptableObject
         Debug.Log("tut " + taskStartNarration);
         PlayTaskSound();
     }
-    
+
     public void EndDialogue()
     {
         Debug.Log(taskCompleteNarration);
