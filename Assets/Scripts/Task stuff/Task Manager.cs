@@ -90,6 +90,7 @@ public class TaskManager : MonoBehaviour
     {
         if (canRepeat)
         {
+            taskList[currentTask].StartDialogue();
             StartCoroutine(DialogueDelay());
         }
     }

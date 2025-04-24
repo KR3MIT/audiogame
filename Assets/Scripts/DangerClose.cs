@@ -29,7 +29,7 @@ public class DangerClose : MonoBehaviour
 
             var intensity = Mathf.Lerp(1, 0, closestDistance / searchDistance);
 
-            Debug.Log($"Closest object: {colliders.First().name}, Distance: {intensity}");
+            //Debug.Log($"Closest object: {colliders.First().name}, Distance: {intensity}");
             if (Haptics.instance != null)
                 if (trapCollider.gameObject.TryGetComponent(out AxeTrap axeTrap))
                 {
