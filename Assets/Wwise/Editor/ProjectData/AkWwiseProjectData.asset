@@ -990,7 +990,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 369525a7a2c8f84bbdafd28b9fcd98a3
     GuidInternal: 
-    m_lastTime: -8584568181823174095
+    m_lastTime: -8584561236968533865
     List:
     - name: PlayerHealth
       guid: 506c9c23d5acf4458bb85e80e2bac887
@@ -1006,6 +1006,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: 506c9c23d5acf4458bb85e80e2bac887
       Path: Game Parameters\Default Work Unit\PlayerHealth
+    - name: PlayerHitTime
+      guid: 7b3a2a2e351da84d9e145ba77f2b1598
+      id: 1504789082
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 369525a7a2c8f84bbdafd28b9fcd98a3
+      - ElementName: PlayerHitTime
+        ObjectType: 13
+        guid: 7b3a2a2e351da84d9e145ba77f2b1598
+      Path: Game Parameters\Default Work Unit\PlayerHitTime
     - name: PlayerSpeed
       guid: 8d3c428a640c0f429210ab34c1f08e35
       id: 1493153371
@@ -1241,7 +1255,7 @@ MonoBehaviour:
     m_lastTime: -8584568181808207149
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000020000000300000004000000050000000600000007000000090000000b0000000d000000100000001100000013000000150000001700000018000000190000001e00000040000000410000004300000058000000670000006800000069000000
+  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000d0000000e00000010000000110000001300000014000000150000001700000018000000190000001a0000001b0000001d0000001e0000001f000000200000002200000023000000240000002500000040000000410000004300000058000000670000006800000069000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

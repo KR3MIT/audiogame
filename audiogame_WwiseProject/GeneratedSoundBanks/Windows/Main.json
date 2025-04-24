@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{519447ED-683E-5544-3422-255F2244EDA0}",
+    "Hash": "{FBF952C8-37FC-B947-3913-01C90131427B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -2184,6 +2184,12 @@
       "Name": "PlayerSpeed",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerSpeed",
       "GUID": "{8A423C8D-0C64-420F-9210-AB34C1F08E35}"
+     },
+     {
+      "Id": "1504789082",
+      "Name": "PlayerHitTime",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerHitTime",
+      "GUID": "{2E2A3A7B-1D35-4DA8-9E14-5BA77F2B1598}"
      }
     ],
     "StateGroups": [
@@ -2250,6 +2256,6 @@
     ]
    }
   ],
-  "FileHash": "{AABEFB11-87E7-8343-8C8B-96FECE2CF112}"
+  "FileHash": "{50E9AE7B-7D0D-44EB-6CA4-6945E1F88777}"
  }
 }

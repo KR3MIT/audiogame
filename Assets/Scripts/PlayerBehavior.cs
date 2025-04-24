@@ -22,7 +22,11 @@ public class PlayerBehavior : MonoBehaviour
 
     public AK.Wwise.Event heartbeatEvent;
     public AK.Wwise.RTPC healthRTPC;
+    public AK.Wwise.RTPC playerHitTimeRTPC;
 
+    private Coroutine takeDamgeTimeCoroutine;
+
+    public float val;
    
     private void Awake()
     {
@@ -49,6 +53,7 @@ public class PlayerBehavior : MonoBehaviour
         {
             heartbeatEvent.Post(gameObject);
             healthRTPC.SetValue(gameObject, health);
+            playerHitTimeRTPC.SetValue(gameObject, 0);
         }
     }
     private void Update()
@@ -77,10 +82,29 @@ public class PlayerBehavior : MonoBehaviour
 
         healthRTPC.SetValue(gameObject, health);
 
+        if(takeDamgeTimeCoroutine != null)
+        {
+            StopCoroutine(takeDamgeTimeCoroutine);
+            takeDamgeTimeCoroutine = null;
+        }
+        takeDamgeTimeCoroutine = StartCoroutine(TakeDamageSoundWindDown());
+
         Debug.Log("Player took "+ damage +" damage. Health is now: " + health);
         if (health <= 0)
             StartCoroutine(Death());
         
+    }
+
+    public IEnumerator TakeDamageSoundWindDown()
+    {
+         val = 1;
+
+        while (val > 0)
+        {
+            val -= .0025f;
+            playerHitTimeRTPC.SetValue(gameObject, val);
+            yield return new WaitForSeconds(0.01f);
+        }
     }
     
    public  IEnumerator Death()
