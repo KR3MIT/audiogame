@@ -15965,6 +15965,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4793453861586208634, guid: 9efa649c1f57a8a429f94e707ba08c4b, type: 3}
   m_PrefabInstance: {fileID: 885739523}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &889620994
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1665610275}
+    m_Modifications:
+    - target: {fileID: 2781052016403054242, guid: 9146bbe5925b18243927808cbab41368, type: 3}
+      propertyPath: m_Name
+      value: WaterDroplets (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214556040980431473, guid: 9146bbe5925b18243927808cbab41368, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 67.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214556040980431473, guid: 9146bbe5925b18243927808cbab41368, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.27799994
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214556040980431473, guid: 9146bbe5925b18243927808cbab41368, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -87.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214556040980431473, guid: 9146bbe5925b18243927808cbab41368, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214556040980431473, guid: 9146bbe5925b18243927808cbab41368, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214556040980431473, guid: 9146bbe5925b18243927808cbab41368, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214556040980431473, guid: 9146bbe5925b18243927808cbab41368, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214556040980431473, guid: 9146bbe5925b18243927808cbab41368, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214556040980431473, guid: 9146bbe5925b18243927808cbab41368, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214556040980431473, guid: 9146bbe5925b18243927808cbab41368, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9146bbe5925b18243927808cbab41368, type: 3}
+--- !u!4 &889620995 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4214556040980431473, guid: 9146bbe5925b18243927808cbab41368, type: 3}
+  m_PrefabInstance: {fileID: 889620994}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &893603203
 GameObject:
   m_ObjectHideFlags: 0
@@ -18879,6 +18941,14 @@ PrefabInstance:
     - target: {fileID: 4214556040980431473, guid: 9146bbe5925b18243927808cbab41368, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250058187318901719, guid: 9146bbe5925b18243927808cbab41368, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250058187318901719, guid: 9146bbe5925b18243927808cbab41368, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.37
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24564,7 +24634,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4214556040980431473, guid: 9146bbe5925b18243927808cbab41368, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 55.09
+      value: 64.39
       objectReference: {fileID: 0}
     - target: {fileID: 4214556040980431473, guid: 9146bbe5925b18243927808cbab41368, type: 3}
       propertyPath: m_LocalPosition.y
@@ -29547,6 +29617,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2138498061}
+  - {fileID: 889620995}
   - {fileID: 1025005448}
   - {fileID: 912654045}
   - {fileID: 168199313}
