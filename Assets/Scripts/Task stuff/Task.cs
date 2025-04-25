@@ -25,13 +25,13 @@ public class Task : ScriptableObject
         onTaskStart?.Invoke();
         onTaskComplete = onTaskCompleteCallback;
     }
-
+    
     public void StartDialogue()
     {
         Debug.Log("tut " + taskStartNarration);
         PlayTaskSound();
     }
-    
+
     public void EndDialogue()
     {
         Debug.Log(taskCompleteNarration);

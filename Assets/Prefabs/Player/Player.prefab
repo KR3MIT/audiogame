@@ -435,6 +435,8 @@ GameObject:
   - component: {fileID: 4243507214024805099}
   - component: {fileID: 3683678482086644041}
   - component: {fileID: 1897849928347807879}
+  - component: {fileID: 3612312564300413336}
+  - component: {fileID: 690934284588633557}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -641,12 +643,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5398658719960121855}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04ed3651bb780da428f658dcea089dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rockThrowTask: {fileID: 11400000, guid: 4d31944d671fcf04a86d867e5dfbea37, type: 2}
+  RockThrowReleaseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d6fea5206314b1d4f9b4e14e7d20e1f1, type: 2}
   RockThrowRate: 2
   RockPrefab: {fileID: 4771837504582411164, guid: ac32b3cf88194df46922db4df44b9755, type: 3}
   characterController: {fileID: 0}
@@ -681,6 +687,14 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: f52e9c95fe922eb41b2e59309addbaa3, type: 2}
+  heartbeatEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c27562b86f9450b478ce3c3d8b855414, type: 2}
+  healthRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 94d10175e480b9c4aa513bdc56dad909, type: 2}
 --- !u!114 &4243507214024805099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -708,6 +722,7 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 11400000, guid: fa3b39529e46c6449ba381d93cd80a2e, type: 2}
   soundObject: {fileID: 3132695115990697664, guid: 787ac5d7163b00f47a35387c8ab94816, type: 3}
   touchingWalls: []
+  WallTouchTask: {fileID: 0}
 --- !u!114 &3683678482086644041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -728,7 +743,7 @@ MonoBehaviour:
   usePositionOffsetData: 0
   m_positionOffsetData:
     KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
+    positionOffset: {x: 0, y: -0.31342924, z: 0}
   scalingFactor: 1
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
@@ -744,6 +759,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 395e7275ffff15e4e906162abc2f640f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3612312564300413336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5398658719960121855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae25c8432b047954bafadf08d0f7a8a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dangerLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  searchDistance: 5
+--- !u!114 &690934284588633557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5398658719960121855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff0d26e9ddfaee0498f39544912e182f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  searchDistance: 8
+  delay: 0.75
+  duration: 0.1
+  intensity: 0.05
+  closestDistance: 0
 --- !u!1 &6293670021017016092
 GameObject:
   m_ObjectHideFlags: 0

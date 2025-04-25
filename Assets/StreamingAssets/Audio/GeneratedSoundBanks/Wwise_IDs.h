@@ -86,6 +86,7 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID PLAYERHEALTH = 151362964U;
+        static const AkUniqueID PLAYERHITTIME = 1504789082U;
         static const AkUniqueID PLAYERSPEED = 1493153371U;
     } // namespace GAME_PARAMETERS
 

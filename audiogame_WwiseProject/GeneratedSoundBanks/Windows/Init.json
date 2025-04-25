@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{F8771A4B-D5C1-056C-BC5B-486BCF271DB6}",
+    "Hash": "{5668DD87-AF48-36FB-FC2E-C1C5F4B4944D}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -121,6 +121,12 @@
       "Name": "PlayerSpeed",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerSpeed",
       "GUID": "{8A423C8D-0C64-420F-9210-AB34C1F08E35}"
+     },
+     {
+      "Id": "1504789082",
+      "Name": "PlayerHitTime",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerHitTime",
+      "GUID": "{2E2A3A7B-1D35-4DA8-9E14-5BA77F2B1598}"
      }
     ],
     "StateGroups": [
@@ -187,6 +193,6 @@
     ]
    }
   ],
-  "FileHash": "{68CCF6C2-D64C-C343-C77D-18896541AA1C}"
+  "FileHash": "{0D0E798F-F1DB-69C8-56A5-DCE217660DB7}"
  }
 }

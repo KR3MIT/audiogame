@@ -4017,7 +4017,7 @@
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>-28</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4067,20 +4067,23 @@
 																<Custom>
 																	<Curve Name="" ID="{AC60F305-CE0B-4B9E-A226-650D29F97F9E}">
 																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
+																			<Property Name="Flags" Type="int32" Value="1"/>
 																		</PropertyList>
 																		<PointList>
 																			<Point>
 																				<XPos>0</XPos>
-																				<YPos>-0</YPos>
+																				<YPos>0</YPos>
 																				<Flags>5</Flags>
-																				<SegmentShape>Exp2</SegmentShape>
 																			</Point>
 																			<Point>
-																				<XPos>60.2117</XPos>
+																				<XPos>50.5</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>51</XPos>
 																				<YPos>-200</YPos>
 																				<Flags>0</Flags>
-																				<SegmentShape>Exp3</SegmentShape>
 																			</Point>
 																			<Point>
 																				<XPos>100</XPos>
@@ -4120,6 +4123,42 @@
 																			<Point>
 																				<XPos>100</XPos>
 																				<YPos>64</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{995011CF-A01D-4E1D-B1CF-B3C67DBD65A0}" ShortID="156494605">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="PlayerHitTime" ID="{2E2A3A7B-1D35-4DA8-9E14-5BA77F2B1598}" WorkUnitID="{A7259536-C8A2-4BF8-BDAF-D28B9FCD98A3}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{159F0094-0BB4-4146-9DC0-A6F22CB82311}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-0</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Exp2</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>16</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>
