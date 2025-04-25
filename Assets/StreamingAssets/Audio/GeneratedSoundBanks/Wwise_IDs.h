@@ -38,6 +38,7 @@ namespace AK
         static const AkUniqueID PLAY_RIVERSEQUENCE = 2493706327U;
         static const AkUniqueID PLAY_WALLIMPACTANDRUB = 1324720394U;
         static const AkUniqueID PLAY_WATERDROPLETS = 2298613774U;
+        static const AkUniqueID PLAY_WINDAMBIENCE = 1852565204U;
         static const AkUniqueID PLAYERCHECKPOINTEVENT = 1953273240U;
         static const AkUniqueID PLAYERDEATHEVENT = 4042825516U;
         static const AkUniqueID PLAYERREVIVEEVENT = 1587523507U;

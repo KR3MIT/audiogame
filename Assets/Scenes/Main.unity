@@ -23673,6 +23673,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5398658719960121855, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1767957044}
+    - targetCorrespondingSourceObject: {fileID: 5398658719960121855, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1767957045}
   m_SourcePrefab: {fileID: 100100000, guid: 2b07aa8a84be9774499505167e7532b0, type: 3}
 --- !u!114 &1262987714 stripped
 MonoBehaviour:
@@ -31532,6 +31535,35 @@ MonoBehaviour:
   duration: 0.1
   intensity: 0.05
   closestDistance: 0
+--- !u!114 &1767957045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767957016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8bd248760083874c9944d1821f50573, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2b463876c1a55714586cefe5f161db0c, type: 2}
+  useCallbacks: 0
+  stopSoundOnDestroy: 1
+  Callbacks: []
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
 --- !u!1 &1779432274
 GameObject:
   m_ObjectHideFlags: 0

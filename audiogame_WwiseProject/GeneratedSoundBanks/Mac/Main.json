@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{C7378866-D009-91E8-B649-BE2FEAB7A966}",
+    "Hash": "{1BC4F253-CA51-E91A-CE21-BFED3B59B709}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -48,6 +48,14 @@
       "CachePath": "DE/{DE5C1CE9-EA79-630D-F0DA-32E03FA4A0B0}.wem"
      },
      {
+      "Id": "18672492",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "DeepWindRumble.wav",
+      "CachePath": "C3/{C3996CC6-D197-FC8F-47B7-191B28970722}.wem"
+     },
+     {
       "Id": "21677575",
       "Language": "SFX",
       "Streaming": "false",
@@ -80,6 +88,14 @@
       "CachePath": "A1/{A1CDE2DE-01BA-3DE9-183B-723A13907BF9}.wem"
      },
      {
+      "Id": "48354538",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MidPitchRumbleWind.wav",
+      "CachePath": "6E/{6E65AC4E-B34E-06CC-6A78-3EC70E24D10E}.wem"
+     },
+     {
       "Id": "53361661",
       "Language": "SFX",
       "Streaming": "false",
@@ -93,7 +109,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "WaterDrip.wav",
-      "CachePath": "FE/{FE54039C-F8D0-7ED8-39DF-7B5052FABD4F}.wem"
+      "CachePath": "E8/{E8BC7EAD-2713-0F7D-ABE1-0962E6A3337F}.wem"
      },
      {
       "Id": "76045582",
@@ -141,7 +157,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "WaterDrip.wav",
-      "CachePath": "70/{70B65F85-1677-F724-C83F-A388FF07B6AB}.wem"
+      "CachePath": "83/{83A2CC96-5FCC-9DC0-7DA7-0024A87C0C4C}.wem"
      },
      {
       "Id": "126216804",
@@ -373,7 +389,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "WaterDrip.wav",
-      "CachePath": "F7/{F7E03176-A874-62EB-B1CD-CB4E16040953}.wem"
+      "CachePath": "78/{788DF0A4-5EBC-FFA0-3DF5-9C6C67758D6B}.wem"
      },
      {
       "Id": "384600095",
@@ -429,7 +445,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "WaterDrip.wav",
-      "CachePath": "FE/{FE731D57-6175-2BFE-2EB1-A5CE7201706A}.wem"
+      "CachePath": "D1/{D194A974-BF99-0B48-267E-A52332F41461}.wem"
      },
      {
       "Id": "427107830",
@@ -630,6 +646,14 @@
       "Location": "Memory",
       "ShortName": "HealingMoans.wav",
       "CachePath": "FF/{FFAD6700-4C9D-AD29-1EFD-0FC9AAB0761A}.wem"
+     },
+     {
+      "Id": "612606462",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "HighPitchRumbleWind.wav",
+      "CachePath": "3E/{3E051C3A-5E59-62B3-1124-2F26F9965377}.wem"
      },
      {
       "Id": "620271480",
@@ -845,7 +869,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "WaterDrip.wav",
-      "CachePath": "BD/{BD8F66EC-851F-5AE9-26AB-DE2C78699FFE}.wem"
+      "CachePath": "E5/{E5B995BB-8DDE-F32C-2BF7-AFE9FFBD0479}.wem"
      },
      {
       "Id": "841893982",
@@ -1911,6 +1935,24 @@
       ]
      },
      {
+      "Id": "1852565204",
+      "Name": "Play_WindAmbience",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\Play_WindAmbience",
+      "GUID": "{67E2DE6C-D50A-4445-ACA7-C599305BE5A9}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "18672492"
+       },
+       {
+        "Id": "48354538"
+       },
+       {
+        "Id": "612606462"
+       }
+      ]
+     },
+     {
       "Id": "1953273240",
       "Name": "PlayerCheckpointEvent",
       "ObjectPath": "\\Events\\Default Work Unit\\PlayerSounds\\PlayerCheckpointEvent",
@@ -2247,6 +2289,6 @@
     ]
    }
   ],
-  "FileHash": "{A466B804-81CA-7575-1172-60A67D838025}"
+  "FileHash": "{3510AFDA-1EE1-A942-C947-4316A84C7C15}"
  }
 }

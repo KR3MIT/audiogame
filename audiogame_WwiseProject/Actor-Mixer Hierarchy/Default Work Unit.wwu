@@ -2802,6 +2802,7 @@
 									<ChildrenList>
 										<AudioFileSource Name="WaterDrip" ID="{BD0AA79C-34A6-4549-A12F-76A2992167FE}">
 											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0254444091283994"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.0395029476652551"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.973523740591858"/>
@@ -2845,6 +2846,7 @@
 									<ChildrenList>
 										<AudioFileSource Name="WaterDrip" ID="{B0E38C78-AEF0-486C-B18B-41E715F67A0D}">
 											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0210284372961982"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.0593785660947455"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="1.86500770879259"/>
@@ -2936,6 +2938,7 @@
 									<ChildrenList>
 										<AudioFileSource Name="WaterDrip" ID="{3CB2541B-5EB5-4C4D-817A-41471C385A4C}">
 											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0172352467423238"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.158011790661019"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="7.21696842423607"/>
@@ -2979,6 +2982,7 @@
 									<ChildrenList>
 										<AudioFileSource Name="WaterDrip" ID="{0F7CFE11-296A-4B44-A5BF-83EAA255D7E6}">
 											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0157989761804647"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.0523268747286352"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="8.10492779399607"/>
@@ -3022,6 +3026,7 @@
 									<ChildrenList>
 										<AudioFileSource Name="WaterDrip" ID="{02832D05-CE78-4572-BDDC-A2D96A76707C}">
 											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0172050850605245"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.0752198824224095"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="8.97540612178797"/>
@@ -4152,7 +4157,7 @@
 																		<PointList>
 																			<Point>
 																				<XPos>0</XPos>
-																				<YPos>-0</YPos>
+																				<YPos>0</YPos>
 																				<Flags>5</Flags>
 																				<SegmentShape>Exp2</SegmentShape>
 																			</Point>

@@ -229,6 +229,31 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_WindAmbience" ID="{67E2DE6C-D50A-4445-ACA7-C599305BE5A9}">
+							<ChildrenList>
+								<Action Name="" ID="{D660C65A-C326-4C5C-AF81-7746BD0A56C6}" ShortID="300497265">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DeepWind" ID="{B37E108B-0E75-4D61-8433-C5B30DBABF4F}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9F6A60E5-DDA7-4EDC-B8FE-0515D3B42FEC}" ShortID="1042787563">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HighWind" ID="{20D54F29-65CB-4508-A15D-05C727DFB902}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A9497585-BBD4-42DE-8A9D-DE16C181D1EA}" ShortID="685593411">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MidWind" ID="{B7E9F663-6B58-4A4D-9D10-8CC86E542441}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Interactables" ID="{A0B6B4A2-19A2-4853-870D-3C88553825CC}" ShortID="756475110">

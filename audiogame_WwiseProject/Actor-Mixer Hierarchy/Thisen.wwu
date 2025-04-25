@@ -2334,6 +2334,534 @@
 								</ObjectList>
 							</ObjectLists>
 						</RandomSequenceContainer>
+						<Folder Name="WindAmbience" ID="{2C80EB44-97B6-43EB-93EB-9FD24ED772BD}" ShortID="158870934">
+							<ChildrenList>
+								<ActorMixer Name="Wind" ID="{6A050F33-4480-404C-87E3-637FB47FDC17}" ShortID="535187585">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="DeepWind" ID="{B37E108B-0E75-4D61-8433-C5B30DBABF4F}" ShortID="446203171">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="1"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-18</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="DeepWindRumble" ID="{430B7B8A-9FB4-409D-B23C-03E1EAF646A3}" ShortID="347123092">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="DeepWindRumble" ID="{B90D8EE5-E6C9-413D-AB2D-D79DBAF0A467}">
+															<Language>SFX</Language>
+															<AudioFile>DeepWindRumble.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="18672492"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="DeepWindRumble" ID="{B90D8EE5-E6C9-413D-AB2D-D79DBAF0A467}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{89AB6FEA-25F1-4A37-99C4-9CB2B0362792}">
+													<PropertyList>
+														<Property Name="PanX" Type="Real64" Value="-55.627425614489"/>
+														<Property Name="PanY" Type="Real64" Value="-7.46887966804978"/>
+													</PropertyList>
+												</Panner>
+												<Position Name="" ID="{CDC22951-6FA3-432A-8BB6-ED189D212C0C}">
+													<PropertyList>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="2"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="DeepWind_Path" ID="{D8ADC0D6-3C18-41C6-9505-03D69CEEF9A1}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="1"/>
+																<Property Name="RandomY" Type="Real64" Value="1"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-1E-05</XPos>
+																	<YPos>0.64935</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ObjectLists>
+												<ObjectList Name="Playlist">
+													<Reference>
+														<ObjectRef Name="DeepWindRumble" ID="{430B7B8A-9FB4-409D-B23C-03E1EAF646A3}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+													</Reference>
+													<Reference>
+														<ObjectRef Name="DeepWindRumble" ID="{430B7B8A-9FB4-409D-B23C-03E1EAF646A3}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+													</Reference>
+												</ObjectList>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{2FD65423-0388-4D48-AFC2-2CD5B344B3FB}" ShortID="120889277">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Pitch"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<Custom>
+																			<ModulatorTime Name="Modulator Time (Custom)" ID="{D0735E14-A172-4B88-B5BC-E1B75BD8AB62}" ShortID="485562562">
+																				<PropertyList>
+																					<Property Name="TimeModDuration" Type="Real64" Value="11"/>
+																					<Property Name="TimeModLoops" Type="int32" Value="0"/>
+																					<Property Name="TimeModPlaybackRate" Type="Real64" Value="2">
+																						<ModifierList>
+																							<ModifierInfo>
+																								<Modifier Name="" ID="{97731C10-AC8D-4E8D-BC38-B96D82B7D269}">
+																									<PropertyList>
+																										<Property Name="Enabled" Type="bool" Value="True"/>
+																										<Property Name="Max" Type="Real64" Value="1"/>
+																										<Property Name="Min" Type="Real64" Value="-1"/>
+																									</PropertyList>
+																								</Modifier>
+																							</ModifierInfo>
+																						</ModifierList>
+																					</Property>
+																				</PropertyList>
+																			</ModulatorTime>
+																		</Custom>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{1D6A3338-2894-41D0-AC6D-3210BD1A5B18}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="65537"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>94</YPos>
+																						<Flags>5</Flags>
+																						<SegmentShape>Exp1</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>5.20725</XPos>
+																						<YPos>-960</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>Log1</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>11</XPos>
+																						<YPos>304</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{73DECF22-02DA-49A9-A1EC-F977C50B4476}" ShortID="1044721928">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Volume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<Custom>
+																			<ModulatorTime Name="Modulator Time (Custom)" ID="{3439C386-AB61-4B0E-809E-2A09E7A92D5D}" ShortID="711352026">
+																				<PropertyList>
+																					<Property Name="TimeModDuration" Type="Real64" Value="20"/>
+																					<Property Name="TimeModLoops" Type="int32" Value="0"/>
+																					<Property Name="TimeModPlaybackRate" Type="Real64" Value="2.5">
+																						<ModifierList>
+																							<ModifierInfo>
+																								<Modifier Name="" ID="{86DB507F-68FC-4231-93D9-E0EDEF684D70}">
+																									<PropertyList>
+																										<Property Name="Enabled" Type="bool" Value="True"/>
+																										<Property Name="Max" Type="Real64" Value="1"/>
+																										<Property Name="Min" Type="Real64" Value="-1"/>
+																									</PropertyList>
+																								</Modifier>
+																							</ModifierInfo>
+																						</ModifierList>
+																					</Property>
+																				</PropertyList>
+																			</ModulatorTime>
+																		</Custom>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{3A253CA7-DE14-4F63-A6EA-1A2AA0071F9F}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-0</YPos>
+																						<Flags>5</Flags>
+																						<SegmentShape>InvertedSCurve</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>4.39736</XPos>
+																						<YPos>-6.19739583333333</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>InvertedSCurve</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>14.6081</XPos>
+																						<YPos>6.59958333333336</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>InvertedSCurve</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>20</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="HighWind" ID="{20D54F29-65CB-4508-A15D-05C727DFB902}" ShortID="988603560">
+											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-20</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="HighPitchRumbleWind" ID="{82DE8CC1-61BF-4F62-91BE-F854787989D7}" ShortID="543556627">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HighPitchRumbleWind" ID="{6DE904F7-7438-4CA4-8EB9-3C7D52447609}">
+															<Language>SFX</Language>
+															<AudioFile>HighPitchRumbleWind.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="612606462"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HighPitchRumbleWind" ID="{6DE904F7-7438-4CA4-8EB9-3C7D52447609}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Playlist">
+													<Reference>
+														<ObjectRef Name="HighPitchRumbleWind" ID="{82DE8CC1-61BF-4F62-91BE-F854787989D7}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+													</Reference>
+													<Reference>
+														<ObjectRef Name="HighPitchRumbleWind" ID="{82DE8CC1-61BF-4F62-91BE-F854787989D7}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+													</Reference>
+												</ObjectList>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{D044B271-D742-494A-AB84-160D2B5CF9C7}" ShortID="723505265">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Volume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<Custom>
+																			<ModulatorTime Name="Modulator Time (Custom)" ID="{45E0854A-77BC-4FD5-8F59-FB2C61C42090}" ShortID="751282917">
+																				<PropertyList>
+																					<Property Name="TimeModDuration" Type="Real64" Value="30.2"/>
+																					<Property Name="TimeModInitialDelay" Type="Real64">
+																						<ModifierList>
+																							<ModifierInfo>
+																								<Modifier Name="" ID="{4C0BF53B-E2A4-440A-BF8E-B63FD0E8505E}">
+																									<PropertyList>
+																										<Property Name="Max" Type="Real64" Value="4"/>
+																									</PropertyList>
+																								</Modifier>
+																							</ModifierInfo>
+																						</ModifierList>
+																					</Property>
+																					<Property Name="TimeModLoops" Type="int32" Value="0"/>
+																					<Property Name="TimeModPlaybackRate" Type="Real64" Value="2">
+																						<ModifierList>
+																							<ModifierInfo>
+																								<Modifier Name="" ID="{F8C0108C-A2E8-4C8C-A281-E8DF5631C5F3}">
+																									<PropertyList>
+																										<Property Name="Enabled" Type="bool" Value="True"/>
+																										<Property Name="Max" Type="Real64" Value="2"/>
+																									</PropertyList>
+																								</Modifier>
+																							</ModifierInfo>
+																						</ModifierList>
+																					</Property>
+																				</PropertyList>
+																			</ModulatorTime>
+																		</Custom>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{88499E25-FD0E-4B0B-BF3E-606230A45C2E}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-17.094</YPos>
+																						<Flags>5</Flags>
+																						<SegmentShape>Constant</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>12.9923578947368</XPos>
+																						<YPos>-17.80341</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>Log1</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>15.5906705263158</XPos>
+																						<YPos>-2.92486</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>Exp1</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>16.4569866666667</XPos>
+																						<YPos>-2.83504</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>Exp2</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>18.7667038596491</XPos>
+																						<YPos>-15.82842</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>Constant</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>30.2</XPos>
+																						<YPos>-17.09447</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="MidWind" ID="{B7E9F663-6B58-4A4D-9D10-8CC86E542441}" ShortID="450174382">
+											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-22</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="MidPitchRumbleWind" ID="{34BD0A2A-986F-41C3-9F78-C6AAAF640D21}" ShortID="942826294">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B5DA26BA-73BB-4994-84C1-3DF76E93B0AF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="MidPitchRumbleWind" ID="{368EA487-066E-4725-A99F-F70D13E1495A}">
+															<Language>SFX</Language>
+															<AudioFile>MidPitchRumbleWind.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="48354538"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="MidPitchRumbleWind" ID="{368EA487-066E-4725-A99F-F70D13E1495A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Playlist">
+													<Reference>
+														<ObjectRef Name="MidPitchRumbleWind" ID="{34BD0A2A-986F-41C3-9F78-C6AAAF640D21}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+													</Reference>
+													<Reference>
+														<ObjectRef Name="MidPitchRumbleWind" ID="{34BD0A2A-986F-41C3-9F78-C6AAAF640D21}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+													</Reference>
+												</ObjectList>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{D3FA93E5-249A-4589-8FAC-55D1BB5FBD54}" ShortID="54435402">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Volume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<Custom>
+																			<ModulatorTime Name="Modulator Time (Custom)" ID="{66C465B6-EC31-4665-A81B-B4B803E9596F}" ShortID="719142716">
+																				<PropertyList>
+																					<Property Name="TimeModDuration" Type="Real64" Value="10"/>
+																					<Property Name="TimeModLoops" Type="int32" Value="0"/>
+																					<Property Name="TimeModPlaybackRate" Type="Real64" Value="0.5">
+																						<ModifierList>
+																							<ModifierInfo>
+																								<Modifier Name="" ID="{937BA3D5-F999-4490-B01D-76FC6286BFC6}">
+																									<PropertyList>
+																										<Property Name="Enabled" Type="bool" Value="True"/>
+																										<Property Name="Max" Type="Real64" Value="1.5"/>
+																									</PropertyList>
+																								</Modifier>
+																							</ModifierInfo>
+																						</ModifierList>
+																					</Property>
+																				</PropertyList>
+																			</ModulatorTime>
+																		</Custom>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{3A33AED0-14DF-4FD7-9699-E10DB6B953CE}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-0</YPos>
+																						<Flags>5</Flags>
+																						<SegmentShape>Exp2</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>3.02085</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>Log2</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>4.93307</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>Exp2</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>7.99235</XPos>
+																						<YPos>-0</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>Constant</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>10</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="TutorialVoicelines" ID="{143DDEA7-C197-43B4-B8AB-BBFEA0D78046}" ShortID="901593101">
