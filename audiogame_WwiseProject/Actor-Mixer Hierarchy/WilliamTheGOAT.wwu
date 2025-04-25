@@ -6,6 +6,7 @@
 				<ActorMixer Name="Jesus" ID="{0AE6374F-0A9C-4BBC-A687-518390EF2622}" ShortID="126164553">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
