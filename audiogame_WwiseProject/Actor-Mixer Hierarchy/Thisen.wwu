@@ -6,6 +6,7 @@
 				<ActorMixer Name="Sounds" ID="{0795FD36-C7C4-4384-9858-BE1BC611156D}" ShortID="934231523">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -2340,7 +2341,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-12</Value>
+												<Value>-11</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2355,7 +2356,7 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="DeepWind" ID="{B37E108B-0E75-4D61-8433-C5B30DBABF4F}" ShortID="446203171">
 											<PropertyList>
-												<Property Name="3DPosition" Type="int16" Value="1"/>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
@@ -2419,15 +2420,40 @@
 													<ChildrenList>
 														<Path2D Name="DeepWind_Path" ID="{D8ADC0D6-3C18-41C6-9505-03D69CEEF9A1}">
 															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="10000"/>
 																<Property Name="RandomX" Type="Real64" Value="1"/>
 																<Property Name="RandomY" Type="Real64" Value="1"/>
 															</PropertyList>
 															<PointList>
 																<Point>
-																	<XPos>-1E-05</XPos>
-																	<YPos>0.64935</YPos>
+																	<XPos>-6.20844</XPos>
+																	<YPos>-6.70995</YPos>
 																	<Flags>12</Flags>
 																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>6.87361</XPos>
+																	<YPos>-7.35931</YPos>
+																	<Flags>0</Flags>
+																	<Time>2500</Time>
+																</Point>
+																<Point>
+																	<XPos>5.98668</XPos>
+																	<YPos>6.92641</YPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+																<Point>
+																	<XPos>-6.87362</XPos>
+																	<YPos>6.49351</YPos>
+																	<Flags>0</Flags>
+																	<Time>7500</Time>
+																</Point>
+																<Point>
+																	<XPos>-6.87362</XPos>
+																	<YPos>-7.35931</YPos>
+																	<Flags>0</Flags>
+																	<Time>10000</Time>
 																</Point>
 															</PointList>
 														</Path2D>
@@ -2550,14 +2576,14 @@
 																						<SegmentShape>InvertedSCurve</SegmentShape>
 																					</Point>
 																					<Point>
-																						<XPos>4.39736</XPos>
-																						<YPos>-6.19739583333333</YPos>
+																						<XPos>4.47384</XPos>
+																						<YPos>-1.68927</YPos>
 																						<Flags>0</Flags>
 																						<SegmentShape>InvertedSCurve</SegmentShape>
 																					</Point>
 																					<Point>
-																						<XPos>14.6081</XPos>
-																						<YPos>6.59958333333336</YPos>
+																						<XPos>14.53162</XPos>
+																						<YPos>1.5888</YPos>
 																						<Flags>0</Flags>
 																						<SegmentShape>InvertedSCurve</SegmentShape>
 																					</Point>
@@ -2579,6 +2605,8 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="HighWind" ID="{20D54F29-65CB-4508-A15D-05C727DFB902}" ShortID="988603560">
 											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
@@ -2587,11 +2615,14 @@
 												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-20</Value>
+														<Value>12</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Main Attenuation" ID="{DA9B5B74-4121-469A-8A01-50B055F98546}" WorkUnitID="{70F7CC7D-94B9-4B48-B95E-64C5FBA641A8}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECE24778-AC59-4CDF-ACD7-2743F097D4E3}"/>
 												</Reference>
@@ -2623,6 +2654,9 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{9DEA3787-A8F3-4335-8124-64179AD75DB5}"/>
+											</PositioningInfo>
 											<ObjectLists>
 												<ObjectList Name="Playlist">
 													<Reference>
