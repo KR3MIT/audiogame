@@ -129,17 +129,6 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{4BA95D14-BF3B-4BE6-9FA4-4C35732CCE85}" ShortID="117290216">
-									<PropertyList>
-										<Property Name="Delay" Type="Real64" Value="0.5"/>
-										<Property Name="FadeInCurve" Type="int16" Value="7"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SpikeTrapTicks" ID="{CCE2CC8A-4C03-4129-B3A3-52C00A9AFDDB}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_LedgeRocks" ID="{1BF278D8-EFAB-4D5F-8D79-EC2075920473}">
