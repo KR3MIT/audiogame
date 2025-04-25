@@ -8,7 +8,7 @@ public class TaskSubscriber : MonoBehaviour
 
     public UnityEvent test;
 
-    private void Start()
+    private void Awake()
     {
         taskManager = GetComponent<TaskManager>();
     }
