@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{94271908-D1CB-4795-8A29-C0AA63F15F72}",
     "Language": "SFX",
-    "Hash": "{BC789DAA-44A0-DF95-913D-0ADB33F73519}",
+    "Hash": "{9727936F-DD51-4877-49BE-FB7203D9662C}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -416,14 +416,6 @@
       "CachePath": "51/{51A055E4-DFD1-AD91-DF99-39452FA6E936}.wem"
      },
      {
-      "Id": "411977813",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "ZOOM0012.wav",
-      "CachePath": "83/{83E53BF2-721B-3604-66CA-465B56069592}.wem"
-     },
-     {
       "Id": "416703143",
       "Language": "SFX",
       "Streaming": "false",
@@ -704,6 +696,14 @@
       "CachePath": "60/{607A980B-2BF1-3856-F22A-F258DAA00F59}.wem"
      },
      {
+      "Id": "688933374",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "6.wav",
+      "CachePath": "1A/{1A8D79B0-0BBC-772F-58DE-4DD1C730F8B2}.wem"
+     },
+     {
       "Id": "689988897",
       "Language": "SFX",
       "Streaming": "false",
@@ -824,12 +824,20 @@
       "CachePath": "7B/{7B0DC466-A16D-DA7A-3B0B-0EE59AED64B7}.wem"
      },
      {
+      "Id": "792990130",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "5.wav",
+      "CachePath": "AC/{AC444533-B4F4-F50C-49FC-B76548C09B20}.wem"
+     },
+     {
       "Id": "803635225",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ZOOM0011-2.wav",
-      "CachePath": "CF/{CF59C406-580F-FBC4-AE9A-62C2626B47AF}.wem"
+      "CachePath": "3A/{3A86D0C2-6092-9F7F-0823-E9171ADABC18}.wem"
      },
      {
       "Id": "811327516",
@@ -950,6 +958,14 @@
       "Location": "Memory",
       "ShortName": "HealingMoans.wav",
       "CachePath": "C9/{C9B8C7B1-ADF0-6305-5377-D20FC6BD959C}.wem"
+     },
+     {
+      "Id": "943521693",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "2.wav",
+      "CachePath": "AD/{AD1DE8FA-4CDA-9619-EBC7-818F8B259EB5}.wem"
      },
      {
       "Id": "966737072",
@@ -1155,6 +1171,21 @@
        },
        {
         "Id": "1038029385"
+       }
+      ]
+     },
+     {
+      "Id": "3724569835",
+      "Name": "BumpIntoWall",
+      "ObjectPath": "\\Events\\Default Work Unit\\FairyTutorial\\BumpIntoWall",
+      "GUID": "{EA563A8A-19D6-414B-BE37-79E87154195B}",
+      "MaxAttenuation": "30",
+      "DurationType": "OneShot",
+      "DurationMin": "7.385743",
+      "DurationMax": "7.385743",
+      "MediaRefs": [
+       {
+        "Id": "943521693"
        }
       ]
      },
@@ -1531,9 +1562,12 @@
       "GUID": "{44E31DFB-B5D6-459E-B824-512CF08936CE}",
       "MaxAttenuation": "30",
       "DurationType": "OneShot",
-      "DurationMin": "10.11287",
-      "DurationMax": "10.11287",
+      "DurationMin": "11.243831",
+      "DurationMax": "11.243831",
       "MediaRefs": [
+       {
+        "Id": "792990130"
+       },
        {
         "Id": "803635225"
        }
@@ -2196,11 +2230,11 @@
       "GUID": "{89507EA9-7029-41EE-A3E7-FE0B985913AB}",
       "MaxAttenuation": "30",
       "DurationType": "OneShot",
-      "DurationMin": "8.2396",
-      "DurationMax": "8.2396",
+      "DurationMin": "9.232116",
+      "DurationMax": "9.232116",
       "MediaRefs": [
        {
-        "Id": "411977813"
+        "Id": "688933374"
        }
       ]
      }
@@ -2289,6 +2323,6 @@
     ]
    }
   ],
-  "FileHash": "{F9F2FDD2-FC04-A9AC-9DCF-45523CAD19E5}"
+  "FileHash": "{28FA7F84-8201-9579-796D-0054DF209EF7}"
  }
 }

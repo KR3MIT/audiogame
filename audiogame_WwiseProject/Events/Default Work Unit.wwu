@@ -392,7 +392,7 @@
 								<Action Name="" ID="{28BDF9CD-500C-4567-847A-115EB6664CCA}" ShortID="909051038">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="FairyTrapWarning" ID="{34EC913D-9BF5-4D4D-8F4E-C3F70FF872CF}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+											<ObjectRef Name="FairyTrapWarning" ID="{E0A2512B-724D-4E54-8088-5A750D751856}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -434,9 +434,19 @@
 						<Event Name="FairyFollowFairy" ID="{44E31DFB-B5D6-459E-B824-512CF08936CE}">
 							<ChildrenList>
 								<Action Name="" ID="{1C6BA84C-F26C-4F3D-BAA0-8284C2833D21}" ShortID="22111920">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="5"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="FairyFollowFairy" ID="{6D4F89F8-596D-49F5-AF62-A0ED4A9FE989}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B3F0E9C3-BFA2-4913-9C59-1467B5FFE2C7}" ShortID="533998837">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FairyScrapeWall" ID="{1F06E753-908B-488D-B2E0-7FBDD0E5E20D}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -459,6 +469,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="FairyLeverAfterCauldron" ID="{2A2FBB66-F32D-4B71-A997-DE6DF6C1ADB6}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="BumpIntoWall" ID="{EA563A8A-19D6-414B-BE37-79E87154195B}">
+							<ChildrenList>
+								<Action Name="" ID="{4FEB1488-724F-447A-B237-42AEF3F22006}" ShortID="716606186">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FairyBumpIntoWall" ID="{1B203EBE-149A-45CD-9241-643471CFFB22}" WorkUnitID="{543AA68A-03F3-4940-81BD-3741357C33EB}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

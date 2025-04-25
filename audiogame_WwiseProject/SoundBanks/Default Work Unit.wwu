@@ -7,6 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Healing" ID="{90F53772-0C56-410A-A59C-CD5BA6DC54D4}" WorkUnitID="{62E6B6D2-5892-4B94-891E-2D5CE2D57E22}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="DoorSounds" ID="{FE6EDF9B-20F5-411F-BD42-2C08AC27388A}" WorkUnitID="{62E6B6D2-5892-4B94-891E-2D5CE2D57E22}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="BumpIntoWall" ID="{EA563A8A-19D6-414B-BE37-79E87154195B}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Breath" ID="{83BBD59D-6E24-4348-A865-3B7DA6BE0203}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TakeDamageEvent" ID="{20533D7E-D413-437F-8784-CACF63D9A290}" WorkUnitID="{A77AFEBE-DB83-4C14-BDF8-44A78D27198F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="CauldronStart" ID="{E2C14E99-1C9B-4397-931E-BE43993252CA}" WorkUnitID="{62E6B6D2-5892-4B94-891E-2D5CE2D57E22}" Origin="Manual" Filter="7"/>

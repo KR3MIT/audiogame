@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskStartNarration: lmao omg u touch wall haha
   taskCompleteNarration: 
-  dialogueLength: 0
+  dialogueLength: 8
   onTaskStart:
     m_PersistentCalls:
       m_Calls: []
@@ -32,4 +32,4 @@ MonoBehaviour:
   endTaskSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 3aa801b7754640d4d99aee5185ffcf70, type: 2}

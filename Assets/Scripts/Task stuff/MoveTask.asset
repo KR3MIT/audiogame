@@ -32,6 +32,6 @@ MonoBehaviour:
   endTaskSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3aa801b7754640d4d99aee5185ffcf70, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 69409cfe8d8fe44409e27fa2d7bf34e4, type: 2}
   requiredAmount: 500
   currentAmount: 500

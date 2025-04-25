@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AXESWINGEVENT = 3270970525U;
+        static const AkUniqueID BUMPINTOWALL = 3724569835U;
         static const AkUniqueID BUTTONCLICKEVENT = 1406980521U;
         static const AkUniqueID BUTTONGLOWEVENT = 3589471410U;
         static const AkUniqueID CAULDRONINTRO = 3823172619U;
