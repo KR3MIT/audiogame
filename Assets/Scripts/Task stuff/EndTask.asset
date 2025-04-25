@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskStartNarration: hell yea dawg
   taskCompleteNarration: now go on, be a hero
-  dialogueLength: 10
+  dialogueLength: 12
   onTaskStart:
     m_PersistentCalls:
       m_Calls:
@@ -47,6 +47,8 @@ MonoBehaviour:
         m_CallState: 2
   isActiveTask: 0
   shouldMoveFairyOnComplete: 1
+  both: 0
+  taskToRepeat: 2
   taskSound:
     idInternal: 0
     valueGuidInternal: 

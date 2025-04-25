@@ -3,14 +3,14 @@ using UnityEngine;
 
 public class TaskSubscriber : MonoBehaviour
 {
-    [SerializeField] private TaskManager taskManager;
+    private TaskManager taskManager;
     [SerializeField] private Task taskToSubscribe;
 
     public UnityEvent test;
 
     private void Start()
     {
-        
+        taskManager = GetComponent<TaskManager>();
     }
 
     public void Initialize()

@@ -8,16 +8,14 @@ public class TaskManager : MonoBehaviour
     public UnityEvent tutorialComplete;
     private bool _coroutineRunning;
     
-    public UnityEvent onAnyTaskComplete;
-    
     [SerializeField] private bool onStart = false;
     [SerializeField] private List<Task> taskList;
     [SerializeField] private int currentTask = 0;
-    [SerializeField] private Task taskOccurAtAnyTime;
     
     public float timeTillRepeatDialogue = 2f;
     private bool canRepeat = false;
     public PlayerInput playerInput;
+    private Coroutine delayRepeatCoroutine;
     
     private Dictionary<Task, UnityEvent> taskEventRelays = new Dictionary<Task, UnityEvent>();
     public void Start()
@@ -33,19 +31,17 @@ public class TaskManager : MonoBehaviour
 
         if (onStart)
             StartNextTask();
-
-        if (taskOccurAtAnyTime != null)
-        {
-            taskOccurAtAnyTime.StartTask(CompleteTask);
-        }
+        
 
         foreach(var subscriber in GetComponents<TaskSubscriber>())
         {
             subscriber.Initialize();
         }
-        
-        playerInput.actions["RepeatDialogue"].performed += ctx => RepeatDialogue();
-        
+
+        #if UNITY_EDITOR
+            playerInput.actions["RepeatDialogue"].performed += ctx => RepeatDialogue();
+        #endif
+
     }
     private void StartNextTask()
     {
@@ -60,18 +56,34 @@ public class TaskManager : MonoBehaviour
     }
     private void CompleteTask()
     {
+        if (currentTask == taskList.Count)
+        {
+            return;
+        }
+        
         currentTask++;
-        onAnyTaskComplete?.Invoke();
         StartNextTask();
     }
     private IEnumerator DialogueDelay()
     {
-        StartCoroutine(RepeatDelay());
+        if (delayRepeatCoroutine != null)
+        {
+            StopCoroutine(delayRepeatCoroutine);
+            delayRepeatCoroutine = null;
+        }
+        
+        delayRepeatCoroutine = StartCoroutine(RepeatDelay());
+        
         _coroutineRunning = true;
+        
         var _delay = taskList[currentTask].dialogueLength;
+        
         yield return new WaitForSeconds(_delay);
-        taskList[currentTask].StartTask(CompleteTask);
+        
+        taskList[currentTask].StartTask(CompleteTask); 
+        
         _coroutineRunning = false;
+        
         EndTutorial();
     }
 
@@ -88,17 +100,40 @@ public class TaskManager : MonoBehaviour
     
     void RepeatDialogue()
     {
-        if (canRepeat)
+        /*if (canRepeat)
         {
             taskList[currentTask].StartDialogue();
-            StartCoroutine(DialogueDelay());
-        }
+            Debug.Log("lmao sound repeated!");
+            if(currentTask != 0 && taskList[currentTask].taskSound == null)
+            {
+                taskList[currentTask - 1].EndDialogue();
+                Debug.Log("lmao sound -1");
+                
+                if (taskList[currentTask - 1].endTaskSound == null)
+                {
+                    taskList[currentTask - 2].EndDialogue();
+                        Debug.Log("lmao sound -2");
+                }
+            }*/
+        
     }
 
     private IEnumerator RepeatDelay()
     {
         canRepeat = false;
         yield return new WaitForSeconds(timeTillRepeatDialogue);
+        
+        if (taskList[currentTask].both)
+        {
+            taskList[taskList[currentTask].taskToRepeat].StartDialogue();
+        }
+        else
+        {
+            taskList[taskList[currentTask].taskToRepeat].StartDialogue();
+            taskList[taskList[currentTask].taskToRepeat].EndDialogue();
+        }
+        
         canRepeat = true;
+        delayRepeatCoroutine = StartCoroutine(RepeatDelay());
     }
 }

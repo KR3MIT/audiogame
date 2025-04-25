@@ -13,9 +13,11 @@ public class Task : ScriptableObject
     public UnityEvent taskCompletedEvent;
 
     public bool isActiveTask;
-
     public bool shouldMoveFairyOnComplete;
 
+    public bool both;
+    public int taskToRepeat;
+    
     public AK.Wwise.Event taskSound;
     public AK.Wwise.Event endTaskSound;
     public virtual void StartTask(UnityAction onTaskCompleteCallback)
@@ -56,10 +58,12 @@ public class Task : ScriptableObject
 
     public void PlayTaskSound()
     {
+        if(taskSound == null) { return; }
         taskSound.Post(FairyController.instance.gameObject);
     }
     public void PlayEndTaskSound()
     {
+        if(taskSound == null) { return; }
         endTaskSound.Post(FairyController.instance.gameObject);
     }
 }

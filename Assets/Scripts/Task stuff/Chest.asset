@@ -24,6 +24,8 @@ MonoBehaviour:
       m_Calls: []
   isActiveTask: 0
   shouldMoveFairyOnComplete: 0
+  both: 0
+  taskToRepeat: 8
   taskSound:
     idInternal: 0
     valueGuidInternal: 

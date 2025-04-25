@@ -23,6 +23,8 @@ MonoBehaviour:
       m_Calls: []
   isActiveTask: 0
   shouldMoveFairyOnComplete: 0
+  both: 0
+  taskToRepeat: 1
   taskSound:
     idInternal: 0
     valueGuidInternal: 
@@ -32,4 +34,4 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
   requiredAmount: 180
-  currentAmount: 180.79391
+  currentAmount: 189
