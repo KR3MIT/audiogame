@@ -7,8 +7,8 @@ public class TrapBehavior : MonoBehaviour
     public AK.Wwise.Event spikeRetractTrapSound;
     
     public int spikeTrapDamage = 25;
-    public int spikeRate;
-    public int spikeOpenDuration;
+    public float spikeRate;
+    public int spikeClosedDuration;
     private BoxCollider bc;
     private MeshRenderer mr;
     void Start()
@@ -39,7 +39,7 @@ public class TrapBehavior : MonoBehaviour
             spikeRetractTrapSound.Post(gameObject);
             bc.enabled = false;
             mr.enabled = false;
-            yield return new WaitForSeconds(spikeRate);
+            yield return new WaitForSeconds(spikeClosedDuration);
         }
     }
 
