@@ -22,10 +22,10 @@ MonoBehaviour:
   taskCompletedEvent:
     m_PersistentCalls:
       m_Calls: []
-  isActiveTask: 0
+  isActiveTask: 1
   shouldMoveFairyOnComplete: 0
   both: 0
-  taskToRepeat: 2
+  taskToRepeat: 3
   taskSound:
     idInternal: 0
     valueGuidInternal: 

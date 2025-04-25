@@ -114,8 +114,8 @@ public class TaskManager : MonoBehaviour
                     taskList[currentTask - 2].EndDialogue();
                         Debug.Log("lmao sound -2");
                 }
-            }*/
-        
+            }
+        }*/
     }
 
     private IEnumerator RepeatDelay()

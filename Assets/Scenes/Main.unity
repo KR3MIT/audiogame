@@ -5349,7 +5349,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 37c6522b4bbe1524f8d1fd5c3ccb27af, type: 2}
     - target: {fileID: 4059204195902732051, guid: 8c36ee34aa293e64aa67393a640a518a, type: 3}
       propertyPath: taskList.Array.size
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4059204195902732051, guid: 8c36ee34aa293e64aa67393a640a518a, type: 3}
       propertyPath: 'taskList.Array.data[0]'
@@ -5366,31 +5366,31 @@ PrefabInstance:
     - target: {fileID: 4059204195902732051, guid: 8c36ee34aa293e64aa67393a640a518a, type: 3}
       propertyPath: 'taskList.Array.data[3]'
       value: 
-      objectReference: {fileID: 11400000, guid: 32eaf1d8bcdedbe46ab9a2ded27b3b53, type: 2}
+      objectReference: {fileID: 11400000, guid: 37c6522b4bbe1524f8d1fd5c3ccb27af, type: 2}
     - target: {fileID: 4059204195902732051, guid: 8c36ee34aa293e64aa67393a640a518a, type: 3}
       propertyPath: 'taskList.Array.data[4]'
       value: 
-      objectReference: {fileID: 11400000, guid: 5120c208367733b4d92d7bd0815ae8e7, type: 2}
+      objectReference: {fileID: 11400000, guid: 32eaf1d8bcdedbe46ab9a2ded27b3b53, type: 2}
     - target: {fileID: 4059204195902732051, guid: 8c36ee34aa293e64aa67393a640a518a, type: 3}
       propertyPath: 'taskList.Array.data[5]'
       value: 
-      objectReference: {fileID: 11400000, guid: 976f108d492a25640830967ca8131443, type: 2}
+      objectReference: {fileID: 11400000, guid: 5120c208367733b4d92d7bd0815ae8e7, type: 2}
     - target: {fileID: 4059204195902732051, guid: 8c36ee34aa293e64aa67393a640a518a, type: 3}
       propertyPath: 'taskList.Array.data[6]'
       value: 
-      objectReference: {fileID: 11400000, guid: 965440ba67df2a14f98da79ab8967545, type: 2}
+      objectReference: {fileID: 11400000, guid: 976f108d492a25640830967ca8131443, type: 2}
     - target: {fileID: 4059204195902732051, guid: 8c36ee34aa293e64aa67393a640a518a, type: 3}
       propertyPath: 'taskList.Array.data[7]'
       value: 
-      objectReference: {fileID: 11400000, guid: 31cf36d58c17d354abe5b225b102613a, type: 2}
+      objectReference: {fileID: 11400000, guid: 965440ba67df2a14f98da79ab8967545, type: 2}
     - target: {fileID: 4059204195902732051, guid: 8c36ee34aa293e64aa67393a640a518a, type: 3}
       propertyPath: 'taskList.Array.data[8]'
       value: 
-      objectReference: {fileID: 11400000, guid: cc7693a81c681584587e00a6593350cb, type: 2}
+      objectReference: {fileID: 11400000, guid: 31cf36d58c17d354abe5b225b102613a, type: 2}
     - target: {fileID: 4059204195902732051, guid: 8c36ee34aa293e64aa67393a640a518a, type: 3}
       propertyPath: 'taskList.Array.data[9]'
       value: 
-      objectReference: {fileID: 11400000, guid: 628071b8e2f6d4c4d8fd10c362854d81, type: 2}
+      objectReference: {fileID: 11400000, guid: cc7693a81c681584587e00a6593350cb, type: 2}
     - target: {fileID: 4059204195902732051, guid: 8c36ee34aa293e64aa67393a640a518a, type: 3}
       propertyPath: timeTillRepeatDialogue
       value: 20
@@ -5398,19 +5398,19 @@ PrefabInstance:
     - target: {fileID: 4059204195902732051, guid: 8c36ee34aa293e64aa67393a640a518a, type: 3}
       propertyPath: 'taskList.Array.data[10]'
       value: 
-      objectReference: {fileID: 11400000, guid: aebe16747b0e8bb459b01d0aeb155210, type: 2}
+      objectReference: {fileID: 11400000, guid: 628071b8e2f6d4c4d8fd10c362854d81, type: 2}
     - target: {fileID: 4059204195902732051, guid: 8c36ee34aa293e64aa67393a640a518a, type: 3}
       propertyPath: 'taskList.Array.data[11]'
       value: 
-      objectReference: {fileID: 11400000, guid: 7767940eaa8c2064b9224ceead8a6849, type: 2}
+      objectReference: {fileID: 11400000, guid: aebe16747b0e8bb459b01d0aeb155210, type: 2}
     - target: {fileID: 4059204195902732051, guid: 8c36ee34aa293e64aa67393a640a518a, type: 3}
       propertyPath: 'taskList.Array.data[12]'
       value: 
-      objectReference: {fileID: 11400000, guid: 246b24c0bce6e784db824f368ca0423c, type: 2}
+      objectReference: {fileID: 11400000, guid: 7767940eaa8c2064b9224ceead8a6849, type: 2}
     - target: {fileID: 4059204195902732051, guid: 8c36ee34aa293e64aa67393a640a518a, type: 3}
       propertyPath: 'taskList.Array.data[13]'
       value: 
-      objectReference: {fileID: 11400000, guid: c14ff41d0e8990b43ad3e17d41c83146, type: 2}
+      objectReference: {fileID: 11400000, guid: 246b24c0bce6e784db824f368ca0423c, type: 2}
     - target: {fileID: 4059204195902732051, guid: 8c36ee34aa293e64aa67393a640a518a, type: 3}
       propertyPath: 'taskList.Array.data[14]'
       value: 
@@ -8585,6 +8585,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4495011087446182445, guid: a1b2451aebd39a94fb0ba9113222ca43, type: 3}
       propertyPath: spikeRate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495011087446182445, guid: a1b2451aebd39a94fb0ba9113222ca43, type: 3}
+      propertyPath: spikeClosedDuration
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4866193536097096352, guid: a1b2451aebd39a94fb0ba9113222ca43, type: 3}
@@ -34028,7 +34032,8 @@ GameObject:
   - component: {fileID: 1881166338}
   - component: {fileID: 1881166337}
   - component: {fileID: 1881166336}
-  m_Layer: 0
+  - component: {fileID: 1881166339}
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34124,6 +34129,33 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1881166334}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1881166339
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881166334}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1886338172
 PrefabInstance:
   m_ObjectHideFlags: 0

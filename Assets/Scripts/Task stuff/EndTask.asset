@@ -48,7 +48,7 @@ MonoBehaviour:
   isActiveTask: 0
   shouldMoveFairyOnComplete: 1
   both: 0
-  taskToRepeat: 2
+  taskToRepeat: 3
   taskSound:
     idInternal: 0
     valueGuidInternal: 
